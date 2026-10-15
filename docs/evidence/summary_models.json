@@ -1,0 +1,50 @@
+[
+  {
+    "model": "qwen3.5:9b",
+    "seconds": 44.3,
+    "claims": 9,
+    "accepted": 8,
+    "rejected": 1,
+    "markets_on_template": [],
+    "notes": [],
+    "rejection_reasons": {
+      "longer than": 1
+    },
+    "rejected_claims": [
+      {
+        "market": "rents",
+        "text": "Real GDP growth of 5.9% supports income and activity conditions for renters. The unemployment rate fell 0.10 percentage points, reducing labour market slack that typically supports rental demand. CPI accommodation rose 0.8% year-on-year, reflecting higher realised housing costs that support rents. A drop in the non-landed vacancy rate of 1.49 percentage points indicates tighter supply conditions supporting rental prices.",
+        "violations": [
+          "claim longer than two sentences' worth of text"
+        ]
+      }
+    ]
+  },
+  {
+    "model": "qwen3.5:9b (thinking)",
+    "seconds": 256.6,
+    "claims": 0,
+    "accepted": 0,
+    "rejected": 0,
+    "markets_on_template": [
+      "sales",
+      "rents"
+    ],
+    "notes": [
+      "model output was not valid JSON: Expecting value: line 1 column 1 (char 0)"
+    ],
+    "rejection_reasons": {},
+    "rejected_claims": []
+  },
+  {
+    "model": "qwen3.5:27b",
+    "seconds": 199.2,
+    "claims": 9,
+    "accepted": 9,
+    "rejected": 0,
+    "markets_on_template": [],
+    "notes": [],
+    "rejection_reasons": {},
+    "rejected_claims": []
+  }
+]
