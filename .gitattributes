@@ -1,0 +1,12 @@
+* text=auto eol=lf
+# Raw snapshots must stay byte-identical to what the upstream served: their
+# sha256 is recorded in every run and re-checked by `sgmacro trace`. Line-ending
+# normalisation would silently break that the first time a source served CRLF.
+data/snapshots/** -text
+data/catalogue/** -text
+tests/fixtures/** -text
+
+# Output of `sgmacro run`, committed as the sample: kept out of GitHub's language
+# statistics (the HTML report would otherwise count as a third of the code).
+reports/** linguist-generated=true
+data/processed/** linguist-generated=true

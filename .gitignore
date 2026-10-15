@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+
+# Local credentials and editor settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+agent-notes/
+
+# Local experiments; the sample data and run are included deliberately.
+data/_scratch/
