@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Singapore Housing Predictors</title>
+<style>
+:root {
+  color-scheme: light;
+  --surface: #fcfcfb; --surface-2: #f4f3f0; --border: #e4e3df; --grid: #ebeae6; --band: #efeeea;
+  --text: #0b0b0b; --text-2: #52514e; --text-3: #75746f; --accent: #2a78d6;
+  --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a;
+  --sup-bg: #d7e7fb; --sup-fg: #154a8a; --head-bg: #fadedd; --head-fg: #8f2524; --neu-bg: #eeede9; --neu-fg: #52514e;
+  --neg1: #e3eefc; --neg2: #b7d3f6; --neg3: #86b6ef; --pos1: #fbe6e5; --pos2: #f5bdbb; --pos3: #ee9492; --corr-fg: #0b0b0b;
+  --ok: #1d7a4f; --warn: #a15c00; --bad: #b3261e;
+  --shadow: 0 1px 2px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --surface: #1a1a19; --surface-2: #232321; --border: #3a3a37; --grid: #2e2e2b; --band: #2a2a27;
+    --text: #ffffff; --text-2: #c3c2b7; --text-3: #9a998f; --accent: #3987e5;
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70;
+    --sup-bg: #17375e; --sup-fg: #d3e5fb; --head-bg: #4d1f1f; --head-fg: #f7d2d2; --neu-bg: #33332f; --neu-fg: #c3c2b7;
+    --neg1: #1d3350; --neg2: #1c4a80; --neg3: #2563ad; --pos1: #3f2222; --pos2: #6b2b2a; --pos3: #973838; --corr-fg: #ffffff;
+    --ok: #5cc796; --warn: #e3a64a; --bad: #f08b84;
+    --shadow: 0 1px 2px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface: #1a1a19; --surface-2: #232321; --border: #3a3a37; --grid: #2e2e2b; --band: #2a2a27;
+  --text: #ffffff; --text-2: #c3c2b7; --text-3: #9a998f; --accent: #3987e5;
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70;
+  --sup-bg: #17375e; --sup-fg: #d3e5fb; --head-bg: #4d1f1f; --head-fg: #f7d2d2; --neu-bg: #33332f; --neu-fg: #c3c2b7;
+  --neg1: #1d3350; --neg2: #1c4a80; --neg3: #2563ad; --pos1: #3f2222; --pos2: #6b2b2a; --pos3: #973838; --corr-fg: #ffffff;
+  --ok: #5cc796; --warn: #e3a64a; --bad: #f08b84;
+  --shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--surface); color: var(--text);
+  font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px 64px; }
+header.top { padding: 28px 0 12px; border-bottom: 1px solid var(--border); margin-bottom: 8px; }
+header.top h1 { margin: 0 0 4px; font-size: 26px; line-height: 1.2; letter-spacing: -.01em; }
+.sub { color: var(--text-2); font-size: 13.5px; }
+.sub code { font-size: 12.5px; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.stat { background: var(--surface-2); border: 1px solid var(--border); border-radius: 999px; padding: 3px 11px; font-size: 13px; color: var(--text-2); }
+.stat b { color: var(--text); }
+.toolbar { float: right; }
+button { font: inherit; }
+.btn { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 5px 10px; cursor: pointer; font-size: 13px; }
+.btn:hover { border-color: var(--text-3); }
+nav.toc { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 0; margin-bottom: 18px; overflow-x: auto; white-space: nowrap; }
+nav.toc a { color: var(--text-2); text-decoration: none; font-size: 13.5px; margin-right: 16px; }
+nav.toc a:hover { color: var(--text); }
+section { margin: 30px 0; scroll-margin-top: 52px; }
+h2 { font-size: 19px; margin: 0 0 4px; }
+.lede { color: var(--text-2); font-size: 13.5px; margin: 0 0 14px; max-width: 900px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; box-shadow: var(--shadow); min-width: 0; }
+.card h3 { margin: 0; font-size: 14.5px; }
+.muted { color: var(--text-2); }
+.small { font-size: 12.5px; }
+.kpi { font-size: 30px; font-weight: 650; letter-spacing: -.02em; line-height: 1.15; margin: 6px 0 2px; }
+.kpi .fact { font-size: inherit; font-weight: inherit; }
+.kv { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--text-2); }
+.spark { height: 56px; margin-top: 8px; position: relative; }
+.chart { position: relative; width: 100%; }
+.fact { background: none; border: none; padding: 0 1px; color: inherit; font: inherit; cursor: pointer;
+  border-bottom: 1px dotted var(--text-3); }
+.fact:hover, .fact:focus-visible { color: var(--accent); border-bottom-color: var(--accent); outline: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.fact.chip { display: inline-block; font-size: 11.5px; line-height: 1.6; padding: 0 7px; border: 1px solid var(--border); border-radius: 999px; color: var(--text-2); }
+.fact.chip.sig-supportive, .fact.chip.sig-headwind, .fact.chip.sig-neutral { border-color: transparent; }
+.fact.chip.sig-ambiguous { border-style: dashed; }
+.fact.chip:hover { border-color: var(--accent); color: var(--text); }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+ul.claims { margin: 8px 0 0; padding-left: 18px; }
+ul.claims li { margin: 6px 0; }
+.note { font-size: 12.5px; color: var(--text-2); margin-top: 10px; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-weight: 600; color: var(--text-2); background: var(--surface-2); font-size: 12.5px; white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+.nw { white-space: nowrap; }
+td.notes { min-width: 280px; }
+table.compact { font-size: 12.5px; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sig { display: inline-block; min-width: 82px; text-align: center; border-radius: 6px; padding: 1px 8px; font-size: 12.5px; font-weight: 550; }
+.sig-supportive { background: var(--sup-bg); color: var(--sup-fg); }
+.sig-headwind { background: var(--head-bg); color: var(--head-fg); }
+.sig-neutral { background: var(--neu-bg); color: var(--neu-fg); }
+.sig-ambiguous { background: transparent; color: var(--text-2); border: 1px dashed var(--text-3); }
+.sig-none { color: var(--text-3); }
+.legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12.5px; color: var(--text-2); margin: 8px 0; align-items: center; }
+.legend i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 5px; }
+.pred-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 14px; }
+.pred-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.pred-value { font-size: 22px; font-weight: 650; white-space: nowrap; }
+.badges { margin: 6px 0; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 12.5px; color: var(--text-2); }
+details { margin-top: 10px; border-top: 1px solid var(--border); padding-top: 8px; }
+details > summary { cursor: pointer; color: var(--text-2); font-size: 13px; }
+details > summary:hover { color: var(--text); }
+details p { margin: 8px 0; font-size: 13.5px; }
+details table { font-size: 12.5px; }
+.corr { text-align: center; font-variant-numeric: tabular-nums; cursor: pointer; color: var(--corr-fg); min-width: 92px; }
+.corr small { display: block; font-size: 11px; opacity: .85; }
+.corr small.outside { font-style: italic; opacity: .7; }
+.corr-na { color: var(--text-3); cursor: default; }
+.corr-0 { background: var(--neu-bg); }
+.corr-neg1 { background: var(--neg1); } .corr-neg2 { background: var(--neg2); } .corr-neg3 { background: var(--neg3); }
+.corr-pos1 { background: var(--pos1); } .corr-pos2 { background: var(--pos2); } .corr-pos3 { background: var(--pos3); }
+.ok { color: var(--ok); } .warn { color: var(--warn); } .bad { color: var(--bad); }
+.tip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow);
+  border-radius: 8px; padding: 6px 9px; font-size: 12px; white-space: nowrap; z-index: 3; }
+.tip b { font-weight: 600; }
+.tip .row { display: flex; gap: 8px; align-items: center; }
+.tip .sw { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+svg text { fill: var(--text-2); font-size: 11px; }
+svg .gridline { stroke: var(--grid); stroke-width: 1; }
+svg .zero { stroke: var(--text-3); stroke-width: 1; }
+svg .bandrect { fill: var(--band); }
+svg .line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+svg .s1 { stroke: var(--series-1); } svg .s2 { stroke: var(--series-2); } svg .s3 { stroke: var(--series-3); }
+svg .dot1 { fill: var(--series-1); } svg .dot2 { fill: var(--series-2); } svg .dot3 { fill: var(--series-3); }
+svg .ring { stroke: var(--surface); stroke-width: 2; }
+svg .cross { stroke: var(--text-3); stroke-width: 1; stroke-dasharray: 3 3; }
+.drawer { position: fixed; top: 0; right: 0; height: 100%; width: min(560px, 100%); background: var(--surface); border-left: 1px solid var(--border);
+  box-shadow: -8px 0 24px rgba(0,0,0,.12); transform: translateX(105%); transition: transform .18s ease; z-index: 20; overflow-y: auto; padding: 18px 18px 40px; }
+.drawer.open { transform: none; }
+.drawer h3 { margin: 0 32px 4px 0; font-size: 16px; }
+.drawer .close { position: absolute; top: 12px; right: 12px; }
+.drawer .big { font-size: 26px; font-weight: 650; margin: 6px 0; }
+.drawer code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }
+.drawer table { font-size: 12px; margin-top: 6px; }
+.drawer td { word-break: break-all; }
+.drawer td:first-child, .drawer td.num { word-break: normal; white-space: nowrap; }
+.cmd { display: flex; gap: 6px; align-items: center; margin-top: 12px; }
+.cmd code { flex: 1; background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; overflow-x: auto; white-space: nowrap; }
+footer { margin-top: 40px; color: var(--text-3); font-size: 12.5px; border-top: 1px solid var(--border); padding-top: 12px; }
+@media (max-width: 640px) {
+  header.top h1 { font-size: 21px; }
+  .pred-grid { grid-template-columns: 1fr; }
+  .toolbar { float: none; margin-bottom: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="toolbar"><button class="btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">Theme</button></div>
+  <h1>Singapore residential prices and rents: predictor data</h1>
+  <div class="sub">As of <b>{{ as_of }}</b> · run <code>{{ run_id }}</code> · registry v{{ registry_version }} · pipeline {{ pipeline_version }}</div>
+  <div class="stats">
+    <span class="stat"><b>{{ targets | length }}</b> target indices</span>
+    <span class="stat"><b>{{ predictors | length }}</b> predictors</span>
+    <span class="stat"><b>{{ controls_ok }}/{{ controls_total }}</b> negative controls rejected as expected</span>
+    <span class="stat"><b>{{ n_facts }}</b> traceable figures</span>
+  </div>
+  <p class="lede" style="margin-top:12px">Only observations published by {{ as_of }} are used. Rates and ratios change in percentage points or basis points. Nothing here is a forecast. <b>Click any underlined figure</b> to see exactly where it came from.</p>
+</header>
+
+<nav class="toc">
+  <a href="#targets">Targets</a><a href="#summary">Summary</a><a href="#signals">Signals</a><a href="#predictors">Predictors</a><a href="#diagnostics">Lead-lag</a><a href="#quality">Data quality</a><a href="#provenance">Provenance</a>
+</nav>
+
+<section id="targets">
+  <h2>Target indices</h2>
+  <p class="lede">What a forecasting model would predict. Year-on-year change, with the real (CPI-deflated) change beside it.</p>
+  <div class="cards">
+  {% for t in targets %}
+    <div class="card">
+      <h3>{{ t.short }}</h3>
+      <div class="small muted">{{ t.latest_period }} · index level <button class="fact" data-fact="{{ t.level_id }}">{{ t.level }}</button></div>
+      <div class="kpi"><button class="fact" data-fact="{{ t.yoy_id }}">{{ t.yoy }}</button> <span class="small muted">YoY</span></div>
+      <div class="kv">
+        <span>QoQ <button class="fact" data-fact="{{ t.qoq_id }}">{{ t.qoq }}</button></span>
+        {% if t.real is defined %}<span>Real YoY <button class="fact" data-fact="{{ t.real_id }}">{{ t.real }}</button></span>{% endif %}
+        {% if t.cross_ok is defined %}<span class="{{ 'ok' if t.cross_ok else 'warn' }}">{{ "✓ matches SingStat copy" if t.cross_ok else "⚠ differs from second source" }}</span>{% endif %}
+      </div>
+      <div class="spark" data-spark="{{ t.id }}"></div>
+    </div>
+  {% endfor %}
+  </div>
+  <div class="card" style="margin-top:14px">
+    <h3>Year-on-year change since {{ 2005 }}</h3>
+    <div class="legend">{% for t in targets %}<span><i style="background:var(--series-{{ loop.index }})"></i>{{ t.short }}</span>{% endfor %}</div>
+    <div class="chart" data-chart="targets" style="height:300px"></div>
+  </div>
+</section>
+
+<section id="summary">
+  <h2>Summary</h2>
+  {% if summary %}
+  <div class="cols">
+  {% for m in summary.markets %}
+    <div class="card">
+      <h3>{{ m.name }}</h3>
+      <ul class="claims">
+      {% if m.claims %}
+        {% for c in m.claims %}<li>{{ c.text }}<span class="chips">{% for f in c.figures %}<button class="fact chip{% if f.reading %} sig-{{ f.reading }}{% endif %}" data-fact="{{ f.id }}" title="{{ f.title }}">{{ f.text }}</button>{% endfor %}</span></li>{% endfor %}
+      {% else %}
+        {% for line in m.fallback %}<li>{{ line }}</li>{% endfor %}
+      {% endif %}
+      </ul>
+    </div>
+  {% endfor %}
+  </div>
+  <p class="note">{% if summary.source == "deterministic" %}Written by a template from the computed facts.{% else %}Drafted by an LLM (<code>{{ summary.source }}</code>) from pre-computed figures and signal readings, then checked claim by claim. The model writes no figures: the chips under each claim are the facts it cites, printed by code. Each claim must cite every series it names, rise/fall wording must match the computed direction, and support/headwind wording must match the computed signal. {% for m in summary.markets %}{{ m.name }}: {{ m.accepted }}/{{ m.total }} claims passed{% if m.source == "deterministic" %} (template used){% endif %}. {% endfor %}Chips are coloured by reading.{% endif %}</p>
+  {% endif %}
+</section>
+
+<section id="signals">
+  <h2>Signal dashboard</h2>
+  <p class="lede">Each predictor's latest move read against the effect the registry declares for it: <span class="sig sig-supportive">supportive</span> pushes the market up, <span class="sig sig-headwind">headwind</span> pushes it down, <span class="sig sig-neutral">neutral</span> moved less than its declared band, <span class="sig sig-ambiguous">ambiguous</span> has no clear sign in theory. Hypotheses applied to data, not forecasts.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Predictor</th><th>Channel</th><th>Latest</th><th>Headline change</th><th>Hist. pct</th><th>Sales</th><th>Rents</th><th>Typical lead</th></tr></thead>
+    <tbody>
+    {% for p in predictors %}
+      <tr>
+        <td><a href="#pred-{{ p.id }}">{{ p.short }}</a></td>
+        <td class="muted">{{ p.channel }}</td>
+        <td class="nw">{{ p.latest_period }}</td>
+        <td class="num"><button class="fact" data-fact="{{ p.headline_id }}">{{ p.headline }}</button></td>
+        <td class="num"><button class="fact" data-fact="{{ p.percentile_id }}">{{ p.percentile }}</button></td>
+        {% for mkt in ["sales", "rents"] %}
+        <td>{% if mkt in p.signals %}<button class="fact sig sig-{{ p.signals[mkt] }}" data-fact="{{ p.signal_ids[mkt] }}">{{ p.signals[mkt] }}</button>{% else %}<span class="sig-none">–</span>{% endif %}</td>
+        {% endfor %}
+        <td class="muted nw">{{ p.lead }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+</section>
+
+<section id="predictors">
+  <h2>Predictors</h2>
+  <p class="lede">Headline change history since 2005; the shaded band is the declared neutral zone. Hover the charts for values; open a card's details for its source, definition, all changes, rationale, lags and limitations.</p>
+  <div class="pred-grid">
+  {% for p in predictors %}
+    <div class="card" id="pred-{{ p.id }}">
+      <div class="pred-head">
+        <div><h3>{{ p.short }}</h3><div class="small muted">{{ p.channel }} · {{ p.latest_period }}</div></div>
+        <div class="pred-value"><button class="fact" data-fact="{{ p.headline_id }}">{{ p.headline }}</button></div>
+      </div>
+      <div class="badges">{{ p.headline_human }}{% for mkt, reading in p.signals.items() %} · {{ mkt }} <span class="sig sig-{{ reading }}">{{ reading }}</span>{% endfor %}</div>
+      <div class="chart" data-chart="pred:{{ p.id }}" style="height:170px"></div>
+      <p class="small" style="margin:8px 0 0">{{ p.reading | md_bold }}</p>
+      <details>
+        <summary>Source, definition and changes</summary>
+        <div class="table-wrap" style="margin-top:8px"><table>
+          <tr><th>Source</th><td>{{ p.publisher }} via {{ p.source_name }}: <a href="{{ p.link }}">{{ p.identifier }}</a></td></tr>
+          <tr><th>Definition</th><td>{{ p.definition }}</td></tr>
+          <tr><th>Unit</th><td>{{ p.unit }} ({{ p.unit_kind }})</td></tr>
+          <tr><th>Frequency</th><td>{{ p.frequency }}, {{ p.adjustment }}; updates: {{ p.update_frequency }}</td></tr>
+          <tr><th>Latest</th><td>{{ p.latest_period }} = <button class="fact" data-fact="{{ p.level_id }}">{{ p.level }}</button> (as of {{ as_of }})</td></tr>
+          <tr><th>Publication lag</th><td>{{ p.lag }} days declared{{ p.reference_note }}, {{ p.observed_lag if p.observed_lag is not none else "n/a" }} observed</td></tr>
+          <tr><th>Vintage</th><td class="mono">{{ p.vintage }}</td></tr>
+          {% if p.comparability %}<tr><th>Comparability</th><td>{{ p.comparability | join(" · ") }}</td></tr>{% endif %}
+        </table></div>
+        <div class="table-wrap" style="margin-top:8px"><table>
+          <thead><tr><th>Change</th><th>Value</th><th>Basis</th></tr></thead>
+          {% for c in p.changes %}<tr><td>{{ c.name }}</td><td class="num"><button class="fact" data-fact="{{ c.id }}">{{ c.value }}</button></td><td class="muted">{{ c.basis }}{% if c.note %} ({{ c.note }}){% endif %}</td></tr>{% endfor %}
+        </table></div>
+        {% if p.events is defined %}
+        <p><b>Most recent rounds</b> ({{ p.events_total }} since 2005; list reviewed {{ p.events_reviewed }})</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Announced</th><th>Direction</th><th>What changed</th></tr></thead>
+          {% for e in p.events %}<tr><td><a href="{{ e.source }}">{{ e.date }}</a></td><td>{{ e.direction }}</td><td>{{ e.summary }}</td></tr>{% endfor %}
+        </table></div>
+        {% endif %}
+      </details>
+      <details>
+        <summary>Why it may be informative, lags and limitations</summary>
+        <p><b>Why.</b> {{ p.rationale }}</p>
+        <p><b>Lags.</b> Expected lead {{ p.lead }}.{% if p.evidence %} Inside that window: {% for e in p.evidence %}{{ e.text | md_bold }}{{ "; " if not loop.last else "." }}{% endfor %}{% set outside = p.evidence | selectattr("outside") | map(attribute="outside") | list %}{% if outside %} Stronger outside it: {{ outside | join("; ") | md_bold }}.{% endif %}{% endif %}</p>
+        <p><b>Limitations.</b> {{ p.limitations }}</p>
+        {% if p.warnings %}<p class="warn"><b>Validation warnings.</b> {{ p.warnings | join(" · ") }}</p>{% endif %}
+      </details>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+
+<section id="diagnostics">
+  <h2>Lead-lag diagnostics</h2>
+  <p class="lede">Correlation between each predictor's headline change and each target's year-on-year change, the predictor leading by <i>k</i> quarters (blue negative, red positive, grey |r| &lt; 0.2). Each predictor declares <i>when</i> its effect should show, so each cell is the strongest correlation <b>inside that declared window</b>, and agreement compares its sign with the declared effect. A clearly stronger correlation outside the window is noted under the cell as a finding, not as a verdict. Descriptive only: overlapping windows, no multiple-testing correction, collinear predictors, no p-values. Click a cell for its basis.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Predictor</th>{% for t in diag.targets %}<th style="text-align:center">{{ t }}</th>{% endfor %}</tr></thead>
+    <tbody>
+    {% for row in diag.rows %}
+      <tr><td>{{ row.predictor }}<small class="muted" style="display:block">declared lead {{ row.lead }} q</small></td>
+      {% for c in row.cells %}
+        {% if c.fact %}<td class="corr {{ c.cls }}" data-fact="{{ c.fact }}" title="{{ c.agreement }}" tabindex="0">{{ c.short }}<small>k={{ c.lag }} · {{ c.agreement }}</small>{% if c.outside %}<small class="outside">outside: {{ c.outside }}</small>{% endif %}</td>
+        {% else %}<td class="corr corr-na">n/a<small>{{ c.agreement }}</small></td>{% endif %}
+      {% endfor %}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+</section>
+
+<section id="quality">
+  <h2>Data quality and validation</h2>
+  <p class="lede">Every series' verdict, including three negative controls registered to fail on purpose so the checks run against live data on every run.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Series</th><th>Role</th><th>Verdict</th><th>Expected</th><th>Latest</th><th>Notes</th></tr></thead>
+    <tbody>
+    {% for s in every %}
+      <tr><td>{{ s.short }}</td><td class="muted">{{ s.role }}</td>
+        <td class="nw {{ 'ok' if s.verdict.startswith('ok') else ('ok' if s.expected_status == s.verdict else 'bad') }}">{{ s.verdict }}</td>
+        <td class="muted nw">{{ s.expected_status }}</td><td class="nw">{{ s.latest_period | default("–") }}</td>
+        <td class="small muted notes">{{ (s.errors + s.warnings) | join(" · ") }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  <h3 style="margin:18px 0 6px;font-size:15px">Cross-source reconciliation</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Series</th><th>Second source</th><th>Periods compared</th><th>Mismatches</th><th>Max |diff|</th><th>Latest: primary / second</th></tr></thead>
+    {% for c in cross %}<tr><td>{{ c.series }}</td><td class="small">{{ c.source }} <span class="mono">{{ c.identifier }}</span></td><td class="num">{{ c.overlap_periods }}</td><td class="num {{ 'ok' if c.mismatches == 0 else 'bad' }}">{{ c.mismatches }}</td><td class="num">{{ c.max_abs_diff }}</td><td>{{ c.primary_latest }} / {{ c.cross_latest }}</td></tr>{% endfor %}
+  </table></div>
+  <p class="note">Withheld by the as-of gate: {% for s in every if s.withheld %}{{ s.short }} ({{ s.withheld | join(", ") }}){{ "; " if not loop.last else "" }}{% else %}nothing{% endfor %}.</p>
+</section>
+
+<section id="provenance">
+  <h2>Provenance</h2>
+  <p class="lede">One row per upstream object: the exact bytes served, stored under <span class="mono">data/snapshots/&lt;object&gt;/&lt;vintage&gt;/</span>. Re-run offline with <span class="mono">sgmacro run --as-of {{ as_of }}</span>; check any figure with <span class="mono">sgmacro trace &lt;fact id&gt; --run {{ run_id }}</span>.</p>
+  <div class="table-wrap"><table class="compact">
+    <thead><tr><th>Object</th><th>Vintage</th><th>Retrieved</th><th>Upstream last updated</th><th>sha256</th></tr></thead>
+    {% for v in vintages %}<tr><td class="mono">{{ v.object }}</td><td class="mono">{{ v.vintage }}</td><td class="nw">{{ v.retrieved }}</td><td class="nw">{{ v.upstream[:10] if v.upstream[4:5] == "-" else v.upstream }}</td><td class="mono">{{ v.sha }}</td></tr>{% endfor %}
+  </table></div>
+  {% if summary and summary.audit %}
+  <details>
+    <summary>LLM claim audit: every proposed claim and the checker's verdict</summary>
+    <div class="table-wrap" style="margin-top:8px"><table>
+      <thead><tr><th>Market</th><th>Verdict</th><th>Claim</th><th>Reason</th></tr></thead>
+      {% for a in summary.audit %}<tr><td>{{ a.market }}</td><td class="{{ 'ok' if a.ok else 'bad' }}">{{ "accepted" if a.ok else "rejected" }}</td><td>{{ a.text }}</td><td class="small">{{ a.violations | join("; ") if a.violations else "–" }}</td></tr>{% endfor %}
+    </table></div>
+  </details>
+  {% endif %}
+</section>
+
+<footer>Generated by sgmacro {{ pipeline_version }} from the processed results of run <span class="mono">{{ run_id }}</span>. The Markdown report beside this file carries the same figures.</footer>
+</div>
+
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Figure lineage">
+  <button class="btn close" type="button" id="drawer-close">Close</button>
+  <div id="drawer-body"></div>
+</aside>
+
+<script type="application/json" id="report-data">{{ data_json }}</script>
+{% raw %}
+<script>
+(function () {
+  "use strict";
+  var DATA = JSON.parse(document.getElementById("report-data").textContent);
+  var FACTS = DATA.facts;
+
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+    return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]; }); }
+
+  /* ---------- theme ---------- */
+  var root = document.documentElement;
+  try { var saved = localStorage.getItem("sgmacro-theme"); if (saved) root.dataset.theme = saved; } catch (e) {}
+  document.getElementById("theme-toggle").addEventListener("click", function () {
+    var dark = root.dataset.theme ? root.dataset.theme === "dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("sgmacro-theme", root.dataset.theme); } catch (e) {}
+  });
+
+  /* ---------- lineage drawer ---------- */
+  var drawer = document.getElementById("drawer"), body = document.getElementById("drawer-body");
+  function openFact(id) {
+    var f = FACTS[id];
+    if (!f) return;
+    var html = "<div class='small muted mono'>" + esc(id) + "</div><h3>" + esc(f.label) + "</h3>";
+    html += "<div class='big'>" + esc(f.display) + "</div>";
+    if (f.period) html += "<div class='small muted'>Period " + esc(f.period) + "</div>";
+    html += "<p class='small'><b>Formula</b> <code>" + esc(f.formula) + "</code></p>";
+    if (f.note) html += "<p class='small muted'>" + esc(f.note) + "</p>";
+    if (f.inputs && f.inputs.length) {
+      html += "<p class='small'><b>Inputs, read from the raw snapshot</b></p><div class='table-wrap'><table><tr><th>Period</th><th>Value</th><th>Where in the file</th></tr>";
+      f.inputs.forEach(function (i) {
+        html += "<tr><td>" + esc(i.period) + "<div class='muted small'>" + esc(i.series) + "</div></td><td class='num'>" +
+          esc(i.value) + "</td><td><code>" + esc(i.locator) + "</code><div class='muted small mono'>" + esc(i.file) +
+          "<br>sha256 " + esc(String(i.sha256).slice(0, 16)) + "…</div></td></tr>";
+      });
+      html += "</table></div>";
+    }
+    if (f.depends_on && f.depends_on.length) {
+      html += "<p class='small'><b>Derived from</b> " + f.depends_on.map(function (d) {
+        return "<button class='fact' data-fact='" + esc(d) + "'>" + esc(FACTS[d] ? FACTS[d].label + " (" + FACTS[d].display + ")" : d) + "</button>";
+      }).join(", ") + "</p>";
+    }
+    var cmd = "sgmacro trace " + id + " --run " + DATA.run_id;
+    html += "<div class='cmd'><code>" + esc(cmd) + "</code><button class='btn' type='button' data-copy='" + esc(cmd) + "'>Copy</button></div>";
+    html += "<p class='small muted'>" + (f.inputs && f.inputs.length
+      ? "The command re-hashes the snapshot, re-reads each cell with an independent reader and recomputes the figure."
+      : "This figure is computed from other figures, not read from single cells; trace those to reach the raw data.") + "</p>";
+    body.innerHTML = html;
+    drawer.classList.add("open");
+    drawer.setAttribute("aria-hidden", "false");
+  }
+  function closeDrawer() { drawer.classList.remove("open"); drawer.setAttribute("aria-hidden", "true"); }
+  document.getElementById("drawer-close").addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeDrawer();
+    if (e.key === "Enter" && e.target.dataset && e.target.dataset.fact && e.target.tagName === "TD") openFact(e.target.dataset.fact);
+  });
+  document.addEventListener("click", function (e) {
+    var copy = e.target.closest("[data-copy]");
+    if (copy) {
+      try { navigator.clipboard.writeText(copy.dataset.copy); copy.textContent = "Copied"; } catch (err) {}
+      return;
+    }
+    var el = e.target.closest("[data-fact]");
+    if (el) { e.preventDefault(); openFact(el.dataset.fact); }
+  });
+
+  /* ---------- charts ---------- */
+  function niceTicks(lo, hi, n) {
+    var span = hi - lo || 1, raw = span / n, mag = Math.pow(10, Math.floor(Math.log10(raw))), r = raw / mag;
+    var step = (r >= 7.5 ? 10 : r >= 3.5 ? 5 : r >= 1.5 ? 2 : 1) * mag, out = [];
+    for (var v = Math.ceil(lo / step) * step; v <= hi + step * 1e-9; v += step) out.push(Math.round(v / step) * step);
+    return out;
+  }
+  function fmtVal(v, unit) {
+    if (v == null) return "n/a";
+    var d = /bp|rounds/.test(unit) ? 0 : /pp/.test(unit) ? 2 : 1;
+    var s = Math.abs(v).toFixed(d), sign = Number(s) === 0 ? "" : (v > 0 ? "+" : "−");
+    return sign + s + unit;
+  }
+  function lineChart(el, cfg) {
+    var W = Math.max(el.clientWidth, 200), H = el.clientHeight || cfg.height || 200;
+    var m = cfg.compact ? {l: 3, r: 7, t: 6, b: 6} : {l: 44, r: 14, t: 10, b: 24};
+    var pts = [];
+    cfg.series.forEach(function (s) { s.points.forEach(function (p) { if (p[1] != null) pts.push(p); }); });
+    if (!pts.length) { el.textContent = "no data"; return; }
+    var x0 = Infinity, x1 = -Infinity, y0 = 0, y1 = 0;
+    pts.forEach(function (p) { x0 = Math.min(x0, p[0]); x1 = Math.max(x1, p[0]); y0 = Math.min(y0, p[1]); y1 = Math.max(y1, p[1]); });
+    if (cfg.band) { y0 = Math.min(y0, -cfg.band); y1 = Math.max(y1, cfg.band); }
+    var pad = (y1 - y0) * 0.08 || 1; y0 -= pad; y1 += pad;
+    function X(x) { return m.l + (x - x0) / ((x1 - x0) || 1) * (W - m.l - m.r); }
+    function Y(y) { return m.t + (y1 - y) / (y1 - y0) * (H - m.t - m.b); }
+    var s = "<svg viewBox='0 0 " + W + " " + H + "' width='" + W + "' height='" + H + "' role='img' aria-label='" + esc(cfg.label) + "'>";
+    if (!cfg.compact) {
+      niceTicks(y0, y1, 4).forEach(function (t) {
+        s += "<line class='gridline' x1='" + m.l + "' x2='" + (W - m.r) + "' y1='" + Y(t) + "' y2='" + Y(t) + "'/>";
+        var label = String(Math.round(t * 1000) / 1000).replace("-", "−") + (cfg.unit === "%" ? "%" : "");
+        s += "<text x='" + (m.l - 6) + "' y='" + (Y(t) + 4) + "' text-anchor='end'>" + esc(label) + "</text>";
+      });
+      var yStep = x1 - x0 > 14 ? 5 : x1 - x0 > 6 ? 2 : 1;
+      for (var yr = Math.ceil(x0 / yStep) * yStep; yr <= x1; yr += yStep) {
+        s += "<text x='" + X(yr) + "' y='" + (H - 6) + "' text-anchor='middle'>" + yr + "</text>";
+      }
+    }
+    if (cfg.band) s += "<rect class='bandrect' x='" + m.l + "' width='" + (W - m.l - m.r) + "' y='" + Y(cfg.band) + "' height='" + Math.max(0, Y(-cfg.band) - Y(cfg.band)) + "'/>";
+    s += "<line class='zero' x1='" + m.l + "' x2='" + (W - m.r) + "' y1='" + Y(0) + "' y2='" + Y(0) + "'/>";
+    cfg.series.forEach(function (ser) {
+      var d = "", pen = false, last = null;
+      ser.points.forEach(function (p) {
+        if (p[1] == null) { pen = false; return; }
+        d += (pen ? "L" : "M") + X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1);
+        pen = true; last = p;
+      });
+      s += "<path class='line s" + ser.slot + "' d='" + d + "'/>";
+      if (last) s += "<circle class='dot" + ser.slot + " ring' cx='" + X(last[0]) + "' cy='" + Y(last[1]) + "' r='4.5'/>";
+    });
+    s += "<line class='cross' x1='0' x2='0' y1='" + m.t + "' y2='" + (H - m.b) + "' visibility='hidden'/>";
+    s += "</svg><div class='tip' hidden></div>";
+    el.innerHTML = s;
+    var svg = el.querySelector("svg"), cross = el.querySelector(".cross"), tip = el.querySelector(".tip");
+    el.onmousemove = function (e) {
+      var r = svg.getBoundingClientRect(), px = e.clientX - r.left;
+      var x = x0 + (px - m.l) / (W - m.l - m.r) * (x1 - x0), best = null;
+      cfg.series.forEach(function (ser) { ser.points.forEach(function (p) {
+        if (p[1] != null && (best === null || Math.abs(p[0] - x) < Math.abs(best[0] - x))) best = p; }); });
+      if (!best) return;
+      cross.setAttribute("x1", X(best[0])); cross.setAttribute("x2", X(best[0])); cross.setAttribute("visibility", "visible");
+      var rows = "<div><b>" + esc(best[2]) + "</b></div>";
+      cfg.series.forEach(function (ser) {
+        var hit = null;
+        ser.points.forEach(function (p) { if (Math.abs(p[0] - best[0]) < 1e-6) hit = p; });
+        rows += "<div class='row'><span class='sw' style='background:var(--series-" + ser.slot + ")'></span>" +
+          (cfg.series.length > 1 ? esc(ser.name) + ": " : "") + "<b>" + esc(fmtVal(hit ? hit[1] : null, cfg.unit)) + "</b></div>";
+      });
+      tip.innerHTML = rows; tip.hidden = false;
+      var left = X(best[0]) + 12; if (left + tip.offsetWidth > W) left = X(best[0]) - tip.offsetWidth - 12;
+      tip.style.left = Math.max(0, left) + "px"; tip.style.top = (cfg.compact ? 0 : m.t) + "px";
+    };
+    el.onmouseleave = function () { tip.hidden = true; cross.setAttribute("visibility", "hidden"); };
+  }
+
+  function drawAll() {
+    var targets = DATA.charts.targets;
+    document.querySelectorAll("[data-chart='targets']").forEach(function (el) {
+      lineChart(el, {series: targets, unit: "%", label: "Target indices, year-on-year change"});
+    });
+    document.querySelectorAll("[data-spark]").forEach(function (el) {
+      var t = targets.filter(function (x) { return x.id === el.dataset.spark; })[0];
+      if (t) lineChart(el, {series: [t], unit: "%", compact: true, label: t.name + " year-on-year change"});
+    });
+    document.querySelectorAll("[data-chart^='pred:']").forEach(function (el) {
+      var p = DATA.charts.predictors[el.dataset.chart.slice(5)];
+      if (p) lineChart(el, {series: [{name: p.name, slot: 1, points: p.points}], unit: p.unit, band: p.band,
+        label: p.name + " headline change history"});
+    });
+  }
+  drawAll();
+  var pending = null;
+  window.addEventListener("resize", function () { clearTimeout(pending); pending = setTimeout(drawAll, 120); });
+})();
+</script>
+{% endraw %}
+</body>
+</html>

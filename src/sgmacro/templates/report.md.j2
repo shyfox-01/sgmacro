@@ -1,0 +1,181 @@
+# Singapore residential prices and rents: predictor data report
+
+**As-of date:** {{ as_of }} · **Run:** `{{ run_id }}` · **Registry:** v{{ registry_version }} (`{{ fingerprint }}`) · **Pipeline:** {{ pipeline_version }}
+
+{{ targets | length }} target indices and {{ predictors | length }} predictors reported ·
+{{ controls_ok }}/{{ controls_total }} negative controls rejected exactly as expected ·
+{% if unexpected_rejections %}**series rejected unexpectedly: {{ unexpected_rejections | join(", ") }}** · {% endif %}
+{{ n_facts }} figures, each with a fact id; `sgmacro trace <id> --run {{ run_id }}` re-reads the raw cells behind any level or change and recomputes it.
+
+Only observations that could have been published by {{ as_of }} are used: each is admitted once its
+reference date plus the declared publication lag has passed. Rates and ratios change in percentage points or
+basis points, never in percent. Nothing here is a forecast; no model is fitted.
+
+## 1. Summary
+
+{% if summary %}
+{% for m in summary.markets %}
+### {{ m.name }}
+
+{% if m.claims %}
+{% for c in m.claims %}
+- {{ c.text }}
+  <sub>{% for f in c.figures %}{{ f.text }}{% if f.reading %} ({{ f.reading }}){% endif %} `{{ f.id }}`{{ " · " if not loop.last else "" }}{% endfor %}</sub>
+{% endfor %}
+{% else %}
+{% for line in m.fallback %}
+- {{ line }}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
+*How this summary was produced:* {% if summary.source == "deterministic" %}written by a template from the fact sheet{% else %}drafted by an LLM (`{{ summary.source }}`) from pre-computed figures and signal readings, then checked claim by claim. The model writes no figures: the ones under each claim are the facts it cites, printed by code. Each claim must cite every series it names, rise/fall wording must match the computed direction, and support/headwind wording must match the computed signal. {% for m in summary.markets %}{{ m.name }}: {{ m.accepted }} of {{ m.total }} claims passed{% if m.source == "deterministic" %} (template used instead){% endif %}. {% endfor %}{% if summary.audit | rejectattr("ok") | list %}Rejected claims are listed in section 6.{% else %}No claim was rejected.{% endif %}{% endif %}{{ "" }}
+{% for note in summary.notes %}
+*Note:* {{ note }}
+{% endfor %}
+{% endif %}
+
+## 2. Signal dashboard
+
+Each predictor's headline change, read against the economic effect the registry declares for it. *Supportive* means
+the move tends to push the market up, *headwind* down; *neutral* means it moved less than its declared neutral band;
+*ambiguous* means theory gives no clear sign. These are hypotheses applied to the latest data, not forecasts.
+
+| Predictor | Channel | Latest | Headline change | Hist. pct | Sales | Rents | Typical lead |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+{% for p in predictors %}
+| {{ p.short }} | {{ p.channel }} | {{ p.latest_period }} | {{ p.headline }} | {{ p.percentile }} | {{ p.signals.get("sales", "–") }} | {{ p.signals.get("rents", "–") }} | {{ p.lead }} |
+{% endfor %}
+
+*Hist. pct* places the latest headline change within that series' own history of the same change
+(the start date is given in each predictor's section).
+
+## 3. Target indices
+
+| Index | Latest | Level | QoQ | YoY | Real YoY | Cross-check |
+| --- | --- | --- | --- | --- | --- | --- |
+{% for t in targets %}
+| {{ t.short }} | {{ t.latest_period }} | {{ t.level }} | {{ t.qoq }} | {{ t.yoy }} | {{ t.real | default("n/a") }} | {{ ("agrees" if t.cross_ok else "mismatch, see §6") if t.cross_ok is defined else "–" }} |
+{% endfor %}
+
+![Target indices, year-on-year change](charts/targets.svg)
+
+{% for t in targets %}
+**{{ t.label }}**: {{ t.publisher }} via {{ t.source_name }} [`{{ t.identifier }}`]({{ t.link }}) · {{ t.unit }} · {{ t.frequency }} (updates: {{ t.update_frequency }}) · latest {{ t.latest_period }} = {{ t.level }} `{{ t.level_id }}` · lag {{ t.lag }} days declared, {{ t.observed_lag if t.observed_lag is not none else "n/a" }} observed. {{ t.definition }}{% if t.comparability %} *Comparability:* {{ t.comparability | join(" ") }}{% endif %}{{ "" }}
+
+{% endfor %}
+## 4. Predictors
+
+![Predictor headline histories](charts/predictors.svg)
+
+{% for p in predictors %}
+### {{ p.short }}
+
+- **Source:** {{ p.publisher }} via {{ p.source_name }}, [`{{ p.identifier }}`]({{ p.link }}) · **Channel:** {{ p.channel }}
+- **Definition:** {{ p.definition }}
+- **Unit:** {{ p.unit }} ({{ p.unit_kind }}) · **Frequency:** {{ p.frequency }}, {{ p.adjustment }} · **Updates:** {{ p.update_frequency }}
+- **Latest:** {{ p.latest_period }} = {{ p.level }} `{{ p.level_id }}`, as of {{ as_of }} · **Publication lag:** {{ p.lag }} days declared{{ p.reference_note }}, {{ p.observed_lag if p.observed_lag is not none else "n/a" }} observed
+- **Changes:** {% for c in p.changes %}{{ c.name }} **{{ c.value }}** `{{ c.id }}`{% if c.note %} ({{ c.note }}){% endif %}{{ "; " if not loop.last else "" }}{% endfor %}. Headline ({{ p.headline_human }}) at the {{ p.percentile }} percentile of its history since {{ p.history_start }}.
+- **Why it may be informative:** {{ p.rationale }}
+- **Lags:** expected lead {{ p.lead }}.{% if p.evidence %} Inside that window:{% for e in p.evidence %} {{ e.text }}{{ ";" if not loop.last else "." }}{% endfor %}{% set outside = p.evidence | selectattr("outside") | map(attribute="outside") | list %}{% if outside %} Stronger outside it: {{ outside | join("; ") }}.{% endif %}{% endif %}
+
+- **Limitations:** {{ p.limitations }}
+{% if p.comparability %}
+- **Comparability:** {{ p.comparability | join(" · ") }}
+{% endif %}
+{% if p.warnings %}
+- **Validation warnings:** {{ p.warnings | join(" · ") }}
+{% endif %}
+{% if p.events is defined %}
+- **Most recent rounds** ({{ p.events_total }} since 2005; list reviewed {{ p.events_reviewed }}):{% for e in p.events[:4] %} [{{ e.date }}]({{ e.source }}) {{ e.direction }}: {{ e.summary | trim(".") }}{{ ";" if not loop.last else "." }}{% endfor %}
+
+{% endif %}
+
+{% endfor %}
+## 5. Lead-lag diagnostics
+
+Correlation between each predictor's headline change and each target's year-on-year change, with the predictor
+leading by *k* quarters, on gated observations only. Each predictor declares *when* its effect should show (its
+expected lead), so the verdict uses only the lags inside that window: the strongest of them, compared in sign with
+the declared effect (|r| below 0.2 is *weak*). A clearly stronger correlation at another lag is listed as a finding,
+not as evidence for or against the declaration. Lags tested: {{ lags | join(", ") }}; every value is in
+`data/processed/{{ run_id }}/diagnostics.csv` and in the HTML report.
+
+| Predictor | Declared lead (q) |{% for t in diag_targets %} {{ t }} |{% endfor %} Stronger outside the window |
+| --- | --- |{% for t in diag_targets %} --- |{% endfor %} --- |
+{% for r in diagnostics %}
+| {{ r.predictor }} | {{ r.lead }} |{% for c in r.cells %} {{ c.text }} |{% endfor %} {{ r.outside }} |
+{% endfor %}
+
+Descriptive evidence, not a test: year-on-year windows overlap, so the effective sample is much smaller than the pair
+count; nothing is corrected for the number of correlations; the predictors are collinear. No p-values, deliberately.
+
+## 6. Data quality and validation
+
+{% set reported = every | rejectattr("role", "equalto", "quarantine") | list %}
+**Verdicts.** {{ reported | selectattr("verdict", "equalto", "ok") | list | length }} of {{ reported | length }} targets and predictors passed every check{% for s in reported if s.verdict != "ok" %}{{ "; not clean: " if loop.first else "; " }}{{ s.short }} ({{ s.verdict }}{% if s.errors %}: {{ s.errors[0] }}{% endif %}){% endfor %}. The negative controls are registered to fail, so the checks are exercised on live data every run:
+
+| Negative control | Expected | Verdict | Why |
+| --- | --- | --- | --- |
+{% for s in every if s.role == "quarantine" %}
+| {{ s.short }} | {{ s.expected_status }} | {{ s.verdict }} | {{ s.errors[0] if s.errors else "–" }} |
+{% endfor %}
+
+{% for s in reported if s.warnings %}
+- **{{ s.short }}** ({{ s.verdict }}): {{ s.warnings | join(" · ") }}
+{% endfor %}
+
+**Cross-source reconciliation.** The same series published by a second channel, compared period by period.
+
+| Series | Second source | Periods compared | Mismatches | Max abs. difference | Primary latest | Second latest |
+| --- | --- | --- | --- | --- | --- | --- |
+{% for c in cross %}
+| {{ c.series }} | {{ c.source }} `{{ c.identifier }}` | {{ c.overlap_periods }} | {{ c.mismatches }} | {{ c.max_abs_diff }} | {{ c.primary_latest }} | {{ c.cross_latest }} |
+{% endfor %}
+
+{% if revisions %}
+**Revisions against the previous stored vintage.**
+
+| Series | Periods compared | Revised | Largest abs. revision | New periods |
+| --- | --- | --- | --- | --- |
+{% for r in revisions %}
+| {{ r.series }} | {{ r.compared_periods }} | {{ r.revised_periods }} | {{ "%.4g" | format(r.max_abs_revision) }} | {{ r.new_periods | join(", ") }} |
+{% endfor %}
+{% else %}
+**Revisions.** No earlier vintage of these objects is stored, so no revision comparison was possible on this run;
+the next `--refetch` that finds changed bytes will be diffed point by point against this one.
+{% endif %}
+
+**Withheld by the as-of gate:** {% for s in every if s.withheld %}{{ s.short }} ({{ s.withheld | join(", ") }}){{ "; " if not loop.last else "" }}{% else %}nothing{% endfor %}.
+
+**How sources were selected.**
+{% for rule in selection_rules %}
+- {{ rule }}
+{% endfor %}
+
+{% if summary and summary.audit | rejectattr("ok") | list %}
+**Rejected summary claims** (the full audit is in the run manifest and the HTML report):
+{% for a in summary.audit if not a.ok %}
+- *{{ a.market }}:* {{ a.text }} (rejected: {{ a.violations | join("; ") }})
+{% endfor %}
+
+{% endif %}
+## 7. Provenance and reproduction
+
+One row per upstream object. The sha256 is of the exact bytes served, stored under `data/snapshots/<object>/<vintage>/`
+(the vintage id is the retrieval time in UTC plus the hash prefix). data.gov.sg download links are presigned URLs
+carrying temporary credentials and are never recorded.
+
+| Object | Vintage | Upstream last updated | sha256 | Flags |
+| --- | --- | --- | --- | --- |
+{% for v in vintages %}
+| `{{ v.object }}` | `{{ v.vintage }}` | {{ v.upstream }} | `{{ v.sha }}` | {{ v.flags or "–" }} |
+{% endfor %}
+
+```bash
+sgmacro run --as-of {{ as_of }}          # reproduce this report from the stored vintages, offline
+sgmacro trace <fact id> --run {{ run_id }}   # re-read a level or change from the raw bytes
+```
+
+The report carries no generation timestamp, so re-running the same request produces a byte-identical file. The HTML
+report beside it carries the same figures, with each figure's lineage one click away.
