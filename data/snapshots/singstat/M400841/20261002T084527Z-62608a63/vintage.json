@@ -1,0 +1,39 @@
+{
+  "object": "singstat/M400841",
+  "vintage_id": "20261002T084527Z-62608a63",
+  "retrieved_at": "2026-10-02T08:45:27+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M400841",
+    "series": [
+      "1.2",
+      "2.2"
+    ]
+  },
+  "files": {
+    "data.json": "62608a6386dc200489cd603420e3b9c631c14d88efd90e48d5f14549f11a4f67",
+    "metadata.json": "262100460cdc957b42112e374db40beb261a79b0eed0e4fddddbda1e06c9b3dd"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Available And Vacant Private Residential Properties (End Of Period), Quarterly",
+    "publisher": "URBAN REDEVELOPMENT AUTHORITY",
+    "frequency": "Quarterly",
+    "adjustment": "",
+    "last_updated": "24/07/2026",
+    "start_period": "1988 1Q",
+    "end_period": "2026 2Q",
+    "series": {
+      "1.2": {
+        "label": "Available Non-Landed Properties",
+        "unit_of_measure": "Number Of Units",
+        "footnote": null
+      },
+      "2.2": {
+        "label": "Vacant Non-Landed Properties",
+        "unit_of_measure": "Number Of Units",
+        "footnote": null
+      }
+    }
+  }
+}

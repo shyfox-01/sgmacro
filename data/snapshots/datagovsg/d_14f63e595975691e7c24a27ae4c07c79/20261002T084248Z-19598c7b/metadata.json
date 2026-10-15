@@ -1,0 +1,40 @@
+{
+  "collectionIds": [
+    "152"
+  ],
+  "columnMetadata": {
+    "map": {
+      "c_5lpxfyvqvkvqp91ynvk4hxd0t": "index",
+      "c_89fzp21z56xa0gev9x4ohxt9": "quarter"
+    },
+    "metaMapping": {
+      "c_5lpxfyvqvkvqp91ynvk4hxd0t": {
+        "columnTitle": "Index",
+        "dataType": "Numeric",
+        "index": "1",
+        "isCategorical": false,
+        "name": "index"
+      },
+      "c_89fzp21z56xa0gev9x4ohxt9": {
+        "columnTitle": "Quarter",
+        "dataType": "Quarter (Q)",
+        "index": "0",
+        "isCategorical": false,
+        "name": "quarter"
+      }
+    },
+    "order": [
+      "c_89fzp21z56xa0gev9x4ohxt9",
+      "c_5lpxfyvqvkvqp91ynvk4hxd0t"
+    ]
+  },
+  "coverageEnd": "2026-06-30T08:00:00+08:00",
+  "coverageStart": "1990-01-01T08:00:00+08:00",
+  "createdAt": "2015-07-07T18:22:54+08:00",
+  "datasetId": "d_14f63e595975691e7c24a27ae4c07c79",
+  "datasetSize": 2102,
+  "format": "CSV",
+  "lastUpdatedAt": "2026-07-24T11:36:15+08:00",
+  "managedBy": "Housing & Development Board",
+  "name": "HDB Resale Price Index (1Q2009 = 100), Quarterly"
+}

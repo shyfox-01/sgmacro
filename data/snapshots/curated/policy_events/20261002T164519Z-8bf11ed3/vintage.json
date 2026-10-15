@@ -1,0 +1,20 @@
+{
+  "object": "curated/policy_events",
+  "vintage_id": "20261002T164519Z-8bf11ed3",
+  "retrieved_at": "2026-10-02T16:45:19+00:00",
+  "request": {
+    "source": "curated",
+    "path": "config/policy_events.yaml"
+  },
+  "files": {
+    "data.yaml": "8bf11ed3792c09810565299142ffb03e7042e18304e2c7f8366ad42d9ae7e7d7"
+  },
+  "data_file": "data.yaml",
+  "upstream": {
+    "title": "Singapore residential property market measures (hand-maintained from official releases)",
+    "publisher": "MAS / MND / MOF / HDB releases, curated",
+    "last_updated": "2026-10-03",
+    "coverage_start": "2005-01-01",
+    "events": 20
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "object": "datagovsg/d_01e3556fb916ca19a7e29fc39520fa78",
+  "vintage_id": "20261002T084224Z-c7d6cfa7",
+  "retrieved_at": "2026-10-02T08:42:24+00:00",
+  "request": {
+    "source": "datagovsg",
+    "dataset_id": "d_01e3556fb916ca19a7e29fc39520fa78"
+  },
+  "files": {
+    "data.csv": "c7d6cfa702f7c1af2745bfb86fa8b8ddd74b7597c9b4768edb71ea79736e6a68",
+    "metadata.json": "07f3e55a64c396725649bd7ae7cda94e889a90303eb14330f74e772233779be1"
+  },
+  "data_file": "data.csv",
+  "upstream": {
+    "title": "Available And Vacant Private Residential Properties (End Of Period), Quarterly",
+    "publisher": "Singapore Department of Statistics",
+    "last_updated": "2026-07-24T00:00:00+08:00",
+    "coverage_start": "1988-01-01T08:00:00+08:00",
+    "coverage_end": "2026-06-30T08:00:00+08:00",
+    "columns_head": [
+      "DataSeries",
+      "20262Q",
+      "20261Q",
+      "20254Q",
+      "20253Q",
+      "20252Q",
+      "20251Q",
+      "20244Q"
+    ],
+    "column_count": 155
+  }
+}

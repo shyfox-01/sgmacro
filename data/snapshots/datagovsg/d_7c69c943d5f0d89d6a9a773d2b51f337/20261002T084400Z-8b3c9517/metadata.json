@@ -1,0 +1,58 @@
+{
+  "collectionIds": [
+    "1658"
+  ],
+  "columnMetadata": {
+    "map": {
+      "c_18y9eobk6930eex440iz379kt": "quarter",
+      "c_47rvd8o9ybr6gso5jr1udi2pt": "type_of_sale",
+      "c_5x1jj862dyme94fajpahtwf1b": "sale_status",
+      "c_a86jt5vaqojimxqlbv4howu7z": "units"
+    },
+    "metaMapping": {
+      "c_18y9eobk6930eex440iz379kt": {
+        "columnTitle": "Quarter",
+        "dataType": "Quarter (Q)",
+        "index": "0",
+        "isCategorical": false,
+        "name": "quarter"
+      },
+      "c_47rvd8o9ybr6gso5jr1udi2pt": {
+        "columnTitle": "Type Of Sale",
+        "dataType": "Text",
+        "index": "1",
+        "isCategorical": true,
+        "name": "type_of_sale"
+      },
+      "c_5x1jj862dyme94fajpahtwf1b": {
+        "columnTitle": "Sale Status",
+        "dataType": "Text",
+        "index": "2",
+        "isCategorical": true,
+        "name": "sale_status"
+      },
+      "c_a86jt5vaqojimxqlbv4howu7z": {
+        "columnTitle": "Units",
+        "dataType": "Numeric",
+        "index": "3",
+        "isCategorical": false,
+        "name": "units"
+      }
+    },
+    "order": [
+      "c_18y9eobk6930eex440iz379kt",
+      "c_47rvd8o9ybr6gso5jr1udi2pt",
+      "c_5x1jj862dyme94fajpahtwf1b",
+      "c_a86jt5vaqojimxqlbv4howu7z"
+    ]
+  },
+  "coverageEnd": "2026-06-30T08:00:00+08:00",
+  "coverageStart": "1999-10-01T08:00:00+08:00",
+  "createdAt": "2016-09-08T18:16:47+08:00",
+  "datasetId": "d_7c69c943d5f0d89d6a9a773d2b51f337",
+  "datasetSize": 12350,
+  "format": "CSV",
+  "lastUpdatedAt": "2026-07-27T10:32:04+08:00",
+  "managedBy": "Urban Redevelopment Authority",
+  "name": "Private Residential Property Transactions in the Whole of Singapore, Quarterly"
+}

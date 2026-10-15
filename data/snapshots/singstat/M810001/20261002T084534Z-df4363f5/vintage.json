@@ -1,0 +1,33 @@
+{
+  "object": "singstat/M810001",
+  "vintage_id": "20261002T084534Z-df4363f5",
+  "retrieved_at": "2026-10-02T08:45:34+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M810001",
+    "series": [
+      "5"
+    ]
+  },
+  "files": {
+    "data.json": "df4363f580bda6c42f6e5ca1588fbb0c391f81d51245ba4c1da43bfa3108d25a",
+    "metadata.json": "a0c4ea09455c0d5190c805430138316af136de1427e894081b2322e098f8a60e"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Indicators On Population, Annual",
+    "publisher": "SINGAPORE DEPARTMENT OF STATISTICS",
+    "frequency": "Annual",
+    "adjustment": "",
+    "last_updated": "25/09/2026",
+    "start_period": "1950",
+    "end_period": "2026",
+    "series": {
+      "5": {
+        "label": "Non-Resident Population",
+        "unit_of_measure": "Number",
+        "footnote": "Data are as at end-June.  Non-resident population comprises foreigners who were working, studying or living in Singapore but not granted permanent residence, excluding tourists and short-term visitors."
+      }
+    }
+  }
+}

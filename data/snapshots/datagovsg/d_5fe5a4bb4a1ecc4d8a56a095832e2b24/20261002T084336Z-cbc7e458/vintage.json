@@ -1,0 +1,32 @@
+{
+  "object": "datagovsg/d_5fe5a4bb4a1ecc4d8a56a095832e2b24",
+  "vintage_id": "20261002T084336Z-cbc7e458",
+  "retrieved_at": "2026-10-02T08:43:36+00:00",
+  "request": {
+    "source": "datagovsg",
+    "dataset_id": "d_5fe5a4bb4a1ecc4d8a56a095832e2b24"
+  },
+  "files": {
+    "data.csv": "cbc7e458469624bfd0d3cc272e38f7203d3ba3c007e091a73193ad0cc72e737a",
+    "metadata.json": "695b2d4729f2a83cb2cd44716b44e92594d31b35d8743caaaf0a0d75d96cdb6a"
+  },
+  "data_file": "data.csv",
+  "upstream": {
+    "title": "Current Banks Interest Rates (End Of Period), Monthly",
+    "publisher": "Singapore Department of Statistics",
+    "last_updated": "2026-08-25T00:00:00+08:00",
+    "coverage_start": "2005-07-01T08:00:00+08:00",
+    "coverage_end": "2026-07-01T08:00:00+08:00",
+    "columns_head": [
+      "DataSeries",
+      "2026Jul",
+      "2026Jun",
+      "2026May",
+      "2026Apr",
+      "2026Mar",
+      "2026Feb",
+      "2026Jan"
+    ],
+    "column_count": 464
+  }
+}

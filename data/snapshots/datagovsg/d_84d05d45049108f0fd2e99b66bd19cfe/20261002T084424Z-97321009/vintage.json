@@ -1,0 +1,30 @@
+{
+  "object": "datagovsg/d_84d05d45049108f0fd2e99b66bd19cfe",
+  "vintage_id": "20261002T084424Z-97321009",
+  "retrieved_at": "2026-10-02T08:44:24+00:00",
+  "request": {
+    "source": "datagovsg",
+    "dataset_id": "d_84d05d45049108f0fd2e99b66bd19cfe"
+  },
+  "files": {
+    "data.csv": "9732100930c274a6628e5a15b5a64a42fc8c197fe322c3d7719dc843c6f78b30",
+    "metadata.json": "a6e547a710141299e3f3293cbf02580e57fc21b48c711c3eca25ddb6cfa86677"
+  },
+  "data_file": "data.csv",
+  "upstream": {
+    "title": "Unsold Private Residential Units with Planning Approvals by Market Segment, Quarterly",
+    "publisher": "Urban Redevelopment Authority",
+    "last_updated": "2026-07-27T10:05:50+08:00",
+    "coverage_start": "2006-07-01T08:00:00+08:00",
+    "coverage_end": "2026-06-30T08:00:00+08:00",
+    "columns_head": [
+      "quarter",
+      "market_segment",
+      "completion_status",
+      "launch_status",
+      "pre_requisites_status",
+      "units"
+    ],
+    "column_count": 6
+  }
+}

@@ -1,0 +1,4661 @@
+{
+  "collectionIds": [],
+  "columnMetadata": {
+    "map": {
+      "c_01byppbnkgf7nnq1h9qm8kv83": "1990Dec",
+      "c_01onlku7brb1d5hn8uigjbod8": "1992Oct",
+      "c_119fmem777uef10ac20fpa3ov": "1989Oct",
+      "c_11b62xxlw1hkur90pza7576gt": "1991Jan",
+      "c_13wcnqlo32ic79kfc7cqqw15b": "2022Oct",
+      "c_18u4an0ftljqg6xmhz6ose9k1": "1996Mar",
+      "c_1cihxpxcbi3or4cvgo7u9xqsn": "1999Feb",
+      "c_1cwf7dccjs6iao9nweg1hp6ev": "2005Aug",
+      "c_1d44d8bghu1ec3nb3uo3ipdwa": "1999Dec",
+      "c_1dj53bvruck4wm15jn261ffmx": "2001Jul",
+      "c_1fyflb537ftgsa209r0xmuofk": "2006Aug",
+      "c_1i959l1eyrkabfbmzizja50g8": "1989Dec",
+      "c_1jisoqis7t1qtl8lsfnzo3g0e": "1992Nov",
+      "c_1migu5hkhy5bmakk442phoao3": "2016Nov",
+      "c_1nw8lfi92cfgtqhmx0of3gmye": "1995Aug",
+      "c_1o4b2ohpqbhbug1404m64dqxw": "2003Apr",
+      "c_1p02nr5lo9vjwpku921rhm3ce": "2006Jun",
+      "c_1pb35w6texcxr2j5o7fx6fk7h": "2026Feb",
+      "c_1pe0x60r6gqeuov0joprqbnne": "2016Jul",
+      "c_1qd1ftt0wp4kd0miq8lujjuz6": "1996Sep",
+      "c_1qga7hli8r3be5laew0xd45mc": "2020Jul",
+      "c_1qnhb244fgzts3qi6qujbzoqe": "2000Aug",
+      "c_1r6n5nmv05xpb00r8a9nsmf35": "1995Jan",
+      "c_1rcbpzyrg1610610sn1uon2xt": "2015Oct",
+      "c_1rxmqoemixfhwif8155355sh2": "2003May",
+      "c_1sjgs7x3a9wxxej4erceagbdl": "2012Jul",
+      "c_1u5zj5rj5yhq17fz4tg8ooi1v": "2002Apr",
+      "c_1vk9pnjkl3bs3mlfcotsldk4m": "2015Mar",
+      "c_1yci48dvitrb9yu2sahh16w7a": "2022Sep",
+      "c_1yr7ga06iqw8o29u8scdyopga": "2023Feb",
+      "c_1zg1y67zbd9rxdou89f8tdy2g": "2024Mar",
+      "c_1zn6imemblyy1jzrnhzo6klpn": "2008May",
+      "c_22ke84jz4bedasomh450ho49o": "1998Jul",
+      "c_236mxp1xwbxk2600asemgeyv0": "2020Jan",
+      "c_24m32cutwja5m58s4lnclmj6n": "2018Dec",
+      "c_2561c9zq7mmtufim3xfvaaunt": "1996Oct",
+      "c_25ssxj91luca64zsx1ouh5npf": "1994Feb",
+      "c_266h18ebgjq4t5o1dxc1zcs0t": "1990Jul",
+      "c_26dn2sv32auo00h8aap76lups": "2004Feb",
+      "c_26toaxymk66lmm2blxry9m8zk": "1988Dec",
+      "c_26ubl353vw0zrpdjcpzmag7mi": "1995Nov",
+      "c_29bidewyyaon6at1vh8zgfbwh": "1992Jan",
+      "c_2bap0dmcnbavukjdfeum3hzzz": "2006Nov",
+      "c_2dw5ztyilhvujz89sslxs1k87": "2018Sep",
+      "c_2fz8ie0l87py0sxd3q1893ar0": "1994May",
+      "c_2go33tes6is9sw318dbknc9vk": "2012Apr",
+      "c_2gw9o5lkxv6k1rcepbff5rk0l": "2001May",
+      "c_2hdj9e00yb83239p2lw7jhiqu": "2003Dec",
+      "c_2jh75v7rnnbf8rh7lwm46r1y": "2002Oct",
+      "c_2k8vj7vy7kcu30cqafsqfcx5": "2010Nov",
+      "c_2n5i2aiirsnha3cy5dpnf3j03": "1991Dec",
+      "c_2nfdkf4o3q36hy5tb7t1mhyyl": "1992Feb",
+      "c_2nkbjeo24moz32p1ivi7zxxqg": "2022Jan",
+      "c_2nlxmkvfkfclaz0trdr6cgqmi": "2023Aug",
+      "c_2nmso2kar4rl0ma3ykoxtfac8": "2022Nov",
+      "c_2ofccqxm3qt1yw599yib4308d": "2013Jul",
+      "c_2p484ery8bnq5txehzf57mqid": "2018Jul",
+      "c_2plfh68lgyxl6xucy6tbzkwep": "1997Apr",
+      "c_2qb393qkqpexbxyx4fccil9fd": "2002Dec",
+      "c_2rbb6tjvyl3y1ouvbgqlz4h2c": "1993Jun",
+      "c_2rcbz9nrfov3409lqxsdynn61": "1993Sep",
+      "c_2ro2ajst2selsdvbix48jiez9": "2000Jan",
+      "c_2ryq28nrr71bjt5f6y3vdpad4": "2004Dec",
+      "c_2xogzj3kfdfwrxiy26p09qdwf": "2020Jun",
+      "c_2xojpgh4p00yt0sxcbboonl0f": "2022Aug",
+      "c_2xzlzj8dltkfg5zozsnzb99sr": "2000Dec",
+      "c_2ypusf2y7t21232xg3mwrlm89": "2008Nov",
+      "c_2zpifmrv7176yh619h2260cvi": "2019Jul",
+      "c_31ho428cxj371y46htmb6zvfz": "2009Apr",
+      "c_335o6vve9jng5cywzs2hf0c1z": "2021Sep",
+      "c_35g3ji114cvbznrk9wpobwm30": "2016Feb",
+      "c_36n3uolxlbkhuhht4a5wsjqvq": "2010Jul",
+      "c_383wbzb6w80oyjl3ymipu07sh": "2010Aug",
+      "c_38dsuwghpn5thuyn9n7zj6ngn": "2013Nov",
+      "c_38yyoxxi3pdespthcvdv4znmp": "2005Jan",
+      "c_39jfyda0xeigcie4ytccjpke9": "2001Feb",
+      "c_3ap8n4ghl2cz3n670uxznoyph": "2019Mar",
+      "c_3cemltydex4rgca5jngqc6tw9": "2024Jun",
+      "c_3e0p39ibwwjdlf1mh30rkz8xe": "1995Oct",
+      "c_3egy6s7qzf943f9qsec2a3bq2": "2018Aug",
+      "c_3fnezto0m2lkg91jn7jhopikw": "2010Mar",
+      "c_3frby0snjipod39alan5gobth": "2003Mar",
+      "c_3g8qajwc50xs9clm2wsmdqu8l": "1988May",
+      "c_3gtrlsr6d5tob05o1mf0gmhrj": "2012Aug",
+      "c_3i2r8pc0e0ou7fve7mpsesqsb": "1995May",
+      "c_3ikx2l9ejxjuy4muxltil3mnz": "2005Jun",
+      "c_3jttbawboxk8r8qfkksqxgw3g": "1995Jul",
+      "c_3k5dswn7qoiq3qs7fg4lj1lei": "2014Nov",
+      "c_3ldkg0nv4aeymx3u2hxq6cdk1": "2004Jan",
+      "c_3n87qznc44digsqwh7aep9v61": "1995Feb",
+      "c_3ouv8rperurds509cg0s37t4v": "2009Feb",
+      "c_3p0bj7dp842krj4jqujr7doxi": "2013Jan",
+      "c_3qmens3ocohhph11143dskt3q": "2020Feb",
+      "c_3qzkf3or2ebtpt4ao96p0kn2z": "1994Sep",
+      "c_3r6w4ztzzil5xjlbqcxp7eb3u": "2009Nov",
+      "c_3rx5t93u1bnzy2m4djxsd4xyv": "1997Oct",
+      "c_3s5sgy0zukt938zxs293kk7vx": "2006Jul",
+      "c_3tsc8j041jca740fuse9rxip8": "2012May",
+      "c_3uxb7x6zwfy1rj9wvsfp9frhh": "1999Nov",
+      "c_3vi9gfvi7vpdjoo1vmv569jtu": "1992Mar",
+      "c_3vvbsrjtgv64afh661v78d0zw": "2015Nov",
+      "c_3wbwqtdtg4gtzyecuihhdcotb": "1994Aug",
+      "c_3wxcslnkjqmi13dtwrczw3pm3": "2009Aug",
+      "c_3xkh8zu1w1awyrqzf4ja46z4": "1992Aug",
+      "c_3xzvk0ej4p07o6zemjga95xgh": "2001Oct",
+      "c_420skev59tbi2ngvj1akcgj79": "1993Feb",
+      "c_4375p43b5uzam4flxr64smn79": "2007Mar",
+      "c_43kpuhfr8vxyluo7lynif61b9": "2021May",
+      "c_46oyrokdgkap5a1sco6knrn8z": "2004Sep",
+      "c_4a7o7qh9o6wvuvt0zyo0puwdg": "2007Jul",
+      "c_4do0sw6kkgc4qg5mn3zupsx7e": "1993Jul",
+      "c_4dobvros75zdgibivkfkz5qvu": "2006Mar",
+      "c_4kegpsl6r015l83jwab7vvqcl": "1988Nov",
+      "c_4lv37cvu1om1a8omgj3zu85z6": "2000Apr",
+      "c_4lz3w8id6qos6gte8r5nnxj2h": "2011Dec",
+      "c_4mr3z5mrhlww7b3okk7z2y3q9": "1996Aug",
+      "c_4nlbdiodcgs5km1crdrtbnlyj": "2020May",
+      "c_4omhea4umezgb60pb7xy85swf": "2008Jul",
+      "c_4p3fahj7zstn9kafqakjlcaoq": "2024Aug",
+      "c_4qyf3zl3wzg2ar65d0ni0likn": "2021Aug",
+      "c_4r2tlncyl675trwy6f2p6i0vj": "1998Nov",
+      "c_4rlvku5yern04p82r4r3sawo5": "2019Feb",
+      "c_4si0w0gy0nm3xh173adejr1y2": "2003Aug",
+      "c_4uaxsdzvoknn3vrlef7xsot5f": "2014Oct",
+      "c_4vkf3c7kltlsqpm78jq7nu3hh": "2012Sep",
+      "c_4vlchoakszfel8ynpbbr8cteb": "1990Apr",
+      "c_4vmlw7ul8386j3616osdp4pov": "DataSeries",
+      "c_4w9rdioc4rz1deka6ej5hv5j8": "1988Apr",
+      "c_4xlz8kqiju6fpdm35r6igq1x6": "1990Jun",
+      "c_4y1bngbniz2rcq8grko22ahs0": "2021Apr",
+      "c_52iuxpmk5t0bat58qj25jpghq": "1989Mar",
+      "c_532ug7toz7t0ddtv170ib7g5f": "1990May",
+      "c_53mcuf2xaftc1se0riugutuut": "2013May",
+      "c_53rsbmo3rr1lzdpe2t4elbr48": "2007Aug",
+      "c_53ynmzzclvp3odhv68946axlv": "2025Oct",
+      "c_5594gc97r8p3xmzsrvxvu7186": "2023Oct",
+      "c_55t2pxjm90p3634xnefopudzi": "2014Jul",
+      "c_55u2lelbrtlzdjcujdd8v3jxl": "1993Nov",
+      "c_569nd2j1ohu7j93i5pml8q38d": "2001Dec",
+      "c_56a0x8q3b1b7yjmx0nuer2lze": "2016Jun",
+      "c_57w4fw09p2zdnbg8ze9al99pj": "2002Sep",
+      "c_5biixa1ncz85g4pny81c66q76": "2003Sep",
+      "c_5csky28wxi6kf6eowp756rhzw": "1991Sep",
+      "c_5db6565z5bngkwfvngl6gmniv": "1998Aug",
+      "c_5dd3wwtk39yupasklcy0kpbjg": "2010Jun",
+      "c_5etgvdn865hqap2cckoxxftku": "2023Sep",
+      "c_5gp497v2gpaydedwmgphme65c": "1994Mar",
+      "c_5hgbwjfsp3nttj18ipq0r1hbr": "2015Jul",
+      "c_5hgkqknk93of12q63f005ee9z": "2008Jan",
+      "c_5ii1wtoznoz1i8dwt4104dq4p": "2001Nov",
+      "c_5kvqo8izlzv31tc430jeci86q": "2016Aug",
+      "c_5m1817v9lwfmha0rtu4ojexim": "2026Jun",
+      "c_5n5iyewtjvoq261lh3b1aj89f": "2007Jan",
+      "c_5pkqade14nf72cbuli5ynso1w": "2000Jun",
+      "c_5pn64c6p3t782b2an1i3y5zk5": "2020Nov",
+      "c_5rgv5uy93wv65k2avobngymaq": "1992Apr",
+      "c_5ro1ouqbiz7k4xahboyxc1vnf": "1999Apr",
+      "c_5tizkbzai6edgo9i0nha6lol3": "1989Jun",
+      "c_5tw9868b5e49r2llyp1tzg5yl": "2009Sep",
+      "c_5u0otk9u8dy559k7vizfkrme8": "1994Dec",
+      "c_5vulnm84nx14zcx9f38zsj6y3": "1993Dec",
+      "c_5w3d06zy59ydi8h2dc09mirul": "2014Apr",
+      "c_5xmphzr3oe4pkl0e3yh4zak7i": "2000Sep",
+      "c_5zgp0cy9xyybo66s89h1hdpsk": "2012Feb",
+      "c_607lbxkjxkixjjfgknqu97618": "2000Feb",
+      "c_62ct3x948ap2s3hxdivmbbjrl": "2017Feb",
+      "c_637kdpgzfz1g1g98zlekuu5n8": "1994Oct",
+      "c_63c9pgqgstubnyye2nsrll2tm": "2007Dec",
+      "c_6434qhe8e1my602fu4mc9w1j2": "1992Jun",
+      "c_6488nko83iz16ig4averhys97": "1988Jul",
+      "c_66fhmug0v1ldf4kimxy4snq85": "1991Jun",
+      "c_66ycipp3j0kpvmbhgpea92ol4": "1993Jan",
+      "c_673wdabue168k3ufmtutger05": "1991Jul",
+      "c_683hdniq87qr3xr5h7ph7ojld": "2013Feb",
+      "c_69he1socejj3n6z6yglgdqgyn": "2016May",
+      "c_69z101mp1fh15q9elnzg0e7be": "2009Jan",
+      "c_6aun611ok1dqwglqmdh1q9mci": "1996Jan",
+      "c_6b2lwlz9jyjqpsibhaoy7zg6o": "2009Mar",
+      "c_6dgde66c3fuk56udmhws0d0s8": "2005Jul",
+      "c_6di2yzdfkwu4cgzjnvppolwtv": "2002Nov",
+      "c_6ds8bp83gpixiw1ai3sfrde9r": "2018Jun",
+      "c_6esjh5vhos09c4qccc3gyrkzv": "1989Sep",
+      "c_6ewzsewhybvqoxprddtoyhk8p": "1990Sep",
+      "c_6fhs5ottpzl0f0kcs24njzv58": "2016Oct",
+      "c_6fuzuwc4bkdgi8k3bl4721ilf": "2023Dec",
+      "c_6httwp16frzq9bdyiqglrqbcq": "2016Apr",
+      "c_6jkxi95dt85wi0gp27sr4dp7q": "2008Sep",
+      "c_6kp88x78fdq81lcsu3xe3udx9": "1993Apr",
+      "c_6kz3prdqaky0etmy6ndr14qxu": "2004Jul",
+      "c_6l6iexvb5zwtwlpozamoqq9iy": "2007Feb",
+      "c_6lopb05odcilfx5h6fbbe7goq": "1997Mar",
+      "c_6oemz61q5kqizd28990inhq0f": "2020Aug",
+      "c_6qdrrwdyvv6psp4ui4d69y09": "2008Dec",
+      "c_6txrbwp80cr5r73kv81ffhmmk": "1992Jul",
+      "c_6yt5x46ro990vlzep5217owec": "2002Jan",
+      "c_6zjc0uiep39wxp9ote45qatmk": "1998Mar",
+      "c_70cteaerlkv4xud3t514y1ipn": "2006Sep",
+      "c_716ou7szc7s3h7f6eiu7ypim7": "1989Apr",
+      "c_71c0vxoehne6bz441duv5w2mg": "2020Mar",
+      "c_725rp35cakk73r4qlzsi752p": "1995Apr",
+      "c_73fy45nybdqamr1618sec8cjg": "2001Jan",
+      "c_75foxcp217ahbxvw6l1x7xo9a": "2025Dec",
+      "c_7auefp33emxsdspu3ujwepr2b": "2008Apr",
+      "c_7azplimin6a7o6qms2yz5pe4y": "2005May",
+      "c_7bmi9vhusi3b8yokchnu3sbhz": "2015Jun",
+      "c_7bsg2v1e60cyb5njkjl04kyxa": "1990Nov",
+      "c_7fxf5qkvkij7w9lpandj39pc9": "2021Nov",
+      "c_7ho4whz1zjotemcq8vt1mk5sm": "1995Sep",
+      "c_7hr3tyj5y5zn99gms87sgk3zy": "1989Feb",
+      "c_7k6qw1mvekxqvw8f9yj8dly2z": "2013Jun",
+      "c_7kb50yj6su75xh6gxgdgelbah": "2017Jan",
+      "c_7lh3b662ymea4wekgsewv8zip": "2025Mar",
+      "c_7ljefemiou4193o94bpo9oj60": "1991May",
+      "c_7nepxtz9mznho281l9zt3s38o": "2002May",
+      "c_7rae1rgn6blqpq6p4omd6b3sx": "2001Jun",
+      "c_7rikkwx3uczfz7gyhfqy1joel": "2015Feb",
+      "c_7u65jbct9j1tsuipg4nrj5cvk": "2022Dec",
+      "c_7uce3psebfnr9r0zcxkimeoti": "1990Jan",
+      "c_7ud54v57mam7pwyij6u0st2uq": "2014Aug",
+      "c_7wmuuilbhlq2gsj9nz2y2n7um": "2012Nov",
+      "c_7wo0vxy9qv4oozq8253efmlq3": "2011May",
+      "c_7z7whoz9s0uqrl7mwm0xickoo": "2024Feb",
+      "c_80dc0kjyf90fmv2m227oh8yz9": "2026Jan",
+      "c_80po4glgzzg85fs2662ewub8l": "2023Apr",
+      "c_8107kxk81rvnmsv4dc1vzjdgf": "2002Aug",
+      "c_830d52e3m8jonaiigllvnh8k": "2015Sep",
+      "c_83b710c7nuhw2ghbpl8fzxvh4": "1995Mar",
+      "c_83gl2xprc3vyc7otirue9l5jr": "2014Dec",
+      "c_83kivahhcxuafdh9fx46fhtox": "2006Feb",
+      "c_86afzkrpl1hpgkkeql1i4y1kj": "1991Apr",
+      "c_86auwbgpzpj6tt9ixjzcfjfsd": "1997Sep",
+      "c_87fzaqg1qqn27h2b9jifkdq2s": "2025May",
+      "c_87vfkz5kpgsldg6kscvnv16jo": "1998May",
+      "c_888sfb3cb0lodmdmq0hztfavh": "2025Jun",
+      "c_89ehz7g31x0dbhi6pornoymy2": "2014Sep",
+      "c_89nfjzwb3b6ln7uotf64zgdwo": "2005Sep",
+      "c_8a2k78avl85eyj1b3c1cevf88": "2000Nov",
+      "c_8b78lur5hjr6fx08c8rk0j8u0": "2002Feb",
+      "c_8bx95qqs0muxibr0e8dhf5jrk": "2026Apr",
+      "c_8cnh75k6a3m3wylb4dywvzt2l": "1998Feb",
+      "c_8jsvm48wflq46u7z9rcdwrph8": "2018Apr",
+      "c_8lzlzr69iyy8mtg2a39sevgcs": "2009Jun",
+      "c_8mxnbnh683d1em23h7mnyj91o": "2015May",
+      "c_8mzusdttprf62nhui869rc167": "2024Nov",
+      "c_8ohfskap19lx4vvcxmyarg355": "2017Oct",
+      "c_8qn82p8oj88fwv6dg7okv9ccu": "1998Dec",
+      "c_8ru38r8jgj5e8nxeqs8ptjwl5": "2014Feb",
+      "c_8siutdqhon819zxp8riunanz5": "2000Jul",
+      "c_8sjpa3foftlwdeg81miogsy2i": "1995Dec",
+      "c_8tr3di3fptqneo89clamapjcs": "2020Dec",
+      "c_8v2161nbcd9rnbdis1ufdlz1v": "2008Aug",
+      "c_8vk434oqs73z2b34z2zwc9nug": "1988Feb",
+      "c_8w5qjswvurxoocek26aufwd4q": "2009May",
+      "c_8yx08l99r1giurnli2vacr58m": "1989May",
+      "c_910rkb22xgpjkrvuvfav396kb": "1993May",
+      "c_9857anajh5c360s3fjx8anhxk": "1992Dec",
+      "c_98cs0ealnjp2lvegesesd0rzw": "1996Apr",
+      "c_98dsp9tja4jzgbg9uhdgukd8c": "2007Oct",
+      "c_98iwin6n29cne6uf91omyhfcc": "2010Feb",
+      "c_9b3vky3qrmr1wzirxpr9j0upw": "2008Oct",
+      "c_9e52oymce1mns54utlvosah9j": "2005Mar",
+      "c_9gbie9iy69riup16etsu2vmhl": "2003Jun",
+      "c_9gest1zoe9c72f75tcjmdvx4a": "1990Feb",
+      "c_9hhgbq4hlh0t4cnau5ee1zpzh": "2017Jun",
+      "c_9hq2twijdbj9ou4fw9dgw32ix": "1989Aug",
+      "c_9j4plqmveuifamjvks3hu261a": "2019Oct",
+      "c_9j52kt91clxr3v1jh5t6ezxuv": "2018Jan",
+      "c_9k1te490rcb6k2oi5v7yue6a0": "2023Jan",
+      "c_9o7f845zeo8kapokqa7u1myuj": "2001Apr",
+      "c_9oxe9wmv5lp9vzbds918agevi": "2019Jan",
+      "c_9p5tc70azydq0nut7beidamin": "2015Dec",
+      "c_9r4ae6itay8yzf9ugfl48tpw5": "2006Dec",
+      "c_9ssw7nzjcp5t6y5wrnouit3m1": "1997Nov",
+      "c_9tmucpz2ny08auobgfzw2rwmx": "1994Apr",
+      "c_9u5xzingil38aoumakqb28pgs": "1991Oct",
+      "c_9u8d4eu061jfupe6c4gyu2d10": "2005Apr",
+      "c_9uusfmqs6odr0j1ct2vu4x990": "2017Aug",
+      "c_9vmzvzzl12sh33d023ruhqy32": "2012Oct",
+      "c_9zvn5zg3z5kvlolohhcmmlfkh": "2023Jun",
+      "c_a13gdt12jojqok0bpwwwe03b8": "1992May",
+      "c_a2ie6v6z2nfbvt1ow5ruaokae": "2007Jun",
+      "c_a3iyj1hz5yc95jlwgakuql0r7": "2005Feb",
+      "c_a4uevdegwqxg0s14kczagyoat": "2018Feb",
+      "c_a5fursq40pw33zy22hkqipay9": "2010Sep",
+      "c_a7lkc2809qeimh2kxf2fjct6m": "2025Aug",
+      "c_a8yf24h3dne74pk6nw644e9qk": "2007May",
+      "c_aad2gkup6ptrok43zykkogxkh": "1999May",
+      "c_aco4ti4wrq8ak6e9qt1ra071t": "2019Aug",
+      "c_ad37o3qg1wh0h0my159n4nhxx": "2011Feb",
+      "c_adaf9u3blo1bjdr9kt2nf7ha6": "2010Apr",
+      "c_ado0kgwtbv2jthmwlaqj67z71": "2011Jul",
+      "c_aexgxpio6khr863f5g2c8lj54": "1998Apr",
+      "c_afzd0m6avvx2spu0kr6nc0vjd": "2005Oct",
+      "c_aij93yrbny76zrnwatlzb3w99": "1991Mar",
+      "c_aj4560oqfc92auuzhkvo1b4aa": "1999Aug",
+      "c_ali1c5yww2ac2cor29ab1i4yl": "2006May",
+      "c_am8mvb1altdcpedbady8qxgug": "1997Aug",
+      "c_an2d2spgr8owjzo9yoet8awje": "2019Sep",
+      "c_aod1uldwb5r9ccu5xtpgendnv": "2019Jun",
+      "c_aopwzilac8xtd555uljjd3wyp": "2000Oct",
+      "c_ap77byzstat7gww89j639zhie": "2024Sep",
+      "c_ap95nm24f7e7l2ktbr3mf0tve": "1996Feb",
+      "c_ariieurded5jnyaj9u3cjv529": "2000Mar",
+      "c_atvyk03z31tysd439j3ilzjvf": "2003Jul",
+      "c_avuvvl37p7vpqy454c0dv0l2m": "2023Nov",
+      "c_awyb12if2aq44g3pmje9ql5l0": "2016Jan",
+      "c_ax2rwjobf213emmbnltno7qj0": "2014Jan",
+      "c_ayqea5m0nxb77lprwbhaaw12e": "2013Aug",
+      "c_azvtf6z2n09t4oh4xe3m1vvka": "1988Sep",
+      "c_b007odawprhclg7l2shuoh786": "2012Mar",
+      "c_b0d9grvw58hwvngb2glvebywy": "2021Feb",
+      "c_b1834zqglevmhfz2ka4c48x00": "2012Dec",
+      "c_b1z5856si1b50a0x35ahw5asf": "1999Jan",
+      "c_b2qkukhxwf8g78mgz9i7qei46": "1988Jan",
+      "c_b2zs7g681uo67m47aj8qq6m2f": "2013Mar",
+      "c_b3eoyvbmqhv9j8laiqqq3zgty": "2004Apr",
+      "c_b4anfjzhhs1etpnzjirzovqew": "1997May",
+      "c_b4ejpsaacoogtl76iwz96urkp": "1997Jun",
+      "c_b4m2dzby0ebfk9s3l87k9ajm8": "1991Nov",
+      "c_b5zo3l504hs8opaxgp9398gl6": "2018May",
+      "c_b61lgworbjn4u93zbaism0mxh": "2011Jun",
+      "c_b6ojnq30uxoekmm3qvb52xdur": "2007Nov",
+      "c_battlsf18tdt0591yq9fc3ei5": "1992Sep",
+      "c_bcrdugfwrs5tw2ay2q984bwba": "1998Sep",
+      "c_bcxof9h8m0hunrpgjctoxhq22": "2006Apr",
+      "c_belzomp0r18r4x6ry0lcq4qpy": "2025Apr",
+      "c_bg0qxeu1m4ukcy0x270q515zh": "2004Aug",
+      "c_bggdhwyzb5i6ctztgfjdec69y": "2019Dec",
+      "c_bgwpnf2feh8raoun81rhgm9fj": "2018Oct",
+      "c_bhj28xxqsbuwnx39wyaydinhl": "2018Mar",
+      "c_bhtt3h8343donnui2qpcws6qv": "2011Apr",
+      "c_bjosafttfsllp3ldngd3v21sb": "2006Jan",
+      "c_blpqht9vxhzit5m2cuako0a4e": "2007Sep",
+      "c_bluth0drsf3grssd9uepgeuf0": "2011Nov",
+      "c_bm2463hd6txo3up7eldw1nqds": "2008Mar",
+      "c_bmkudiol2y7thr4bcxpnz30t1": "2001Sep",
+      "c_boncsh0ntvtfavns7o5dd6c6n": "2019Nov",
+      "c_bra2mr7a58y73wtxmki2qxhnp": "2010Jan",
+      "c_bri8vqqtgvcbajq6zepxhcaat": "2016Sep",
+      "c_brvvn3dhay3n9zdiddqpjqaww": "2011Aug",
+      "c_btlfr126iws07azafpjkbt7j7": "2023Jul",
+      "c_buijomsd0ujichiaxhh0jmc7v": "2025Jan",
+      "c_burrrzy79or8sg4e8fhw8g6mv": "2011Sep",
+      "c_bv8avg50ium8nu3hxqkn0yu8n": "2009Jul",
+      "c_bvoghe55aesccofbitopb2aic": "2026Jul",
+      "c_bwm4tqj8smnwyyoqfn6dydrvd": "2022Jul",
+      "c_bx4wp91ecomkvexrusslgjy19": "2009Oct",
+      "c_bxjzyyukr1b7kkavahswqsxdy": "1991Aug",
+      "c_by8kiywjh1qwy2o35vvmdkh87": "1993Aug",
+      "c_by9hn3rf1qpwuoxo86o0e7tbh": "1995Jun",
+      "c_bznn5uvavbmbr00ipu0b1mq6s": "2021Jun",
+      "c_c0u1be5z8ekim0m0sqqwuocgj": "2002Mar",
+      "c_c2277bug6u54ym9ja8vw2529t": "1998Oct",
+      "c_c3ntq2ejapxc6rcwrduupf97o": "2006Oct",
+      "c_c4in3hayfcknqo4ix315r8dex": "2025Nov",
+      "c_c595w0qykoh9jr6jkypsy54ri": "2004Jun",
+      "c_c78mrt10lmswyg5z5y5zth90r": "2024May",
+      "c_c8nhestd2ds5tjqpo7lvtt4f7": "2015Jan",
+      "c_c8w0eoahwzbsh8a2kcucqfh6u": "2017Dec",
+      "c_cb7mzxmgav7tx5985tk1tifih": "2011Mar",
+      "c_cbdkfwaaqguvxamvn0l7wxj3p": "1996Jun",
+      "c_cdoj4lc0e9m4rmv6jhat0wek1": "2021Jan",
+      "c_cgm52ql1f84x8v8pcg8cvt7dh": "1997Jan",
+      "c_cgv5jqs6hhnaop5hrlel058oq": "2015Apr",
+      "c_ch8qb25dsaramhrapkakm2dh2": "1990Oct",
+      "c_ci3tni0y6f3detbsvdy0bvpkj": "2002Jul",
+      "c_cj20oz9l5h8jagbk9kvf6ycex": "2007Apr",
+      "c_cjo4xz3nej3rlwctoczdy4fgr": "2017Mar",
+      "c_cjzocty59q51aj9q6bvd95dz7": "2024Jan",
+      "c_cnpg16moludapfxpiz8cox2ll": "2022May",
+      "c_cnrrtym6584nreme6pkwrfgr7": "2026Mar",
+      "c_cpruoo5ap38ey5cpjmtqrr5dz": "2016Dec",
+      "c_cq4mcttj3osw0fxhcoha3bsja": "2014May",
+      "c_csxptaeilfhzqubgpyoc7rubn": "2005Nov",
+      "c_ctsbubmt7bg4gl8w0wd7sl0b7": "2020Apr",
+      "c_cuert0d0uvrltoya6viihy62v": "1990Aug",
+      "c_cwuxq0iaj9y584k3ojyfg19c1": "2023May",
+      "c_czp73asdzj8yjsd9mpy3ut99r": "2020Sep",
+      "c_d2nfn68jiu1ej8c1nm4uhkbm0": "2013Apr",
+      "c_d2xkhuswt67u02q3mkbol4xgx": "2000May",
+      "c_d3ymuzwfbod6ua36005mewg6u": "2011Jan",
+      "c_d5ejnj7xhi6fl2qxv1tze3fm1": "1994Jun",
+      "c_d5tn3zd3jakketyxl3l68se2o": "2014Mar",
+      "c_d6whpkeiedld8o6m1parqcwj3": "1999Mar",
+      "c_d8e2oxxi7wrcth5bp2198jfmr": "2009Dec",
+      "c_dadrnsyrzsq3dm10u4v7z99fc": "2024Dec",
+      "c_de280ipu9qdx49jd7tti2jmif": "2022Feb",
+      "c_deay8oix4kjkskwzw5pdnfz3n": "2021Mar",
+      "c_deo350doqstitp9hwmeigmuv9": "1996Nov",
+      "c_dihmeqwq0tgoh8tzox5gg3vbi": "1998Jun",
+      "c_dj31nxas6kpqw94rheut5iyr2": "2022Apr",
+      "c_djrpai2vbnjtfcdo1w8rk95e": "1993Mar",
+      "c_dkn48uodx2h1d67l2j08wwix0": "2025Jul",
+      "c_dl63wyl3rbwofdfks1igr2bg1": "2017Nov",
+      "c_dlooqqcken4j3g3nzt33kw46o": "2010Dec",
+      "c_dmoo0y2ft568xytu8yg6c5lzo": "2003Oct",
+      "c_dmqhlqj9502qtxna8443me9z4": "2017May",
+      "c_dpduxkmbawmjwijvwmmnwat6g": "2026May",
+      "c_drimlzrv4ng45zfsd4trmwjt2": "1988Aug",
+      "c_dt8qzhso24h0u9pa8kgftoz0v": "1998Jan",
+      "c_duvbapibybcsl7gqbwdnt7fwv": "2003Nov",
+      "c_dvpoml4qbhm8uzcn7lub4glg": "1990Mar",
+      "c_dw5r00d3dlku3bjcwo2me9knm": "2012Jun",
+      "c_dxiqvuoryari2hy9bbhlp09op": "2008Feb",
+      "c_dxkvo3cadk7ptigejsaftcq8u": "2005Dec",
+      "c_dymnoc0tusswgty08wbd4pxm9": "1989Nov",
+      "c_dzn39pdav3en3cpru4bvw0whe": "2008Jun",
+      "c_e54xan8ffwchooqs6it29lc6e": "2022Jun",
+      "c_e6zg79kcn3w8mic8pqpk62lpm": "1997Dec",
+      "c_e7kv2wn80na9oqudhkojbqbwf": "2011Oct",
+      "c_e80dqmgffn8dn9wj42g4varzk": "2003Jan",
+      "c_eal26xsp5cqg63pfpmfymu8lm": "1993Oct",
+      "c_easnlp2omovmcx8ehyzpcvrzp": "2004Oct",
+      "c_ebnh97b12thbdqnyalvieu2g4": "2017Apr",
+      "c_ebzwkmxw4y0829bnhcddglpo": "1999Jul",
+      "c_eev289l8gl68xqvf57yeuvmpo": "1994Nov",
+      "c_eg6s3mg9jbjwgd2rltmm7l96w": "2010Oct",
+      "c_eglfmpy0zcz0dgllle5ilohps": "2019Apr",
+      "c_eig2om82x4aroxf9ozil056jb": "2018Nov",
+      "c_ejg1xtv6h9871vkbzwoix4fo7": "2020Oct",
+      "c_ejp3epu8cznctv49fpql1kgzq": "2015Aug",
+      "c_ekanf8ol555z0bwhrkver583m": "2025Sep",
+      "c_elccgropeot7lirgajgky9z2z": "2014Jun",
+      "c_emqt0k1dcvwi9fqao3u1tkskv": "2004Mar",
+      "c_epj2mfqe7sbguozyjd07eet68": "1997Jul",
+      "c_eu5k8b8oz6a75pf70fg61mcwx": "2022Mar",
+      "c_euw28io2uzuaxsf07nv1nsv81": "2024Oct",
+      "c_evdvkznuhhsd39d3sv4lgg80": "2013Dec",
+      "c_ewp97v40kmdonzj39aj5jtndw": "2002Jun",
+      "c_ezbfooc37tkvufr8rwpzjgvp3": "1989Jul",
+      "c_ezctbwm4133rrjz4kjmidfv4p": "1988Jun",
+      "c_ezhp15os26ludtl5e7rdrjk05": "2025Feb",
+      "c_f1jltzu1ktu5wfobd26vjoakv": "2016Mar",
+      "c_f1t1p7jn45izlj7yvw0fp8k3s": "2023Mar",
+      "c_f4l8gvar85uyfw9gy6g5i0itl": "2013Sep",
+      "c_gxwlv53bfsafeim5ginficfy": "2021Jul",
+      "c_ikfoba7tiq6feskf6up8p7cr": "1988Oct",
+      "c_is3pput358zeh3z6j38tebi9": "1989Jan",
+      "c_ka8wtam14a87ritb1ktkz3od": "1999Jun",
+      "c_kgqy0125v5z20kmif8wpnba3": "2004Nov",
+      "c_lcicbp8rp7o3wan2edb1ibpf": "2019May",
+      "c_lx7xfsue3uc4deg3zdhd5c6c": "1996Jul",
+      "c_m7i7iib20khqut6c3tl20msj": "2012Jan",
+      "c_mgkmd4kr6ugyj9kikr0bmtz3": "1991Feb",
+      "c_myu163aqlbnlxdkos4jic9nl": "1999Oct",
+      "c_ndrjb1qj5cardi5bwm4pgal5": "2021Dec",
+      "c_nwhmdkcdgmvvamqwnbvs7k57": "2024Jul",
+      "c_o9p59f6f8vpnh395nie0ofut": "1996Dec",
+      "c_pgfv77furxwli9gx5n3ype4z": "2010May",
+      "c_qfjetb02jm4isz6hon90icos": "2021Oct",
+      "c_r55sij098ilad2akinq377qd": "2017Jul",
+      "c_r6pxkknsvkwc4w6gth7108dw": "1988Mar",
+      "c_rir05brrtvxwlg1ht9ts2mi8": "1997Feb",
+      "c_slog4lpwjukf1lqnnk71xlx6": "1999Sep",
+      "c_srhi55tt684s4bn1lqq9jmrz": "2003Feb",
+      "c_v6bdvxcswbpr85b84mzckfpu": "1994Jul",
+      "c_vr7gb2bm5lmcgid65kszvt4q": "2024Apr",
+      "c_w5u4awi1upmmss2x2jbe2gu6": "2013Oct",
+      "c_wf6b2didmwkh83xxqnfp6wzb": "2004May",
+      "c_wsmuzier7wzwwehaynplojw6": "2017Sep",
+      "c_xaznamo4tvr39fb7x6s68iof": "1994Jan",
+      "c_xvwensa6151obljb776mskje": "2001Aug",
+      "c_z2efr7532k22ueozsv7mkqfr": "2001Mar",
+      "c_zgjqpd0xin0stuoigznzbntv": "1996May"
+    },
+    "metaMapping": {
+      "c_01byppbnkgf7nnq1h9qm8kv83": {
+        "columnTitle": "1990 Dec",
+        "dataType": "Text",
+        "index": "428",
+        "isCategorical": false,
+        "name": "1990Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_01onlku7brb1d5hn8uigjbod8": {
+        "columnTitle": "1992 Oct",
+        "dataType": "Text",
+        "index": "406",
+        "isCategorical": false,
+        "name": "1992Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_119fmem777uef10ac20fpa3ov": {
+        "columnTitle": "1989 Oct",
+        "dataType": "Text",
+        "index": "442",
+        "isCategorical": false,
+        "name": "1989Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_11b62xxlw1hkur90pza7576gt": {
+        "columnTitle": "1991 Jan",
+        "dataType": "Text",
+        "index": "427",
+        "isCategorical": false,
+        "name": "1991Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_13wcnqlo32ic79kfc7cqqw15b": {
+        "columnTitle": "2022 Oct",
+        "dataType": "Numeric",
+        "index": "46",
+        "isCategorical": false,
+        "name": "2022Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_18u4an0ftljqg6xmhz6ose9k1": {
+        "columnTitle": "1996 Mar",
+        "dataType": "Text",
+        "index": "365",
+        "isCategorical": false,
+        "name": "1996Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1cihxpxcbi3or4cvgo7u9xqsn": {
+        "columnTitle": "1999 Feb",
+        "dataType": "Text",
+        "index": "330",
+        "isCategorical": false,
+        "name": "1999Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1cwf7dccjs6iao9nweg1hp6ev": {
+        "columnTitle": "2005 Aug",
+        "dataType": "Text",
+        "index": "252",
+        "isCategorical": false,
+        "name": "2005Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1d44d8bghu1ec3nb3uo3ipdwa": {
+        "columnTitle": "1999 Dec",
+        "dataType": "Text",
+        "index": "320",
+        "isCategorical": false,
+        "name": "1999Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1dj53bvruck4wm15jn261ffmx": {
+        "columnTitle": "2001 Jul",
+        "dataType": "Text",
+        "index": "301",
+        "isCategorical": false,
+        "name": "2001Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1fyflb537ftgsa209r0xmuofk": {
+        "columnTitle": "2006 Aug",
+        "dataType": "Text",
+        "index": "240",
+        "isCategorical": false,
+        "name": "2006Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1i959l1eyrkabfbmzizja50g8": {
+        "columnTitle": "1989 Dec",
+        "dataType": "Text",
+        "index": "440",
+        "isCategorical": false,
+        "name": "1989Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1jisoqis7t1qtl8lsfnzo3g0e": {
+        "columnTitle": "1992 Nov",
+        "dataType": "Text",
+        "index": "405",
+        "isCategorical": false,
+        "name": "1992Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1migu5hkhy5bmakk442phoao3": {
+        "columnTitle": "2016 Nov",
+        "dataType": "Numeric",
+        "index": "117",
+        "isCategorical": false,
+        "name": "2016Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1nw8lfi92cfgtqhmx0of3gmye": {
+        "columnTitle": "1995 Aug",
+        "dataType": "Text",
+        "index": "372",
+        "isCategorical": false,
+        "name": "1995Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1o4b2ohpqbhbug1404m64dqxw": {
+        "columnTitle": "2003 Apr",
+        "dataType": "Text",
+        "index": "280",
+        "isCategorical": false,
+        "name": "2003Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1p02nr5lo9vjwpku921rhm3ce": {
+        "columnTitle": "2006 Jun",
+        "dataType": "Text",
+        "index": "242",
+        "isCategorical": false,
+        "name": "2006Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1pb35w6texcxr2j5o7fx6fk7h": {
+        "columnTitle": "2026 Feb",
+        "dataType": "Numeric",
+        "index": "6",
+        "isCategorical": false,
+        "name": "2026Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1pe0x60r6gqeuov0joprqbnne": {
+        "columnTitle": "2016 Jul",
+        "dataType": "Numeric",
+        "index": "121",
+        "isCategorical": false,
+        "name": "2016Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1qd1ftt0wp4kd0miq8lujjuz6": {
+        "columnTitle": "1996 Sep",
+        "dataType": "Text",
+        "index": "359",
+        "isCategorical": false,
+        "name": "1996Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1qga7hli8r3be5laew0xd45mc": {
+        "columnTitle": "2020 Jul",
+        "dataType": "Numeric",
+        "index": "73",
+        "isCategorical": false,
+        "name": "2020Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1qnhb244fgzts3qi6qujbzoqe": {
+        "columnTitle": "2000 Aug",
+        "dataType": "Text",
+        "index": "312",
+        "isCategorical": false,
+        "name": "2000Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1r6n5nmv05xpb00r8a9nsmf35": {
+        "columnTitle": "1995 Jan",
+        "dataType": "Text",
+        "index": "379",
+        "isCategorical": false,
+        "name": "1995Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1rcbpzyrg1610610sn1uon2xt": {
+        "columnTitle": "2015 Oct",
+        "dataType": "Numeric",
+        "index": "130",
+        "isCategorical": false,
+        "name": "2015Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1rxmqoemixfhwif8155355sh2": {
+        "columnTitle": "2003 May",
+        "dataType": "Text",
+        "index": "279",
+        "isCategorical": false,
+        "name": "2003May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1sjgs7x3a9wxxej4erceagbdl": {
+        "columnTitle": "2012 Jul",
+        "dataType": "Numeric",
+        "index": "169",
+        "isCategorical": false,
+        "name": "2012Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1u5zj5rj5yhq17fz4tg8ooi1v": {
+        "columnTitle": "2002 Apr",
+        "dataType": "Text",
+        "index": "292",
+        "isCategorical": false,
+        "name": "2002Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1vk9pnjkl3bs3mlfcotsldk4m": {
+        "columnTitle": "2015 Mar",
+        "dataType": "Numeric",
+        "index": "137",
+        "isCategorical": false,
+        "name": "2015Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1yci48dvitrb9yu2sahh16w7a": {
+        "columnTitle": "2022 Sep",
+        "dataType": "Numeric",
+        "index": "47",
+        "isCategorical": false,
+        "name": "2022Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1yr7ga06iqw8o29u8scdyopga": {
+        "columnTitle": "2023 Feb",
+        "dataType": "Numeric",
+        "index": "42",
+        "isCategorical": false,
+        "name": "2023Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1zg1y67zbd9rxdou89f8tdy2g": {
+        "columnTitle": "2024 Mar",
+        "dataType": "Numeric",
+        "index": "29",
+        "isCategorical": false,
+        "name": "2024Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_1zn6imemblyy1jzrnhzo6klpn": {
+        "columnTitle": "2008 May",
+        "dataType": "Numeric",
+        "index": "219",
+        "isCategorical": false,
+        "name": "2008May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_22ke84jz4bedasomh450ho49o": {
+        "columnTitle": "1998 Jul",
+        "dataType": "Text",
+        "index": "337",
+        "isCategorical": false,
+        "name": "1998Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_236mxp1xwbxk2600asemgeyv0": {
+        "columnTitle": "2020 Jan",
+        "dataType": "Numeric",
+        "index": "79",
+        "isCategorical": false,
+        "name": "2020Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_24m32cutwja5m58s4lnclmj6n": {
+        "columnTitle": "2018 Dec",
+        "dataType": "Numeric",
+        "index": "92",
+        "isCategorical": false,
+        "name": "2018Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2561c9zq7mmtufim3xfvaaunt": {
+        "columnTitle": "1996 Oct",
+        "dataType": "Text",
+        "index": "358",
+        "isCategorical": false,
+        "name": "1996Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_25ssxj91luca64zsx1ouh5npf": {
+        "columnTitle": "1994 Feb",
+        "dataType": "Text",
+        "index": "390",
+        "isCategorical": false,
+        "name": "1994Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_266h18ebgjq4t5o1dxc1zcs0t": {
+        "columnTitle": "1990 Jul",
+        "dataType": "Text",
+        "index": "433",
+        "isCategorical": false,
+        "name": "1990Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_26dn2sv32auo00h8aap76lups": {
+        "columnTitle": "2004 Feb",
+        "dataType": "Text",
+        "index": "270",
+        "isCategorical": false,
+        "name": "2004Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_26toaxymk66lmm2blxry9m8zk": {
+        "columnTitle": "1988 Dec",
+        "dataType": "Text",
+        "index": "452",
+        "isCategorical": false,
+        "name": "1988Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_26ubl353vw0zrpdjcpzmag7mi": {
+        "columnTitle": "1995 Nov",
+        "dataType": "Text",
+        "index": "369",
+        "isCategorical": false,
+        "name": "1995Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_29bidewyyaon6at1vh8zgfbwh": {
+        "columnTitle": "1992 Jan",
+        "dataType": "Text",
+        "index": "415",
+        "isCategorical": false,
+        "name": "1992Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2bap0dmcnbavukjdfeum3hzzz": {
+        "columnTitle": "2006 Nov",
+        "dataType": "Text",
+        "index": "237",
+        "isCategorical": false,
+        "name": "2006Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2dw5ztyilhvujz89sslxs1k87": {
+        "columnTitle": "2018 Sep",
+        "dataType": "Numeric",
+        "index": "95",
+        "isCategorical": false,
+        "name": "2018Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2fz8ie0l87py0sxd3q1893ar0": {
+        "columnTitle": "1994 May",
+        "dataType": "Text",
+        "index": "387",
+        "isCategorical": false,
+        "name": "1994May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2go33tes6is9sw318dbknc9vk": {
+        "columnTitle": "2012 Apr",
+        "dataType": "Numeric",
+        "index": "172",
+        "isCategorical": false,
+        "name": "2012Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2gw9o5lkxv6k1rcepbff5rk0l": {
+        "columnTitle": "2001 May",
+        "dataType": "Text",
+        "index": "303",
+        "isCategorical": false,
+        "name": "2001May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2hdj9e00yb83239p2lw7jhiqu": {
+        "columnTitle": "2003 Dec",
+        "dataType": "Text",
+        "index": "272",
+        "isCategorical": false,
+        "name": "2003Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2jh75v7rnnbf8rh7lwm46r1y": {
+        "columnTitle": "2002 Oct",
+        "dataType": "Text",
+        "index": "286",
+        "isCategorical": false,
+        "name": "2002Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2k8vj7vy7kcu30cqafsqfcx5": {
+        "columnTitle": "2010 Nov",
+        "dataType": "Numeric",
+        "index": "189",
+        "isCategorical": false,
+        "name": "2010Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2n5i2aiirsnha3cy5dpnf3j03": {
+        "columnTitle": "1991 Dec",
+        "dataType": "Text",
+        "index": "416",
+        "isCategorical": false,
+        "name": "1991Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2nfdkf4o3q36hy5tb7t1mhyyl": {
+        "columnTitle": "1992 Feb",
+        "dataType": "Text",
+        "index": "414",
+        "isCategorical": false,
+        "name": "1992Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2nkbjeo24moz32p1ivi7zxxqg": {
+        "columnTitle": "2022 Jan",
+        "dataType": "Numeric",
+        "index": "55",
+        "isCategorical": false,
+        "name": "2022Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2nlxmkvfkfclaz0trdr6cgqmi": {
+        "columnTitle": "2023 Aug",
+        "dataType": "Numeric",
+        "index": "36",
+        "isCategorical": false,
+        "name": "2023Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2nmso2kar4rl0ma3ykoxtfac8": {
+        "columnTitle": "2022 Nov",
+        "dataType": "Numeric",
+        "index": "45",
+        "isCategorical": false,
+        "name": "2022Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2ofccqxm3qt1yw599yib4308d": {
+        "columnTitle": "2013 Jul",
+        "dataType": "Numeric",
+        "index": "157",
+        "isCategorical": false,
+        "name": "2013Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2p484ery8bnq5txehzf57mqid": {
+        "columnTitle": "2018 Jul",
+        "dataType": "Numeric",
+        "index": "97",
+        "isCategorical": false,
+        "name": "2018Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2plfh68lgyxl6xucy6tbzkwep": {
+        "columnTitle": "1997 Apr",
+        "dataType": "Text",
+        "index": "352",
+        "isCategorical": false,
+        "name": "1997Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2qb393qkqpexbxyx4fccil9fd": {
+        "columnTitle": "2002 Dec",
+        "dataType": "Text",
+        "index": "284",
+        "isCategorical": false,
+        "name": "2002Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2rbb6tjvyl3y1ouvbgqlz4h2c": {
+        "columnTitle": "1993 Jun",
+        "dataType": "Text",
+        "index": "398",
+        "isCategorical": false,
+        "name": "1993Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2rcbz9nrfov3409lqxsdynn61": {
+        "columnTitle": "1993 Sep",
+        "dataType": "Text",
+        "index": "395",
+        "isCategorical": false,
+        "name": "1993Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2ro2ajst2selsdvbix48jiez9": {
+        "columnTitle": "2000 Jan",
+        "dataType": "Text",
+        "index": "319",
+        "isCategorical": false,
+        "name": "2000Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2ryq28nrr71bjt5f6y3vdpad4": {
+        "columnTitle": "2004 Dec",
+        "dataType": "Text",
+        "index": "260",
+        "isCategorical": false,
+        "name": "2004Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2xogzj3kfdfwrxiy26p09qdwf": {
+        "columnTitle": "2020 Jun",
+        "dataType": "Numeric",
+        "index": "74",
+        "isCategorical": false,
+        "name": "2020Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2xojpgh4p00yt0sxcbboonl0f": {
+        "columnTitle": "2022 Aug",
+        "dataType": "Numeric",
+        "index": "48",
+        "isCategorical": false,
+        "name": "2022Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2xzlzj8dltkfg5zozsnzb99sr": {
+        "columnTitle": "2000 Dec",
+        "dataType": "Text",
+        "index": "308",
+        "isCategorical": false,
+        "name": "2000Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2ypusf2y7t21232xg3mwrlm89": {
+        "columnTitle": "2008 Nov",
+        "dataType": "Numeric",
+        "index": "213",
+        "isCategorical": false,
+        "name": "2008Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_2zpifmrv7176yh619h2260cvi": {
+        "columnTitle": "2019 Jul",
+        "dataType": "Numeric",
+        "index": "85",
+        "isCategorical": false,
+        "name": "2019Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_31ho428cxj371y46htmb6zvfz": {
+        "columnTitle": "2009 Apr",
+        "dataType": "Numeric",
+        "index": "208",
+        "isCategorical": false,
+        "name": "2009Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_335o6vve9jng5cywzs2hf0c1z": {
+        "columnTitle": "2021 Sep",
+        "dataType": "Numeric",
+        "index": "59",
+        "isCategorical": false,
+        "name": "2021Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_35g3ji114cvbznrk9wpobwm30": {
+        "columnTitle": "2016 Feb",
+        "dataType": "Numeric",
+        "index": "126",
+        "isCategorical": false,
+        "name": "2016Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_36n3uolxlbkhuhht4a5wsjqvq": {
+        "columnTitle": "2010 Jul",
+        "dataType": "Numeric",
+        "index": "193",
+        "isCategorical": false,
+        "name": "2010Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_383wbzb6w80oyjl3ymipu07sh": {
+        "columnTitle": "2010 Aug",
+        "dataType": "Numeric",
+        "index": "192",
+        "isCategorical": false,
+        "name": "2010Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_38dsuwghpn5thuyn9n7zj6ngn": {
+        "columnTitle": "2013 Nov",
+        "dataType": "Numeric",
+        "index": "153",
+        "isCategorical": false,
+        "name": "2013Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_38yyoxxi3pdespthcvdv4znmp": {
+        "columnTitle": "2005 Jan",
+        "dataType": "Text",
+        "index": "259",
+        "isCategorical": false,
+        "name": "2005Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_39jfyda0xeigcie4ytccjpke9": {
+        "columnTitle": "2001 Feb",
+        "dataType": "Text",
+        "index": "306",
+        "isCategorical": false,
+        "name": "2001Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3ap8n4ghl2cz3n670uxznoyph": {
+        "columnTitle": "2019 Mar",
+        "dataType": "Numeric",
+        "index": "89",
+        "isCategorical": false,
+        "name": "2019Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3cemltydex4rgca5jngqc6tw9": {
+        "columnTitle": "2024 Jun",
+        "dataType": "Numeric",
+        "index": "26",
+        "isCategorical": false,
+        "name": "2024Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3e0p39ibwwjdlf1mh30rkz8xe": {
+        "columnTitle": "1995 Oct",
+        "dataType": "Text",
+        "index": "370",
+        "isCategorical": false,
+        "name": "1995Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3egy6s7qzf943f9qsec2a3bq2": {
+        "columnTitle": "2018 Aug",
+        "dataType": "Numeric",
+        "index": "96",
+        "isCategorical": false,
+        "name": "2018Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3fnezto0m2lkg91jn7jhopikw": {
+        "columnTitle": "2010 Mar",
+        "dataType": "Numeric",
+        "index": "197",
+        "isCategorical": false,
+        "name": "2010Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3frby0snjipod39alan5gobth": {
+        "columnTitle": "2003 Mar",
+        "dataType": "Text",
+        "index": "281",
+        "isCategorical": false,
+        "name": "2003Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3g8qajwc50xs9clm2wsmdqu8l": {
+        "columnTitle": "1988 May",
+        "dataType": "Text",
+        "index": "459",
+        "isCategorical": false,
+        "name": "1988May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3gtrlsr6d5tob05o1mf0gmhrj": {
+        "columnTitle": "2012 Aug",
+        "dataType": "Numeric",
+        "index": "168",
+        "isCategorical": false,
+        "name": "2012Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3i2r8pc0e0ou7fve7mpsesqsb": {
+        "columnTitle": "1995 May",
+        "dataType": "Text",
+        "index": "375",
+        "isCategorical": false,
+        "name": "1995May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3ikx2l9ejxjuy4muxltil3mnz": {
+        "columnTitle": "2005 Jun",
+        "dataType": "Text",
+        "index": "254",
+        "isCategorical": false,
+        "name": "2005Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3jttbawboxk8r8qfkksqxgw3g": {
+        "columnTitle": "1995 Jul",
+        "dataType": "Text",
+        "index": "373",
+        "isCategorical": false,
+        "name": "1995Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3k5dswn7qoiq3qs7fg4lj1lei": {
+        "columnTitle": "2014 Nov",
+        "dataType": "Numeric",
+        "index": "141",
+        "isCategorical": false,
+        "name": "2014Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3ldkg0nv4aeymx3u2hxq6cdk1": {
+        "columnTitle": "2004 Jan",
+        "dataType": "Text",
+        "index": "271",
+        "isCategorical": false,
+        "name": "2004Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3n87qznc44digsqwh7aep9v61": {
+        "columnTitle": "1995 Feb",
+        "dataType": "Text",
+        "index": "378",
+        "isCategorical": false,
+        "name": "1995Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3ouv8rperurds509cg0s37t4v": {
+        "columnTitle": "2009 Feb",
+        "dataType": "Numeric",
+        "index": "210",
+        "isCategorical": false,
+        "name": "2009Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3p0bj7dp842krj4jqujr7doxi": {
+        "columnTitle": "2013 Jan",
+        "dataType": "Numeric",
+        "index": "163",
+        "isCategorical": false,
+        "name": "2013Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3qmens3ocohhph11143dskt3q": {
+        "columnTitle": "2020 Feb",
+        "dataType": "Numeric",
+        "index": "78",
+        "isCategorical": false,
+        "name": "2020Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3qzkf3or2ebtpt4ao96p0kn2z": {
+        "columnTitle": "1994 Sep",
+        "dataType": "Text",
+        "index": "383",
+        "isCategorical": false,
+        "name": "1994Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3r6w4ztzzil5xjlbqcxp7eb3u": {
+        "columnTitle": "2009 Nov",
+        "dataType": "Numeric",
+        "index": "201",
+        "isCategorical": false,
+        "name": "2009Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3rx5t93u1bnzy2m4djxsd4xyv": {
+        "columnTitle": "1997 Oct",
+        "dataType": "Text",
+        "index": "346",
+        "isCategorical": false,
+        "name": "1997Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3s5sgy0zukt938zxs293kk7vx": {
+        "columnTitle": "2006 Jul",
+        "dataType": "Text",
+        "index": "241",
+        "isCategorical": false,
+        "name": "2006Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3tsc8j041jca740fuse9rxip8": {
+        "columnTitle": "2012 May",
+        "dataType": "Numeric",
+        "index": "171",
+        "isCategorical": false,
+        "name": "2012May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3uxb7x6zwfy1rj9wvsfp9frhh": {
+        "columnTitle": "1999 Nov",
+        "dataType": "Text",
+        "index": "321",
+        "isCategorical": false,
+        "name": "1999Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3vi9gfvi7vpdjoo1vmv569jtu": {
+        "columnTitle": "1992 Mar",
+        "dataType": "Text",
+        "index": "413",
+        "isCategorical": false,
+        "name": "1992Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3vvbsrjtgv64afh661v78d0zw": {
+        "columnTitle": "2015 Nov",
+        "dataType": "Numeric",
+        "index": "129",
+        "isCategorical": false,
+        "name": "2015Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3wbwqtdtg4gtzyecuihhdcotb": {
+        "columnTitle": "1994 Aug",
+        "dataType": "Text",
+        "index": "384",
+        "isCategorical": false,
+        "name": "1994Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3wxcslnkjqmi13dtwrczw3pm3": {
+        "columnTitle": "2009 Aug",
+        "dataType": "Numeric",
+        "index": "204",
+        "isCategorical": false,
+        "name": "2009Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3xkh8zu1w1awyrqzf4ja46z4": {
+        "columnTitle": "1992 Aug",
+        "dataType": "Text",
+        "index": "408",
+        "isCategorical": false,
+        "name": "1992Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_3xzvk0ej4p07o6zemjga95xgh": {
+        "columnTitle": "2001 Oct",
+        "dataType": "Text",
+        "index": "298",
+        "isCategorical": false,
+        "name": "2001Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_420skev59tbi2ngvj1akcgj79": {
+        "columnTitle": "1993 Feb",
+        "dataType": "Text",
+        "index": "402",
+        "isCategorical": false,
+        "name": "1993Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4375p43b5uzam4flxr64smn79": {
+        "columnTitle": "2007 Mar",
+        "dataType": "Numeric",
+        "index": "233",
+        "isCategorical": false,
+        "name": "2007Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_43kpuhfr8vxyluo7lynif61b9": {
+        "columnTitle": "2021 May",
+        "dataType": "Numeric",
+        "index": "63",
+        "isCategorical": false,
+        "name": "2021May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_46oyrokdgkap5a1sco6knrn8z": {
+        "columnTitle": "2004 Sep",
+        "dataType": "Text",
+        "index": "263",
+        "isCategorical": false,
+        "name": "2004Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4a7o7qh9o6wvuvt0zyo0puwdg": {
+        "columnTitle": "2007 Jul",
+        "dataType": "Numeric",
+        "index": "229",
+        "isCategorical": false,
+        "name": "2007Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4do0sw6kkgc4qg5mn3zupsx7e": {
+        "columnTitle": "1993 Jul",
+        "dataType": "Text",
+        "index": "397",
+        "isCategorical": false,
+        "name": "1993Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4dobvros75zdgibivkfkz5qvu": {
+        "columnTitle": "2006 Mar",
+        "dataType": "Text",
+        "index": "245",
+        "isCategorical": false,
+        "name": "2006Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4kegpsl6r015l83jwab7vvqcl": {
+        "columnTitle": "1988 Nov",
+        "dataType": "Text",
+        "index": "453",
+        "isCategorical": false,
+        "name": "1988Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4lv37cvu1om1a8omgj3zu85z6": {
+        "columnTitle": "2000 Apr",
+        "dataType": "Text",
+        "index": "316",
+        "isCategorical": false,
+        "name": "2000Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4lz3w8id6qos6gte8r5nnxj2h": {
+        "columnTitle": "2011 Dec",
+        "dataType": "Numeric",
+        "index": "176",
+        "isCategorical": false,
+        "name": "2011Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4mr3z5mrhlww7b3okk7z2y3q9": {
+        "columnTitle": "1996 Aug",
+        "dataType": "Text",
+        "index": "360",
+        "isCategorical": false,
+        "name": "1996Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4nlbdiodcgs5km1crdrtbnlyj": {
+        "columnTitle": "2020 May",
+        "dataType": "Numeric",
+        "index": "75",
+        "isCategorical": false,
+        "name": "2020May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4omhea4umezgb60pb7xy85swf": {
+        "columnTitle": "2008 Jul",
+        "dataType": "Numeric",
+        "index": "217",
+        "isCategorical": false,
+        "name": "2008Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4p3fahj7zstn9kafqakjlcaoq": {
+        "columnTitle": "2024 Aug",
+        "dataType": "Numeric",
+        "index": "24",
+        "isCategorical": false,
+        "name": "2024Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4qyf3zl3wzg2ar65d0ni0likn": {
+        "columnTitle": "2021 Aug",
+        "dataType": "Numeric",
+        "index": "60",
+        "isCategorical": false,
+        "name": "2021Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4r2tlncyl675trwy6f2p6i0vj": {
+        "columnTitle": "1998 Nov",
+        "dataType": "Text",
+        "index": "333",
+        "isCategorical": false,
+        "name": "1998Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4rlvku5yern04p82r4r3sawo5": {
+        "columnTitle": "2019 Feb",
+        "dataType": "Numeric",
+        "index": "90",
+        "isCategorical": false,
+        "name": "2019Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4si0w0gy0nm3xh173adejr1y2": {
+        "columnTitle": "2003 Aug",
+        "dataType": "Text",
+        "index": "276",
+        "isCategorical": false,
+        "name": "2003Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4uaxsdzvoknn3vrlef7xsot5f": {
+        "columnTitle": "2014 Oct",
+        "dataType": "Numeric",
+        "index": "142",
+        "isCategorical": false,
+        "name": "2014Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4vkf3c7kltlsqpm78jq7nu3hh": {
+        "columnTitle": "2012 Sep",
+        "dataType": "Numeric",
+        "index": "167",
+        "isCategorical": false,
+        "name": "2012Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4vlchoakszfel8ynpbbr8cteb": {
+        "columnTitle": "1990 Apr",
+        "dataType": "Text",
+        "index": "436",
+        "isCategorical": false,
+        "name": "1990Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4vmlw7ul8386j3616osdp4pov": {
+        "columnTitle": "Data Series",
+        "dataType": "Text",
+        "index": "0",
+        "isCategorical": false,
+        "name": "DataSeries",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4w9rdioc4rz1deka6ej5hv5j8": {
+        "columnTitle": "1988 Apr",
+        "dataType": "Text",
+        "index": "460",
+        "isCategorical": false,
+        "name": "1988Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4xlz8kqiju6fpdm35r6igq1x6": {
+        "columnTitle": "1990 Jun",
+        "dataType": "Text",
+        "index": "434",
+        "isCategorical": false,
+        "name": "1990Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_4y1bngbniz2rcq8grko22ahs0": {
+        "columnTitle": "2021 Apr",
+        "dataType": "Numeric",
+        "index": "64",
+        "isCategorical": false,
+        "name": "2021Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_52iuxpmk5t0bat58qj25jpghq": {
+        "columnTitle": "1989 Mar",
+        "dataType": "Text",
+        "index": "449",
+        "isCategorical": false,
+        "name": "1989Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_532ug7toz7t0ddtv170ib7g5f": {
+        "columnTitle": "1990 May",
+        "dataType": "Text",
+        "index": "435",
+        "isCategorical": false,
+        "name": "1990May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_53mcuf2xaftc1se0riugutuut": {
+        "columnTitle": "2013 May",
+        "dataType": "Numeric",
+        "index": "159",
+        "isCategorical": false,
+        "name": "2013May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_53rsbmo3rr1lzdpe2t4elbr48": {
+        "columnTitle": "2007 Aug",
+        "dataType": "Numeric",
+        "index": "228",
+        "isCategorical": false,
+        "name": "2007Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_53ynmzzclvp3odhv68946axlv": {
+        "columnTitle": "2025 Oct",
+        "dataType": "Numeric",
+        "index": "10",
+        "isCategorical": false,
+        "name": "2025Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5594gc97r8p3xmzsrvxvu7186": {
+        "columnTitle": "2023 Oct",
+        "dataType": "Numeric",
+        "index": "34",
+        "isCategorical": false,
+        "name": "2023Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_55t2pxjm90p3634xnefopudzi": {
+        "columnTitle": "2014 Jul",
+        "dataType": "Numeric",
+        "index": "145",
+        "isCategorical": false,
+        "name": "2014Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_55u2lelbrtlzdjcujdd8v3jxl": {
+        "columnTitle": "1993 Nov",
+        "dataType": "Text",
+        "index": "393",
+        "isCategorical": false,
+        "name": "1993Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_569nd2j1ohu7j93i5pml8q38d": {
+        "columnTitle": "2001 Dec",
+        "dataType": "Text",
+        "index": "296",
+        "isCategorical": false,
+        "name": "2001Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_56a0x8q3b1b7yjmx0nuer2lze": {
+        "columnTitle": "2016 Jun",
+        "dataType": "Numeric",
+        "index": "122",
+        "isCategorical": false,
+        "name": "2016Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_57w4fw09p2zdnbg8ze9al99pj": {
+        "columnTitle": "2002 Sep",
+        "dataType": "Text",
+        "index": "287",
+        "isCategorical": false,
+        "name": "2002Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5biixa1ncz85g4pny81c66q76": {
+        "columnTitle": "2003 Sep",
+        "dataType": "Text",
+        "index": "275",
+        "isCategorical": false,
+        "name": "2003Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5csky28wxi6kf6eowp756rhzw": {
+        "columnTitle": "1991 Sep",
+        "dataType": "Text",
+        "index": "419",
+        "isCategorical": false,
+        "name": "1991Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5db6565z5bngkwfvngl6gmniv": {
+        "columnTitle": "1998 Aug",
+        "dataType": "Text",
+        "index": "336",
+        "isCategorical": false,
+        "name": "1998Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5dd3wwtk39yupasklcy0kpbjg": {
+        "columnTitle": "2010 Jun",
+        "dataType": "Numeric",
+        "index": "194",
+        "isCategorical": false,
+        "name": "2010Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5etgvdn865hqap2cckoxxftku": {
+        "columnTitle": "2023 Sep",
+        "dataType": "Numeric",
+        "index": "35",
+        "isCategorical": false,
+        "name": "2023Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5gp497v2gpaydedwmgphme65c": {
+        "columnTitle": "1994 Mar",
+        "dataType": "Text",
+        "index": "389",
+        "isCategorical": false,
+        "name": "1994Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5hgbwjfsp3nttj18ipq0r1hbr": {
+        "columnTitle": "2015 Jul",
+        "dataType": "Numeric",
+        "index": "133",
+        "isCategorical": false,
+        "name": "2015Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5hgkqknk93of12q63f005ee9z": {
+        "columnTitle": "2008 Jan",
+        "dataType": "Numeric",
+        "index": "223",
+        "isCategorical": false,
+        "name": "2008Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5ii1wtoznoz1i8dwt4104dq4p": {
+        "columnTitle": "2001 Nov",
+        "dataType": "Text",
+        "index": "297",
+        "isCategorical": false,
+        "name": "2001Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5kvqo8izlzv31tc430jeci86q": {
+        "columnTitle": "2016 Aug",
+        "dataType": "Numeric",
+        "index": "120",
+        "isCategorical": false,
+        "name": "2016Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5m1817v9lwfmha0rtu4ojexim": {
+        "columnTitle": "2026 Jun",
+        "dataType": "Numeric",
+        "index": "2",
+        "isCategorical": false,
+        "name": "2026Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5n5iyewtjvoq261lh3b1aj89f": {
+        "columnTitle": "2007 Jan",
+        "dataType": "Text",
+        "index": "235",
+        "isCategorical": false,
+        "name": "2007Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5pkqade14nf72cbuli5ynso1w": {
+        "columnTitle": "2000 Jun",
+        "dataType": "Text",
+        "index": "314",
+        "isCategorical": false,
+        "name": "2000Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5pn64c6p3t782b2an1i3y5zk5": {
+        "columnTitle": "2020 Nov",
+        "dataType": "Numeric",
+        "index": "69",
+        "isCategorical": false,
+        "name": "2020Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5rgv5uy93wv65k2avobngymaq": {
+        "columnTitle": "1992 Apr",
+        "dataType": "Text",
+        "index": "412",
+        "isCategorical": false,
+        "name": "1992Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5ro1ouqbiz7k4xahboyxc1vnf": {
+        "columnTitle": "1999 Apr",
+        "dataType": "Text",
+        "index": "328",
+        "isCategorical": false,
+        "name": "1999Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5tizkbzai6edgo9i0nha6lol3": {
+        "columnTitle": "1989 Jun",
+        "dataType": "Text",
+        "index": "446",
+        "isCategorical": false,
+        "name": "1989Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5tw9868b5e49r2llyp1tzg5yl": {
+        "columnTitle": "2009 Sep",
+        "dataType": "Numeric",
+        "index": "203",
+        "isCategorical": false,
+        "name": "2009Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5u0otk9u8dy559k7vizfkrme8": {
+        "columnTitle": "1994 Dec",
+        "dataType": "Text",
+        "index": "380",
+        "isCategorical": false,
+        "name": "1994Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5vulnm84nx14zcx9f38zsj6y3": {
+        "columnTitle": "1993 Dec",
+        "dataType": "Text",
+        "index": "392",
+        "isCategorical": false,
+        "name": "1993Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5w3d06zy59ydi8h2dc09mirul": {
+        "columnTitle": "2014 Apr",
+        "dataType": "Numeric",
+        "index": "148",
+        "isCategorical": false,
+        "name": "2014Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5xmphzr3oe4pkl0e3yh4zak7i": {
+        "columnTitle": "2000 Sep",
+        "dataType": "Text",
+        "index": "311",
+        "isCategorical": false,
+        "name": "2000Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_5zgp0cy9xyybo66s89h1hdpsk": {
+        "columnTitle": "2012 Feb",
+        "dataType": "Numeric",
+        "index": "174",
+        "isCategorical": false,
+        "name": "2012Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_607lbxkjxkixjjfgknqu97618": {
+        "columnTitle": "2000 Feb",
+        "dataType": "Text",
+        "index": "318",
+        "isCategorical": false,
+        "name": "2000Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_62ct3x948ap2s3hxdivmbbjrl": {
+        "columnTitle": "2017 Feb",
+        "dataType": "Numeric",
+        "index": "114",
+        "isCategorical": false,
+        "name": "2017Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_637kdpgzfz1g1g98zlekuu5n8": {
+        "columnTitle": "1994 Oct",
+        "dataType": "Text",
+        "index": "382",
+        "isCategorical": false,
+        "name": "1994Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_63c9pgqgstubnyye2nsrll2tm": {
+        "columnTitle": "2007 Dec",
+        "dataType": "Numeric",
+        "index": "224",
+        "isCategorical": false,
+        "name": "2007Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6434qhe8e1my602fu4mc9w1j2": {
+        "columnTitle": "1992 Jun",
+        "dataType": "Text",
+        "index": "410",
+        "isCategorical": false,
+        "name": "1992Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6488nko83iz16ig4averhys97": {
+        "columnTitle": "1988 Jul",
+        "dataType": "Text",
+        "index": "457",
+        "isCategorical": false,
+        "name": "1988Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_66fhmug0v1ldf4kimxy4snq85": {
+        "columnTitle": "1991 Jun",
+        "dataType": "Text",
+        "index": "422",
+        "isCategorical": false,
+        "name": "1991Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_66ycipp3j0kpvmbhgpea92ol4": {
+        "columnTitle": "1993 Jan",
+        "dataType": "Text",
+        "index": "403",
+        "isCategorical": false,
+        "name": "1993Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_673wdabue168k3ufmtutger05": {
+        "columnTitle": "1991 Jul",
+        "dataType": "Text",
+        "index": "421",
+        "isCategorical": false,
+        "name": "1991Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_683hdniq87qr3xr5h7ph7ojld": {
+        "columnTitle": "2013 Feb",
+        "dataType": "Numeric",
+        "index": "162",
+        "isCategorical": false,
+        "name": "2013Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_69he1socejj3n6z6yglgdqgyn": {
+        "columnTitle": "2016 May",
+        "dataType": "Numeric",
+        "index": "123",
+        "isCategorical": false,
+        "name": "2016May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_69z101mp1fh15q9elnzg0e7be": {
+        "columnTitle": "2009 Jan",
+        "dataType": "Numeric",
+        "index": "211",
+        "isCategorical": false,
+        "name": "2009Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6aun611ok1dqwglqmdh1q9mci": {
+        "columnTitle": "1996 Jan",
+        "dataType": "Text",
+        "index": "367",
+        "isCategorical": false,
+        "name": "1996Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6b2lwlz9jyjqpsibhaoy7zg6o": {
+        "columnTitle": "2009 Mar",
+        "dataType": "Numeric",
+        "index": "209",
+        "isCategorical": false,
+        "name": "2009Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6dgde66c3fuk56udmhws0d0s8": {
+        "columnTitle": "2005 Jul",
+        "dataType": "Text",
+        "index": "253",
+        "isCategorical": false,
+        "name": "2005Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6di2yzdfkwu4cgzjnvppolwtv": {
+        "columnTitle": "2002 Nov",
+        "dataType": "Text",
+        "index": "285",
+        "isCategorical": false,
+        "name": "2002Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6ds8bp83gpixiw1ai3sfrde9r": {
+        "columnTitle": "2018 Jun",
+        "dataType": "Numeric",
+        "index": "98",
+        "isCategorical": false,
+        "name": "2018Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6esjh5vhos09c4qccc3gyrkzv": {
+        "columnTitle": "1989 Sep",
+        "dataType": "Text",
+        "index": "443",
+        "isCategorical": false,
+        "name": "1989Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6ewzsewhybvqoxprddtoyhk8p": {
+        "columnTitle": "1990 Sep",
+        "dataType": "Text",
+        "index": "431",
+        "isCategorical": false,
+        "name": "1990Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6fhs5ottpzl0f0kcs24njzv58": {
+        "columnTitle": "2016 Oct",
+        "dataType": "Numeric",
+        "index": "118",
+        "isCategorical": false,
+        "name": "2016Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6fuzuwc4bkdgi8k3bl4721ilf": {
+        "columnTitle": "2023 Dec",
+        "dataType": "Numeric",
+        "index": "32",
+        "isCategorical": false,
+        "name": "2023Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6httwp16frzq9bdyiqglrqbcq": {
+        "columnTitle": "2016 Apr",
+        "dataType": "Numeric",
+        "index": "124",
+        "isCategorical": false,
+        "name": "2016Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6jkxi95dt85wi0gp27sr4dp7q": {
+        "columnTitle": "2008 Sep",
+        "dataType": "Numeric",
+        "index": "215",
+        "isCategorical": false,
+        "name": "2008Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6kp88x78fdq81lcsu3xe3udx9": {
+        "columnTitle": "1993 Apr",
+        "dataType": "Text",
+        "index": "400",
+        "isCategorical": false,
+        "name": "1993Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6kz3prdqaky0etmy6ndr14qxu": {
+        "columnTitle": "2004 Jul",
+        "dataType": "Text",
+        "index": "265",
+        "isCategorical": false,
+        "name": "2004Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6l6iexvb5zwtwlpozamoqq9iy": {
+        "columnTitle": "2007 Feb",
+        "dataType": "Numeric",
+        "index": "234",
+        "isCategorical": false,
+        "name": "2007Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6lopb05odcilfx5h6fbbe7goq": {
+        "columnTitle": "1997 Mar",
+        "dataType": "Text",
+        "index": "353",
+        "isCategorical": false,
+        "name": "1997Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6oemz61q5kqizd28990inhq0f": {
+        "columnTitle": "2020 Aug",
+        "dataType": "Numeric",
+        "index": "72",
+        "isCategorical": false,
+        "name": "2020Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6qdrrwdyvv6psp4ui4d69y09": {
+        "columnTitle": "2008 Dec",
+        "dataType": "Numeric",
+        "index": "212",
+        "isCategorical": false,
+        "name": "2008Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6txrbwp80cr5r73kv81ffhmmk": {
+        "columnTitle": "1992 Jul",
+        "dataType": "Text",
+        "index": "409",
+        "isCategorical": false,
+        "name": "1992Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6yt5x46ro990vlzep5217owec": {
+        "columnTitle": "2002 Jan",
+        "dataType": "Text",
+        "index": "295",
+        "isCategorical": false,
+        "name": "2002Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_6zjc0uiep39wxp9ote45qatmk": {
+        "columnTitle": "1998 Mar",
+        "dataType": "Text",
+        "index": "341",
+        "isCategorical": false,
+        "name": "1998Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_70cteaerlkv4xud3t514y1ipn": {
+        "columnTitle": "2006 Sep",
+        "dataType": "Text",
+        "index": "239",
+        "isCategorical": false,
+        "name": "2006Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_716ou7szc7s3h7f6eiu7ypim7": {
+        "columnTitle": "1989 Apr",
+        "dataType": "Text",
+        "index": "448",
+        "isCategorical": false,
+        "name": "1989Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_71c0vxoehne6bz441duv5w2mg": {
+        "columnTitle": "2020 Mar",
+        "dataType": "Numeric",
+        "index": "77",
+        "isCategorical": false,
+        "name": "2020Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_725rp35cakk73r4qlzsi752p": {
+        "columnTitle": "1995 Apr",
+        "dataType": "Text",
+        "index": "376",
+        "isCategorical": false,
+        "name": "1995Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_73fy45nybdqamr1618sec8cjg": {
+        "columnTitle": "2001 Jan",
+        "dataType": "Text",
+        "index": "307",
+        "isCategorical": false,
+        "name": "2001Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_75foxcp217ahbxvw6l1x7xo9a": {
+        "columnTitle": "2025 Dec",
+        "dataType": "Numeric",
+        "index": "8",
+        "isCategorical": false,
+        "name": "2025Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7auefp33emxsdspu3ujwepr2b": {
+        "columnTitle": "2008 Apr",
+        "dataType": "Numeric",
+        "index": "220",
+        "isCategorical": false,
+        "name": "2008Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7azplimin6a7o6qms2yz5pe4y": {
+        "columnTitle": "2005 May",
+        "dataType": "Text",
+        "index": "255",
+        "isCategorical": false,
+        "name": "2005May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7bmi9vhusi3b8yokchnu3sbhz": {
+        "columnTitle": "2015 Jun",
+        "dataType": "Numeric",
+        "index": "134",
+        "isCategorical": false,
+        "name": "2015Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7bsg2v1e60cyb5njkjl04kyxa": {
+        "columnTitle": "1990 Nov",
+        "dataType": "Text",
+        "index": "429",
+        "isCategorical": false,
+        "name": "1990Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7fxf5qkvkij7w9lpandj39pc9": {
+        "columnTitle": "2021 Nov",
+        "dataType": "Numeric",
+        "index": "57",
+        "isCategorical": false,
+        "name": "2021Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7ho4whz1zjotemcq8vt1mk5sm": {
+        "columnTitle": "1995 Sep",
+        "dataType": "Text",
+        "index": "371",
+        "isCategorical": false,
+        "name": "1995Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7hr3tyj5y5zn99gms87sgk3zy": {
+        "columnTitle": "1989 Feb",
+        "dataType": "Text",
+        "index": "450",
+        "isCategorical": false,
+        "name": "1989Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7k6qw1mvekxqvw8f9yj8dly2z": {
+        "columnTitle": "2013 Jun",
+        "dataType": "Numeric",
+        "index": "158",
+        "isCategorical": false,
+        "name": "2013Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7kb50yj6su75xh6gxgdgelbah": {
+        "columnTitle": "2017 Jan",
+        "dataType": "Numeric",
+        "index": "115",
+        "isCategorical": false,
+        "name": "2017Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7lh3b662ymea4wekgsewv8zip": {
+        "columnTitle": "2025 Mar",
+        "dataType": "Numeric",
+        "index": "17",
+        "isCategorical": false,
+        "name": "2025Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7ljefemiou4193o94bpo9oj60": {
+        "columnTitle": "1991 May",
+        "dataType": "Text",
+        "index": "423",
+        "isCategorical": false,
+        "name": "1991May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7nepxtz9mznho281l9zt3s38o": {
+        "columnTitle": "2002 May",
+        "dataType": "Text",
+        "index": "291",
+        "isCategorical": false,
+        "name": "2002May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7rae1rgn6blqpq6p4omd6b3sx": {
+        "columnTitle": "2001 Jun",
+        "dataType": "Text",
+        "index": "302",
+        "isCategorical": false,
+        "name": "2001Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7rikkwx3uczfz7gyhfqy1joel": {
+        "columnTitle": "2015 Feb",
+        "dataType": "Numeric",
+        "index": "138",
+        "isCategorical": false,
+        "name": "2015Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7u65jbct9j1tsuipg4nrj5cvk": {
+        "columnTitle": "2022 Dec",
+        "dataType": "Numeric",
+        "index": "44",
+        "isCategorical": false,
+        "name": "2022Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7uce3psebfnr9r0zcxkimeoti": {
+        "columnTitle": "1990 Jan",
+        "dataType": "Text",
+        "index": "439",
+        "isCategorical": false,
+        "name": "1990Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7ud54v57mam7pwyij6u0st2uq": {
+        "columnTitle": "2014 Aug",
+        "dataType": "Numeric",
+        "index": "144",
+        "isCategorical": false,
+        "name": "2014Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7wmuuilbhlq2gsj9nz2y2n7um": {
+        "columnTitle": "2012 Nov",
+        "dataType": "Numeric",
+        "index": "165",
+        "isCategorical": false,
+        "name": "2012Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7wo0vxy9qv4oozq8253efmlq3": {
+        "columnTitle": "2011 May",
+        "dataType": "Numeric",
+        "index": "183",
+        "isCategorical": false,
+        "name": "2011May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_7z7whoz9s0uqrl7mwm0xickoo": {
+        "columnTitle": "2024 Feb",
+        "dataType": "Numeric",
+        "index": "30",
+        "isCategorical": false,
+        "name": "2024Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_80dc0kjyf90fmv2m227oh8yz9": {
+        "columnTitle": "2026 Jan",
+        "dataType": "Numeric",
+        "index": "7",
+        "isCategorical": false,
+        "name": "2026Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_80po4glgzzg85fs2662ewub8l": {
+        "columnTitle": "2023 Apr",
+        "dataType": "Numeric",
+        "index": "40",
+        "isCategorical": false,
+        "name": "2023Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8107kxk81rvnmsv4dc1vzjdgf": {
+        "columnTitle": "2002 Aug",
+        "dataType": "Text",
+        "index": "288",
+        "isCategorical": false,
+        "name": "2002Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_830d52e3m8jonaiigllvnh8k": {
+        "columnTitle": "2015 Sep",
+        "dataType": "Numeric",
+        "index": "131",
+        "isCategorical": false,
+        "name": "2015Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_83b710c7nuhw2ghbpl8fzxvh4": {
+        "columnTitle": "1995 Mar",
+        "dataType": "Text",
+        "index": "377",
+        "isCategorical": false,
+        "name": "1995Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_83gl2xprc3vyc7otirue9l5jr": {
+        "columnTitle": "2014 Dec",
+        "dataType": "Numeric",
+        "index": "140",
+        "isCategorical": false,
+        "name": "2014Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_83kivahhcxuafdh9fx46fhtox": {
+        "columnTitle": "2006 Feb",
+        "dataType": "Text",
+        "index": "246",
+        "isCategorical": false,
+        "name": "2006Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_86afzkrpl1hpgkkeql1i4y1kj": {
+        "columnTitle": "1991 Apr",
+        "dataType": "Text",
+        "index": "424",
+        "isCategorical": false,
+        "name": "1991Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_86auwbgpzpj6tt9ixjzcfjfsd": {
+        "columnTitle": "1997 Sep",
+        "dataType": "Text",
+        "index": "347",
+        "isCategorical": false,
+        "name": "1997Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_87fzaqg1qqn27h2b9jifkdq2s": {
+        "columnTitle": "2025 May",
+        "dataType": "Numeric",
+        "index": "15",
+        "isCategorical": false,
+        "name": "2025May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_87vfkz5kpgsldg6kscvnv16jo": {
+        "columnTitle": "1998 May",
+        "dataType": "Text",
+        "index": "339",
+        "isCategorical": false,
+        "name": "1998May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_888sfb3cb0lodmdmq0hztfavh": {
+        "columnTitle": "2025 Jun",
+        "dataType": "Numeric",
+        "index": "14",
+        "isCategorical": false,
+        "name": "2025Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_89ehz7g31x0dbhi6pornoymy2": {
+        "columnTitle": "2014 Sep",
+        "dataType": "Numeric",
+        "index": "143",
+        "isCategorical": false,
+        "name": "2014Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_89nfjzwb3b6ln7uotf64zgdwo": {
+        "columnTitle": "2005 Sep",
+        "dataType": "Text",
+        "index": "251",
+        "isCategorical": false,
+        "name": "2005Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8a2k78avl85eyj1b3c1cevf88": {
+        "columnTitle": "2000 Nov",
+        "dataType": "Text",
+        "index": "309",
+        "isCategorical": false,
+        "name": "2000Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8b78lur5hjr6fx08c8rk0j8u0": {
+        "columnTitle": "2002 Feb",
+        "dataType": "Text",
+        "index": "294",
+        "isCategorical": false,
+        "name": "2002Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8bx95qqs0muxibr0e8dhf5jrk": {
+        "columnTitle": "2026 Apr",
+        "dataType": "Numeric",
+        "index": "4",
+        "isCategorical": false,
+        "name": "2026Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8cnh75k6a3m3wylb4dywvzt2l": {
+        "columnTitle": "1998 Feb",
+        "dataType": "Text",
+        "index": "342",
+        "isCategorical": false,
+        "name": "1998Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8jsvm48wflq46u7z9rcdwrph8": {
+        "columnTitle": "2018 Apr",
+        "dataType": "Numeric",
+        "index": "100",
+        "isCategorical": false,
+        "name": "2018Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8lzlzr69iyy8mtg2a39sevgcs": {
+        "columnTitle": "2009 Jun",
+        "dataType": "Numeric",
+        "index": "206",
+        "isCategorical": false,
+        "name": "2009Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8mxnbnh683d1em23h7mnyj91o": {
+        "columnTitle": "2015 May",
+        "dataType": "Numeric",
+        "index": "135",
+        "isCategorical": false,
+        "name": "2015May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8mzusdttprf62nhui869rc167": {
+        "columnTitle": "2024 Nov",
+        "dataType": "Numeric",
+        "index": "21",
+        "isCategorical": false,
+        "name": "2024Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8ohfskap19lx4vvcxmyarg355": {
+        "columnTitle": "2017 Oct",
+        "dataType": "Numeric",
+        "index": "106",
+        "isCategorical": false,
+        "name": "2017Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8qn82p8oj88fwv6dg7okv9ccu": {
+        "columnTitle": "1998 Dec",
+        "dataType": "Text",
+        "index": "332",
+        "isCategorical": false,
+        "name": "1998Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8ru38r8jgj5e8nxeqs8ptjwl5": {
+        "columnTitle": "2014 Feb",
+        "dataType": "Numeric",
+        "index": "150",
+        "isCategorical": false,
+        "name": "2014Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8siutdqhon819zxp8riunanz5": {
+        "columnTitle": "2000 Jul",
+        "dataType": "Text",
+        "index": "313",
+        "isCategorical": false,
+        "name": "2000Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8sjpa3foftlwdeg81miogsy2i": {
+        "columnTitle": "1995 Dec",
+        "dataType": "Text",
+        "index": "368",
+        "isCategorical": false,
+        "name": "1995Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8tr3di3fptqneo89clamapjcs": {
+        "columnTitle": "2020 Dec",
+        "dataType": "Numeric",
+        "index": "68",
+        "isCategorical": false,
+        "name": "2020Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8v2161nbcd9rnbdis1ufdlz1v": {
+        "columnTitle": "2008 Aug",
+        "dataType": "Numeric",
+        "index": "216",
+        "isCategorical": false,
+        "name": "2008Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8vk434oqs73z2b34z2zwc9nug": {
+        "columnTitle": "1988 Feb",
+        "dataType": "Text",
+        "index": "462",
+        "isCategorical": false,
+        "name": "1988Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8w5qjswvurxoocek26aufwd4q": {
+        "columnTitle": "2009 May",
+        "dataType": "Numeric",
+        "index": "207",
+        "isCategorical": false,
+        "name": "2009May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_8yx08l99r1giurnli2vacr58m": {
+        "columnTitle": "1989 May",
+        "dataType": "Text",
+        "index": "447",
+        "isCategorical": false,
+        "name": "1989May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_910rkb22xgpjkrvuvfav396kb": {
+        "columnTitle": "1993 May",
+        "dataType": "Text",
+        "index": "399",
+        "isCategorical": false,
+        "name": "1993May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9857anajh5c360s3fjx8anhxk": {
+        "columnTitle": "1992 Dec",
+        "dataType": "Text",
+        "index": "404",
+        "isCategorical": false,
+        "name": "1992Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_98cs0ealnjp2lvegesesd0rzw": {
+        "columnTitle": "1996 Apr",
+        "dataType": "Text",
+        "index": "364",
+        "isCategorical": false,
+        "name": "1996Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_98dsp9tja4jzgbg9uhdgukd8c": {
+        "columnTitle": "2007 Oct",
+        "dataType": "Numeric",
+        "index": "226",
+        "isCategorical": false,
+        "name": "2007Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_98iwin6n29cne6uf91omyhfcc": {
+        "columnTitle": "2010 Feb",
+        "dataType": "Numeric",
+        "index": "198",
+        "isCategorical": false,
+        "name": "2010Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9b3vky3qrmr1wzirxpr9j0upw": {
+        "columnTitle": "2008 Oct",
+        "dataType": "Numeric",
+        "index": "214",
+        "isCategorical": false,
+        "name": "2008Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9e52oymce1mns54utlvosah9j": {
+        "columnTitle": "2005 Mar",
+        "dataType": "Text",
+        "index": "257",
+        "isCategorical": false,
+        "name": "2005Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9gbie9iy69riup16etsu2vmhl": {
+        "columnTitle": "2003 Jun",
+        "dataType": "Text",
+        "index": "278",
+        "isCategorical": false,
+        "name": "2003Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9gest1zoe9c72f75tcjmdvx4a": {
+        "columnTitle": "1990 Feb",
+        "dataType": "Text",
+        "index": "438",
+        "isCategorical": false,
+        "name": "1990Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9hhgbq4hlh0t4cnau5ee1zpzh": {
+        "columnTitle": "2017 Jun",
+        "dataType": "Numeric",
+        "index": "110",
+        "isCategorical": false,
+        "name": "2017Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9hq2twijdbj9ou4fw9dgw32ix": {
+        "columnTitle": "1989 Aug",
+        "dataType": "Text",
+        "index": "444",
+        "isCategorical": false,
+        "name": "1989Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9j4plqmveuifamjvks3hu261a": {
+        "columnTitle": "2019 Oct",
+        "dataType": "Numeric",
+        "index": "82",
+        "isCategorical": false,
+        "name": "2019Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9j52kt91clxr3v1jh5t6ezxuv": {
+        "columnTitle": "2018 Jan",
+        "dataType": "Numeric",
+        "index": "103",
+        "isCategorical": false,
+        "name": "2018Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9k1te490rcb6k2oi5v7yue6a0": {
+        "columnTitle": "2023 Jan",
+        "dataType": "Numeric",
+        "index": "43",
+        "isCategorical": false,
+        "name": "2023Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9o7f845zeo8kapokqa7u1myuj": {
+        "columnTitle": "2001 Apr",
+        "dataType": "Text",
+        "index": "304",
+        "isCategorical": false,
+        "name": "2001Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9oxe9wmv5lp9vzbds918agevi": {
+        "columnTitle": "2019 Jan",
+        "dataType": "Numeric",
+        "index": "91",
+        "isCategorical": false,
+        "name": "2019Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9p5tc70azydq0nut7beidamin": {
+        "columnTitle": "2015 Dec",
+        "dataType": "Numeric",
+        "index": "128",
+        "isCategorical": false,
+        "name": "2015Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9r4ae6itay8yzf9ugfl48tpw5": {
+        "columnTitle": "2006 Dec",
+        "dataType": "Text",
+        "index": "236",
+        "isCategorical": false,
+        "name": "2006Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9ssw7nzjcp5t6y5wrnouit3m1": {
+        "columnTitle": "1997 Nov",
+        "dataType": "Text",
+        "index": "345",
+        "isCategorical": false,
+        "name": "1997Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9tmucpz2ny08auobgfzw2rwmx": {
+        "columnTitle": "1994 Apr",
+        "dataType": "Text",
+        "index": "388",
+        "isCategorical": false,
+        "name": "1994Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9u5xzingil38aoumakqb28pgs": {
+        "columnTitle": "1991 Oct",
+        "dataType": "Text",
+        "index": "418",
+        "isCategorical": false,
+        "name": "1991Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9u8d4eu061jfupe6c4gyu2d10": {
+        "columnTitle": "2005 Apr",
+        "dataType": "Text",
+        "index": "256",
+        "isCategorical": false,
+        "name": "2005Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9uusfmqs6odr0j1ct2vu4x990": {
+        "columnTitle": "2017 Aug",
+        "dataType": "Numeric",
+        "index": "108",
+        "isCategorical": false,
+        "name": "2017Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9vmzvzzl12sh33d023ruhqy32": {
+        "columnTitle": "2012 Oct",
+        "dataType": "Numeric",
+        "index": "166",
+        "isCategorical": false,
+        "name": "2012Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_9zvn5zg3z5kvlolohhcmmlfkh": {
+        "columnTitle": "2023 Jun",
+        "dataType": "Numeric",
+        "index": "38",
+        "isCategorical": false,
+        "name": "2023Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_a13gdt12jojqok0bpwwwe03b8": {
+        "columnTitle": "1992 May",
+        "dataType": "Text",
+        "index": "411",
+        "isCategorical": false,
+        "name": "1992May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_a2ie6v6z2nfbvt1ow5ruaokae": {
+        "columnTitle": "2007 Jun",
+        "dataType": "Numeric",
+        "index": "230",
+        "isCategorical": false,
+        "name": "2007Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_a3iyj1hz5yc95jlwgakuql0r7": {
+        "columnTitle": "2005 Feb",
+        "dataType": "Text",
+        "index": "258",
+        "isCategorical": false,
+        "name": "2005Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_a4uevdegwqxg0s14kczagyoat": {
+        "columnTitle": "2018 Feb",
+        "dataType": "Numeric",
+        "index": "102",
+        "isCategorical": false,
+        "name": "2018Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_a5fursq40pw33zy22hkqipay9": {
+        "columnTitle": "2010 Sep",
+        "dataType": "Numeric",
+        "index": "191",
+        "isCategorical": false,
+        "name": "2010Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_a7lkc2809qeimh2kxf2fjct6m": {
+        "columnTitle": "2025 Aug",
+        "dataType": "Numeric",
+        "index": "12",
+        "isCategorical": false,
+        "name": "2025Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_a8yf24h3dne74pk6nw644e9qk": {
+        "columnTitle": "2007 May",
+        "dataType": "Numeric",
+        "index": "231",
+        "isCategorical": false,
+        "name": "2007May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_aad2gkup6ptrok43zykkogxkh": {
+        "columnTitle": "1999 May",
+        "dataType": "Text",
+        "index": "327",
+        "isCategorical": false,
+        "name": "1999May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_aco4ti4wrq8ak6e9qt1ra071t": {
+        "columnTitle": "2019 Aug",
+        "dataType": "Numeric",
+        "index": "84",
+        "isCategorical": false,
+        "name": "2019Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ad37o3qg1wh0h0my159n4nhxx": {
+        "columnTitle": "2011 Feb",
+        "dataType": "Numeric",
+        "index": "186",
+        "isCategorical": false,
+        "name": "2011Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_adaf9u3blo1bjdr9kt2nf7ha6": {
+        "columnTitle": "2010 Apr",
+        "dataType": "Numeric",
+        "index": "196",
+        "isCategorical": false,
+        "name": "2010Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ado0kgwtbv2jthmwlaqj67z71": {
+        "columnTitle": "2011 Jul",
+        "dataType": "Numeric",
+        "index": "181",
+        "isCategorical": false,
+        "name": "2011Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_aexgxpio6khr863f5g2c8lj54": {
+        "columnTitle": "1998 Apr",
+        "dataType": "Text",
+        "index": "340",
+        "isCategorical": false,
+        "name": "1998Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_afzd0m6avvx2spu0kr6nc0vjd": {
+        "columnTitle": "2005 Oct",
+        "dataType": "Text",
+        "index": "250",
+        "isCategorical": false,
+        "name": "2005Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_aij93yrbny76zrnwatlzb3w99": {
+        "columnTitle": "1991 Mar",
+        "dataType": "Text",
+        "index": "425",
+        "isCategorical": false,
+        "name": "1991Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_aj4560oqfc92auuzhkvo1b4aa": {
+        "columnTitle": "1999 Aug",
+        "dataType": "Text",
+        "index": "324",
+        "isCategorical": false,
+        "name": "1999Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ali1c5yww2ac2cor29ab1i4yl": {
+        "columnTitle": "2006 May",
+        "dataType": "Text",
+        "index": "243",
+        "isCategorical": false,
+        "name": "2006May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_am8mvb1altdcpedbady8qxgug": {
+        "columnTitle": "1997 Aug",
+        "dataType": "Text",
+        "index": "348",
+        "isCategorical": false,
+        "name": "1997Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_an2d2spgr8owjzo9yoet8awje": {
+        "columnTitle": "2019 Sep",
+        "dataType": "Numeric",
+        "index": "83",
+        "isCategorical": false,
+        "name": "2019Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_aod1uldwb5r9ccu5xtpgendnv": {
+        "columnTitle": "2019 Jun",
+        "dataType": "Numeric",
+        "index": "86",
+        "isCategorical": false,
+        "name": "2019Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_aopwzilac8xtd555uljjd3wyp": {
+        "columnTitle": "2000 Oct",
+        "dataType": "Text",
+        "index": "310",
+        "isCategorical": false,
+        "name": "2000Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ap77byzstat7gww89j639zhie": {
+        "columnTitle": "2024 Sep",
+        "dataType": "Numeric",
+        "index": "23",
+        "isCategorical": false,
+        "name": "2024Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ap95nm24f7e7l2ktbr3mf0tve": {
+        "columnTitle": "1996 Feb",
+        "dataType": "Text",
+        "index": "366",
+        "isCategorical": false,
+        "name": "1996Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ariieurded5jnyaj9u3cjv529": {
+        "columnTitle": "2000 Mar",
+        "dataType": "Text",
+        "index": "317",
+        "isCategorical": false,
+        "name": "2000Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_atvyk03z31tysd439j3ilzjvf": {
+        "columnTitle": "2003 Jul",
+        "dataType": "Text",
+        "index": "277",
+        "isCategorical": false,
+        "name": "2003Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_avuvvl37p7vpqy454c0dv0l2m": {
+        "columnTitle": "2023 Nov",
+        "dataType": "Numeric",
+        "index": "33",
+        "isCategorical": false,
+        "name": "2023Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_awyb12if2aq44g3pmje9ql5l0": {
+        "columnTitle": "2016 Jan",
+        "dataType": "Numeric",
+        "index": "127",
+        "isCategorical": false,
+        "name": "2016Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ax2rwjobf213emmbnltno7qj0": {
+        "columnTitle": "2014 Jan",
+        "dataType": "Numeric",
+        "index": "151",
+        "isCategorical": false,
+        "name": "2014Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ayqea5m0nxb77lprwbhaaw12e": {
+        "columnTitle": "2013 Aug",
+        "dataType": "Numeric",
+        "index": "156",
+        "isCategorical": false,
+        "name": "2013Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_azvtf6z2n09t4oh4xe3m1vvka": {
+        "columnTitle": "1988 Sep",
+        "dataType": "Text",
+        "index": "455",
+        "isCategorical": false,
+        "name": "1988Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b007odawprhclg7l2shuoh786": {
+        "columnTitle": "2012 Mar",
+        "dataType": "Numeric",
+        "index": "173",
+        "isCategorical": false,
+        "name": "2012Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b0d9grvw58hwvngb2glvebywy": {
+        "columnTitle": "2021 Feb",
+        "dataType": "Numeric",
+        "index": "66",
+        "isCategorical": false,
+        "name": "2021Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b1834zqglevmhfz2ka4c48x00": {
+        "columnTitle": "2012 Dec",
+        "dataType": "Numeric",
+        "index": "164",
+        "isCategorical": false,
+        "name": "2012Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b1z5856si1b50a0x35ahw5asf": {
+        "columnTitle": "1999 Jan",
+        "dataType": "Text",
+        "index": "331",
+        "isCategorical": false,
+        "name": "1999Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b2qkukhxwf8g78mgz9i7qei46": {
+        "columnTitle": "1988 Jan",
+        "dataType": "Text",
+        "index": "463",
+        "isCategorical": false,
+        "name": "1988Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b2zs7g681uo67m47aj8qq6m2f": {
+        "columnTitle": "2013 Mar",
+        "dataType": "Numeric",
+        "index": "161",
+        "isCategorical": false,
+        "name": "2013Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b3eoyvbmqhv9j8laiqqq3zgty": {
+        "columnTitle": "2004 Apr",
+        "dataType": "Text",
+        "index": "268",
+        "isCategorical": false,
+        "name": "2004Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b4anfjzhhs1etpnzjirzovqew": {
+        "columnTitle": "1997 May",
+        "dataType": "Text",
+        "index": "351",
+        "isCategorical": false,
+        "name": "1997May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b4ejpsaacoogtl76iwz96urkp": {
+        "columnTitle": "1997 Jun",
+        "dataType": "Text",
+        "index": "350",
+        "isCategorical": false,
+        "name": "1997Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b4m2dzby0ebfk9s3l87k9ajm8": {
+        "columnTitle": "1991 Nov",
+        "dataType": "Text",
+        "index": "417",
+        "isCategorical": false,
+        "name": "1991Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b5zo3l504hs8opaxgp9398gl6": {
+        "columnTitle": "2018 May",
+        "dataType": "Numeric",
+        "index": "99",
+        "isCategorical": false,
+        "name": "2018May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b61lgworbjn4u93zbaism0mxh": {
+        "columnTitle": "2011 Jun",
+        "dataType": "Numeric",
+        "index": "182",
+        "isCategorical": false,
+        "name": "2011Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_b6ojnq30uxoekmm3qvb52xdur": {
+        "columnTitle": "2007 Nov",
+        "dataType": "Numeric",
+        "index": "225",
+        "isCategorical": false,
+        "name": "2007Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_battlsf18tdt0591yq9fc3ei5": {
+        "columnTitle": "1992 Sep",
+        "dataType": "Text",
+        "index": "407",
+        "isCategorical": false,
+        "name": "1992Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bcrdugfwrs5tw2ay2q984bwba": {
+        "columnTitle": "1998 Sep",
+        "dataType": "Text",
+        "index": "335",
+        "isCategorical": false,
+        "name": "1998Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bcxof9h8m0hunrpgjctoxhq22": {
+        "columnTitle": "2006 Apr",
+        "dataType": "Text",
+        "index": "244",
+        "isCategorical": false,
+        "name": "2006Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_belzomp0r18r4x6ry0lcq4qpy": {
+        "columnTitle": "2025 Apr",
+        "dataType": "Numeric",
+        "index": "16",
+        "isCategorical": false,
+        "name": "2025Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bg0qxeu1m4ukcy0x270q515zh": {
+        "columnTitle": "2004 Aug",
+        "dataType": "Text",
+        "index": "264",
+        "isCategorical": false,
+        "name": "2004Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bggdhwyzb5i6ctztgfjdec69y": {
+        "columnTitle": "2019 Dec",
+        "dataType": "Numeric",
+        "index": "80",
+        "isCategorical": false,
+        "name": "2019Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bgwpnf2feh8raoun81rhgm9fj": {
+        "columnTitle": "2018 Oct",
+        "dataType": "Numeric",
+        "index": "94",
+        "isCategorical": false,
+        "name": "2018Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bhj28xxqsbuwnx39wyaydinhl": {
+        "columnTitle": "2018 Mar",
+        "dataType": "Numeric",
+        "index": "101",
+        "isCategorical": false,
+        "name": "2018Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bhtt3h8343donnui2qpcws6qv": {
+        "columnTitle": "2011 Apr",
+        "dataType": "Numeric",
+        "index": "184",
+        "isCategorical": false,
+        "name": "2011Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bjosafttfsllp3ldngd3v21sb": {
+        "columnTitle": "2006 Jan",
+        "dataType": "Text",
+        "index": "247",
+        "isCategorical": false,
+        "name": "2006Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_blpqht9vxhzit5m2cuako0a4e": {
+        "columnTitle": "2007 Sep",
+        "dataType": "Numeric",
+        "index": "227",
+        "isCategorical": false,
+        "name": "2007Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bluth0drsf3grssd9uepgeuf0": {
+        "columnTitle": "2011 Nov",
+        "dataType": "Numeric",
+        "index": "177",
+        "isCategorical": false,
+        "name": "2011Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bm2463hd6txo3up7eldw1nqds": {
+        "columnTitle": "2008 Mar",
+        "dataType": "Numeric",
+        "index": "221",
+        "isCategorical": false,
+        "name": "2008Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bmkudiol2y7thr4bcxpnz30t1": {
+        "columnTitle": "2001 Sep",
+        "dataType": "Text",
+        "index": "299",
+        "isCategorical": false,
+        "name": "2001Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_boncsh0ntvtfavns7o5dd6c6n": {
+        "columnTitle": "2019 Nov",
+        "dataType": "Numeric",
+        "index": "81",
+        "isCategorical": false,
+        "name": "2019Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bra2mr7a58y73wtxmki2qxhnp": {
+        "columnTitle": "2010 Jan",
+        "dataType": "Numeric",
+        "index": "199",
+        "isCategorical": false,
+        "name": "2010Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bri8vqqtgvcbajq6zepxhcaat": {
+        "columnTitle": "2016 Sep",
+        "dataType": "Numeric",
+        "index": "119",
+        "isCategorical": false,
+        "name": "2016Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_brvvn3dhay3n9zdiddqpjqaww": {
+        "columnTitle": "2011 Aug",
+        "dataType": "Numeric",
+        "index": "180",
+        "isCategorical": false,
+        "name": "2011Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_btlfr126iws07azafpjkbt7j7": {
+        "columnTitle": "2023 Jul",
+        "dataType": "Numeric",
+        "index": "37",
+        "isCategorical": false,
+        "name": "2023Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_buijomsd0ujichiaxhh0jmc7v": {
+        "columnTitle": "2025 Jan",
+        "dataType": "Numeric",
+        "index": "19",
+        "isCategorical": false,
+        "name": "2025Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_burrrzy79or8sg4e8fhw8g6mv": {
+        "columnTitle": "2011 Sep",
+        "dataType": "Numeric",
+        "index": "179",
+        "isCategorical": false,
+        "name": "2011Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bv8avg50ium8nu3hxqkn0yu8n": {
+        "columnTitle": "2009 Jul",
+        "dataType": "Numeric",
+        "index": "205",
+        "isCategorical": false,
+        "name": "2009Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bvoghe55aesccofbitopb2aic": {
+        "columnTitle": "2026 Jul",
+        "dataType": "Numeric",
+        "index": "1",
+        "isCategorical": false,
+        "name": "2026Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bwm4tqj8smnwyyoqfn6dydrvd": {
+        "columnTitle": "2022 Jul",
+        "dataType": "Numeric",
+        "index": "49",
+        "isCategorical": false,
+        "name": "2022Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bx4wp91ecomkvexrusslgjy19": {
+        "columnTitle": "2009 Oct",
+        "dataType": "Numeric",
+        "index": "202",
+        "isCategorical": false,
+        "name": "2009Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bxjzyyukr1b7kkavahswqsxdy": {
+        "columnTitle": "1991 Aug",
+        "dataType": "Text",
+        "index": "420",
+        "isCategorical": false,
+        "name": "1991Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_by8kiywjh1qwy2o35vvmdkh87": {
+        "columnTitle": "1993 Aug",
+        "dataType": "Text",
+        "index": "396",
+        "isCategorical": false,
+        "name": "1993Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_by9hn3rf1qpwuoxo86o0e7tbh": {
+        "columnTitle": "1995 Jun",
+        "dataType": "Text",
+        "index": "374",
+        "isCategorical": false,
+        "name": "1995Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_bznn5uvavbmbr00ipu0b1mq6s": {
+        "columnTitle": "2021 Jun",
+        "dataType": "Numeric",
+        "index": "62",
+        "isCategorical": false,
+        "name": "2021Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_c0u1be5z8ekim0m0sqqwuocgj": {
+        "columnTitle": "2002 Mar",
+        "dataType": "Text",
+        "index": "293",
+        "isCategorical": false,
+        "name": "2002Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_c2277bug6u54ym9ja8vw2529t": {
+        "columnTitle": "1998 Oct",
+        "dataType": "Text",
+        "index": "334",
+        "isCategorical": false,
+        "name": "1998Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_c3ntq2ejapxc6rcwrduupf97o": {
+        "columnTitle": "2006 Oct",
+        "dataType": "Text",
+        "index": "238",
+        "isCategorical": false,
+        "name": "2006Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_c4in3hayfcknqo4ix315r8dex": {
+        "columnTitle": "2025 Nov",
+        "dataType": "Numeric",
+        "index": "9",
+        "isCategorical": false,
+        "name": "2025Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_c595w0qykoh9jr6jkypsy54ri": {
+        "columnTitle": "2004 Jun",
+        "dataType": "Text",
+        "index": "266",
+        "isCategorical": false,
+        "name": "2004Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_c78mrt10lmswyg5z5y5zth90r": {
+        "columnTitle": "2024 May",
+        "dataType": "Numeric",
+        "index": "27",
+        "isCategorical": false,
+        "name": "2024May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_c8nhestd2ds5tjqpo7lvtt4f7": {
+        "columnTitle": "2015 Jan",
+        "dataType": "Numeric",
+        "index": "139",
+        "isCategorical": false,
+        "name": "2015Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_c8w0eoahwzbsh8a2kcucqfh6u": {
+        "columnTitle": "2017 Dec",
+        "dataType": "Numeric",
+        "index": "104",
+        "isCategorical": false,
+        "name": "2017Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cb7mzxmgav7tx5985tk1tifih": {
+        "columnTitle": "2011 Mar",
+        "dataType": "Numeric",
+        "index": "185",
+        "isCategorical": false,
+        "name": "2011Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cbdkfwaaqguvxamvn0l7wxj3p": {
+        "columnTitle": "1996 Jun",
+        "dataType": "Text",
+        "index": "362",
+        "isCategorical": false,
+        "name": "1996Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cdoj4lc0e9m4rmv6jhat0wek1": {
+        "columnTitle": "2021 Jan",
+        "dataType": "Numeric",
+        "index": "67",
+        "isCategorical": false,
+        "name": "2021Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cgm52ql1f84x8v8pcg8cvt7dh": {
+        "columnTitle": "1997 Jan",
+        "dataType": "Text",
+        "index": "355",
+        "isCategorical": false,
+        "name": "1997Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cgv5jqs6hhnaop5hrlel058oq": {
+        "columnTitle": "2015 Apr",
+        "dataType": "Numeric",
+        "index": "136",
+        "isCategorical": false,
+        "name": "2015Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ch8qb25dsaramhrapkakm2dh2": {
+        "columnTitle": "1990 Oct",
+        "dataType": "Text",
+        "index": "430",
+        "isCategorical": false,
+        "name": "1990Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ci3tni0y6f3detbsvdy0bvpkj": {
+        "columnTitle": "2002 Jul",
+        "dataType": "Text",
+        "index": "289",
+        "isCategorical": false,
+        "name": "2002Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cj20oz9l5h8jagbk9kvf6ycex": {
+        "columnTitle": "2007 Apr",
+        "dataType": "Numeric",
+        "index": "232",
+        "isCategorical": false,
+        "name": "2007Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cjo4xz3nej3rlwctoczdy4fgr": {
+        "columnTitle": "2017 Mar",
+        "dataType": "Numeric",
+        "index": "113",
+        "isCategorical": false,
+        "name": "2017Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cjzocty59q51aj9q6bvd95dz7": {
+        "columnTitle": "2024 Jan",
+        "dataType": "Numeric",
+        "index": "31",
+        "isCategorical": false,
+        "name": "2024Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cnpg16moludapfxpiz8cox2ll": {
+        "columnTitle": "2022 May",
+        "dataType": "Numeric",
+        "index": "51",
+        "isCategorical": false,
+        "name": "2022May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cnrrtym6584nreme6pkwrfgr7": {
+        "columnTitle": "2026 Mar",
+        "dataType": "Numeric",
+        "index": "5",
+        "isCategorical": false,
+        "name": "2026Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cpruoo5ap38ey5cpjmtqrr5dz": {
+        "columnTitle": "2016 Dec",
+        "dataType": "Numeric",
+        "index": "116",
+        "isCategorical": false,
+        "name": "2016Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cq4mcttj3osw0fxhcoha3bsja": {
+        "columnTitle": "2014 May",
+        "dataType": "Numeric",
+        "index": "147",
+        "isCategorical": false,
+        "name": "2014May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_csxptaeilfhzqubgpyoc7rubn": {
+        "columnTitle": "2005 Nov",
+        "dataType": "Text",
+        "index": "249",
+        "isCategorical": false,
+        "name": "2005Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ctsbubmt7bg4gl8w0wd7sl0b7": {
+        "columnTitle": "2020 Apr",
+        "dataType": "Numeric",
+        "index": "76",
+        "isCategorical": false,
+        "name": "2020Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cuert0d0uvrltoya6viihy62v": {
+        "columnTitle": "1990 Aug",
+        "dataType": "Text",
+        "index": "432",
+        "isCategorical": false,
+        "name": "1990Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_cwuxq0iaj9y584k3ojyfg19c1": {
+        "columnTitle": "2023 May",
+        "dataType": "Numeric",
+        "index": "39",
+        "isCategorical": false,
+        "name": "2023May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_czp73asdzj8yjsd9mpy3ut99r": {
+        "columnTitle": "2020 Sep",
+        "dataType": "Numeric",
+        "index": "71",
+        "isCategorical": false,
+        "name": "2020Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_d2nfn68jiu1ej8c1nm4uhkbm0": {
+        "columnTitle": "2013 Apr",
+        "dataType": "Numeric",
+        "index": "160",
+        "isCategorical": false,
+        "name": "2013Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_d2xkhuswt67u02q3mkbol4xgx": {
+        "columnTitle": "2000 May",
+        "dataType": "Text",
+        "index": "315",
+        "isCategorical": false,
+        "name": "2000May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_d3ymuzwfbod6ua36005mewg6u": {
+        "columnTitle": "2011 Jan",
+        "dataType": "Numeric",
+        "index": "187",
+        "isCategorical": false,
+        "name": "2011Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_d5ejnj7xhi6fl2qxv1tze3fm1": {
+        "columnTitle": "1994 Jun",
+        "dataType": "Text",
+        "index": "386",
+        "isCategorical": false,
+        "name": "1994Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_d5tn3zd3jakketyxl3l68se2o": {
+        "columnTitle": "2014 Mar",
+        "dataType": "Numeric",
+        "index": "149",
+        "isCategorical": false,
+        "name": "2014Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_d6whpkeiedld8o6m1parqcwj3": {
+        "columnTitle": "1999 Mar",
+        "dataType": "Text",
+        "index": "329",
+        "isCategorical": false,
+        "name": "1999Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_d8e2oxxi7wrcth5bp2198jfmr": {
+        "columnTitle": "2009 Dec",
+        "dataType": "Numeric",
+        "index": "200",
+        "isCategorical": false,
+        "name": "2009Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dadrnsyrzsq3dm10u4v7z99fc": {
+        "columnTitle": "2024 Dec",
+        "dataType": "Numeric",
+        "index": "20",
+        "isCategorical": false,
+        "name": "2024Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_de280ipu9qdx49jd7tti2jmif": {
+        "columnTitle": "2022 Feb",
+        "dataType": "Numeric",
+        "index": "54",
+        "isCategorical": false,
+        "name": "2022Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_deay8oix4kjkskwzw5pdnfz3n": {
+        "columnTitle": "2021 Mar",
+        "dataType": "Numeric",
+        "index": "65",
+        "isCategorical": false,
+        "name": "2021Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_deo350doqstitp9hwmeigmuv9": {
+        "columnTitle": "1996 Nov",
+        "dataType": "Text",
+        "index": "357",
+        "isCategorical": false,
+        "name": "1996Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dihmeqwq0tgoh8tzox5gg3vbi": {
+        "columnTitle": "1998 Jun",
+        "dataType": "Text",
+        "index": "338",
+        "isCategorical": false,
+        "name": "1998Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dj31nxas6kpqw94rheut5iyr2": {
+        "columnTitle": "2022 Apr",
+        "dataType": "Numeric",
+        "index": "52",
+        "isCategorical": false,
+        "name": "2022Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_djrpai2vbnjtfcdo1w8rk95e": {
+        "columnTitle": "1993 Mar",
+        "dataType": "Text",
+        "index": "401",
+        "isCategorical": false,
+        "name": "1993Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dkn48uodx2h1d67l2j08wwix0": {
+        "columnTitle": "2025 Jul",
+        "dataType": "Numeric",
+        "index": "13",
+        "isCategorical": false,
+        "name": "2025Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dl63wyl3rbwofdfks1igr2bg1": {
+        "columnTitle": "2017 Nov",
+        "dataType": "Numeric",
+        "index": "105",
+        "isCategorical": false,
+        "name": "2017Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dlooqqcken4j3g3nzt33kw46o": {
+        "columnTitle": "2010 Dec",
+        "dataType": "Numeric",
+        "index": "188",
+        "isCategorical": false,
+        "name": "2010Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dmoo0y2ft568xytu8yg6c5lzo": {
+        "columnTitle": "2003 Oct",
+        "dataType": "Text",
+        "index": "274",
+        "isCategorical": false,
+        "name": "2003Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dmqhlqj9502qtxna8443me9z4": {
+        "columnTitle": "2017 May",
+        "dataType": "Numeric",
+        "index": "111",
+        "isCategorical": false,
+        "name": "2017May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dpduxkmbawmjwijvwmmnwat6g": {
+        "columnTitle": "2026 May",
+        "dataType": "Numeric",
+        "index": "3",
+        "isCategorical": false,
+        "name": "2026May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_drimlzrv4ng45zfsd4trmwjt2": {
+        "columnTitle": "1988 Aug",
+        "dataType": "Text",
+        "index": "456",
+        "isCategorical": false,
+        "name": "1988Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dt8qzhso24h0u9pa8kgftoz0v": {
+        "columnTitle": "1998 Jan",
+        "dataType": "Text",
+        "index": "343",
+        "isCategorical": false,
+        "name": "1998Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_duvbapibybcsl7gqbwdnt7fwv": {
+        "columnTitle": "2003 Nov",
+        "dataType": "Text",
+        "index": "273",
+        "isCategorical": false,
+        "name": "2003Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dvpoml4qbhm8uzcn7lub4glg": {
+        "columnTitle": "1990 Mar",
+        "dataType": "Text",
+        "index": "437",
+        "isCategorical": false,
+        "name": "1990Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dw5r00d3dlku3bjcwo2me9knm": {
+        "columnTitle": "2012 Jun",
+        "dataType": "Numeric",
+        "index": "170",
+        "isCategorical": false,
+        "name": "2012Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dxiqvuoryari2hy9bbhlp09op": {
+        "columnTitle": "2008 Feb",
+        "dataType": "Numeric",
+        "index": "222",
+        "isCategorical": false,
+        "name": "2008Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dxkvo3cadk7ptigejsaftcq8u": {
+        "columnTitle": "2005 Dec",
+        "dataType": "Text",
+        "index": "248",
+        "isCategorical": false,
+        "name": "2005Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dymnoc0tusswgty08wbd4pxm9": {
+        "columnTitle": "1989 Nov",
+        "dataType": "Text",
+        "index": "441",
+        "isCategorical": false,
+        "name": "1989Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_dzn39pdav3en3cpru4bvw0whe": {
+        "columnTitle": "2008 Jun",
+        "dataType": "Numeric",
+        "index": "218",
+        "isCategorical": false,
+        "name": "2008Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_e54xan8ffwchooqs6it29lc6e": {
+        "columnTitle": "2022 Jun",
+        "dataType": "Numeric",
+        "index": "50",
+        "isCategorical": false,
+        "name": "2022Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_e6zg79kcn3w8mic8pqpk62lpm": {
+        "columnTitle": "1997 Dec",
+        "dataType": "Text",
+        "index": "344",
+        "isCategorical": false,
+        "name": "1997Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_e7kv2wn80na9oqudhkojbqbwf": {
+        "columnTitle": "2011 Oct",
+        "dataType": "Numeric",
+        "index": "178",
+        "isCategorical": false,
+        "name": "2011Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_e80dqmgffn8dn9wj42g4varzk": {
+        "columnTitle": "2003 Jan",
+        "dataType": "Text",
+        "index": "283",
+        "isCategorical": false,
+        "name": "2003Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_eal26xsp5cqg63pfpmfymu8lm": {
+        "columnTitle": "1993 Oct",
+        "dataType": "Text",
+        "index": "394",
+        "isCategorical": false,
+        "name": "1993Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_easnlp2omovmcx8ehyzpcvrzp": {
+        "columnTitle": "2004 Oct",
+        "dataType": "Text",
+        "index": "262",
+        "isCategorical": false,
+        "name": "2004Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ebnh97b12thbdqnyalvieu2g4": {
+        "columnTitle": "2017 Apr",
+        "dataType": "Numeric",
+        "index": "112",
+        "isCategorical": false,
+        "name": "2017Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ebzwkmxw4y0829bnhcddglpo": {
+        "columnTitle": "1999 Jul",
+        "dataType": "Text",
+        "index": "325",
+        "isCategorical": false,
+        "name": "1999Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_eev289l8gl68xqvf57yeuvmpo": {
+        "columnTitle": "1994 Nov",
+        "dataType": "Text",
+        "index": "381",
+        "isCategorical": false,
+        "name": "1994Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_eg6s3mg9jbjwgd2rltmm7l96w": {
+        "columnTitle": "2010 Oct",
+        "dataType": "Numeric",
+        "index": "190",
+        "isCategorical": false,
+        "name": "2010Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_eglfmpy0zcz0dgllle5ilohps": {
+        "columnTitle": "2019 Apr",
+        "dataType": "Numeric",
+        "index": "88",
+        "isCategorical": false,
+        "name": "2019Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_eig2om82x4aroxf9ozil056jb": {
+        "columnTitle": "2018 Nov",
+        "dataType": "Numeric",
+        "index": "93",
+        "isCategorical": false,
+        "name": "2018Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ejg1xtv6h9871vkbzwoix4fo7": {
+        "columnTitle": "2020 Oct",
+        "dataType": "Numeric",
+        "index": "70",
+        "isCategorical": false,
+        "name": "2020Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ejp3epu8cznctv49fpql1kgzq": {
+        "columnTitle": "2015 Aug",
+        "dataType": "Numeric",
+        "index": "132",
+        "isCategorical": false,
+        "name": "2015Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ekanf8ol555z0bwhrkver583m": {
+        "columnTitle": "2025 Sep",
+        "dataType": "Numeric",
+        "index": "11",
+        "isCategorical": false,
+        "name": "2025Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_elccgropeot7lirgajgky9z2z": {
+        "columnTitle": "2014 Jun",
+        "dataType": "Numeric",
+        "index": "146",
+        "isCategorical": false,
+        "name": "2014Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_emqt0k1dcvwi9fqao3u1tkskv": {
+        "columnTitle": "2004 Mar",
+        "dataType": "Text",
+        "index": "269",
+        "isCategorical": false,
+        "name": "2004Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_epj2mfqe7sbguozyjd07eet68": {
+        "columnTitle": "1997 Jul",
+        "dataType": "Text",
+        "index": "349",
+        "isCategorical": false,
+        "name": "1997Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_eu5k8b8oz6a75pf70fg61mcwx": {
+        "columnTitle": "2022 Mar",
+        "dataType": "Numeric",
+        "index": "53",
+        "isCategorical": false,
+        "name": "2022Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_euw28io2uzuaxsf07nv1nsv81": {
+        "columnTitle": "2024 Oct",
+        "dataType": "Numeric",
+        "index": "22",
+        "isCategorical": false,
+        "name": "2024Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_evdvkznuhhsd39d3sv4lgg80": {
+        "columnTitle": "2013 Dec",
+        "dataType": "Numeric",
+        "index": "152",
+        "isCategorical": false,
+        "name": "2013Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ewp97v40kmdonzj39aj5jtndw": {
+        "columnTitle": "2002 Jun",
+        "dataType": "Text",
+        "index": "290",
+        "isCategorical": false,
+        "name": "2002Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ezbfooc37tkvufr8rwpzjgvp3": {
+        "columnTitle": "1989 Jul",
+        "dataType": "Text",
+        "index": "445",
+        "isCategorical": false,
+        "name": "1989Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ezctbwm4133rrjz4kjmidfv4p": {
+        "columnTitle": "1988 Jun",
+        "dataType": "Text",
+        "index": "458",
+        "isCategorical": false,
+        "name": "1988Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ezhp15os26ludtl5e7rdrjk05": {
+        "columnTitle": "2025 Feb",
+        "dataType": "Numeric",
+        "index": "18",
+        "isCategorical": false,
+        "name": "2025Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_f1jltzu1ktu5wfobd26vjoakv": {
+        "columnTitle": "2016 Mar",
+        "dataType": "Numeric",
+        "index": "125",
+        "isCategorical": false,
+        "name": "2016Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_f1t1p7jn45izlj7yvw0fp8k3s": {
+        "columnTitle": "2023 Mar",
+        "dataType": "Numeric",
+        "index": "41",
+        "isCategorical": false,
+        "name": "2023Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_f4l8gvar85uyfw9gy6g5i0itl": {
+        "columnTitle": "2013 Sep",
+        "dataType": "Numeric",
+        "index": "155",
+        "isCategorical": false,
+        "name": "2013Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_gxwlv53bfsafeim5ginficfy": {
+        "columnTitle": "2021 Jul",
+        "dataType": "Numeric",
+        "index": "61",
+        "isCategorical": false,
+        "name": "2021Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ikfoba7tiq6feskf6up8p7cr": {
+        "columnTitle": "1988 Oct",
+        "dataType": "Text",
+        "index": "454",
+        "isCategorical": false,
+        "name": "1988Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_is3pput358zeh3z6j38tebi9": {
+        "columnTitle": "1989 Jan",
+        "dataType": "Text",
+        "index": "451",
+        "isCategorical": false,
+        "name": "1989Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ka8wtam14a87ritb1ktkz3od": {
+        "columnTitle": "1999 Jun",
+        "dataType": "Text",
+        "index": "326",
+        "isCategorical": false,
+        "name": "1999Jun",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_kgqy0125v5z20kmif8wpnba3": {
+        "columnTitle": "2004 Nov",
+        "dataType": "Text",
+        "index": "261",
+        "isCategorical": false,
+        "name": "2004Nov",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_lcicbp8rp7o3wan2edb1ibpf": {
+        "columnTitle": "2019 May",
+        "dataType": "Numeric",
+        "index": "87",
+        "isCategorical": false,
+        "name": "2019May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_lx7xfsue3uc4deg3zdhd5c6c": {
+        "columnTitle": "1996 Jul",
+        "dataType": "Text",
+        "index": "361",
+        "isCategorical": false,
+        "name": "1996Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_m7i7iib20khqut6c3tl20msj": {
+        "columnTitle": "2012 Jan",
+        "dataType": "Numeric",
+        "index": "175",
+        "isCategorical": false,
+        "name": "2012Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_mgkmd4kr6ugyj9kikr0bmtz3": {
+        "columnTitle": "1991 Feb",
+        "dataType": "Text",
+        "index": "426",
+        "isCategorical": false,
+        "name": "1991Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_myu163aqlbnlxdkos4jic9nl": {
+        "columnTitle": "1999 Oct",
+        "dataType": "Text",
+        "index": "322",
+        "isCategorical": false,
+        "name": "1999Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_ndrjb1qj5cardi5bwm4pgal5": {
+        "columnTitle": "2021 Dec",
+        "dataType": "Numeric",
+        "index": "56",
+        "isCategorical": false,
+        "name": "2021Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_nwhmdkcdgmvvamqwnbvs7k57": {
+        "columnTitle": "2024 Jul",
+        "dataType": "Numeric",
+        "index": "25",
+        "isCategorical": false,
+        "name": "2024Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_o9p59f6f8vpnh395nie0ofut": {
+        "columnTitle": "1996 Dec",
+        "dataType": "Text",
+        "index": "356",
+        "isCategorical": false,
+        "name": "1996Dec",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_pgfv77furxwli9gx5n3ype4z": {
+        "columnTitle": "2010 May",
+        "dataType": "Numeric",
+        "index": "195",
+        "isCategorical": false,
+        "name": "2010May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_qfjetb02jm4isz6hon90icos": {
+        "columnTitle": "2021 Oct",
+        "dataType": "Numeric",
+        "index": "58",
+        "isCategorical": false,
+        "name": "2021Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_r55sij098ilad2akinq377qd": {
+        "columnTitle": "2017 Jul",
+        "dataType": "Numeric",
+        "index": "109",
+        "isCategorical": false,
+        "name": "2017Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_r6pxkknsvkwc4w6gth7108dw": {
+        "columnTitle": "1988 Mar",
+        "dataType": "Text",
+        "index": "461",
+        "isCategorical": false,
+        "name": "1988Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_rir05brrtvxwlg1ht9ts2mi8": {
+        "columnTitle": "1997 Feb",
+        "dataType": "Text",
+        "index": "354",
+        "isCategorical": false,
+        "name": "1997Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_slog4lpwjukf1lqnnk71xlx6": {
+        "columnTitle": "1999 Sep",
+        "dataType": "Text",
+        "index": "323",
+        "isCategorical": false,
+        "name": "1999Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_srhi55tt684s4bn1lqq9jmrz": {
+        "columnTitle": "2003 Feb",
+        "dataType": "Text",
+        "index": "282",
+        "isCategorical": false,
+        "name": "2003Feb",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_v6bdvxcswbpr85b84mzckfpu": {
+        "columnTitle": "1994 Jul",
+        "dataType": "Text",
+        "index": "385",
+        "isCategorical": false,
+        "name": "1994Jul",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_vr7gb2bm5lmcgid65kszvt4q": {
+        "columnTitle": "2024 Apr",
+        "dataType": "Numeric",
+        "index": "28",
+        "isCategorical": false,
+        "name": "2024Apr",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_w5u4awi1upmmss2x2jbe2gu6": {
+        "columnTitle": "2013 Oct",
+        "dataType": "Numeric",
+        "index": "154",
+        "isCategorical": false,
+        "name": "2013Oct",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_wf6b2didmwkh83xxqnfp6wzb": {
+        "columnTitle": "2004 May",
+        "dataType": "Text",
+        "index": "267",
+        "isCategorical": false,
+        "name": "2004May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_wsmuzier7wzwwehaynplojw6": {
+        "columnTitle": "2017 Sep",
+        "dataType": "Numeric",
+        "index": "107",
+        "isCategorical": false,
+        "name": "2017Sep",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_xaznamo4tvr39fb7x6s68iof": {
+        "columnTitle": "1994 Jan",
+        "dataType": "Text",
+        "index": "391",
+        "isCategorical": false,
+        "name": "1994Jan",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_xvwensa6151obljb776mskje": {
+        "columnTitle": "2001 Aug",
+        "dataType": "Text",
+        "index": "300",
+        "isCategorical": false,
+        "name": "2001Aug",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_z2efr7532k22ueozsv7mkqfr": {
+        "columnTitle": "2001 Mar",
+        "dataType": "Text",
+        "index": "305",
+        "isCategorical": false,
+        "name": "2001Mar",
+        "unitOfMeasure": "Per Cent Per Annum"
+      },
+      "c_zgjqpd0xin0stuoigznzbntv": {
+        "columnTitle": "1996 May",
+        "dataType": "Text",
+        "index": "363",
+        "isCategorical": false,
+        "name": "1996May",
+        "unitOfMeasure": "Per Cent Per Annum"
+      }
+    },
+    "order": [
+      "c_4vmlw7ul8386j3616osdp4pov",
+      "c_bvoghe55aesccofbitopb2aic",
+      "c_5m1817v9lwfmha0rtu4ojexim",
+      "c_dpduxkmbawmjwijvwmmnwat6g",
+      "c_8bx95qqs0muxibr0e8dhf5jrk",
+      "c_cnrrtym6584nreme6pkwrfgr7",
+      "c_1pb35w6texcxr2j5o7fx6fk7h",
+      "c_80dc0kjyf90fmv2m227oh8yz9",
+      "c_75foxcp217ahbxvw6l1x7xo9a",
+      "c_c4in3hayfcknqo4ix315r8dex",
+      "c_53ynmzzclvp3odhv68946axlv",
+      "c_ekanf8ol555z0bwhrkver583m",
+      "c_a7lkc2809qeimh2kxf2fjct6m",
+      "c_dkn48uodx2h1d67l2j08wwix0",
+      "c_888sfb3cb0lodmdmq0hztfavh",
+      "c_87fzaqg1qqn27h2b9jifkdq2s",
+      "c_belzomp0r18r4x6ry0lcq4qpy",
+      "c_7lh3b662ymea4wekgsewv8zip",
+      "c_ezhp15os26ludtl5e7rdrjk05",
+      "c_buijomsd0ujichiaxhh0jmc7v",
+      "c_dadrnsyrzsq3dm10u4v7z99fc",
+      "c_8mzusdttprf62nhui869rc167",
+      "c_euw28io2uzuaxsf07nv1nsv81",
+      "c_ap77byzstat7gww89j639zhie",
+      "c_4p3fahj7zstn9kafqakjlcaoq",
+      "c_nwhmdkcdgmvvamqwnbvs7k57",
+      "c_3cemltydex4rgca5jngqc6tw9",
+      "c_c78mrt10lmswyg5z5y5zth90r",
+      "c_vr7gb2bm5lmcgid65kszvt4q",
+      "c_1zg1y67zbd9rxdou89f8tdy2g",
+      "c_7z7whoz9s0uqrl7mwm0xickoo",
+      "c_cjzocty59q51aj9q6bvd95dz7",
+      "c_6fuzuwc4bkdgi8k3bl4721ilf",
+      "c_avuvvl37p7vpqy454c0dv0l2m",
+      "c_5594gc97r8p3xmzsrvxvu7186",
+      "c_5etgvdn865hqap2cckoxxftku",
+      "c_2nlxmkvfkfclaz0trdr6cgqmi",
+      "c_btlfr126iws07azafpjkbt7j7",
+      "c_9zvn5zg3z5kvlolohhcmmlfkh",
+      "c_cwuxq0iaj9y584k3ojyfg19c1",
+      "c_80po4glgzzg85fs2662ewub8l",
+      "c_f1t1p7jn45izlj7yvw0fp8k3s",
+      "c_1yr7ga06iqw8o29u8scdyopga",
+      "c_9k1te490rcb6k2oi5v7yue6a0",
+      "c_7u65jbct9j1tsuipg4nrj5cvk",
+      "c_2nmso2kar4rl0ma3ykoxtfac8",
+      "c_13wcnqlo32ic79kfc7cqqw15b",
+      "c_1yci48dvitrb9yu2sahh16w7a",
+      "c_2xojpgh4p00yt0sxcbboonl0f",
+      "c_bwm4tqj8smnwyyoqfn6dydrvd",
+      "c_e54xan8ffwchooqs6it29lc6e",
+      "c_cnpg16moludapfxpiz8cox2ll",
+      "c_dj31nxas6kpqw94rheut5iyr2",
+      "c_eu5k8b8oz6a75pf70fg61mcwx",
+      "c_de280ipu9qdx49jd7tti2jmif",
+      "c_2nkbjeo24moz32p1ivi7zxxqg",
+      "c_ndrjb1qj5cardi5bwm4pgal5",
+      "c_7fxf5qkvkij7w9lpandj39pc9",
+      "c_qfjetb02jm4isz6hon90icos",
+      "c_335o6vve9jng5cywzs2hf0c1z",
+      "c_4qyf3zl3wzg2ar65d0ni0likn",
+      "c_gxwlv53bfsafeim5ginficfy",
+      "c_bznn5uvavbmbr00ipu0b1mq6s",
+      "c_43kpuhfr8vxyluo7lynif61b9",
+      "c_4y1bngbniz2rcq8grko22ahs0",
+      "c_deay8oix4kjkskwzw5pdnfz3n",
+      "c_b0d9grvw58hwvngb2glvebywy",
+      "c_cdoj4lc0e9m4rmv6jhat0wek1",
+      "c_8tr3di3fptqneo89clamapjcs",
+      "c_5pn64c6p3t782b2an1i3y5zk5",
+      "c_ejg1xtv6h9871vkbzwoix4fo7",
+      "c_czp73asdzj8yjsd9mpy3ut99r",
+      "c_6oemz61q5kqizd28990inhq0f",
+      "c_1qga7hli8r3be5laew0xd45mc",
+      "c_2xogzj3kfdfwrxiy26p09qdwf",
+      "c_4nlbdiodcgs5km1crdrtbnlyj",
+      "c_ctsbubmt7bg4gl8w0wd7sl0b7",
+      "c_71c0vxoehne6bz441duv5w2mg",
+      "c_3qmens3ocohhph11143dskt3q",
+      "c_236mxp1xwbxk2600asemgeyv0",
+      "c_bggdhwyzb5i6ctztgfjdec69y",
+      "c_boncsh0ntvtfavns7o5dd6c6n",
+      "c_9j4plqmveuifamjvks3hu261a",
+      "c_an2d2spgr8owjzo9yoet8awje",
+      "c_aco4ti4wrq8ak6e9qt1ra071t",
+      "c_2zpifmrv7176yh619h2260cvi",
+      "c_aod1uldwb5r9ccu5xtpgendnv",
+      "c_lcicbp8rp7o3wan2edb1ibpf",
+      "c_eglfmpy0zcz0dgllle5ilohps",
+      "c_3ap8n4ghl2cz3n670uxznoyph",
+      "c_4rlvku5yern04p82r4r3sawo5",
+      "c_9oxe9wmv5lp9vzbds918agevi",
+      "c_24m32cutwja5m58s4lnclmj6n",
+      "c_eig2om82x4aroxf9ozil056jb",
+      "c_bgwpnf2feh8raoun81rhgm9fj",
+      "c_2dw5ztyilhvujz89sslxs1k87",
+      "c_3egy6s7qzf943f9qsec2a3bq2",
+      "c_2p484ery8bnq5txehzf57mqid",
+      "c_6ds8bp83gpixiw1ai3sfrde9r",
+      "c_b5zo3l504hs8opaxgp9398gl6",
+      "c_8jsvm48wflq46u7z9rcdwrph8",
+      "c_bhj28xxqsbuwnx39wyaydinhl",
+      "c_a4uevdegwqxg0s14kczagyoat",
+      "c_9j52kt91clxr3v1jh5t6ezxuv",
+      "c_c8w0eoahwzbsh8a2kcucqfh6u",
+      "c_dl63wyl3rbwofdfks1igr2bg1",
+      "c_8ohfskap19lx4vvcxmyarg355",
+      "c_wsmuzier7wzwwehaynplojw6",
+      "c_9uusfmqs6odr0j1ct2vu4x990",
+      "c_r55sij098ilad2akinq377qd",
+      "c_9hhgbq4hlh0t4cnau5ee1zpzh",
+      "c_dmqhlqj9502qtxna8443me9z4",
+      "c_ebnh97b12thbdqnyalvieu2g4",
+      "c_cjo4xz3nej3rlwctoczdy4fgr",
+      "c_62ct3x948ap2s3hxdivmbbjrl",
+      "c_7kb50yj6su75xh6gxgdgelbah",
+      "c_cpruoo5ap38ey5cpjmtqrr5dz",
+      "c_1migu5hkhy5bmakk442phoao3",
+      "c_6fhs5ottpzl0f0kcs24njzv58",
+      "c_bri8vqqtgvcbajq6zepxhcaat",
+      "c_5kvqo8izlzv31tc430jeci86q",
+      "c_1pe0x60r6gqeuov0joprqbnne",
+      "c_56a0x8q3b1b7yjmx0nuer2lze",
+      "c_69he1socejj3n6z6yglgdqgyn",
+      "c_6httwp16frzq9bdyiqglrqbcq",
+      "c_f1jltzu1ktu5wfobd26vjoakv",
+      "c_35g3ji114cvbznrk9wpobwm30",
+      "c_awyb12if2aq44g3pmje9ql5l0",
+      "c_9p5tc70azydq0nut7beidamin",
+      "c_3vvbsrjtgv64afh661v78d0zw",
+      "c_1rcbpzyrg1610610sn1uon2xt",
+      "c_830d52e3m8jonaiigllvnh8k",
+      "c_ejp3epu8cznctv49fpql1kgzq",
+      "c_5hgbwjfsp3nttj18ipq0r1hbr",
+      "c_7bmi9vhusi3b8yokchnu3sbhz",
+      "c_8mxnbnh683d1em23h7mnyj91o",
+      "c_cgv5jqs6hhnaop5hrlel058oq",
+      "c_1vk9pnjkl3bs3mlfcotsldk4m",
+      "c_7rikkwx3uczfz7gyhfqy1joel",
+      "c_c8nhestd2ds5tjqpo7lvtt4f7",
+      "c_83gl2xprc3vyc7otirue9l5jr",
+      "c_3k5dswn7qoiq3qs7fg4lj1lei",
+      "c_4uaxsdzvoknn3vrlef7xsot5f",
+      "c_89ehz7g31x0dbhi6pornoymy2",
+      "c_7ud54v57mam7pwyij6u0st2uq",
+      "c_55t2pxjm90p3634xnefopudzi",
+      "c_elccgropeot7lirgajgky9z2z",
+      "c_cq4mcttj3osw0fxhcoha3bsja",
+      "c_5w3d06zy59ydi8h2dc09mirul",
+      "c_d5tn3zd3jakketyxl3l68se2o",
+      "c_8ru38r8jgj5e8nxeqs8ptjwl5",
+      "c_ax2rwjobf213emmbnltno7qj0",
+      "c_evdvkznuhhsd39d3sv4lgg80",
+      "c_38dsuwghpn5thuyn9n7zj6ngn",
+      "c_w5u4awi1upmmss2x2jbe2gu6",
+      "c_f4l8gvar85uyfw9gy6g5i0itl",
+      "c_ayqea5m0nxb77lprwbhaaw12e",
+      "c_2ofccqxm3qt1yw599yib4308d",
+      "c_7k6qw1mvekxqvw8f9yj8dly2z",
+      "c_53mcuf2xaftc1se0riugutuut",
+      "c_d2nfn68jiu1ej8c1nm4uhkbm0",
+      "c_b2zs7g681uo67m47aj8qq6m2f",
+      "c_683hdniq87qr3xr5h7ph7ojld",
+      "c_3p0bj7dp842krj4jqujr7doxi",
+      "c_b1834zqglevmhfz2ka4c48x00",
+      "c_7wmuuilbhlq2gsj9nz2y2n7um",
+      "c_9vmzvzzl12sh33d023ruhqy32",
+      "c_4vkf3c7kltlsqpm78jq7nu3hh",
+      "c_3gtrlsr6d5tob05o1mf0gmhrj",
+      "c_1sjgs7x3a9wxxej4erceagbdl",
+      "c_dw5r00d3dlku3bjcwo2me9knm",
+      "c_3tsc8j041jca740fuse9rxip8",
+      "c_2go33tes6is9sw318dbknc9vk",
+      "c_b007odawprhclg7l2shuoh786",
+      "c_5zgp0cy9xyybo66s89h1hdpsk",
+      "c_m7i7iib20khqut6c3tl20msj",
+      "c_4lz3w8id6qos6gte8r5nnxj2h",
+      "c_bluth0drsf3grssd9uepgeuf0",
+      "c_e7kv2wn80na9oqudhkojbqbwf",
+      "c_burrrzy79or8sg4e8fhw8g6mv",
+      "c_brvvn3dhay3n9zdiddqpjqaww",
+      "c_ado0kgwtbv2jthmwlaqj67z71",
+      "c_b61lgworbjn4u93zbaism0mxh",
+      "c_7wo0vxy9qv4oozq8253efmlq3",
+      "c_bhtt3h8343donnui2qpcws6qv",
+      "c_cb7mzxmgav7tx5985tk1tifih",
+      "c_ad37o3qg1wh0h0my159n4nhxx",
+      "c_d3ymuzwfbod6ua36005mewg6u",
+      "c_dlooqqcken4j3g3nzt33kw46o",
+      "c_2k8vj7vy7kcu30cqafsqfcx5",
+      "c_eg6s3mg9jbjwgd2rltmm7l96w",
+      "c_a5fursq40pw33zy22hkqipay9",
+      "c_383wbzb6w80oyjl3ymipu07sh",
+      "c_36n3uolxlbkhuhht4a5wsjqvq",
+      "c_5dd3wwtk39yupasklcy0kpbjg",
+      "c_pgfv77furxwli9gx5n3ype4z",
+      "c_adaf9u3blo1bjdr9kt2nf7ha6",
+      "c_3fnezto0m2lkg91jn7jhopikw",
+      "c_98iwin6n29cne6uf91omyhfcc",
+      "c_bra2mr7a58y73wtxmki2qxhnp",
+      "c_d8e2oxxi7wrcth5bp2198jfmr",
+      "c_3r6w4ztzzil5xjlbqcxp7eb3u",
+      "c_bx4wp91ecomkvexrusslgjy19",
+      "c_5tw9868b5e49r2llyp1tzg5yl",
+      "c_3wxcslnkjqmi13dtwrczw3pm3",
+      "c_bv8avg50ium8nu3hxqkn0yu8n",
+      "c_8lzlzr69iyy8mtg2a39sevgcs",
+      "c_8w5qjswvurxoocek26aufwd4q",
+      "c_31ho428cxj371y46htmb6zvfz",
+      "c_6b2lwlz9jyjqpsibhaoy7zg6o",
+      "c_3ouv8rperurds509cg0s37t4v",
+      "c_69z101mp1fh15q9elnzg0e7be",
+      "c_6qdrrwdyvv6psp4ui4d69y09",
+      "c_2ypusf2y7t21232xg3mwrlm89",
+      "c_9b3vky3qrmr1wzirxpr9j0upw",
+      "c_6jkxi95dt85wi0gp27sr4dp7q",
+      "c_8v2161nbcd9rnbdis1ufdlz1v",
+      "c_4omhea4umezgb60pb7xy85swf",
+      "c_dzn39pdav3en3cpru4bvw0whe",
+      "c_1zn6imemblyy1jzrnhzo6klpn",
+      "c_7auefp33emxsdspu3ujwepr2b",
+      "c_bm2463hd6txo3up7eldw1nqds",
+      "c_dxiqvuoryari2hy9bbhlp09op",
+      "c_5hgkqknk93of12q63f005ee9z",
+      "c_63c9pgqgstubnyye2nsrll2tm",
+      "c_b6ojnq30uxoekmm3qvb52xdur",
+      "c_98dsp9tja4jzgbg9uhdgukd8c",
+      "c_blpqht9vxhzit5m2cuako0a4e",
+      "c_53rsbmo3rr1lzdpe2t4elbr48",
+      "c_4a7o7qh9o6wvuvt0zyo0puwdg",
+      "c_a2ie6v6z2nfbvt1ow5ruaokae",
+      "c_a8yf24h3dne74pk6nw644e9qk",
+      "c_cj20oz9l5h8jagbk9kvf6ycex",
+      "c_4375p43b5uzam4flxr64smn79",
+      "c_6l6iexvb5zwtwlpozamoqq9iy",
+      "c_5n5iyewtjvoq261lh3b1aj89f",
+      "c_9r4ae6itay8yzf9ugfl48tpw5",
+      "c_2bap0dmcnbavukjdfeum3hzzz",
+      "c_c3ntq2ejapxc6rcwrduupf97o",
+      "c_70cteaerlkv4xud3t514y1ipn",
+      "c_1fyflb537ftgsa209r0xmuofk",
+      "c_3s5sgy0zukt938zxs293kk7vx",
+      "c_1p02nr5lo9vjwpku921rhm3ce",
+      "c_ali1c5yww2ac2cor29ab1i4yl",
+      "c_bcxof9h8m0hunrpgjctoxhq22",
+      "c_4dobvros75zdgibivkfkz5qvu",
+      "c_83kivahhcxuafdh9fx46fhtox",
+      "c_bjosafttfsllp3ldngd3v21sb",
+      "c_dxkvo3cadk7ptigejsaftcq8u",
+      "c_csxptaeilfhzqubgpyoc7rubn",
+      "c_afzd0m6avvx2spu0kr6nc0vjd",
+      "c_89nfjzwb3b6ln7uotf64zgdwo",
+      "c_1cwf7dccjs6iao9nweg1hp6ev",
+      "c_6dgde66c3fuk56udmhws0d0s8",
+      "c_3ikx2l9ejxjuy4muxltil3mnz",
+      "c_7azplimin6a7o6qms2yz5pe4y",
+      "c_9u8d4eu061jfupe6c4gyu2d10",
+      "c_9e52oymce1mns54utlvosah9j",
+      "c_a3iyj1hz5yc95jlwgakuql0r7",
+      "c_38yyoxxi3pdespthcvdv4znmp",
+      "c_2ryq28nrr71bjt5f6y3vdpad4",
+      "c_kgqy0125v5z20kmif8wpnba3",
+      "c_easnlp2omovmcx8ehyzpcvrzp",
+      "c_46oyrokdgkap5a1sco6knrn8z",
+      "c_bg0qxeu1m4ukcy0x270q515zh",
+      "c_6kz3prdqaky0etmy6ndr14qxu",
+      "c_c595w0qykoh9jr6jkypsy54ri",
+      "c_wf6b2didmwkh83xxqnfp6wzb",
+      "c_b3eoyvbmqhv9j8laiqqq3zgty",
+      "c_emqt0k1dcvwi9fqao3u1tkskv",
+      "c_26dn2sv32auo00h8aap76lups",
+      "c_3ldkg0nv4aeymx3u2hxq6cdk1",
+      "c_2hdj9e00yb83239p2lw7jhiqu",
+      "c_duvbapibybcsl7gqbwdnt7fwv",
+      "c_dmoo0y2ft568xytu8yg6c5lzo",
+      "c_5biixa1ncz85g4pny81c66q76",
+      "c_4si0w0gy0nm3xh173adejr1y2",
+      "c_atvyk03z31tysd439j3ilzjvf",
+      "c_9gbie9iy69riup16etsu2vmhl",
+      "c_1rxmqoemixfhwif8155355sh2",
+      "c_1o4b2ohpqbhbug1404m64dqxw",
+      "c_3frby0snjipod39alan5gobth",
+      "c_srhi55tt684s4bn1lqq9jmrz",
+      "c_e80dqmgffn8dn9wj42g4varzk",
+      "c_2qb393qkqpexbxyx4fccil9fd",
+      "c_6di2yzdfkwu4cgzjnvppolwtv",
+      "c_2jh75v7rnnbf8rh7lwm46r1y",
+      "c_57w4fw09p2zdnbg8ze9al99pj",
+      "c_8107kxk81rvnmsv4dc1vzjdgf",
+      "c_ci3tni0y6f3detbsvdy0bvpkj",
+      "c_ewp97v40kmdonzj39aj5jtndw",
+      "c_7nepxtz9mznho281l9zt3s38o",
+      "c_1u5zj5rj5yhq17fz4tg8ooi1v",
+      "c_c0u1be5z8ekim0m0sqqwuocgj",
+      "c_8b78lur5hjr6fx08c8rk0j8u0",
+      "c_6yt5x46ro990vlzep5217owec",
+      "c_569nd2j1ohu7j93i5pml8q38d",
+      "c_5ii1wtoznoz1i8dwt4104dq4p",
+      "c_3xzvk0ej4p07o6zemjga95xgh",
+      "c_bmkudiol2y7thr4bcxpnz30t1",
+      "c_xvwensa6151obljb776mskje",
+      "c_1dj53bvruck4wm15jn261ffmx",
+      "c_7rae1rgn6blqpq6p4omd6b3sx",
+      "c_2gw9o5lkxv6k1rcepbff5rk0l",
+      "c_9o7f845zeo8kapokqa7u1myuj",
+      "c_z2efr7532k22ueozsv7mkqfr",
+      "c_39jfyda0xeigcie4ytccjpke9",
+      "c_73fy45nybdqamr1618sec8cjg",
+      "c_2xzlzj8dltkfg5zozsnzb99sr",
+      "c_8a2k78avl85eyj1b3c1cevf88",
+      "c_aopwzilac8xtd555uljjd3wyp",
+      "c_5xmphzr3oe4pkl0e3yh4zak7i",
+      "c_1qnhb244fgzts3qi6qujbzoqe",
+      "c_8siutdqhon819zxp8riunanz5",
+      "c_5pkqade14nf72cbuli5ynso1w",
+      "c_d2xkhuswt67u02q3mkbol4xgx",
+      "c_4lv37cvu1om1a8omgj3zu85z6",
+      "c_ariieurded5jnyaj9u3cjv529",
+      "c_607lbxkjxkixjjfgknqu97618",
+      "c_2ro2ajst2selsdvbix48jiez9",
+      "c_1d44d8bghu1ec3nb3uo3ipdwa",
+      "c_3uxb7x6zwfy1rj9wvsfp9frhh",
+      "c_myu163aqlbnlxdkos4jic9nl",
+      "c_slog4lpwjukf1lqnnk71xlx6",
+      "c_aj4560oqfc92auuzhkvo1b4aa",
+      "c_ebzwkmxw4y0829bnhcddglpo",
+      "c_ka8wtam14a87ritb1ktkz3od",
+      "c_aad2gkup6ptrok43zykkogxkh",
+      "c_5ro1ouqbiz7k4xahboyxc1vnf",
+      "c_d6whpkeiedld8o6m1parqcwj3",
+      "c_1cihxpxcbi3or4cvgo7u9xqsn",
+      "c_b1z5856si1b50a0x35ahw5asf",
+      "c_8qn82p8oj88fwv6dg7okv9ccu",
+      "c_4r2tlncyl675trwy6f2p6i0vj",
+      "c_c2277bug6u54ym9ja8vw2529t",
+      "c_bcrdugfwrs5tw2ay2q984bwba",
+      "c_5db6565z5bngkwfvngl6gmniv",
+      "c_22ke84jz4bedasomh450ho49o",
+      "c_dihmeqwq0tgoh8tzox5gg3vbi",
+      "c_87vfkz5kpgsldg6kscvnv16jo",
+      "c_aexgxpio6khr863f5g2c8lj54",
+      "c_6zjc0uiep39wxp9ote45qatmk",
+      "c_8cnh75k6a3m3wylb4dywvzt2l",
+      "c_dt8qzhso24h0u9pa8kgftoz0v",
+      "c_e6zg79kcn3w8mic8pqpk62lpm",
+      "c_9ssw7nzjcp5t6y5wrnouit3m1",
+      "c_3rx5t93u1bnzy2m4djxsd4xyv",
+      "c_86auwbgpzpj6tt9ixjzcfjfsd",
+      "c_am8mvb1altdcpedbady8qxgug",
+      "c_epj2mfqe7sbguozyjd07eet68",
+      "c_b4ejpsaacoogtl76iwz96urkp",
+      "c_b4anfjzhhs1etpnzjirzovqew",
+      "c_2plfh68lgyxl6xucy6tbzkwep",
+      "c_6lopb05odcilfx5h6fbbe7goq",
+      "c_rir05brrtvxwlg1ht9ts2mi8",
+      "c_cgm52ql1f84x8v8pcg8cvt7dh",
+      "c_o9p59f6f8vpnh395nie0ofut",
+      "c_deo350doqstitp9hwmeigmuv9",
+      "c_2561c9zq7mmtufim3xfvaaunt",
+      "c_1qd1ftt0wp4kd0miq8lujjuz6",
+      "c_4mr3z5mrhlww7b3okk7z2y3q9",
+      "c_lx7xfsue3uc4deg3zdhd5c6c",
+      "c_cbdkfwaaqguvxamvn0l7wxj3p",
+      "c_zgjqpd0xin0stuoigznzbntv",
+      "c_98cs0ealnjp2lvegesesd0rzw",
+      "c_18u4an0ftljqg6xmhz6ose9k1",
+      "c_ap95nm24f7e7l2ktbr3mf0tve",
+      "c_6aun611ok1dqwglqmdh1q9mci",
+      "c_8sjpa3foftlwdeg81miogsy2i",
+      "c_26ubl353vw0zrpdjcpzmag7mi",
+      "c_3e0p39ibwwjdlf1mh30rkz8xe",
+      "c_7ho4whz1zjotemcq8vt1mk5sm",
+      "c_1nw8lfi92cfgtqhmx0of3gmye",
+      "c_3jttbawboxk8r8qfkksqxgw3g",
+      "c_by9hn3rf1qpwuoxo86o0e7tbh",
+      "c_3i2r8pc0e0ou7fve7mpsesqsb",
+      "c_725rp35cakk73r4qlzsi752p",
+      "c_83b710c7nuhw2ghbpl8fzxvh4",
+      "c_3n87qznc44digsqwh7aep9v61",
+      "c_1r6n5nmv05xpb00r8a9nsmf35",
+      "c_5u0otk9u8dy559k7vizfkrme8",
+      "c_eev289l8gl68xqvf57yeuvmpo",
+      "c_637kdpgzfz1g1g98zlekuu5n8",
+      "c_3qzkf3or2ebtpt4ao96p0kn2z",
+      "c_3wbwqtdtg4gtzyecuihhdcotb",
+      "c_v6bdvxcswbpr85b84mzckfpu",
+      "c_d5ejnj7xhi6fl2qxv1tze3fm1",
+      "c_2fz8ie0l87py0sxd3q1893ar0",
+      "c_9tmucpz2ny08auobgfzw2rwmx",
+      "c_5gp497v2gpaydedwmgphme65c",
+      "c_25ssxj91luca64zsx1ouh5npf",
+      "c_xaznamo4tvr39fb7x6s68iof",
+      "c_5vulnm84nx14zcx9f38zsj6y3",
+      "c_55u2lelbrtlzdjcujdd8v3jxl",
+      "c_eal26xsp5cqg63pfpmfymu8lm",
+      "c_2rcbz9nrfov3409lqxsdynn61",
+      "c_by8kiywjh1qwy2o35vvmdkh87",
+      "c_4do0sw6kkgc4qg5mn3zupsx7e",
+      "c_2rbb6tjvyl3y1ouvbgqlz4h2c",
+      "c_910rkb22xgpjkrvuvfav396kb",
+      "c_6kp88x78fdq81lcsu3xe3udx9",
+      "c_djrpai2vbnjtfcdo1w8rk95e",
+      "c_420skev59tbi2ngvj1akcgj79",
+      "c_66ycipp3j0kpvmbhgpea92ol4",
+      "c_9857anajh5c360s3fjx8anhxk",
+      "c_1jisoqis7t1qtl8lsfnzo3g0e",
+      "c_01onlku7brb1d5hn8uigjbod8",
+      "c_battlsf18tdt0591yq9fc3ei5",
+      "c_3xkh8zu1w1awyrqzf4ja46z4",
+      "c_6txrbwp80cr5r73kv81ffhmmk",
+      "c_6434qhe8e1my602fu4mc9w1j2",
+      "c_a13gdt12jojqok0bpwwwe03b8",
+      "c_5rgv5uy93wv65k2avobngymaq",
+      "c_3vi9gfvi7vpdjoo1vmv569jtu",
+      "c_2nfdkf4o3q36hy5tb7t1mhyyl",
+      "c_29bidewyyaon6at1vh8zgfbwh",
+      "c_2n5i2aiirsnha3cy5dpnf3j03",
+      "c_b4m2dzby0ebfk9s3l87k9ajm8",
+      "c_9u5xzingil38aoumakqb28pgs",
+      "c_5csky28wxi6kf6eowp756rhzw",
+      "c_bxjzyyukr1b7kkavahswqsxdy",
+      "c_673wdabue168k3ufmtutger05",
+      "c_66fhmug0v1ldf4kimxy4snq85",
+      "c_7ljefemiou4193o94bpo9oj60",
+      "c_86afzkrpl1hpgkkeql1i4y1kj",
+      "c_aij93yrbny76zrnwatlzb3w99",
+      "c_mgkmd4kr6ugyj9kikr0bmtz3",
+      "c_11b62xxlw1hkur90pza7576gt",
+      "c_01byppbnkgf7nnq1h9qm8kv83",
+      "c_7bsg2v1e60cyb5njkjl04kyxa",
+      "c_ch8qb25dsaramhrapkakm2dh2",
+      "c_6ewzsewhybvqoxprddtoyhk8p",
+      "c_cuert0d0uvrltoya6viihy62v",
+      "c_266h18ebgjq4t5o1dxc1zcs0t",
+      "c_4xlz8kqiju6fpdm35r6igq1x6",
+      "c_532ug7toz7t0ddtv170ib7g5f",
+      "c_4vlchoakszfel8ynpbbr8cteb",
+      "c_dvpoml4qbhm8uzcn7lub4glg",
+      "c_9gest1zoe9c72f75tcjmdvx4a",
+      "c_7uce3psebfnr9r0zcxkimeoti",
+      "c_1i959l1eyrkabfbmzizja50g8",
+      "c_dymnoc0tusswgty08wbd4pxm9",
+      "c_119fmem777uef10ac20fpa3ov",
+      "c_6esjh5vhos09c4qccc3gyrkzv",
+      "c_9hq2twijdbj9ou4fw9dgw32ix",
+      "c_ezbfooc37tkvufr8rwpzjgvp3",
+      "c_5tizkbzai6edgo9i0nha6lol3",
+      "c_8yx08l99r1giurnli2vacr58m",
+      "c_716ou7szc7s3h7f6eiu7ypim7",
+      "c_52iuxpmk5t0bat58qj25jpghq",
+      "c_7hr3tyj5y5zn99gms87sgk3zy",
+      "c_is3pput358zeh3z6j38tebi9",
+      "c_26toaxymk66lmm2blxry9m8zk",
+      "c_4kegpsl6r015l83jwab7vvqcl",
+      "c_ikfoba7tiq6feskf6up8p7cr",
+      "c_azvtf6z2n09t4oh4xe3m1vvka",
+      "c_drimlzrv4ng45zfsd4trmwjt2",
+      "c_6488nko83iz16ig4averhys97",
+      "c_ezctbwm4133rrjz4kjmidfv4p",
+      "c_3g8qajwc50xs9clm2wsmdqu8l",
+      "c_4w9rdioc4rz1deka6ej5hv5j8",
+      "c_r6pxkknsvkwc4w6gth7108dw",
+      "c_8vk434oqs73z2b34z2zwc9nug",
+      "c_b2qkukhxwf8g78mgz9i7qei46"
+    ]
+  },
+  "coverageEnd": "2026-07-01T08:00:00+08:00",
+  "coverageStart": "2005-07-01T08:00:00+08:00",
+  "createdAt": "2024-10-22T15:14:33+08:00",
+  "datasetId": "d_5fe5a4bb4a1ecc4d8a56a095832e2b24",
+  "datasetSize": 29678,
+  "description": "Source: MONETARY AUTHORITY OF SINGAPORE\r\n\r\nData Last Updated: 25/08/2026\r\n\r\nUpdate Frequency: Monthly\r\n\r\nFootnotes: Interest rates at the end-period are as at the end of month.\r\n\r\nAdapted from: https://tablebuilder.singstat.gov.sg/table/TS/M700071",
+  "format": "CSV",
+  "lastUpdatedAt": "2026-08-25T00:00:00+08:00",
+  "managedBy": "Singapore Department of Statistics",
+  "name": "Current Banks Interest Rates (End Of Period), Monthly"
+}

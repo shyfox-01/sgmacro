@@ -1,0 +1,40 @@
+series_id,verdict,check,severity,message
+ura_ppi,ok,declared_lag,info,declared lag 30d covers the 27d observed for 2026-Q2
+ura_ppi,ok,cross_source,info,"agrees with SingStat on all 206 overlapping periods (max |difference| 0, tolerance 0.05)"
+ura_ppi,ok,history,info,"Method change, no level break: from 2015-Q1 URA compiles the index with a stratified hedonic regression and 5-quarter fixed weights; the published series is linked across the change."
+ura_rri_nonlanded,ok,declared_lag,info,declared lag 30d covers the 27d observed for 2026-Q2
+ura_rri_nonlanded,ok,cross_source,info,"agrees with SingStat on all 90 overlapping periods (max |difference| 0, tolerance 0.05)"
+ura_rri_nonlanded,ok,history,info,"Non-landed rather than all-residential because URA stopped publishing the all-residential rental slice after 2021-Q2 (see the negative control ura_rri_all_discontinued). Non-landed is also where the rental market sits. Method change, no level break: hedonic regression from 2015-Q1, linked."
+hdb_rpi,ok,declared_lag,info,declared lag 30d covers the 24d observed for 2026-Q2
+hdb_rpi,ok,cross_source,info,"agrees with SingStat on all 146 overlapping periods (max |difference| 0, tolerance 0.05)"
+hdb_rpi,ok,history,info,"Method change, no level break: hedonic regression from 2014-Q4; earlier values were rescaled to the 2009-Q1 base by 100/138.3, so HDB warns that pre-2014 quarterly changes may differ slightly through rounding."
+sora_3m,ok,declared_lag,info,declared lag 21d covers the 14d observed for 2026-08
+sora_3m,ok,cross_source,info,"agrees with data.gov.sg on all 250 overlapping periods (max |difference| 0, tolerance 5e-05)"
+sora_3m,ok,cross_source,info,data.gov.sg lags the primary source by 1 period(s) (its latest is 2026-07)
+sgs_10y,ok,declared_lag,info,declared lag 21d covers the 14d observed for 2026-08
+sgs_10y,ok,cross_source,info,"agrees with data.gov.sg on all 338 overlapping periods (max |difference| 0, tolerance 0.005)"
+sgs_10y,ok,cross_source,info,data.gov.sg lags the primary source by 1 period(s) (its latest is 2026-07)
+sgs_10y,ok,history,info,"Method change, no level break: before 2000 the yield is the mode of dealers' closing bid prices, from 2000 their average."
+bank_housing_loans,ok,declared_lag,info,declared lag 31d covers the 30d observed for 2026-08
+bank_housing_loans,ok,history,info,Series break in July 2021 (MAS Notice 610 revision); earlier data are not comparable.
+gdp_real_sa,ok,declared_lag,info,declared lag 45d covers the 42d observed for 2026-Q2
+unemployment_rate_sa,ok,declared_lag,info,declared lag 90d covers the 84d observed for 2026-Q2
+unemployment_rate_sa,ok,history,info,"June 1995, 2000 and 2005 come from the household survey or census rather than the Labour Force Survey; seasonal factors are re-estimated every year, so recent history is revised annually."
+cpi_all_items,ok,declared_lag,info,declared lag 28d covers the 23d observed for 2026-08
+cpi_all_items,ok,history,info,"Basket weights are refreshed from each Household Expenditure Survey (latest 2023, rebased to 2024 = 100); the series is chain-linked, so there is no level break, but its composition drifts over decades."
+cpi_accommodation,ok,declared_lag,info,declared lag 28d covers the 23d observed for 2026-08
+cpi_accommodation,ok,history,info,"Mostly imputed rentals of owner-occupiers (rental-equivalence method), with weights refreshed from each Household Expenditure Survey; chain-linked."
+private_transactions,ok,declared_lag,info,declared lag 30d covers the 27d observed for 2026-Q2
+unsold_inventory,ok,declared_lag,info,declared lag 30d covers the 27d observed for 2026-Q2
+vacancy_nonlanded,ok,declared_lag,info,declared lag 30d covers the 24d observed for 2026-Q2
+vacancy_nonlanded,ok,cross_source,info,"agrees with data.gov.sg on all 154 overlapping periods (max |difference| 0, tolerance 1e-06)"
+vacancy_nonlanded,ok,history,info,"series break at 1995-Q1: URA added 44,891 private homes built before 1974 (10,779 of them apartments) to the available stock; changes spanning it are excluded"
+vacancy_nonlanded,ok,history,info,"series break at 1996-Q2: URA added 12,489 apartment units (non-privatised HUDC flats, apartments above shops, former government-scheme flats); changes spanning it are excluded"
+pipeline_under_construction,ok,declared_lag,info,declared lag 30d covers the 24d observed for 2026-Q2
+nonresident_population,ok,declared_lag,info,declared lag 90d covers the 87d observed for 2026
+policy_tightening,ok,vintage,info,"event list compiled on 2026-10-03, after the as-of date; events are gated by their announcement dates"
+policy_tightening,ok,declared_lag,info,"hand-maintained list, last reviewed 2026-10-03; a quarter is admitted once it has ended"
+ura_rri_all_discontinued,rejected:discontinued,staleness,error,newest observation 2021-Q2 is 20 quarterly periods behind the 2026-Q2 that the as-of date 2026-10-02 should allow; treated as discontinued and excluded
+ura_rri_all_discontinued,rejected:discontinued,coverage,warn,"the dataset declares coverage to 2026-06-30 but this series ends at 2021-Q2 (1826 days earlier): the dataset is alive, the series may not be"
+mas_housing_loans_discontinued,rejected:discontinued,staleness,error,newest observation 2015-Q3 is 43 quarterly periods behind the 2026-Q2 that the as-of date 2026-10-02 should allow; treated as discontinued and excluded
+nonresident_population_unit_trap,rejected:contract_mismatch,contract,error,M810001 series 5: publisher's unit of measure is 'Number' but the registry declares 'Thousand'; every level and change would be mislabelled

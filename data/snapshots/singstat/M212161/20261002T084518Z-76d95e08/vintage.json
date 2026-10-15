@@ -1,0 +1,33 @@
+{
+  "object": "singstat/M212161",
+  "vintage_id": "20261002T084518Z-76d95e08",
+  "retrieved_at": "2026-10-02T08:45:18+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M212161",
+    "series": [
+      "1"
+    ]
+  },
+  "files": {
+    "data.json": "76d95e08de338e961ff24b98d233539aaa651c7560722bf0d84995711b94d52a",
+    "metadata.json": "443ade8ee6a405fbe77b1140e78f8c507d6da95a1f34b5912ca2ba5899dfbce0"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Housing And Development Board (HDB) Resale Price Index (1Q2009 = 100), Quarterly",
+    "publisher": "HOUSING AND DEVELOPMENT BOARD",
+    "frequency": "Quarterly",
+    "adjustment": "",
+    "last_updated": "24/07/2026",
+    "start_period": "1990 1Q",
+    "end_period": "2026 2Q",
+    "series": {
+      "1": {
+        "label": "HDB Resale Price Index",
+        "unit_of_measure": "Index",
+        "footnote": null
+      }
+    }
+  }
+}

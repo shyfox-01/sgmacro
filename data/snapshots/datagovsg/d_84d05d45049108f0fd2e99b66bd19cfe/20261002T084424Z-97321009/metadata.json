@@ -1,0 +1,74 @@
+{
+  "collectionIds": [],
+  "columnMetadata": {
+    "map": {
+      "c_3re9qqy3ypi73n8u8im2b6ruj": "market_segment",
+      "c_3t555vvbqcd8bm3vqnnti008m": "pre_requisites_status",
+      "c_3tq12apb1c6a8fu6bzxleoj37": "completion_status",
+      "c_7i2ktlq5sxtud2d7jq46mq9di": "launch_status",
+      "c_b5w86zdetpcegbcvly35mb8t4": "quarter",
+      "c_c4yiaaw76s82e4uabhjjre9o0": "units"
+    },
+    "metaMapping": {
+      "c_3re9qqy3ypi73n8u8im2b6ruj": {
+        "columnTitle": "Market Segment",
+        "dataType": "Text",
+        "index": "1",
+        "isCategorical": true,
+        "name": "market_segment"
+      },
+      "c_3t555vvbqcd8bm3vqnnti008m": {
+        "columnTitle": "Pre Requisites Status",
+        "dataType": "Text",
+        "index": "4",
+        "isCategorical": true,
+        "name": "pre_requisites_status"
+      },
+      "c_3tq12apb1c6a8fu6bzxleoj37": {
+        "columnTitle": "Completion Status",
+        "dataType": "Text",
+        "index": "2",
+        "isCategorical": true,
+        "name": "completion_status"
+      },
+      "c_7i2ktlq5sxtud2d7jq46mq9di": {
+        "columnTitle": "Launch Status",
+        "dataType": "Text",
+        "index": "3",
+        "isCategorical": true,
+        "name": "launch_status"
+      },
+      "c_b5w86zdetpcegbcvly35mb8t4": {
+        "columnTitle": "Quarter",
+        "dataType": "Quarter (Q)",
+        "index": "0",
+        "isCategorical": true,
+        "name": "quarter"
+      },
+      "c_c4yiaaw76s82e4uabhjjre9o0": {
+        "columnTitle": "Units",
+        "dataType": "Numeric",
+        "index": "5",
+        "isCategorical": false,
+        "name": "units"
+      }
+    },
+    "order": [
+      "c_b5w86zdetpcegbcvly35mb8t4",
+      "c_3re9qqy3ypi73n8u8im2b6ruj",
+      "c_3tq12apb1c6a8fu6bzxleoj37",
+      "c_7i2ktlq5sxtud2d7jq46mq9di",
+      "c_3t555vvbqcd8bm3vqnnti008m",
+      "c_c4yiaaw76s82e4uabhjjre9o0"
+    ]
+  },
+  "coverageEnd": "2026-06-30T08:00:00+08:00",
+  "coverageStart": "2006-07-01T08:00:00+08:00",
+  "createdAt": "2024-10-30T17:14:28+08:00",
+  "datasetId": "d_84d05d45049108f0fd2e99b66bd19cfe",
+  "datasetSize": 68298,
+  "format": "CSV",
+  "lastUpdatedAt": "2026-07-27T10:05:50+08:00",
+  "managedBy": "Urban Redevelopment Authority",
+  "name": "Unsold Private Residential Units with Planning Approvals by Market Segment, Quarterly"
+}

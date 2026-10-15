@@ -1,0 +1,33 @@
+{
+  "object": "singstat/M701091",
+  "vintage_id": "20261002T084532Z-b07e45d3",
+  "retrieved_at": "2026-10-02T08:45:32+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M701091",
+    "series": [
+      "1.2.1"
+    ]
+  },
+  "files": {
+    "data.json": "b07e45d330b1e895ec2ea31669f8c46ef5a68ee1af554c00a1226c2ce73fdd03",
+    "metadata.json": "14ffd36049346bdf4e2202a083365172cb10a6eaa30426ef99e697dd10bf9c04"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Commercial Banks: Loans And Advances To Residents By Industry (End Of Period), Monthly",
+    "publisher": "MONETARY AUTHORITY OF SINGAPORE",
+    "frequency": "Monthly",
+    "adjustment": "Non-seasonally Adjusted",
+    "last_updated": "30/09/2026",
+    "start_period": "2021 Jul",
+    "end_period": "2026 Aug",
+    "series": {
+      "1.2.1": {
+        "label": "Consumer Loans - Housing And Bridging Loans",
+        "unit_of_measure": "Million Dollars",
+        "footnote": null
+      }
+    }
+  }
+}

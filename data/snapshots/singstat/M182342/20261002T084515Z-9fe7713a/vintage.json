@@ -1,0 +1,33 @@
+{
+  "object": "singstat/M182342",
+  "vintage_id": "20261002T084515Z-9fe7713a",
+  "retrieved_at": "2026-10-02T08:45:15+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M182342",
+    "series": [
+      "1"
+    ]
+  },
+  "files": {
+    "data.json": "9fe7713ad9f64ed0eebd579565d02f1a7ca609468401f9786c4941966c966050",
+    "metadata.json": "6a40749399b35396ea55c487b3cf5bc3ba4a19a70e23f86a7065964f036993ff"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Unemployment Rate (End Of Period), Quarterly, Seasonally Adjusted",
+    "publisher": "MINISTRY OF MANPOWER",
+    "frequency": "Quarterly",
+    "adjustment": "Seasonally Adjusted",
+    "last_updated": "22/09/2026",
+    "start_period": "1992 1Q",
+    "end_period": "2026 2Q",
+    "series": {
+      "1": {
+        "label": "Total Unemployment Rate, (SA)",
+        "unit_of_measure": "Per Cent",
+        "footnote": "The seasonally adjusted figures are derived using X-12 ARIMA to remove the seasonal influences in the data series.  The seasonally adjusted unemployment figures are subject to annual revisions when the latest set of seasonal factors is updated, taking into account observations for the latest available year."
+      }
+    }
+  }
+}

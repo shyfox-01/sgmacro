@@ -1,0 +1,7399 @@
+[
+ {
+  "fact_id": "F:a589ed7d",
+  "kind": "change",
+  "series_id": "bank_housing_loans",
+  "label": "Bank housing loans, year-on-year change",
+  "period": "2026-08",
+  "value": 7.2803815811,
+  "unit": "pct",
+  "display": "+7.3%",
+  "formula": "(v[t] / v[t-12] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "bank_housing_loans",
+    "period": "2025-08",
+    "value": 239152.3,
+    "locator": "seriesNo=1.2.1 key=\"2025 Aug\"",
+    "vintage_id": "20261002T084532Z-b07e45d3",
+    "data_sha256": "b07e45d330b1e895ec2ea31669f8c46ef5a68ee1af554c00a1226c2ce73fdd03",
+    "object_key": "singstat/M701091"
+   },
+   {
+    "series_id": "bank_housing_loans",
+    "period": "2026-08",
+    "value": 256563.5,
+    "locator": "seriesNo=1.2.1 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084532Z-b07e45d3",
+    "data_sha256": "b07e45d330b1e895ec2ea31669f8c46ef5a68ee1af554c00a1226c2ce73fdd03",
+    "object_key": "singstat/M701091"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:ceb8d957",
+  "kind": "change",
+  "series_id": "bank_housing_loans",
+  "label": "Bank housing loans, month-on-month change",
+  "period": "2026-08",
+  "value": 0.7422057986,
+  "unit": "pct",
+  "display": "+0.7%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "bank_housing_loans",
+    "period": "2026-07",
+    "value": 254673.3,
+    "locator": "seriesNo=1.2.1 key=\"2026 Jul\"",
+    "vintage_id": "20261002T084532Z-b07e45d3",
+    "data_sha256": "b07e45d330b1e895ec2ea31669f8c46ef5a68ee1af554c00a1226c2ce73fdd03",
+    "object_key": "singstat/M701091"
+   },
+   {
+    "series_id": "bank_housing_loans",
+    "period": "2026-08",
+    "value": 256563.5,
+    "locator": "seriesNo=1.2.1 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084532Z-b07e45d3",
+    "data_sha256": "b07e45d330b1e895ec2ea31669f8c46ef5a68ee1af554c00a1226c2ce73fdd03",
+    "object_key": "singstat/M701091"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "mom"
+  }
+ },
+ {
+  "fact_id": "F:129097f9",
+  "kind": "level",
+  "series_id": "bank_housing_loans",
+  "label": "Bank housing loans, level",
+  "period": "2026-08",
+  "value": 256563.5,
+  "unit": "SGD million",
+  "display": "256,563.5",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "bank_housing_loans",
+    "period": "2026-08",
+    "value": 256563.5,
+    "locator": "seriesNo=1.2.1 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084532Z-b07e45d3",
+    "data_sha256": "b07e45d330b1e895ec2ea31669f8c46ef5a68ee1af554c00a1226c2ce73fdd03",
+    "object_key": "singstat/M701091"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:b9d5f583",
+  "kind": "percentile",
+  "series_id": "bank_housing_loans",
+  "label": "Bank housing loans, historical percentile of the headline change",
+  "period": "2026-08",
+  "value": 100.0,
+  "unit": "percentile",
+  "display": "100th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:a589ed7d"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "2022-07"
+  }
+ },
+ {
+  "fact_id": "F:7d4ba5de",
+  "kind": "signal",
+  "series_id": "bank_housing_loans",
+  "label": "Bank housing loans: reading for sales",
+  "period": "2026-08",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:a589ed7d"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "positive",
+   "neutral_band": 1.0
+  }
+ },
+ {
+  "fact_id": "F:9f9ea43e",
+  "kind": "change",
+  "series_id": "cpi_accommodation",
+  "label": "CPI accommodation, year-on-year change",
+  "period": "2026-08",
+  "value": 0.828723844,
+  "unit": "pct",
+  "display": "+0.8%",
+  "formula": "(v[t] / v[t-12] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "cpi_accommodation",
+    "period": "2025-08",
+    "value": 101.602,
+    "locator": "seriesNo=1.03.1 key=\"2025 Aug\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_accommodation",
+    "period": "2026-08",
+    "value": 102.444,
+    "locator": "seriesNo=1.03.1 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:f431b0a1",
+  "kind": "change",
+  "series_id": "cpi_accommodation",
+  "label": "CPI accommodation, month-on-month change",
+  "period": "2026-08",
+  "value": 1.8471755513,
+  "unit": "pct",
+  "display": "+1.8%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "cpi_accommodation",
+    "period": "2026-07",
+    "value": 100.586,
+    "locator": "seriesNo=1.03.1 key=\"2026 Jul\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_accommodation",
+    "period": "2026-08",
+    "value": 102.444,
+    "locator": "seriesNo=1.03.1 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "mom"
+  }
+ },
+ {
+  "fact_id": "F:0af93ed4",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2289935532,
+  "unit": "r",
+  "display": "+0.23",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 78,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:0f8c6a6e",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0820109479,
+  "unit": "r",
+  "display": "+0.08",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 82,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:1c0076fb",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1203970733,
+  "unit": "r",
+  "display": "+0.12",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 74,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:23580865",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.6606706342,
+  "unit": "r",
+  "display": "+0.66",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 82,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:42bdbb3f",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.1245315536,
+  "unit": "r",
+  "display": "-0.12",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 80,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:4ecb6ce0",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.183464922,
+  "unit": "r",
+  "display": "-0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 81,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:58ed5afc",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.27648913,
+  "unit": "r",
+  "display": "+0.28",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 74,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:6f2441d7",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.090340182,
+  "unit": "r",
+  "display": "-0.09",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 70,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:7020be9e",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.2212307123,
+  "unit": "r",
+  "display": "-0.22",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 78,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:94f2afbb",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.5131182309,
+  "unit": "r",
+  "display": "+0.51",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 81,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:9c5f211a",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2261779142,
+  "unit": "r",
+  "display": "+0.23",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 76,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:b2a7706e",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.3157822507,
+  "unit": "r",
+  "display": "-0.32",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 80,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:bf9dfb83",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0463333669,
+  "unit": "r",
+  "display": "-0.05",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 76,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:c053a865",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1817509507,
+  "unit": "r",
+  "display": "+0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 74,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:c29992f0",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.1221204476,
+  "unit": "r",
+  "display": "-0.12",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 70,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:cddbbe65",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.370212581,
+  "unit": "r",
+  "display": "+0.37",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 80,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:d2784b0f",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0448765078,
+  "unit": "r",
+  "display": "+0.04",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 81,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:e55766a8",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.1313786149,
+  "unit": "r",
+  "display": "-0.13",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 78,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:ef58fd00",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0698877927,
+  "unit": "r",
+  "display": "-0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 70,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:f4bc3b0d",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.2593541213,
+  "unit": "r",
+  "display": "+0.26",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 76,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:ff5c75e8",
+  "kind": "correlation",
+  "series_id": "cpi_accommodation",
+  "label": "correlation of cpi_accommodation headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.265486371,
+  "unit": "r",
+  "display": "+0.27",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 82,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:bd6fb457",
+  "kind": "level",
+  "series_id": "cpi_accommodation",
+  "label": "CPI accommodation, level",
+  "period": "2026-08",
+  "value": 102.444,
+  "unit": "index, 2024 = 100",
+  "display": "102.4",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "cpi_accommodation",
+    "period": "2026-08",
+    "value": 102.444,
+    "locator": "seriesNo=1.03.1 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:78513028",
+  "kind": "percentile",
+  "series_id": "cpi_accommodation",
+  "label": "CPI accommodation, historical percentile of the headline change",
+  "period": "2026-08",
+  "value": 49.1935483871,
+  "unit": "percentile",
+  "display": "49th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:9f9ea43e"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "2006-01"
+  }
+ },
+ {
+  "fact_id": "F:5cc9e660",
+  "kind": "signal",
+  "series_id": "cpi_accommodation",
+  "label": "CPI accommodation: reading for rents",
+  "period": "2026-08",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:9f9ea43e"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "positive",
+   "neutral_band": 0.5
+  }
+ },
+ {
+  "fact_id": "F:e15b1e70",
+  "kind": "signal",
+  "series_id": "cpi_accommodation",
+  "label": "CPI accommodation: reading for sales",
+  "period": "2026-08",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:9f9ea43e"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "positive",
+   "neutral_band": 0.5
+  }
+ },
+ {
+  "fact_id": "F:18a45b38",
+  "kind": "change",
+  "series_id": "cpi_all_items",
+  "label": "CPI all items, year-on-year change",
+  "period": "2026-08",
+  "value": 2.3483850519,
+  "unit": "pct",
+  "display": "+2.3%",
+  "formula": "(v[t] / v[t-12] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-08",
+    "value": 100.963,
+    "locator": "seriesNo=1 key=\"2025 Aug\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-08",
+    "value": 103.334,
+    "locator": "seriesNo=1 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:bcbcb4e6",
+  "kind": "change",
+  "series_id": "cpi_all_items",
+  "label": "CPI all items, month-on-month change",
+  "period": "2026-08",
+  "value": 0.6212510711,
+  "unit": "pct",
+  "display": "+0.6%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-07",
+    "value": 102.696,
+    "locator": "seriesNo=1 key=\"2026 Jul\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-08",
+    "value": 103.334,
+    "locator": "seriesNo=1 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "mom"
+  }
+ },
+ {
+  "fact_id": "F:01412644",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.6123655633,
+  "unit": "r",
+  "display": "+0.61",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:0537a1c6",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.1627797897,
+  "unit": "r",
+  "display": "-0.16",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:05f2145d",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.1375486381,
+  "unit": "r",
+  "display": "-0.14",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:06baeb79",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.2644725822,
+  "unit": "r",
+  "display": "+0.26",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 202,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:06c5ddd5",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.3650415052,
+  "unit": "r",
+  "display": "+0.37",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:0c4a5fd2",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.2032314221,
+  "unit": "r",
+  "display": "+0.20",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 202,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:130d1f01",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.3503522327,
+  "unit": "r",
+  "display": "+0.35",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 202,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:1672d5b4",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2102465507,
+  "unit": "r",
+  "display": "+0.21",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:20f8f76b",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.4542434385,
+  "unit": "r",
+  "display": "+0.45",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:4997e9e5",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1288921702,
+  "unit": "r",
+  "display": "+0.13",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:63d4227d",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.5467931581,
+  "unit": "r",
+  "display": "+0.55",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 202,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:69b51aa8",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.000810376,
+  "unit": "r",
+  "display": "-0.00",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 202,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:6d500c97",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.182682131,
+  "unit": "r",
+  "display": "+0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:7ca3f49c",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1292080636,
+  "unit": "r",
+  "display": "+0.13",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:7fad82cc",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.2579626342,
+  "unit": "r",
+  "display": "+0.26",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:814682da",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.1010923225,
+  "unit": "r",
+  "display": "-0.10",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:8c98bfd5",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.3050730595,
+  "unit": "r",
+  "display": "+0.31",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:ddb7e81a",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2351642848,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:e1201ff6",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.4418499708,
+  "unit": "r",
+  "display": "+0.44",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 202,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:ed253e89",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.2229883507,
+  "unit": "r",
+  "display": "-0.22",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:f2f7ac21",
+  "kind": "correlation",
+  "series_id": "cpi_all_items",
+  "label": "correlation of cpi_all_items headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.1064100394,
+  "unit": "r",
+  "display": "+0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 202,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:ffb6f146",
+  "kind": "level",
+  "series_id": "cpi_all_items",
+  "label": "CPI all items, level",
+  "period": "2026-08",
+  "value": 103.334,
+  "unit": "index, 2024 = 100",
+  "display": "103.3",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-08",
+    "value": 103.334,
+    "locator": "seriesNo=1 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:02c24e07",
+  "kind": "percentile",
+  "series_id": "cpi_all_items",
+  "label": "CPI all items, historical percentile of the headline change",
+  "period": "2026-08",
+  "value": 63.7886597938,
+  "unit": "percentile",
+  "display": "64th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:18a45b38"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "1962-01"
+  }
+ },
+ {
+  "fact_id": "F:829c42c8",
+  "kind": "signal",
+  "series_id": "cpi_all_items",
+  "label": "CPI all items: reading for sales",
+  "period": "2026-08",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "ambiguous",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:18a45b38"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "ambiguous",
+   "neutral_band": 0.5
+  }
+ },
+ {
+  "fact_id": "F:82e9b7ba",
+  "kind": "signal",
+  "series_id": "cpi_all_items",
+  "label": "CPI all items: reading for rents",
+  "period": "2026-08",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "ambiguous",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:18a45b38"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "ambiguous",
+   "neutral_band": 0.5
+  }
+ },
+ {
+  "fact_id": "F:605ceea6",
+  "kind": "change",
+  "series_id": "gdp_real_sa",
+  "label": "Real GDP (SA), year-on-year change",
+  "period": "2026-Q2",
+  "value": 5.9467476325,
+  "unit": "pct",
+  "display": "+5.9%",
+  "formula": "(v[t] / v[t-4] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "gdp_real_sa",
+    "period": "2025-Q2",
+    "value": 147189.7,
+    "locator": "seriesNo=1 key=\"2025 2Q\"",
+    "vintage_id": "20261002T084513Z-98373745",
+    "data_sha256": "98373745e48c75af5cdc508055670db5228e96156fe9251165c09f239655c5ee",
+    "object_key": "singstat/M014812"
+   },
+   {
+    "series_id": "gdp_real_sa",
+    "period": "2026-Q2",
+    "value": 155942.7,
+    "locator": "seriesNo=1 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084513Z-98373745",
+    "data_sha256": "98373745e48c75af5cdc508055670db5228e96156fe9251165c09f239655c5ee",
+    "object_key": "singstat/M014812"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:6d216a76",
+  "kind": "change",
+  "series_id": "gdp_real_sa",
+  "label": "Real GDP (SA), quarter-on-quarter change",
+  "period": "2026-Q2",
+  "value": 1.4020736541,
+  "unit": "pct",
+  "display": "+1.4%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "gdp_real_sa",
+    "period": "2026-Q1",
+    "value": 153786.5,
+    "locator": "seriesNo=1 key=\"2026 1Q\"",
+    "vintage_id": "20261002T084513Z-98373745",
+    "data_sha256": "98373745e48c75af5cdc508055670db5228e96156fe9251165c09f239655c5ee",
+    "object_key": "singstat/M014812"
+   },
+   {
+    "series_id": "gdp_real_sa",
+    "period": "2026-Q2",
+    "value": 155942.7,
+    "locator": "seriesNo=1 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084513Z-98373745",
+    "data_sha256": "98373745e48c75af5cdc508055670db5228e96156fe9251165c09f239655c5ee",
+    "object_key": "singstat/M014812"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "qoq"
+  }
+ },
+ {
+  "fact_id": "F:072d9a1c",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0518978564,
+  "unit": "r",
+  "display": "+0.05",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 196,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:098de95d",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.5395071002,
+  "unit": "r",
+  "display": "+0.54",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 202,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:0b7bc150",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1887906497,
+  "unit": "r",
+  "display": "+0.19",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:16540431",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.3592204026,
+  "unit": "r",
+  "display": "+0.36",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:1fc8681b",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.4554716088,
+  "unit": "r",
+  "display": "+0.46",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 200,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:416f3bf4",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.2085838079,
+  "unit": "r",
+  "display": "+0.21",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 198,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:5d9fb7d5",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.4357405689,
+  "unit": "r",
+  "display": "+0.44",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:5e56d895",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.1012639135,
+  "unit": "r",
+  "display": "-0.10",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:6d8ba119",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.5041548237,
+  "unit": "r",
+  "display": "+0.50",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:6e2b12d0",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.389977711,
+  "unit": "r",
+  "display": "+0.39",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:81e52680",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0117394901,
+  "unit": "r",
+  "display": "-0.01",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:835ae595",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1989629538,
+  "unit": "r",
+  "display": "+0.20",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:90278b67",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1670845365,
+  "unit": "r",
+  "display": "+0.17",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:9d5f6432",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.5326583836,
+  "unit": "r",
+  "display": "+0.53",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 201,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:9e0535dc",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.4256529402,
+  "unit": "r",
+  "display": "+0.43",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:a506d047",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0597861941,
+  "unit": "r",
+  "display": "+0.06",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 194,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:bbc77777",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.2635613248,
+  "unit": "r",
+  "display": "+0.26",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:c5a6c8d1",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1078130898,
+  "unit": "r",
+  "display": "+0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:c5b8206d",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0724740135,
+  "unit": "r",
+  "display": "+0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 190,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:c668acc8",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0518555694,
+  "unit": "r",
+  "display": "+0.05",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:e1da597f",
+  "kind": "correlation",
+  "series_id": "gdp_real_sa",
+  "label": "correlation of gdp_real_sa headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.4171002555,
+  "unit": "r",
+  "display": "+0.42",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 142,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:b61105f0",
+  "kind": "level",
+  "series_id": "gdp_real_sa",
+  "label": "Real GDP (SA), level",
+  "period": "2026-Q2",
+  "value": 155942.7,
+  "unit": "SGD million, chained 2015 prices",
+  "display": "155,942.7",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "gdp_real_sa",
+    "period": "2026-Q2",
+    "value": 155942.7,
+    "locator": "seriesNo=1 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084513Z-98373745",
+    "data_sha256": "98373745e48c75af5cdc508055670db5228e96156fe9251165c09f239655c5ee",
+    "object_key": "singstat/M014812"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:58659565",
+  "kind": "percentile",
+  "series_id": "gdp_real_sa",
+  "label": "Real GDP (SA), historical percentile of the headline change",
+  "period": "2026-Q2",
+  "value": 44.0594059406,
+  "unit": "percentile",
+  "display": "44th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:605ceea6"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "1976-Q1"
+  }
+ },
+ {
+  "fact_id": "F:79625e2b",
+  "kind": "signal",
+  "series_id": "gdp_real_sa",
+  "label": "Real GDP (SA): reading for sales",
+  "period": "2026-Q2",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:605ceea6"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "positive",
+   "neutral_band": 1.0
+  }
+ },
+ {
+  "fact_id": "F:b0ceec97",
+  "kind": "signal",
+  "series_id": "gdp_real_sa",
+  "label": "Real GDP (SA): reading for rents",
+  "period": "2026-Q2",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:605ceea6"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "positive",
+   "neutral_band": 1.0
+  }
+ },
+ {
+  "fact_id": "F:263a825a",
+  "kind": "change",
+  "series_id": "hdb_rpi",
+  "label": "HDB resale prices (HDB RPI), year-on-year change",
+  "period": "2026-Q2",
+  "value": -0.0492853622,
+  "unit": "pct",
+  "display": "0.0%",
+  "formula": "(v[t] / v[t-4] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "hdb_rpi",
+    "period": "2025-Q2",
+    "value": 202.9,
+    "locator": "csv line 143",
+    "vintage_id": "20261002T084248Z-19598c7b",
+    "data_sha256": "19598c7bae4fb807ef992b6b957f3d5f9ff6db11d217c66a1d4db68eb790e627",
+    "object_key": "datagovsg/d_14f63e595975691e7c24a27ae4c07c79"
+   },
+   {
+    "series_id": "hdb_rpi",
+    "period": "2026-Q2",
+    "value": 202.8,
+    "locator": "csv line 147",
+    "vintage_id": "20261002T084248Z-19598c7b",
+    "data_sha256": "19598c7bae4fb807ef992b6b957f3d5f9ff6db11d217c66a1d4db68eb790e627",
+    "object_key": "datagovsg/d_14f63e595975691e7c24a27ae4c07c79"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:4958e846",
+  "kind": "change",
+  "series_id": "hdb_rpi",
+  "label": "HDB resale prices (HDB RPI), quarter-on-quarter change",
+  "period": "2026-Q2",
+  "value": -0.2949852507,
+  "unit": "pct",
+  "display": "-0.3%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "hdb_rpi",
+    "period": "2026-Q1",
+    "value": 203.4,
+    "locator": "csv line 146",
+    "vintage_id": "20261002T084248Z-19598c7b",
+    "data_sha256": "19598c7bae4fb807ef992b6b957f3d5f9ff6db11d217c66a1d4db68eb790e627",
+    "object_key": "datagovsg/d_14f63e595975691e7c24a27ae4c07c79"
+   },
+   {
+    "series_id": "hdb_rpi",
+    "period": "2026-Q2",
+    "value": 202.8,
+    "locator": "csv line 147",
+    "vintage_id": "20261002T084248Z-19598c7b",
+    "data_sha256": "19598c7bae4fb807ef992b6b957f3d5f9ff6db11d217c66a1d4db68eb790e627",
+    "object_key": "datagovsg/d_14f63e595975691e7c24a27ae4c07c79"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "qoq"
+  }
+ },
+ {
+  "fact_id": "F:c2bc4562",
+  "kind": "level",
+  "series_id": "hdb_rpi",
+  "label": "HDB resale prices (HDB RPI), level",
+  "period": "2026-Q2",
+  "value": 202.8,
+  "unit": "index, 2009-Q1 = 100",
+  "display": "202.8",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "hdb_rpi",
+    "period": "2026-Q2",
+    "value": 202.8,
+    "locator": "csv line 147",
+    "vintage_id": "20261002T084248Z-19598c7b",
+    "data_sha256": "19598c7bae4fb807ef992b6b957f3d5f9ff6db11d217c66a1d4db68eb790e627",
+    "object_key": "datagovsg/d_14f63e595975691e7c24a27ae4c07c79"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:97dbae23",
+  "kind": "percentile",
+  "series_id": "hdb_rpi",
+  "label": "HDB resale prices (HDB RPI), historical percentile of the headline change",
+  "period": "2026-Q2",
+  "value": 31.6901408451,
+  "unit": "percentile",
+  "display": "32nd",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:263a825a"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "1991-Q1"
+  }
+ },
+ {
+  "fact_id": "F:533960e6",
+  "kind": "real_change",
+  "series_id": "hdb_rpi",
+  "label": "HDB resale prices (HDB RPI), real (CPI-deflated) year-on-year change",
+  "period": "2026-Q2",
+  "value": -1.8561831847,
+  "unit": "pct",
+  "display": "-1.9%",
+  "formula": "((1 + nominal_yoy/100) / (avg(cpi[t]) / avg(cpi[t-4])) - 1) * 100, cpi averaged over the quarter's three months",
+  "inputs": [
+   {
+    "series_id": "hdb_rpi",
+    "period": "2025-Q2",
+    "value": 202.9,
+    "locator": "csv line 143",
+    "vintage_id": "20261002T084248Z-19598c7b",
+    "data_sha256": "19598c7bae4fb807ef992b6b957f3d5f9ff6db11d217c66a1d4db68eb790e627",
+    "object_key": "datagovsg/d_14f63e595975691e7c24a27ae4c07c79"
+   },
+   {
+    "series_id": "hdb_rpi",
+    "period": "2026-Q2",
+    "value": 202.8,
+    "locator": "csv line 147",
+    "vintage_id": "20261002T084248Z-19598c7b",
+    "data_sha256": "19598c7bae4fb807ef992b6b957f3d5f9ff6db11d217c66a1d4db68eb790e627",
+    "object_key": "datagovsg/d_14f63e595975691e7c24a27ae4c07c79"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-04",
+    "value": 100.283,
+    "locator": "seriesNo=1 key=\"2025 Apr\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-05",
+    "value": 100.978,
+    "locator": "seriesNo=1 key=\"2025 May\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-06",
+    "value": 100.9,
+    "locator": "seriesNo=1 key=\"2025 Jun\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-04",
+    "value": 102.052,
+    "locator": "seriesNo=1 key=\"2026 Apr\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-05",
+    "value": 102.814,
+    "locator": "seriesNo=1 key=\"2026 May\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-06",
+    "value": 102.858,
+    "locator": "seriesNo=1 key=\"2026 Jun\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:0fbbb3a9",
+  "kind": "change",
+  "series_id": "nonresident_population",
+  "label": "Non-resident population, year-on-year change",
+  "period": "2026",
+  "value": 3.6891212906,
+  "unit": "pct",
+  "display": "+3.7%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "nonresident_population",
+    "period": "2025",
+    "value": 1906660.0,
+    "locator": "seriesNo=5 key=\"2025\"",
+    "vintage_id": "20261002T084534Z-df4363f5",
+    "data_sha256": "df4363f580bda6c42f6e5ca1588fbb0c391f81d51245ba4c1da43bfa3108d25a",
+    "object_key": "singstat/M810001"
+   },
+   {
+    "series_id": "nonresident_population",
+    "period": "2026",
+    "value": 1976999.0,
+    "locator": "seriesNo=5 key=\"2026\"",
+    "vintage_id": "20261002T084534Z-df4363f5",
+    "data_sha256": "df4363f580bda6c42f6e5ca1588fbb0c391f81d51245ba4c1da43bfa3108d25a",
+    "object_key": "singstat/M810001"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:0e7d5e92",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.3257402751,
+  "unit": "r",
+  "display": "+0.33",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 21,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:22b8e6c4",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.300458233,
+  "unit": "r",
+  "display": "-0.30",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 21,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:244df692",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.3188482583,
+  "unit": "r",
+  "display": "+0.32",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 45,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:29f9f878",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.1112524167,
+  "unit": "r",
+  "display": "-0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 43,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:2b6774db",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2234457075,
+  "unit": "r",
+  "display": "+0.22",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 36,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:391efa0e",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.6296117465,
+  "unit": "r",
+  "display": "+0.63",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 46,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:3d7c1693",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2392861025,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 36,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:4081388d",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.6497668328,
+  "unit": "r",
+  "display": "+0.65",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 22,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:4ac91d02",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1324842831,
+  "unit": "r",
+  "display": "+0.13",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 36,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:74a97680",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.5252275766,
+  "unit": "r",
+  "display": "+0.53",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 45,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:7ec1365b",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2791436214,
+  "unit": "r",
+  "display": "+0.28",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 35,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:87e64e7e",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0717330138,
+  "unit": "r",
+  "display": "-0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 22,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:8d710db2",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.226152741,
+  "unit": "r",
+  "display": "-0.23",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 22,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:9a50240a",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2444085291,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 35,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:cbdfb4cd",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0317788243,
+  "unit": "r",
+  "display": "-0.03",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 45,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:cf4b57d3",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0654084044,
+  "unit": "r",
+  "display": "+0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 44,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:d447cd11",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.4045883465,
+  "unit": "r",
+  "display": "+0.40",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 36,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:dd14e01a",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0745054012,
+  "unit": "r",
+  "display": "+0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 44,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:e8d92f85",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.5020468937,
+  "unit": "r",
+  "display": "+0.50",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 21,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:e96bccfb",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0301642761,
+  "unit": "r",
+  "display": "-0.03",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 22,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:fe701d7a",
+  "kind": "correlation",
+  "series_id": "nonresident_population",
+  "label": "correlation of nonresident_population headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2231818481,
+  "unit": "r",
+  "display": "+0.22",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 35,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:c4c71fa8",
+  "kind": "level",
+  "series_id": "nonresident_population",
+  "label": "Non-resident population, level",
+  "period": "2026",
+  "value": 1976999.0,
+  "unit": "persons",
+  "display": "1,976,999",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "nonresident_population",
+    "period": "2026",
+    "value": 1976999.0,
+    "locator": "seriesNo=5 key=\"2026\"",
+    "vintage_id": "20261002T084534Z-df4363f5",
+    "data_sha256": "df4363f580bda6c42f6e5ca1588fbb0c391f81d51245ba4c1da43bfa3108d25a",
+    "object_key": "singstat/M810001"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:8b2e97b8",
+  "kind": "percentile",
+  "series_id": "nonresident_population",
+  "label": "Non-resident population, historical percentile of the headline change",
+  "period": "2026",
+  "value": 41.3043478261,
+  "unit": "percentile",
+  "display": "41st",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:0fbbb3a9"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "1981"
+  }
+ },
+ {
+  "fact_id": "F:3abf9473",
+  "kind": "signal",
+  "series_id": "nonresident_population",
+  "label": "Non-resident population: reading for rents",
+  "period": "2026",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:0fbbb3a9"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "positive",
+   "neutral_band": 1.0
+  }
+ },
+ {
+  "fact_id": "F:c47ac73d",
+  "kind": "signal",
+  "series_id": "nonresident_population",
+  "label": "Non-resident population: reading for sales",
+  "period": "2026",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:0fbbb3a9"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "positive",
+   "neutral_band": 1.0
+  }
+ },
+ {
+  "fact_id": "F:518eda66",
+  "kind": "change",
+  "series_id": "pipeline_under_construction",
+  "label": "Non-landed units under construction, quarter-on-quarter change",
+  "period": "2026-Q2",
+  "value": 7.4123333441,
+  "unit": "pct",
+  "display": "+7.4%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "pipeline_under_construction",
+    "period": "2026-Q1",
+    "value": 30827.0,
+    "locator": "seriesNo=2.1 key=\"2026 1Q\"",
+    "vintage_id": "20261002T084525Z-14454eb8",
+    "data_sha256": "14454eb8c5395d2bc96657c887b32811b9ae7a635d3b272f01d62d7512f70895",
+    "object_key": "singstat/M400391"
+   },
+   {
+    "series_id": "pipeline_under_construction",
+    "period": "2026-Q2",
+    "value": 33112.0,
+    "locator": "seriesNo=2.1 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084525Z-14454eb8",
+    "data_sha256": "14454eb8c5395d2bc96657c887b32811b9ae7a635d3b272f01d62d7512f70895",
+    "object_key": "singstat/M400391"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "qoq"
+  }
+ },
+ {
+  "fact_id": "F:9bb1195d",
+  "kind": "change",
+  "series_id": "pipeline_under_construction",
+  "label": "Non-landed units under construction, year-on-year change",
+  "period": "2026-Q2",
+  "value": 12.614359079,
+  "unit": "pct",
+  "display": "+12.6%",
+  "formula": "(v[t] / v[t-4] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "pipeline_under_construction",
+    "period": "2025-Q2",
+    "value": 29403.0,
+    "locator": "seriesNo=2.1 key=\"2025 2Q\"",
+    "vintage_id": "20261002T084525Z-14454eb8",
+    "data_sha256": "14454eb8c5395d2bc96657c887b32811b9ae7a635d3b272f01d62d7512f70895",
+    "object_key": "singstat/M400391"
+   },
+   {
+    "series_id": "pipeline_under_construction",
+    "period": "2026-Q2",
+    "value": 33112.0,
+    "locator": "seriesNo=2.1 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084525Z-14454eb8",
+    "data_sha256": "14454eb8c5395d2bc96657c887b32811b9ae7a635d3b272f01d62d7512f70895",
+    "object_key": "singstat/M400391"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:0659558f",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.2446642055,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 128,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:261f3046",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2771366598,
+  "unit": "r",
+  "display": "+0.28",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 125,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:3e1b82cb",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.007303977,
+  "unit": "r",
+  "display": "+0.01",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:4aad185a",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.3081623674,
+  "unit": "r",
+  "display": "+0.31",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 127,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:78300178",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0881079011,
+  "unit": "r",
+  "display": "-0.09",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 123,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:7ae3be58",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0925698671,
+  "unit": "r",
+  "display": "-0.09",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 125,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:8288b172",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0005868176,
+  "unit": "r",
+  "display": "+0.00",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:9592551e",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0718973142,
+  "unit": "r",
+  "display": "+0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:9ac78418",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0081141494,
+  "unit": "r",
+  "display": "+0.01",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:ad5bd2c5",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0177846011,
+  "unit": "r",
+  "display": "+0.02",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 117,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:ba538648",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1836107402,
+  "unit": "r",
+  "display": "+0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:c2cfcd7a",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0723584856,
+  "unit": "r",
+  "display": "-0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 117,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:c882a995",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.3350255306,
+  "unit": "r",
+  "display": "+0.34",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 128,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:cc00f509",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.3205197136,
+  "unit": "r",
+  "display": "+0.32",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 121,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:ccd3ce84",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.1096048985,
+  "unit": "r",
+  "display": "+0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 127,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:d3c7847c",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1843289881,
+  "unit": "r",
+  "display": "+0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:d7487642",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0267161665,
+  "unit": "r",
+  "display": "-0.03",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 121,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:d94fc717",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1547327855,
+  "unit": "r",
+  "display": "+0.15",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:dbccb29c",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.3960573777,
+  "unit": "r",
+  "display": "+0.40",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 129,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:ddf57367",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.3589601162,
+  "unit": "r",
+  "display": "+0.36",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 129,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:eb82b1d4",
+  "kind": "correlation",
+  "series_id": "pipeline_under_construction",
+  "label": "correlation of pipeline_under_construction headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2930691213,
+  "unit": "r",
+  "display": "+0.29",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 123,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:71d3c006",
+  "kind": "level",
+  "series_id": "pipeline_under_construction",
+  "label": "Non-landed units under construction, level",
+  "period": "2026-Q2",
+  "value": 33112.0,
+  "unit": "units",
+  "display": "33,112",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "pipeline_under_construction",
+    "period": "2026-Q2",
+    "value": 33112.0,
+    "locator": "seriesNo=2.1 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084525Z-14454eb8",
+    "data_sha256": "14454eb8c5395d2bc96657c887b32811b9ae7a635d3b272f01d62d7512f70895",
+    "object_key": "singstat/M400391"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:3b06bffb",
+  "kind": "percentile",
+  "series_id": "pipeline_under_construction",
+  "label": "Non-landed units under construction, historical percentile of the headline change",
+  "period": "2026-Q2",
+  "value": 65.1162790698,
+  "unit": "percentile",
+  "display": "65th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:9bb1195d"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "1994-Q2"
+  }
+ },
+ {
+  "fact_id": "F:6ab8e58f",
+  "kind": "signal",
+  "series_id": "pipeline_under_construction",
+  "label": "Non-landed units under construction: reading for sales",
+  "period": "2026-Q2",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "headwind",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:9bb1195d"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "negative",
+   "neutral_band": 5.0
+  }
+ },
+ {
+  "fact_id": "F:aea70d4e",
+  "kind": "signal",
+  "series_id": "pipeline_under_construction",
+  "label": "Non-landed units under construction: reading for rents",
+  "period": "2026-Q2",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "headwind",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:9bb1195d"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "negative",
+   "neutral_band": 5.0
+  }
+ },
+ {
+  "fact_id": "F:0fb21029",
+  "kind": "change",
+  "series_id": "policy_tightening",
+  "label": "Cooling measures (net rounds, 4Q), net rounds in the trailing four quarters",
+  "period": "2026-Q3",
+  "value": 1.0,
+  "unit": "count",
+  "display": "+1 round",
+  "formula": "sum(v[t-3..t])",
+  "inputs": [
+   {
+    "series_id": "policy_tightening",
+    "period": "2025-Q4",
+    "value": 0.0,
+    "locator": "quarter=2025-Q4",
+    "vintage_id": "20261002T164519Z-8bf11ed3",
+    "data_sha256": "8bf11ed3792c09810565299142ffb03e7042e18304e2c7f8366ad42d9ae7e7d7",
+    "object_key": "curated/policy_events"
+   },
+   {
+    "series_id": "policy_tightening",
+    "period": "2026-Q1",
+    "value": 0.0,
+    "locator": "quarter=2026-Q1",
+    "vintage_id": "20261002T164519Z-8bf11ed3",
+    "data_sha256": "8bf11ed3792c09810565299142ffb03e7042e18304e2c7f8366ad42d9ae7e7d7",
+    "object_key": "curated/policy_events"
+   },
+   {
+    "series_id": "policy_tightening",
+    "period": "2026-Q2",
+    "value": 1.0,
+    "locator": "quarter=2026-Q2",
+    "vintage_id": "20261002T164519Z-8bf11ed3",
+    "data_sha256": "8bf11ed3792c09810565299142ffb03e7042e18304e2c7f8366ad42d9ae7e7d7",
+    "object_key": "curated/policy_events"
+   },
+   {
+    "series_id": "policy_tightening",
+    "period": "2026-Q3",
+    "value": 0.0,
+    "locator": "quarter=2026-Q3",
+    "vintage_id": "20261002T164519Z-8bf11ed3",
+    "data_sha256": "8bf11ed3792c09810565299142ffb03e7042e18304e2c7f8366ad42d9ae7e7d7",
+    "object_key": "curated/policy_events"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "t4q_sum"
+  }
+ },
+ {
+  "fact_id": "F:0395ef21",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0526316329,
+  "unit": "r",
+  "display": "+0.05",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 81,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:1b0e9d91",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.1108701201,
+  "unit": "r",
+  "display": "-0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 71,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:2285dea5",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0863063211,
+  "unit": "r",
+  "display": "+0.09",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 83,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:261466bf",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.1332750615,
+  "unit": "r",
+  "display": "+0.13",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 82,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:3833edc7",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.1894226469,
+  "unit": "r",
+  "display": "-0.19",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 79,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:4650f7e6",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0864934136,
+  "unit": "r",
+  "display": "+0.09",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 82,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:58943cba",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.2229932462,
+  "unit": "r",
+  "display": "-0.22",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 77,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:6118312b",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.138364965,
+  "unit": "r",
+  "display": "-0.14",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 71,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:7ce6ac8e",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.03216838,
+  "unit": "r",
+  "display": "+0.03",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 81,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:8a4fd647",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.3230774832,
+  "unit": "r",
+  "display": "-0.32",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 75,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:92e2de19",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.122425158,
+  "unit": "r",
+  "display": "-0.12",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 79,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:9b9f7a69",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.2604426856,
+  "unit": "r",
+  "display": "-0.26",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 75,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:a46f3f58",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.2013135136,
+  "unit": "r",
+  "display": "+0.20",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 83,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:ad7a2aa7",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1433101229,
+  "unit": "r",
+  "display": "+0.14",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 82,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:ba492699",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0414693678,
+  "unit": "r",
+  "display": "+0.04",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 81,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:d134c06f",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.3351565177,
+  "unit": "r",
+  "display": "-0.34",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 75,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:d315c9fc",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2384144183,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 83,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:db5dad63",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.3218538471,
+  "unit": "r",
+  "display": "-0.32",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 77,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:e1ea1784",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.1016514777,
+  "unit": "r",
+  "display": "-0.10",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 79,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:e7910d2b",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.2738081819,
+  "unit": "r",
+  "display": "-0.27",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 77,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:e9ecd5b7",
+  "kind": "correlation",
+  "series_id": "policy_tightening",
+  "label": "correlation of policy_tightening headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.3091874814,
+  "unit": "r",
+  "display": "-0.31",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 71,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:724333ac",
+  "kind": "level",
+  "series_id": "policy_tightening",
+  "label": "Cooling measures (net rounds, 4Q), level",
+  "period": "2026-Q3",
+  "value": 0.0,
+  "unit": "net rounds (tightening minus easing)",
+  "display": "0",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "policy_tightening",
+    "period": "2026-Q3",
+    "value": 0.0,
+    "locator": "quarter=2026-Q3",
+    "vintage_id": "20261002T164519Z-8bf11ed3",
+    "data_sha256": "8bf11ed3792c09810565299142ffb03e7042e18304e2c7f8366ad42d9ae7e7d7",
+    "object_key": "curated/policy_events"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:b0f052ad",
+  "kind": "percentile",
+  "series_id": "policy_tightening",
+  "label": "Cooling measures (net rounds, 4Q), historical percentile of the headline change",
+  "period": "2026-Q3",
+  "value": 80.9523809524,
+  "unit": "percentile",
+  "display": "81st",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:0fb21029"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "2005-Q4"
+  }
+ },
+ {
+  "fact_id": "F:6fe6d79e",
+  "kind": "signal",
+  "series_id": "policy_tightening",
+  "label": "Cooling measures (net rounds, 4Q): reading for sales",
+  "period": "2026-Q3",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "headwind",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:0fb21029"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "negative",
+   "neutral_band": 0.5
+  }
+ },
+ {
+  "fact_id": "F:ba48e971",
+  "kind": "signal",
+  "series_id": "policy_tightening",
+  "label": "Cooling measures (net rounds, 4Q): reading for rents",
+  "period": "2026-Q3",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "ambiguous",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:0fb21029"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "ambiguous",
+   "neutral_band": 0.5
+  }
+ },
+ {
+  "fact_id": "F:28b42609",
+  "kind": "change",
+  "series_id": "private_transactions",
+  "label": "Private transactions (units), quarter-on-quarter change",
+  "period": "2026-Q2",
+  "value": 13.5784223166,
+  "unit": "pct",
+  "display": "+13.6%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "private_transactions",
+    "period": "2026-Q1",
+    "value": 5413.0,
+    "locator": "csv lines 422,423,424,425",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   },
+   {
+    "series_id": "private_transactions",
+    "period": "2026-Q2",
+    "value": 6148.0,
+    "locator": "csv lines 426,427,428,429",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "qoq"
+  }
+ },
+ {
+  "fact_id": "F:cc8b57d8",
+  "kind": "change",
+  "series_id": "private_transactions",
+  "label": "Private transactions (units), trailing four quarters vs the four before",
+  "period": "2026-Q2",
+  "value": 1.8655235374,
+  "unit": "pct",
+  "display": "+1.9%",
+  "formula": "(sum(v[t-3..t]) / sum(v[t-7..t-4]) - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "private_transactions",
+    "period": "2024-Q3",
+    "value": 5372.0,
+    "locator": "csv lines 398,399,400,401",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   },
+   {
+    "series_id": "private_transactions",
+    "period": "2024-Q4",
+    "value": 7433.0,
+    "locator": "csv lines 402,403,404,405",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   },
+   {
+    "series_id": "private_transactions",
+    "period": "2025-Q1",
+    "value": 7261.0,
+    "locator": "csv lines 406,407,408,409",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   },
+   {
+    "series_id": "private_transactions",
+    "period": "2025-Q2",
+    "value": 5128.0,
+    "locator": "csv lines 410,411,412,413",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   },
+   {
+    "series_id": "private_transactions",
+    "period": "2025-Q3",
+    "value": 7404.0,
+    "locator": "csv lines 414,415,416,417",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   },
+   {
+    "series_id": "private_transactions",
+    "period": "2025-Q4",
+    "value": 6699.0,
+    "locator": "csv lines 418,419,420,421",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   },
+   {
+    "series_id": "private_transactions",
+    "period": "2026-Q1",
+    "value": 5413.0,
+    "locator": "csv lines 422,423,424,425",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   },
+   {
+    "series_id": "private_transactions",
+    "period": "2026-Q2",
+    "value": 6148.0,
+    "locator": "csv lines 426,427,428,429",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "t4q_yoy"
+  }
+ },
+ {
+  "fact_id": "F:23a230a0",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.6490663551,
+  "unit": "r",
+  "display": "+0.65",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 99,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:3116c837",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.3742107099,
+  "unit": "r",
+  "display": "+0.37",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 98,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:3d2d96cf",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.7291909966,
+  "unit": "r",
+  "display": "+0.73",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 98,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:43998ad5",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.084976664,
+  "unit": "r",
+  "display": "+0.08",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 88,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:4e75a448",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.4116918565,
+  "unit": "r",
+  "display": "+0.41",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 96,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:554538d9",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.309246152,
+  "unit": "r",
+  "display": "+0.31",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:63ae4195",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0867837708,
+  "unit": "r",
+  "display": "+0.09",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 100,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:7f595853",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2399664384,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 88,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:8587aa9b",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0616420352,
+  "unit": "r",
+  "display": "+0.06",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:87982125",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0974922831,
+  "unit": "r",
+  "display": "-0.10",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 92,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:8ebe5573",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.375459678,
+  "unit": "r",
+  "display": "+0.38",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 100,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:a9e3121b",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1751464739,
+  "unit": "r",
+  "display": "+0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 92,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:b42d907f",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2558537383,
+  "unit": "r",
+  "display": "+0.26",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 99,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:b45f94a8",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0511785597,
+  "unit": "r",
+  "display": "+0.05",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:bab49e5b",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.425357473,
+  "unit": "r",
+  "display": "+0.43",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 96,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:bc40121f",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0062508309,
+  "unit": "r",
+  "display": "+0.01",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 94,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:cdc9f8f8",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.5009006832,
+  "unit": "r",
+  "display": "+0.50",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:d0800687",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0890175305,
+  "unit": "r",
+  "display": "-0.09",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:d08b318e",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2709657758,
+  "unit": "r",
+  "display": "+0.27",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 94,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:d322fd1e",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.5712156433,
+  "unit": "r",
+  "display": "+0.57",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:de30188d",
+  "kind": "correlation",
+  "series_id": "private_transactions",
+  "label": "correlation of private_transactions headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.3299759131,
+  "unit": "r",
+  "display": "+0.33",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:b660ac78",
+  "kind": "level",
+  "series_id": "private_transactions",
+  "label": "Private transactions (units), level",
+  "period": "2026-Q2",
+  "value": 6148.0,
+  "unit": "units per quarter",
+  "display": "6,148",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "private_transactions",
+    "period": "2026-Q2",
+    "value": 6148.0,
+    "locator": "csv lines 426,427,428,429",
+    "vintage_id": "20261002T084400Z-8b3c9517",
+    "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "object_key": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:d4ca54b5",
+  "kind": "percentile",
+  "series_id": "private_transactions",
+  "label": "Private transactions (units), historical percentile of the headline change",
+  "period": "2026-Q2",
+  "value": 46.0,
+  "unit": "percentile",
+  "display": "46th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:cc8b57d8"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "2001-Q3"
+  }
+ },
+ {
+  "fact_id": "F:c3e90320",
+  "kind": "signal",
+  "series_id": "private_transactions",
+  "label": "Private transactions (units): reading for sales",
+  "period": "2026-Q2",
+  "value": 0.0,
+  "unit": "signal",
+  "display": "neutral",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:cc8b57d8"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "positive",
+   "neutral_band": 5.0
+  }
+ },
+ {
+  "fact_id": "F:4f9fc00f",
+  "kind": "change",
+  "series_id": "sgs_10y",
+  "label": "SGS 10Y yield, month-on-month change",
+  "period": "2026-08",
+  "value": 0.0,
+  "unit": "bp",
+  "display": "0 bp",
+  "formula": "(v[t] - v[t-1]) * 100",
+  "inputs": [
+   {
+    "series_id": "sgs_10y",
+    "period": "2026-07",
+    "value": 2.35,
+    "locator": "seriesNo=15 key=\"2026 Jul\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   },
+   {
+    "series_id": "sgs_10y",
+    "period": "2026-08",
+    "value": 2.35,
+    "locator": "seriesNo=15 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "mom_bp"
+  }
+ },
+ {
+  "fact_id": "F:c145ab14",
+  "kind": "change",
+  "series_id": "sgs_10y",
+  "label": "SGS 10Y yield, year-on-year change",
+  "period": "2026-08",
+  "value": 52.0,
+  "unit": "bp",
+  "display": "+52 bp",
+  "formula": "(v[t] - v[t-12]) * 100",
+  "inputs": [
+   {
+    "series_id": "sgs_10y",
+    "period": "2025-08",
+    "value": 1.83,
+    "locator": "seriesNo=15 key=\"2025 Aug\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   },
+   {
+    "series_id": "sgs_10y",
+    "period": "2026-08",
+    "value": 2.35,
+    "locator": "seriesNo=15 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy_bp"
+  }
+ },
+ {
+  "fact_id": "F:0283dfa9",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0428876512,
+  "unit": "r",
+  "display": "+0.04",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 101,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:0319e2f3",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.1661870785,
+  "unit": "r",
+  "display": "+0.17",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 109,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:05ab9041",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.1473688865,
+  "unit": "r",
+  "display": "-0.15",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 97,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:5be536f6",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0849884786,
+  "unit": "r",
+  "display": "-0.08",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 103,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:662056c9",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.1310960663,
+  "unit": "r",
+  "display": "+0.13",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 108,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:66c14ea7",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0465160239,
+  "unit": "r",
+  "display": "+0.05",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 107,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:6d2d37ab",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1585828759,
+  "unit": "r",
+  "display": "+0.16",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:6da71328",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.1082770643,
+  "unit": "r",
+  "display": "+0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 103,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:7b614bc0",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1782978591,
+  "unit": "r",
+  "display": "+0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 109,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:7e761f9a",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.1309384544,
+  "unit": "r",
+  "display": "-0.13",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 105,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:92d9c125",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1609071098,
+  "unit": "r",
+  "display": "+0.16",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:9eb2d7ce",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.2308146881,
+  "unit": "r",
+  "display": "+0.23",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:b522975b",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0159715747,
+  "unit": "r",
+  "display": "+0.02",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 107,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:b5f6da6d",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0196412413,
+  "unit": "r",
+  "display": "+0.02",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 97,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:b6f8c7a1",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.096654316,
+  "unit": "r",
+  "display": "+0.10",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 108,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:c1a5883d",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.093528626,
+  "unit": "r",
+  "display": "+0.09",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 101,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:d294dd50",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.2167876626,
+  "unit": "r",
+  "display": "+0.22",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:d93d7670",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0259949201,
+  "unit": "r",
+  "display": "-0.03",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:db748fc6",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0122062454,
+  "unit": "r",
+  "display": "-0.01",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 105,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:e17a163e",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.2196828206,
+  "unit": "r",
+  "display": "-0.22",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:f5a43f10",
+  "kind": "correlation",
+  "series_id": "sgs_10y",
+  "label": "correlation of sgs_10y headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0842156864,
+  "unit": "r",
+  "display": "+0.08",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:d43df931",
+  "kind": "level",
+  "series_id": "sgs_10y",
+  "label": "SGS 10Y yield, level",
+  "period": "2026-08",
+  "value": 2.35,
+  "unit": "percent per annum",
+  "display": "2.35",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "sgs_10y",
+    "period": "2026-08",
+    "value": 2.35,
+    "locator": "seriesNo=15 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:beb82941",
+  "kind": "percentile",
+  "series_id": "sgs_10y",
+  "label": "SGS 10Y yield, historical percentile of the headline change",
+  "period": "2026-08",
+  "value": 82.874617737,
+  "unit": "percentile",
+  "display": "83rd",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:c145ab14"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "1999-06"
+  }
+ },
+ {
+  "fact_id": "F:6676ef8d",
+  "kind": "signal",
+  "series_id": "sgs_10y",
+  "label": "SGS 10Y yield: reading for rents",
+  "period": "2026-08",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "ambiguous",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:c145ab14"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "ambiguous",
+   "neutral_band": 10.0
+  }
+ },
+ {
+  "fact_id": "F:a6f7787c",
+  "kind": "signal",
+  "series_id": "sgs_10y",
+  "label": "SGS 10Y yield: reading for sales",
+  "period": "2026-08",
+  "value": 1.0,
+  "unit": "signal",
+  "display": "headwind",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:c145ab14"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "negative",
+   "neutral_band": 10.0
+  }
+ },
+ {
+  "fact_id": "F:331a4bda",
+  "kind": "change",
+  "series_id": "sora_3m",
+  "label": "3M compounded SORA, year-on-year change",
+  "period": "2026-08",
+  "value": -37.75,
+  "unit": "bp",
+  "display": "-38 bp",
+  "formula": "(v[t] - v[t-12]) * 100",
+  "inputs": [
+   {
+    "series_id": "sora_3m",
+    "period": "2025-08",
+    "value": 1.5638,
+    "locator": "seriesNo=23 key=\"2025 Aug\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   },
+   {
+    "series_id": "sora_3m",
+    "period": "2026-08",
+    "value": 1.1863,
+    "locator": "seriesNo=23 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy_bp"
+  }
+ },
+ {
+  "fact_id": "F:d74822bd",
+  "kind": "change",
+  "series_id": "sora_3m",
+  "label": "3M compounded SORA, month-on-month change",
+  "period": "2026-08",
+  "value": 5.09,
+  "unit": "bp",
+  "display": "+5 bp",
+  "formula": "(v[t] - v[t-1]) * 100",
+  "inputs": [
+   {
+    "series_id": "sora_3m",
+    "period": "2026-07",
+    "value": 1.1354,
+    "locator": "seriesNo=23 key=\"2026 Jul\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   },
+   {
+    "series_id": "sora_3m",
+    "period": "2026-08",
+    "value": 1.1863,
+    "locator": "seriesNo=23 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "mom_bp"
+  }
+ },
+ {
+  "fact_id": "F:13176cb9",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.2690825175,
+  "unit": "r",
+  "display": "-0.27",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 67,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:24e53f23",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.2536384516,
+  "unit": "r",
+  "display": "-0.25",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 67,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:29496e92",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.2979263534,
+  "unit": "r",
+  "display": "-0.30",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 67,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:38ef7626",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.1758759679,
+  "unit": "r",
+  "display": "-0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 73,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:3db66486",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.2723123024,
+  "unit": "r",
+  "display": "-0.27",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 71,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:3fe7ca9f",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.2303257532,
+  "unit": "r",
+  "display": "-0.23",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 75,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:46bd7e85",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1545024512,
+  "unit": "r",
+  "display": "+0.15",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 78,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:47e78151",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0556163303,
+  "unit": "r",
+  "display": "+0.06",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 77,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:4baa2b28",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.229051253,
+  "unit": "r",
+  "display": "-0.23",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 78,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:524adcd7",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0261581548,
+  "unit": "r",
+  "display": "-0.03",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 73,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:546bf6cf",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0034676812,
+  "unit": "r",
+  "display": "+0.00",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 78,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:607ad611",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.1844103813,
+  "unit": "r",
+  "display": "-0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 71,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:6b741044",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.119199616,
+  "unit": "r",
+  "display": "+0.12",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 75,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:8aca370b",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0409930566,
+  "unit": "r",
+  "display": "-0.04",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 79,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:a82ad848",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1021862124,
+  "unit": "r",
+  "display": "+0.10",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 75,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:b23034c7",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.2488786431,
+  "unit": "r",
+  "display": "-0.25",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 77,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:b51814ef",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0172560714,
+  "unit": "r",
+  "display": "-0.02",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 73,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:b66395b5",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1210757745,
+  "unit": "r",
+  "display": "+0.12",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 79,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:cc8d6664",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1596509568,
+  "unit": "r",
+  "display": "+0.16",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 77,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:d62d3a1d",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.2157174242,
+  "unit": "r",
+  "display": "-0.22",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 71,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:f0577a49",
+  "kind": "correlation",
+  "series_id": "sora_3m",
+  "label": "correlation of sora_3m headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.1950277984,
+  "unit": "r",
+  "display": "-0.20",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 79,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:7bed2c67",
+  "kind": "level",
+  "series_id": "sora_3m",
+  "label": "3M compounded SORA, level",
+  "period": "2026-08",
+  "value": 1.1863,
+  "unit": "percent per annum",
+  "display": "1.19",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "sora_3m",
+    "period": "2026-08",
+    "value": 1.1863,
+    "locator": "seriesNo=23 key=\"2026 Aug\"",
+    "vintage_id": "20261002T084530Z-c23ac2f1",
+    "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "object_key": "singstat/M700071"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:c99606d0",
+  "kind": "percentile",
+  "series_id": "sora_3m",
+  "label": "3M compounded SORA, historical percentile of the headline change",
+  "period": "2026-08",
+  "value": 27.6150627615,
+  "unit": "percentile",
+  "display": "28th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:331a4bda"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "2006-10"
+  }
+ },
+ {
+  "fact_id": "F:75c5bbd5",
+  "kind": "signal",
+  "series_id": "sora_3m",
+  "label": "3M compounded SORA: reading for rents",
+  "period": "2026-08",
+  "value": -1.0,
+  "unit": "signal",
+  "display": "ambiguous",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:331a4bda"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "ambiguous",
+   "neutral_band": 10.0
+  }
+ },
+ {
+  "fact_id": "F:d2c5632e",
+  "kind": "signal",
+  "series_id": "sora_3m",
+  "label": "3M compounded SORA: reading for sales",
+  "period": "2026-08",
+  "value": -1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:331a4bda"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "negative",
+   "neutral_band": 10.0
+  }
+ },
+ {
+  "fact_id": "F:0681d341",
+  "kind": "change",
+  "series_id": "unemployment_rate_sa",
+  "label": "Unemployment rate (SA), year-on-year change",
+  "period": "2026-Q2",
+  "value": -0.1,
+  "unit": "pp",
+  "display": "-0.10 pp",
+  "formula": "v[t] - v[t-4]",
+  "inputs": [
+   {
+    "series_id": "unemployment_rate_sa",
+    "period": "2025-Q2",
+    "value": 2.0,
+    "locator": "seriesNo=1 key=\"2025 2Q\"",
+    "vintage_id": "20261002T084515Z-9fe7713a",
+    "data_sha256": "9fe7713ad9f64ed0eebd579565d02f1a7ca609468401f9786c4941966c966050",
+    "object_key": "singstat/M182342"
+   },
+   {
+    "series_id": "unemployment_rate_sa",
+    "period": "2026-Q2",
+    "value": 1.9,
+    "locator": "seriesNo=1 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084515Z-9fe7713a",
+    "data_sha256": "9fe7713ad9f64ed0eebd579565d02f1a7ca609468401f9786c4941966c966050",
+    "object_key": "singstat/M182342"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy_pp"
+  }
+ },
+ {
+  "fact_id": "F:7b3033b4",
+  "kind": "change",
+  "series_id": "unemployment_rate_sa",
+  "label": "Unemployment rate (SA), quarter-on-quarter change",
+  "period": "2026-Q2",
+  "value": -0.1,
+  "unit": "pp",
+  "display": "-0.10 pp",
+  "formula": "v[t] - v[t-1]",
+  "inputs": [
+   {
+    "series_id": "unemployment_rate_sa",
+    "period": "2026-Q1",
+    "value": 2.0,
+    "locator": "seriesNo=1 key=\"2026 1Q\"",
+    "vintage_id": "20261002T084515Z-9fe7713a",
+    "data_sha256": "9fe7713ad9f64ed0eebd579565d02f1a7ca609468401f9786c4941966c966050",
+    "object_key": "singstat/M182342"
+   },
+   {
+    "series_id": "unemployment_rate_sa",
+    "period": "2026-Q2",
+    "value": 1.9,
+    "locator": "seriesNo=1 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084515Z-9fe7713a",
+    "data_sha256": "9fe7713ad9f64ed0eebd579565d02f1a7ca609468401f9786c4941966c966050",
+    "object_key": "singstat/M182342"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "qoq_pp"
+  }
+ },
+ {
+  "fact_id": "F:028c47f4",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.2330265547,
+  "unit": "r",
+  "display": "-0.23",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 122,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:20daeb7d",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1496155829,
+  "unit": "r",
+  "display": "+0.15",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:227bec6a",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.2576648549,
+  "unit": "r",
+  "display": "-0.26",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 132,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:27870c1e",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.5554580057,
+  "unit": "r",
+  "display": "-0.56",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:27fe5b03",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.2725896205,
+  "unit": "r",
+  "display": "-0.27",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:2b580967",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0659321493,
+  "unit": "r",
+  "display": "-0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:2f618b77",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0282251901,
+  "unit": "r",
+  "display": "+0.03",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 126,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:44bb2dfc",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0243078901,
+  "unit": "r",
+  "display": "+0.02",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:5e0038d1",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.2071676619,
+  "unit": "r",
+  "display": "-0.21",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 133,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:66f6d74e",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.5311545077,
+  "unit": "r",
+  "display": "-0.53",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:77a83ad4",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.4414908175,
+  "unit": "r",
+  "display": "-0.44",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 133,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:8cbe337a",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.1877547826,
+  "unit": "r",
+  "display": "-0.19",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 122,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:8cd53426",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.148221003,
+  "unit": "r",
+  "display": "+0.15",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 130,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:9ad20c9b",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.2394510223,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 128,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:a0f579ee",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0519370941,
+  "unit": "r",
+  "display": "+0.05",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 130,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:a7f2e99b",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0105282458,
+  "unit": "r",
+  "display": "-0.01",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 126,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:adb494fd",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.6286190769,
+  "unit": "r",
+  "display": "-0.63",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:c05ab216",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.2222448759,
+  "unit": "r",
+  "display": "-0.22",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 134,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:c59ae873",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.1460475007,
+  "unit": "r",
+  "display": "-0.15",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 132,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:d2e7e68d",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.49583712,
+  "unit": "r",
+  "display": "-0.50",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 134,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:e687d9c8",
+  "kind": "correlation",
+  "series_id": "unemployment_rate_sa",
+  "label": "correlation of unemployment_rate_sa headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.1326899129,
+  "unit": "r",
+  "display": "+0.13",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 128,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:9a877964",
+  "kind": "level",
+  "series_id": "unemployment_rate_sa",
+  "label": "Unemployment rate (SA), level",
+  "period": "2026-Q2",
+  "value": 1.9,
+  "unit": "percent of labour force",
+  "display": "1.9",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "unemployment_rate_sa",
+    "period": "2026-Q2",
+    "value": 1.9,
+    "locator": "seriesNo=1 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084515Z-9fe7713a",
+    "data_sha256": "9fe7713ad9f64ed0eebd579565d02f1a7ca609468401f9786c4941966c966050",
+    "object_key": "singstat/M182342"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:8adf5884",
+  "kind": "percentile",
+  "series_id": "unemployment_rate_sa",
+  "label": "Unemployment rate (SA), historical percentile of the headline change",
+  "period": "2026-Q2",
+  "value": 46.2686567164,
+  "unit": "percentile",
+  "display": "46th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:0681d341"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "1993-Q1"
+  }
+ },
+ {
+  "fact_id": "F:4bbe6cfc",
+  "kind": "signal",
+  "series_id": "unemployment_rate_sa",
+  "label": "Unemployment rate (SA): reading for sales",
+  "period": "2026-Q2",
+  "value": -1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:0681d341"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "negative",
+   "neutral_band": 0.1
+  }
+ },
+ {
+  "fact_id": "F:c0d33d57",
+  "kind": "signal",
+  "series_id": "unemployment_rate_sa",
+  "label": "Unemployment rate (SA): reading for rents",
+  "period": "2026-Q2",
+  "value": -1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:0681d341"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "negative",
+   "neutral_band": 0.1
+  }
+ },
+ {
+  "fact_id": "F:623df940",
+  "kind": "change",
+  "series_id": "unsold_inventory",
+  "label": "Unsold private inventory, year-on-year change",
+  "period": "2026-Q2",
+  "value": -19.2784002573,
+  "unit": "pct",
+  "display": "-19.3%",
+  "formula": "(v[t] / v[t-4] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "unsold_inventory",
+    "period": "2025-Q2",
+    "value": 18653.0,
+    "locator": "csv lines 902,903,904,905,906,907,908,909,910,911,912,913",
+    "vintage_id": "20261002T084424Z-97321009",
+    "data_sha256": "9732100930c274a6628e5a15b5a64a42fc8c197fe322c3d7719dc843c6f78b30",
+    "object_key": "datagovsg/d_84d05d45049108f0fd2e99b66bd19cfe"
+   },
+   {
+    "series_id": "unsold_inventory",
+    "period": "2026-Q2",
+    "value": 15057.0,
+    "locator": "csv lines 950,951,952,953,954,955,956,957,958,959,960,961",
+    "vintage_id": "20261002T084424Z-97321009",
+    "data_sha256": "9732100930c274a6628e5a15b5a64a42fc8c197fe322c3d7719dc843c6f78b30",
+    "object_key": "datagovsg/d_84d05d45049108f0fd2e99b66bd19cfe"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:a98584d2",
+  "kind": "change",
+  "series_id": "unsold_inventory",
+  "label": "Unsold private inventory, quarter-on-quarter change",
+  "period": "2026-Q2",
+  "value": -7.1644367717,
+  "unit": "pct",
+  "display": "-7.2%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "unsold_inventory",
+    "period": "2026-Q1",
+    "value": 16219.0,
+    "locator": "csv lines 938,939,940,941,942,943,944,945,946,947,948,949",
+    "vintage_id": "20261002T084424Z-97321009",
+    "data_sha256": "9732100930c274a6628e5a15b5a64a42fc8c197fe322c3d7719dc843c6f78b30",
+    "object_key": "datagovsg/d_84d05d45049108f0fd2e99b66bd19cfe"
+   },
+   {
+    "series_id": "unsold_inventory",
+    "period": "2026-Q2",
+    "value": 15057.0,
+    "locator": "csv lines 950,951,952,953,954,955,956,957,958,959,960,961",
+    "vintage_id": "20261002T084424Z-97321009",
+    "data_sha256": "9732100930c274a6628e5a15b5a64a42fc8c197fe322c3d7719dc843c6f78b30",
+    "object_key": "datagovsg/d_84d05d45049108f0fd2e99b66bd19cfe"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "qoq"
+  }
+ },
+ {
+  "fact_id": "F:0ef68bcc",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.2270372322,
+  "unit": "r",
+  "display": "-0.23",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 68,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:0f4dfe8d",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.391512419,
+  "unit": "r",
+  "display": "-0.39",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 72,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:240cce83",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.1107872932,
+  "unit": "r",
+  "display": "-0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 72,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:313108f3",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0086948434,
+  "unit": "r",
+  "display": "-0.01",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 74,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:3457488d",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.2939979487,
+  "unit": "r",
+  "display": "+0.29",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 64,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:3b2e3e3e",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1066900019,
+  "unit": "r",
+  "display": "+0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 75,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:52b63095",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.2359958001,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 76,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:71ef2333",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.4267971747,
+  "unit": "r",
+  "display": "-0.43",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 70,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:8308ad83",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.2369404014,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 76,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:928c7ef0",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0725239361,
+  "unit": "r",
+  "display": "+0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 75,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:9932bfcc",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0650154993,
+  "unit": "r",
+  "display": "+0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 68,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:b1480baa",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0379669244,
+  "unit": "r",
+  "display": "+0.04",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 75,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:c330d779",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.1132753947,
+  "unit": "r",
+  "display": "-0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 74,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:c3985694",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1785334725,
+  "unit": "r",
+  "display": "+0.18",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 64,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:cd5346a1",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.1496079374,
+  "unit": "r",
+  "display": "-0.15",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 70,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:ce536167",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": 0.0701825555,
+  "unit": "r",
+  "display": "+0.07",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 76,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:e0edaa37",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.3256892685,
+  "unit": "r",
+  "display": "-0.33",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 72,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:e1e85536",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.2713501553,
+  "unit": "r",
+  "display": "+0.27",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 64,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:e83e2e41",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.1235635883,
+  "unit": "r",
+  "display": "+0.12",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 68,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:f5c48f6a",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0905439589,
+  "unit": "r",
+  "display": "-0.09",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 70,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:f6f202ab",
+  "kind": "correlation",
+  "series_id": "unsold_inventory",
+  "label": "correlation of unsold_inventory headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0606286708,
+  "unit": "r",
+  "display": "-0.06",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 74,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:4f06b0ef",
+  "kind": "level",
+  "series_id": "unsold_inventory",
+  "label": "Unsold private inventory, level",
+  "period": "2026-Q2",
+  "value": 15057.0,
+  "unit": "units",
+  "display": "15,057",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "unsold_inventory",
+    "period": "2026-Q2",
+    "value": 15057.0,
+    "locator": "csv lines 950,951,952,953,954,955,956,957,958,959,960,961",
+    "vintage_id": "20261002T084424Z-97321009",
+    "data_sha256": "9732100930c274a6628e5a15b5a64a42fc8c197fe322c3d7719dc843c6f78b30",
+    "object_key": "datagovsg/d_84d05d45049108f0fd2e99b66bd19cfe"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:462931bc",
+  "kind": "percentile",
+  "series_id": "unsold_inventory",
+  "label": "Unsold private inventory, historical percentile of the headline change",
+  "period": "2026-Q2",
+  "value": 19.7368421053,
+  "unit": "percentile",
+  "display": "20th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:623df940"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "2007-Q3"
+  }
+ },
+ {
+  "fact_id": "F:8c53315f",
+  "kind": "signal",
+  "series_id": "unsold_inventory",
+  "label": "Unsold private inventory: reading for sales",
+  "period": "2026-Q2",
+  "value": -1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:623df940"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "negative",
+   "neutral_band": 5.0
+  }
+ },
+ {
+  "fact_id": "F:06cca86b",
+  "kind": "change",
+  "series_id": "ura_ppi",
+  "label": "Private home prices (URA PPI), year-on-year change",
+  "period": "2026-Q2",
+  "value": 2.9080675422,
+  "unit": "pct",
+  "display": "+2.9%",
+  "formula": "(v[t] / v[t-4] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "ura_ppi",
+    "period": "2025-Q2",
+    "value": 213.2,
+    "locator": "csv line 605",
+    "vintage_id": "20261002T084512Z-00679c53",
+    "data_sha256": "00679c53fb3e3822c46f9ee334e2e55cc0604f9dd583c4991488dfed1f054dd3",
+    "object_key": "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c"
+   },
+   {
+    "series_id": "ura_ppi",
+    "period": "2026-Q2",
+    "value": 219.4,
+    "locator": "csv line 617",
+    "vintage_id": "20261002T084512Z-00679c53",
+    "data_sha256": "00679c53fb3e3822c46f9ee334e2e55cc0604f9dd583c4991488dfed1f054dd3",
+    "object_key": "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:c3a058ce",
+  "kind": "change",
+  "series_id": "ura_ppi",
+  "label": "Private home prices (URA PPI), quarter-on-quarter change",
+  "period": "2026-Q2",
+  "value": 0.5038937242,
+  "unit": "pct",
+  "display": "+0.5%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "ura_ppi",
+    "period": "2026-Q1",
+    "value": 218.3,
+    "locator": "csv line 614",
+    "vintage_id": "20261002T084512Z-00679c53",
+    "data_sha256": "00679c53fb3e3822c46f9ee334e2e55cc0604f9dd583c4991488dfed1f054dd3",
+    "object_key": "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c"
+   },
+   {
+    "series_id": "ura_ppi",
+    "period": "2026-Q2",
+    "value": 219.4,
+    "locator": "csv line 617",
+    "vintage_id": "20261002T084512Z-00679c53",
+    "data_sha256": "00679c53fb3e3822c46f9ee334e2e55cc0604f9dd583c4991488dfed1f054dd3",
+    "object_key": "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "qoq"
+  }
+ },
+ {
+  "fact_id": "F:f06cd752",
+  "kind": "level",
+  "series_id": "ura_ppi",
+  "label": "Private home prices (URA PPI), level",
+  "period": "2026-Q2",
+  "value": 219.4,
+  "unit": "index, 2009-Q1 = 100",
+  "display": "219.4",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "ura_ppi",
+    "period": "2026-Q2",
+    "value": 219.4,
+    "locator": "csv line 617",
+    "vintage_id": "20261002T084512Z-00679c53",
+    "data_sha256": "00679c53fb3e3822c46f9ee334e2e55cc0604f9dd583c4991488dfed1f054dd3",
+    "object_key": "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:c1f556ac",
+  "kind": "percentile",
+  "series_id": "ura_ppi",
+  "label": "Private home prices (URA PPI), historical percentile of the headline change",
+  "period": "2026-Q2",
+  "value": 41.0891089109,
+  "unit": "percentile",
+  "display": "41st",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:06cca86b"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "1976-Q1"
+  }
+ },
+ {
+  "fact_id": "F:f0c465dd",
+  "kind": "real_change",
+  "series_id": "ura_ppi",
+  "label": "Private home prices (URA PPI), real (CPI-deflated) year-on-year change",
+  "period": "2026-Q2",
+  "value": 1.0477070252,
+  "unit": "pct",
+  "display": "+1.0%",
+  "formula": "((1 + nominal_yoy/100) / (avg(cpi[t]) / avg(cpi[t-4])) - 1) * 100, cpi averaged over the quarter's three months",
+  "inputs": [
+   {
+    "series_id": "ura_ppi",
+    "period": "2025-Q2",
+    "value": 213.2,
+    "locator": "csv line 605",
+    "vintage_id": "20261002T084512Z-00679c53",
+    "data_sha256": "00679c53fb3e3822c46f9ee334e2e55cc0604f9dd583c4991488dfed1f054dd3",
+    "object_key": "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c"
+   },
+   {
+    "series_id": "ura_ppi",
+    "period": "2026-Q2",
+    "value": 219.4,
+    "locator": "csv line 617",
+    "vintage_id": "20261002T084512Z-00679c53",
+    "data_sha256": "00679c53fb3e3822c46f9ee334e2e55cc0604f9dd583c4991488dfed1f054dd3",
+    "object_key": "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-04",
+    "value": 100.283,
+    "locator": "seriesNo=1 key=\"2025 Apr\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-05",
+    "value": 100.978,
+    "locator": "seriesNo=1 key=\"2025 May\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-06",
+    "value": 100.9,
+    "locator": "seriesNo=1 key=\"2025 Jun\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-04",
+    "value": 102.052,
+    "locator": "seriesNo=1 key=\"2026 Apr\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-05",
+    "value": 102.814,
+    "locator": "seriesNo=1 key=\"2026 May\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-06",
+    "value": 102.858,
+    "locator": "seriesNo=1 key=\"2026 Jun\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:571c087b",
+  "kind": "change",
+  "series_id": "ura_rri_nonlanded",
+  "label": "Private rents (URA rental index), year-on-year change",
+  "period": "2026-Q2",
+  "value": 1.7532874139,
+  "unit": "pct",
+  "display": "+1.8%",
+  "formula": "(v[t] / v[t-4] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "ura_rri_nonlanded",
+    "period": "2025-Q2",
+    "value": 159.7,
+    "locator": "csv line 498",
+    "vintage_id": "20261002T084448Z-5e36cf5a",
+    "data_sha256": "5e36cf5a1ee0176a665903e7dfdbbe79c47eb353b0e3f74c32233936bc8ad629",
+    "object_key": "datagovsg/d_8e4c50283fb7052a391dfb746a05c853"
+   },
+   {
+    "series_id": "ura_rri_nonlanded",
+    "period": "2026-Q2",
+    "value": 162.5,
+    "locator": "csv line 518",
+    "vintage_id": "20261002T084448Z-5e36cf5a",
+    "data_sha256": "5e36cf5a1ee0176a665903e7dfdbbe79c47eb353b0e3f74c32233936bc8ad629",
+    "object_key": "datagovsg/d_8e4c50283fb7052a391dfb746a05c853"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:ae2f0ba0",
+  "kind": "change",
+  "series_id": "ura_rri_nonlanded",
+  "label": "Private rents (URA rental index), quarter-on-quarter change",
+  "period": "2026-Q2",
+  "value": 0.3705991353,
+  "unit": "pct",
+  "display": "+0.4%",
+  "formula": "(v[t] / v[t-1] - 1) * 100",
+  "inputs": [
+   {
+    "series_id": "ura_rri_nonlanded",
+    "period": "2026-Q1",
+    "value": 161.9,
+    "locator": "csv line 513",
+    "vintage_id": "20261002T084448Z-5e36cf5a",
+    "data_sha256": "5e36cf5a1ee0176a665903e7dfdbbe79c47eb353b0e3f74c32233936bc8ad629",
+    "object_key": "datagovsg/d_8e4c50283fb7052a391dfb746a05c853"
+   },
+   {
+    "series_id": "ura_rri_nonlanded",
+    "period": "2026-Q2",
+    "value": 162.5,
+    "locator": "csv line 518",
+    "vintage_id": "20261002T084448Z-5e36cf5a",
+    "data_sha256": "5e36cf5a1ee0176a665903e7dfdbbe79c47eb353b0e3f74c32233936bc8ad629",
+    "object_key": "datagovsg/d_8e4c50283fb7052a391dfb746a05c853"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "qoq"
+  }
+ },
+ {
+  "fact_id": "F:91fb9d08",
+  "kind": "level",
+  "series_id": "ura_rri_nonlanded",
+  "label": "Private rents (URA rental index), level",
+  "period": "2026-Q2",
+  "value": 162.5,
+  "unit": "index, 2009-Q1 = 100",
+  "display": "162.5",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "ura_rri_nonlanded",
+    "period": "2026-Q2",
+    "value": 162.5,
+    "locator": "csv line 518",
+    "vintage_id": "20261002T084448Z-5e36cf5a",
+    "data_sha256": "5e36cf5a1ee0176a665903e7dfdbbe79c47eb353b0e3f74c32233936bc8ad629",
+    "object_key": "datagovsg/d_8e4c50283fb7052a391dfb746a05c853"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:c4e1dac5",
+  "kind": "percentile",
+  "series_id": "ura_rri_nonlanded",
+  "label": "Private rents (URA rental index), historical percentile of the headline change",
+  "period": "2026-Q2",
+  "value": 44.1860465116,
+  "unit": "percentile",
+  "display": "44th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:571c087b"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "2005-Q1"
+  }
+ },
+ {
+  "fact_id": "F:a68c5da8",
+  "kind": "real_change",
+  "series_id": "ura_rri_nonlanded",
+  "label": "Private rents (URA rental index), real (CPI-deflated) year-on-year change",
+  "period": "2026-Q2",
+  "value": -0.0861971173,
+  "unit": "pct",
+  "display": "-0.1%",
+  "formula": "((1 + nominal_yoy/100) / (avg(cpi[t]) / avg(cpi[t-4])) - 1) * 100, cpi averaged over the quarter's three months",
+  "inputs": [
+   {
+    "series_id": "ura_rri_nonlanded",
+    "period": "2025-Q2",
+    "value": 159.7,
+    "locator": "csv line 498",
+    "vintage_id": "20261002T084448Z-5e36cf5a",
+    "data_sha256": "5e36cf5a1ee0176a665903e7dfdbbe79c47eb353b0e3f74c32233936bc8ad629",
+    "object_key": "datagovsg/d_8e4c50283fb7052a391dfb746a05c853"
+   },
+   {
+    "series_id": "ura_rri_nonlanded",
+    "period": "2026-Q2",
+    "value": 162.5,
+    "locator": "csv line 518",
+    "vintage_id": "20261002T084448Z-5e36cf5a",
+    "data_sha256": "5e36cf5a1ee0176a665903e7dfdbbe79c47eb353b0e3f74c32233936bc8ad629",
+    "object_key": "datagovsg/d_8e4c50283fb7052a391dfb746a05c853"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-04",
+    "value": 100.283,
+    "locator": "seriesNo=1 key=\"2025 Apr\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-05",
+    "value": 100.978,
+    "locator": "seriesNo=1 key=\"2025 May\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2025-06",
+    "value": 100.9,
+    "locator": "seriesNo=1 key=\"2025 Jun\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-04",
+    "value": 102.052,
+    "locator": "seriesNo=1 key=\"2026 Apr\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-05",
+    "value": 102.814,
+    "locator": "seriesNo=1 key=\"2026 May\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   },
+   {
+    "series_id": "cpi_all_items",
+    "period": "2026-06",
+    "value": 102.858,
+    "locator": "seriesNo=1 key=\"2026 Jun\"",
+    "vintage_id": "20261002T084524Z-5d219bc9",
+    "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "object_key": "singstat/M213751"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy"
+  }
+ },
+ {
+  "fact_id": "F:94768f7b",
+  "kind": "change",
+  "series_id": "vacancy_nonlanded",
+  "label": "Non-landed vacancy rate, year-on-year change",
+  "period": "2026-Q2",
+  "value": -1.4857096298,
+  "unit": "pp",
+  "display": "-1.49 pp",
+  "formula": "v[t] - v[t-4]",
+  "inputs": [
+   {
+    "series_id": "vacancy_nonlanded",
+    "period": "2025-Q2",
+    "value": 6.8758242360756405,
+    "locator": "seriesNo=2.2 key=\"2025 2Q\" / seriesNo=1.2 key=\"2025 2Q\"",
+    "vintage_id": "20261002T084527Z-62608a63",
+    "data_sha256": "62608a6386dc200489cd603420e3b9c631c14d88efd90e48d5f14549f11a4f67",
+    "object_key": "singstat/M400841"
+   },
+   {
+    "series_id": "vacancy_nonlanded",
+    "period": "2026-Q2",
+    "value": 5.390114606235332,
+    "locator": "seriesNo=2.2 key=\"2026 2Q\" / seriesNo=1.2 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084527Z-62608a63",
+    "data_sha256": "62608a6386dc200489cd603420e3b9c631c14d88efd90e48d5f14549f11a4f67",
+    "object_key": "singstat/M400841"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "yoy_pp"
+  }
+ },
+ {
+  "fact_id": "F:b89a5384",
+  "kind": "change",
+  "series_id": "vacancy_nonlanded",
+  "label": "Non-landed vacancy rate, quarter-on-quarter change",
+  "period": "2026-Q2",
+  "value": 0.0206883816,
+  "unit": "pp",
+  "display": "+0.02 pp",
+  "formula": "v[t] - v[t-1]",
+  "inputs": [
+   {
+    "series_id": "vacancy_nonlanded",
+    "period": "2026-Q1",
+    "value": 5.3694262245972215,
+    "locator": "seriesNo=2.2 key=\"2026 1Q\" / seriesNo=1.2 key=\"2026 1Q\"",
+    "vintage_id": "20261002T084527Z-62608a63",
+    "data_sha256": "62608a6386dc200489cd603420e3b9c631c14d88efd90e48d5f14549f11a4f67",
+    "object_key": "singstat/M400841"
+   },
+   {
+    "series_id": "vacancy_nonlanded",
+    "period": "2026-Q2",
+    "value": 5.390114606235332,
+    "locator": "seriesNo=2.2 key=\"2026 2Q\" / seriesNo=1.2 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084527Z-62608a63",
+    "data_sha256": "62608a6386dc200489cd603420e3b9c631c14d88efd90e48d5f14549f11a4f67",
+    "object_key": "singstat/M400841"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "transform": "qoq_pp"
+  }
+ },
+ {
+  "fact_id": "F:0ed265a0",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 2q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.4973620348,
+  "unit": "r",
+  "display": "-0.50",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:25691e49",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 8q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.0524585674,
+  "unit": "r",
+  "display": "+0.05",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:4a79d88f",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 4q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0973494125,
+  "unit": "r",
+  "display": "-0.10",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 134,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:57bd5bee",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 2q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.396973917,
+  "unit": "r",
+  "display": "-0.40",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 140,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:67cfea4e",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 1q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.3489688905,
+  "unit": "r",
+  "display": "-0.35",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 141,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:6f841062",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 1q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0258065455,
+  "unit": "r",
+  "display": "-0.03",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 134,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:7097299c",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 12q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": 0.1299163774,
+  "unit": "r",
+  "display": "+0.13",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:70ab3233",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 12q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0048328189,
+  "unit": "r",
+  "display": "-0.00",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 130,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:73bbb2a0",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 2q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0211467642,
+  "unit": "r",
+  "display": "-0.02",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 2,
+   "pairs": 134,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:96908562",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 1q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.3066793723,
+  "unit": "r",
+  "display": "-0.31",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 1,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:9e06bb08",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 6q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.1111169883,
+  "unit": "r",
+  "display": "-0.11",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 134,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:a1a5bcb3",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 4q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.3268983696,
+  "unit": "r",
+  "display": "-0.33",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 138,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:b3165d3e",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 12q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.0587935166,
+  "unit": "r",
+  "display": "+0.06",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 12,
+   "pairs": 130,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:bc0e9837",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 4q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.6204423214,
+  "unit": "r",
+  "display": "-0.62",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 4,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:c4a5df7e",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 6q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.0374875018,
+  "unit": "r",
+  "display": "-0.04",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 136,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:c6a9b5f7",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 8q) with ura_ppi YoY",
+  "period": null,
+  "value": 0.244521995,
+  "unit": "r",
+  "display": "+0.24",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 134,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:e33752ca",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 0q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.015180881,
+  "unit": "r",
+  "display": "-0.02",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 134,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:ed20c58b",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 8q) with hdb_rpi YoY",
+  "period": null,
+  "value": -0.0457646764,
+  "unit": "r",
+  "display": "-0.05",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 8,
+   "pairs": 134,
+   "target": "hdb_rpi"
+  }
+ },
+ {
+  "fact_id": "F:f364235b",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 6q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.3463973242,
+  "unit": "r",
+  "display": "-0.35",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 6,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:fc653a6d",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 0q) with ura_rri_nonlanded YoY",
+  "period": null,
+  "value": -0.0606106819,
+  "unit": "r",
+  "display": "-0.06",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 86,
+   "target": "ura_rri_nonlanded"
+  }
+ },
+ {
+  "fact_id": "F:fd8108a9",
+  "kind": "correlation",
+  "series_id": "vacancy_nonlanded",
+  "label": "correlation of vacancy_nonlanded headline (lead 0q) with ura_ppi YoY",
+  "period": null,
+  "value": -0.2486474767,
+  "unit": "r",
+  "display": "-0.25",
+  "formula": "pearson(x[q-k], y[q]) over gated quarterly observations",
+  "inputs": [],
+  "depends_on": [],
+  "note": null,
+  "extra": {
+   "lag": 0,
+   "pairs": 142,
+   "target": "ura_ppi"
+  }
+ },
+ {
+  "fact_id": "F:5f539422",
+  "kind": "level",
+  "series_id": "vacancy_nonlanded",
+  "label": "Non-landed vacancy rate, level",
+  "period": "2026-Q2",
+  "value": 5.3901146062,
+  "unit": "percent of available stock",
+  "display": "5.39",
+  "formula": "v[t] as published",
+  "inputs": [
+   {
+    "series_id": "vacancy_nonlanded",
+    "period": "2026-Q2",
+    "value": 5.390114606235332,
+    "locator": "seriesNo=2.2 key=\"2026 2Q\" / seriesNo=1.2 key=\"2026 2Q\"",
+    "vintage_id": "20261002T084527Z-62608a63",
+    "data_sha256": "62608a6386dc200489cd603420e3b9c631c14d88efd90e48d5f14549f11a4f67",
+    "object_key": "singstat/M400841"
+   }
+  ],
+  "depends_on": [],
+  "note": null,
+  "extra": {}
+ },
+ {
+  "fact_id": "F:6a13d7ee",
+  "kind": "percentile",
+  "series_id": "vacancy_nonlanded",
+  "label": "Non-landed vacancy rate, historical percentile of the headline change",
+  "period": "2026-Q2",
+  "value": 16.1971830986,
+  "unit": "percentile",
+  "display": "16th",
+  "formula": "share of headline-change history at or below the latest value",
+  "inputs": [],
+  "depends_on": [
+   "F:94768f7b"
+  ],
+  "note": null,
+  "extra": {
+   "history_start": "1989-Q1"
+  }
+ },
+ {
+  "fact_id": "F:4e42461b",
+  "kind": "signal",
+  "series_id": "vacancy_nonlanded",
+  "label": "Non-landed vacancy rate: reading for rents",
+  "period": "2026-Q2",
+  "value": -1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:94768f7b"
+  ],
+  "note": null,
+  "extra": {
+   "market": "rents",
+   "effect": "negative",
+   "neutral_band": 0.25
+  }
+ },
+ {
+  "fact_id": "F:672a5a14",
+  "kind": "signal",
+  "series_id": "vacancy_nonlanded",
+  "label": "Non-landed vacancy rate: reading for sales",
+  "period": "2026-Q2",
+  "value": -1.0,
+  "unit": "signal",
+  "display": "supportive",
+  "formula": "direction(headline, neutral band) x declared effect",
+  "inputs": [],
+  "depends_on": [
+   "F:94768f7b"
+  ],
+  "note": null,
+  "extra": {
+   "market": "sales",
+   "effect": "negative",
+   "neutral_band": 0.25
+  }
+ }
+]

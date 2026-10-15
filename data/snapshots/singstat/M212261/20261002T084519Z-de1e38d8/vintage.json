@@ -1,0 +1,33 @@
+{
+  "object": "singstat/M212261",
+  "vintage_id": "20261002T084519Z-de1e38d8",
+  "retrieved_at": "2026-10-02T08:45:19+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M212261",
+    "series": [
+      "1"
+    ]
+  },
+  "files": {
+    "data.json": "de1e38d82d93e673c9e0d19aa513e8f05cdc38068086061e675eaee3e6ca2e7a",
+    "metadata.json": "ecfa7c4578f84f62b35b7d955ac9f03bae1834ac7499f2b26023b7e5e93143a7"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Private Residential Property Price Index By Type Of Property, (1st Quarter 2009 = 100), Quarterly",
+    "publisher": "URBAN REDEVELOPMENT AUTHORITY",
+    "frequency": "Quarterly",
+    "adjustment": "",
+    "last_updated": "24/07/2026",
+    "start_period": "1975 1Q",
+    "end_period": "2026 2Q",
+    "series": {
+      "1": {
+        "label": "Residential Properties",
+        "unit_of_measure": "Index",
+        "footnote": null
+      }
+    }
+  }
+}

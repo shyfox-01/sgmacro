@@ -1,0 +1,33 @@
+{
+  "object": "singstat/M014812",
+  "vintage_id": "20261002T084513Z-98373745",
+  "retrieved_at": "2026-10-02T08:45:13+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M014812",
+    "series": [
+      "1"
+    ]
+  },
+  "files": {
+    "data.json": "98373745e48c75af5cdc508055670db5228e96156fe9251165c09f239655c5ee",
+    "metadata.json": "0717842e9aa2413b2d4af2676c7c72c5e193b4441368f52738d887704198fef4"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Expenditure On Gross Domestic Product In Chained (2015) Dollars, Quarterly, Seasonally Adjusted",
+    "publisher": "SINGAPORE DEPARTMENT OF STATISTICS",
+    "frequency": "Quarterly",
+    "adjustment": "Seasonally Adjusted",
+    "last_updated": "11/08/2026",
+    "start_period": "1975 1Q",
+    "end_period": "2026 2Q",
+    "series": {
+      "1": {
+        "label": "GDP In Chained (2015) Dollars",
+        "unit_of_measure": "Million Dollars",
+        "footnote": null
+      }
+    }
+  }
+}

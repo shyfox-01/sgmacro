@@ -1,0 +1,39 @@
+{
+  "object": "singstat/M700071",
+  "vintage_id": "20261002T084530Z-c23ac2f1",
+  "retrieved_at": "2026-10-02T08:45:30+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M700071",
+    "series": [
+      "15",
+      "23"
+    ]
+  },
+  "files": {
+    "data.json": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+    "metadata.json": "74edc5163ed97c8f8e2f14d231e71b15f4e6612ad631187ad494778d210dc503"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Current Banks Interest Rates (End Of Period), Monthly",
+    "publisher": "MONETARY AUTHORITY OF SINGAPORE",
+    "frequency": "Monthly",
+    "adjustment": "",
+    "last_updated": "14/09/2026",
+    "start_period": "1988 Jan",
+    "end_period": "2026 Aug",
+    "series": {
+      "15": {
+        "label": "Government Securities - 10-Year Bond Yield",
+        "unit_of_measure": "Per Cent Per Annum",
+        "footnote": "Figures after 2000 are the average of closing bid rates quoted by SGS primary dealers, before 2000 are the modes of closing bid prices quoted by SGS primary dealers."
+      },
+      "23": {
+        "label": "Compounded Singapore Overnight Rate Average (SORA) - 3 Month",
+        "unit_of_measure": "Per Cent Per Annum",
+        "footnote": null
+      }
+    }
+  }
+}

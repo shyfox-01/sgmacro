@@ -1,0 +1,26 @@
+{
+  "object": "datagovsg/d_14f63e595975691e7c24a27ae4c07c79",
+  "vintage_id": "20261002T084248Z-19598c7b",
+  "retrieved_at": "2026-10-02T08:42:48+00:00",
+  "request": {
+    "source": "datagovsg",
+    "dataset_id": "d_14f63e595975691e7c24a27ae4c07c79"
+  },
+  "files": {
+    "data.csv": "19598c7bae4fb807ef992b6b957f3d5f9ff6db11d217c66a1d4db68eb790e627",
+    "metadata.json": "7d5ab03f4b912e86a4772030883a105491d865485bf3e110ac803ce5bcacff64"
+  },
+  "data_file": "data.csv",
+  "upstream": {
+    "title": "HDB Resale Price Index (1Q2009 = 100), Quarterly",
+    "publisher": "Housing & Development Board",
+    "last_updated": "2026-07-24T11:36:15+08:00",
+    "coverage_start": "1990-01-01T08:00:00+08:00",
+    "coverage_end": "2026-06-30T08:00:00+08:00",
+    "columns_head": [
+      "quarter",
+      "index"
+    ],
+    "column_count": 2
+  }
+}

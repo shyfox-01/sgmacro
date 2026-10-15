@@ -1,0 +1,66 @@
+fact_id,series_id,kind,transform,period,value,unit,display,formula,inputs
+F:a589ed7d,bank_housing_loans,change,yoy,2026-08,7.2803815811,pct,+7.3%,(v[t] / v[t-12] - 1) * 100,bank_housing_loans:2025-08=239152.3; bank_housing_loans:2026-08=256563.5
+F:ceb8d957,bank_housing_loans,change,mom,2026-08,0.7422057986,pct,+0.7%,(v[t] / v[t-1] - 1) * 100,bank_housing_loans:2026-07=254673.3; bank_housing_loans:2026-08=256563.5
+F:129097f9,bank_housing_loans,level,,2026-08,256563.5,SGD million,"256,563.5",v[t] as published,bank_housing_loans:2026-08=256563.5
+F:b9d5f583,bank_housing_loans,percentile,,2026-08,100.0,percentile,100th,share of headline-change history at or below the latest value,
+F:9f9ea43e,cpi_accommodation,change,yoy,2026-08,0.828723844,pct,+0.8%,(v[t] / v[t-12] - 1) * 100,cpi_accommodation:2025-08=101.602; cpi_accommodation:2026-08=102.444
+F:f431b0a1,cpi_accommodation,change,mom,2026-08,1.8471755513,pct,+1.8%,(v[t] / v[t-1] - 1) * 100,cpi_accommodation:2026-07=100.586; cpi_accommodation:2026-08=102.444
+F:bd6fb457,cpi_accommodation,level,,2026-08,102.444,"index, 2024 = 100",102.4,v[t] as published,cpi_accommodation:2026-08=102.444
+F:78513028,cpi_accommodation,percentile,,2026-08,49.1935483871,percentile,49th,share of headline-change history at or below the latest value,
+F:18a45b38,cpi_all_items,change,yoy,2026-08,2.3483850519,pct,+2.3%,(v[t] / v[t-12] - 1) * 100,cpi_all_items:2025-08=100.963; cpi_all_items:2026-08=103.334
+F:bcbcb4e6,cpi_all_items,change,mom,2026-08,0.6212510711,pct,+0.6%,(v[t] / v[t-1] - 1) * 100,cpi_all_items:2026-07=102.696; cpi_all_items:2026-08=103.334
+F:ffb6f146,cpi_all_items,level,,2026-08,103.334,"index, 2024 = 100",103.3,v[t] as published,cpi_all_items:2026-08=103.334
+F:02c24e07,cpi_all_items,percentile,,2026-08,63.7886597938,percentile,64th,share of headline-change history at or below the latest value,
+F:605ceea6,gdp_real_sa,change,yoy,2026-Q2,5.9467476325,pct,+5.9%,(v[t] / v[t-4] - 1) * 100,gdp_real_sa:2025-Q2=147189.7; gdp_real_sa:2026-Q2=155942.7
+F:6d216a76,gdp_real_sa,change,qoq,2026-Q2,1.4020736541,pct,+1.4%,(v[t] / v[t-1] - 1) * 100,gdp_real_sa:2026-Q1=153786.5; gdp_real_sa:2026-Q2=155942.7
+F:b61105f0,gdp_real_sa,level,,2026-Q2,155942.7,"SGD million, chained 2015 prices","155,942.7",v[t] as published,gdp_real_sa:2026-Q2=155942.7
+F:58659565,gdp_real_sa,percentile,,2026-Q2,44.0594059406,percentile,44th,share of headline-change history at or below the latest value,
+F:263a825a,hdb_rpi,change,yoy,2026-Q2,-0.0492853622,pct,0.0%,(v[t] / v[t-4] - 1) * 100,hdb_rpi:2025-Q2=202.9; hdb_rpi:2026-Q2=202.8
+F:4958e846,hdb_rpi,change,qoq,2026-Q2,-0.2949852507,pct,-0.3%,(v[t] / v[t-1] - 1) * 100,hdb_rpi:2026-Q1=203.4; hdb_rpi:2026-Q2=202.8
+F:c2bc4562,hdb_rpi,level,,2026-Q2,202.8,"index, 2009-Q1 = 100",202.8,v[t] as published,hdb_rpi:2026-Q2=202.8
+F:97dbae23,hdb_rpi,percentile,,2026-Q2,31.6901408451,percentile,32nd,share of headline-change history at or below the latest value,
+F:533960e6,hdb_rpi,real_change,yoy,2026-Q2,-1.8561831847,pct,-1.9%,"((1 + nominal_yoy/100) / (avg(cpi[t]) / avg(cpi[t-4])) - 1) * 100, cpi averaged over the quarter's three months",hdb_rpi:2025-Q2=202.9; hdb_rpi:2026-Q2=202.8; cpi_all_items:2025-04=100.283; cpi_all_items:2025-05=100.978; cpi_all_items:2025-06=100.9; cpi_all_items:2026-04=102.052; cpi_all_items:2026-05=102.814; cpi_all_items:2026-06=102.858
+F:0fbbb3a9,nonresident_population,change,yoy,2026,3.6891212906,pct,+3.7%,(v[t] / v[t-1] - 1) * 100,nonresident_population:2025=1906660.0; nonresident_population:2026=1976999.0
+F:c4c71fa8,nonresident_population,level,,2026,1976999.0,persons,"1,976,999",v[t] as published,nonresident_population:2026=1976999.0
+F:8b2e97b8,nonresident_population,percentile,,2026,41.3043478261,percentile,41st,share of headline-change history at or below the latest value,
+F:518eda66,pipeline_under_construction,change,qoq,2026-Q2,7.4123333441,pct,+7.4%,(v[t] / v[t-1] - 1) * 100,pipeline_under_construction:2026-Q1=30827.0; pipeline_under_construction:2026-Q2=33112.0
+F:9bb1195d,pipeline_under_construction,change,yoy,2026-Q2,12.614359079,pct,+12.6%,(v[t] / v[t-4] - 1) * 100,pipeline_under_construction:2025-Q2=29403.0; pipeline_under_construction:2026-Q2=33112.0
+F:71d3c006,pipeline_under_construction,level,,2026-Q2,33112.0,units,"33,112",v[t] as published,pipeline_under_construction:2026-Q2=33112.0
+F:3b06bffb,pipeline_under_construction,percentile,,2026-Q2,65.1162790698,percentile,65th,share of headline-change history at or below the latest value,
+F:0fb21029,policy_tightening,change,t4q_sum,2026-Q3,1.0,count,+1 round,sum(v[t-3..t]),policy_tightening:2025-Q4=0.0; policy_tightening:2026-Q1=0.0; policy_tightening:2026-Q2=1.0; policy_tightening:2026-Q3=0.0
+F:724333ac,policy_tightening,level,,2026-Q3,0.0,net rounds (tightening minus easing),0,v[t] as published,policy_tightening:2026-Q3=0.0
+F:b0f052ad,policy_tightening,percentile,,2026-Q3,80.9523809524,percentile,81st,share of headline-change history at or below the latest value,
+F:28b42609,private_transactions,change,qoq,2026-Q2,13.5784223166,pct,+13.6%,(v[t] / v[t-1] - 1) * 100,private_transactions:2026-Q1=5413.0; private_transactions:2026-Q2=6148.0
+F:cc8b57d8,private_transactions,change,t4q_yoy,2026-Q2,1.8655235374,pct,+1.9%,(sum(v[t-3..t]) / sum(v[t-7..t-4]) - 1) * 100,private_transactions:2024-Q3=5372.0; private_transactions:2024-Q4=7433.0; private_transactions:2025-Q1=7261.0; private_transactions:2025-Q2=5128.0; private_transactions:2025-Q3=7404.0; private_transactions:2025-Q4=6699.0; private_transactions:2026-Q1=5413.0; private_transactions:2026-Q2=6148.0
+F:b660ac78,private_transactions,level,,2026-Q2,6148.0,units per quarter,"6,148",v[t] as published,private_transactions:2026-Q2=6148.0
+F:d4ca54b5,private_transactions,percentile,,2026-Q2,46.0,percentile,46th,share of headline-change history at or below the latest value,
+F:4f9fc00f,sgs_10y,change,mom_bp,2026-08,0.0,bp,0 bp,(v[t] - v[t-1]) * 100,sgs_10y:2026-07=2.35; sgs_10y:2026-08=2.35
+F:c145ab14,sgs_10y,change,yoy_bp,2026-08,52.0,bp,+52 bp,(v[t] - v[t-12]) * 100,sgs_10y:2025-08=1.83; sgs_10y:2026-08=2.35
+F:d43df931,sgs_10y,level,,2026-08,2.35,percent per annum,2.35,v[t] as published,sgs_10y:2026-08=2.35
+F:beb82941,sgs_10y,percentile,,2026-08,82.874617737,percentile,83rd,share of headline-change history at or below the latest value,
+F:331a4bda,sora_3m,change,yoy_bp,2026-08,-37.75,bp,-38 bp,(v[t] - v[t-12]) * 100,sora_3m:2025-08=1.5638; sora_3m:2026-08=1.1863
+F:d74822bd,sora_3m,change,mom_bp,2026-08,5.09,bp,+5 bp,(v[t] - v[t-1]) * 100,sora_3m:2026-07=1.1354; sora_3m:2026-08=1.1863
+F:7bed2c67,sora_3m,level,,2026-08,1.1863,percent per annum,1.19,v[t] as published,sora_3m:2026-08=1.1863
+F:c99606d0,sora_3m,percentile,,2026-08,27.6150627615,percentile,28th,share of headline-change history at or below the latest value,
+F:0681d341,unemployment_rate_sa,change,yoy_pp,2026-Q2,-0.1,pp,-0.10 pp,v[t] - v[t-4],unemployment_rate_sa:2025-Q2=2.0; unemployment_rate_sa:2026-Q2=1.9
+F:7b3033b4,unemployment_rate_sa,change,qoq_pp,2026-Q2,-0.1,pp,-0.10 pp,v[t] - v[t-1],unemployment_rate_sa:2026-Q1=2.0; unemployment_rate_sa:2026-Q2=1.9
+F:9a877964,unemployment_rate_sa,level,,2026-Q2,1.9,percent of labour force,1.9,v[t] as published,unemployment_rate_sa:2026-Q2=1.9
+F:8adf5884,unemployment_rate_sa,percentile,,2026-Q2,46.2686567164,percentile,46th,share of headline-change history at or below the latest value,
+F:623df940,unsold_inventory,change,yoy,2026-Q2,-19.2784002573,pct,-19.3%,(v[t] / v[t-4] - 1) * 100,unsold_inventory:2025-Q2=18653.0; unsold_inventory:2026-Q2=15057.0
+F:a98584d2,unsold_inventory,change,qoq,2026-Q2,-7.1644367717,pct,-7.2%,(v[t] / v[t-1] - 1) * 100,unsold_inventory:2026-Q1=16219.0; unsold_inventory:2026-Q2=15057.0
+F:4f06b0ef,unsold_inventory,level,,2026-Q2,15057.0,units,"15,057",v[t] as published,unsold_inventory:2026-Q2=15057.0
+F:462931bc,unsold_inventory,percentile,,2026-Q2,19.7368421053,percentile,20th,share of headline-change history at or below the latest value,
+F:06cca86b,ura_ppi,change,yoy,2026-Q2,2.9080675422,pct,+2.9%,(v[t] / v[t-4] - 1) * 100,ura_ppi:2025-Q2=213.2; ura_ppi:2026-Q2=219.4
+F:c3a058ce,ura_ppi,change,qoq,2026-Q2,0.5038937242,pct,+0.5%,(v[t] / v[t-1] - 1) * 100,ura_ppi:2026-Q1=218.3; ura_ppi:2026-Q2=219.4
+F:f06cd752,ura_ppi,level,,2026-Q2,219.4,"index, 2009-Q1 = 100",219.4,v[t] as published,ura_ppi:2026-Q2=219.4
+F:c1f556ac,ura_ppi,percentile,,2026-Q2,41.0891089109,percentile,41st,share of headline-change history at or below the latest value,
+F:f0c465dd,ura_ppi,real_change,yoy,2026-Q2,1.0477070252,pct,+1.0%,"((1 + nominal_yoy/100) / (avg(cpi[t]) / avg(cpi[t-4])) - 1) * 100, cpi averaged over the quarter's three months",ura_ppi:2025-Q2=213.2; ura_ppi:2026-Q2=219.4; cpi_all_items:2025-04=100.283; cpi_all_items:2025-05=100.978; cpi_all_items:2025-06=100.9; cpi_all_items:2026-04=102.052; cpi_all_items:2026-05=102.814; cpi_all_items:2026-06=102.858
+F:571c087b,ura_rri_nonlanded,change,yoy,2026-Q2,1.7532874139,pct,+1.8%,(v[t] / v[t-4] - 1) * 100,ura_rri_nonlanded:2025-Q2=159.7; ura_rri_nonlanded:2026-Q2=162.5
+F:ae2f0ba0,ura_rri_nonlanded,change,qoq,2026-Q2,0.3705991353,pct,+0.4%,(v[t] / v[t-1] - 1) * 100,ura_rri_nonlanded:2026-Q1=161.9; ura_rri_nonlanded:2026-Q2=162.5
+F:91fb9d08,ura_rri_nonlanded,level,,2026-Q2,162.5,"index, 2009-Q1 = 100",162.5,v[t] as published,ura_rri_nonlanded:2026-Q2=162.5
+F:c4e1dac5,ura_rri_nonlanded,percentile,,2026-Q2,44.1860465116,percentile,44th,share of headline-change history at or below the latest value,
+F:a68c5da8,ura_rri_nonlanded,real_change,yoy,2026-Q2,-0.0861971173,pct,-0.1%,"((1 + nominal_yoy/100) / (avg(cpi[t]) / avg(cpi[t-4])) - 1) * 100, cpi averaged over the quarter's three months",ura_rri_nonlanded:2025-Q2=159.7; ura_rri_nonlanded:2026-Q2=162.5; cpi_all_items:2025-04=100.283; cpi_all_items:2025-05=100.978; cpi_all_items:2025-06=100.9; cpi_all_items:2026-04=102.052; cpi_all_items:2026-05=102.814; cpi_all_items:2026-06=102.858
+F:94768f7b,vacancy_nonlanded,change,yoy_pp,2026-Q2,-1.4857096298,pp,-1.49 pp,v[t] - v[t-4],vacancy_nonlanded:2025-Q2=6.8758242360756405; vacancy_nonlanded:2026-Q2=5.390114606235332
+F:b89a5384,vacancy_nonlanded,change,qoq_pp,2026-Q2,0.0206883816,pp,+0.02 pp,v[t] - v[t-1],vacancy_nonlanded:2026-Q1=5.3694262245972215; vacancy_nonlanded:2026-Q2=5.390114606235332
+F:5f539422,vacancy_nonlanded,level,,2026-Q2,5.3901146062,percent of available stock,5.39,v[t] as published,vacancy_nonlanded:2026-Q2=5.390114606235332
+F:6a13d7ee,vacancy_nonlanded,percentile,,2026-Q2,16.1971830986,percentile,16th,share of headline-change history at or below the latest value,

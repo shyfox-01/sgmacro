@@ -1,0 +1,28 @@
+{
+  "object": "datagovsg/d_2d2ca1bcac71713d2c02deca871ebe98",
+  "vintage_id": "20261002T084312Z-9e824ffc",
+  "retrieved_at": "2026-10-02T08:43:12+00:00",
+  "request": {
+    "source": "datagovsg",
+    "dataset_id": "d_2d2ca1bcac71713d2c02deca871ebe98"
+  },
+  "files": {
+    "data.csv": "9e824ffc830a0b4e18bd0fe61298d653360419dbc84b62a3092c8f5cbe88d76c",
+    "metadata.json": "d3b6a89a8b136cd58f68bb00ed5c6ba744939d5bf057842412a4c7bb9a7b2da0"
+  },
+  "data_file": "data.csv",
+  "upstream": {
+    "title": "Outstanding Housing Loans for Owner-Occupied Property, Quarterly",
+    "publisher": "Monetary Authority of Singapore",
+    "last_updated": "2024-06-06T14:29:16+08:00",
+    "coverage_start": "2011-01-01T08:00:00+08:00",
+    "coverage_end": "2015-09-30T08:00:00+08:00",
+    "columns_head": [
+      "quarter",
+      "limits_granted",
+      "utilised",
+      "non-performing_percentage"
+    ],
+    "column_count": 4
+  }
+}

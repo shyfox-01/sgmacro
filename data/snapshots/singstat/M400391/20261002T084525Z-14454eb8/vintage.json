@@ -1,0 +1,33 @@
+{
+  "object": "singstat/M400391",
+  "vintage_id": "20261002T084525Z-14454eb8",
+  "retrieved_at": "2026-10-02T08:45:25+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M400391",
+    "series": [
+      "2.1"
+    ]
+  },
+  "files": {
+    "data.json": "14454eb8c5395d2bc96657c887b32811b9ae7a635d3b272f01d62d7512f70895",
+    "metadata.json": "5d03ed9c5753ca57daeb76c0ce66c8e340ec4ba63785fa526d18f581cbd0c968"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Supply Of Private Residential Properties In The Pipeline By Development Status (End Of Period), Quarterly",
+    "publisher": "URBAN REDEVELOPMENT AUTHORITY",
+    "frequency": "Quarterly",
+    "adjustment": "",
+    "last_updated": "24/07/2026",
+    "start_period": "1993 2Q",
+    "end_period": "2026 2Q",
+    "series": {
+      "2.1": {
+        "label": "Under Construction",
+        "unit_of_measure": "Number Of Units",
+        "footnote": null
+      }
+    }
+  }
+}

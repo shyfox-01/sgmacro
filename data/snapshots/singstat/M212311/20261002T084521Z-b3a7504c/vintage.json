@@ -1,0 +1,33 @@
+{
+  "object": "singstat/M212311",
+  "vintage_id": "20261002T084521Z-b3a7504c",
+  "retrieved_at": "2026-10-02T08:45:21+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M212311",
+    "series": [
+      "1.2"
+    ]
+  },
+  "files": {
+    "data.json": "b3a7504cb1cbc552ccb21da1029c45a4e3f13c96941d64c5bdc1fd482cb6fa5f",
+    "metadata.json": "1d6715ad149f14312f07602d42f218869f6bbcbc348099f73afbdb1ba708ef1f"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Rental Index Of Residential Properties, (1st Quarter 2009 = 100), Quarterly",
+    "publisher": "URBAN REDEVELOPMENT AUTHORITY",
+    "frequency": "Quarterly",
+    "adjustment": "",
+    "last_updated": "24/07/2026",
+    "start_period": "1990 1Q",
+    "end_period": "2026 2Q",
+    "series": {
+      "1.2": {
+        "label": "Non-Landed",
+        "unit_of_measure": "Index",
+        "footnote": null
+      }
+    }
+  }
+}

@@ -1,0 +1,274 @@
+predictor_id,target_id,market,lag_quarters,r,pairs,in_declared_window,verdict_lag,expected_sign,agreement
+sora_3m,ura_ppi,sales,0,-0.0409930566,79,False,4,-1,weak
+sora_3m,ura_ppi,sales,1,0.0034676812,78,True,4,-1,weak
+sora_3m,ura_ppi,sales,2,0.0556163303,77,True,4,-1,weak
+sora_3m,ura_ppi,sales,4,0.119199616,75,True,4,-1,weak
+sora_3m,ura_ppi,sales,6,-0.0261581548,73,False,4,-1,weak
+sora_3m,ura_ppi,sales,8,-0.2723123024,71,False,4,-1,weak
+sora_3m,ura_ppi,sales,12,-0.2536384516,67,False,4,-1,weak
+sora_3m,ura_rri_nonlanded,rents,0,0.1210757745,79,False,2,0,weak
+sora_3m,ura_rri_nonlanded,rents,1,0.1545024512,78,True,2,0,weak
+sora_3m,ura_rri_nonlanded,rents,2,0.1596509568,77,True,2,0,weak
+sora_3m,ura_rri_nonlanded,rents,4,0.1021862124,75,True,2,0,weak
+sora_3m,ura_rri_nonlanded,rents,6,-0.0172560714,73,False,2,0,weak
+sora_3m,ura_rri_nonlanded,rents,8,-0.2157174242,71,False,2,0,weak
+sora_3m,ura_rri_nonlanded,rents,12,-0.2979263534,67,False,2,0,weak
+sora_3m,hdb_rpi,sales,0,-0.1950277984,79,False,2,-1,agrees
+sora_3m,hdb_rpi,sales,1,-0.229051253,78,True,2,-1,agrees
+sora_3m,hdb_rpi,sales,2,-0.2488786431,77,True,2,-1,agrees
+sora_3m,hdb_rpi,sales,4,-0.2303257532,75,True,2,-1,agrees
+sora_3m,hdb_rpi,sales,6,-0.1758759679,73,False,2,-1,agrees
+sora_3m,hdb_rpi,sales,8,-0.1844103813,71,False,2,-1,agrees
+sora_3m,hdb_rpi,sales,12,-0.2690825175,67,False,2,-1,agrees
+sgs_10y,ura_ppi,sales,0,0.1661870785,109,False,1,-1,weak
+sgs_10y,ura_ppi,sales,1,0.1310960663,108,True,1,-1,weak
+sgs_10y,ura_ppi,sales,2,0.0465160239,107,True,1,-1,weak
+sgs_10y,ura_ppi,sales,4,-0.0122062454,105,True,1,-1,weak
+sgs_10y,ura_ppi,sales,6,0.1082770643,103,False,1,-1,weak
+sgs_10y,ura_ppi,sales,8,0.093528626,101,False,1,-1,weak
+sgs_10y,ura_ppi,sales,12,-0.1473688865,97,False,1,-1,weak
+sgs_10y,ura_rri_nonlanded,rents,0,0.1585828759,86,False,2,0,ambiguous by design
+sgs_10y,ura_rri_nonlanded,rents,1,0.2167876626,86,True,2,0,ambiguous by design
+sgs_10y,ura_rri_nonlanded,rents,2,0.2308146881,86,True,2,0,ambiguous by design
+sgs_10y,ura_rri_nonlanded,rents,4,0.1609071098,86,True,2,0,ambiguous by design
+sgs_10y,ura_rri_nonlanded,rents,6,0.0842156864,86,False,2,0,ambiguous by design
+sgs_10y,ura_rri_nonlanded,rents,8,-0.0259949201,86,False,2,0,ambiguous by design
+sgs_10y,ura_rri_nonlanded,rents,12,-0.2196828206,86,False,2,0,ambiguous by design
+sgs_10y,hdb_rpi,sales,0,0.1782978591,109,False,4,-1,weak
+sgs_10y,hdb_rpi,sales,1,0.096654316,108,True,4,-1,weak
+sgs_10y,hdb_rpi,sales,2,0.0159715747,107,True,4,-1,weak
+sgs_10y,hdb_rpi,sales,4,-0.1309384544,105,True,4,-1,weak
+sgs_10y,hdb_rpi,sales,6,-0.0849884786,103,False,4,-1,weak
+sgs_10y,hdb_rpi,sales,8,0.0428876512,101,False,4,-1,weak
+sgs_10y,hdb_rpi,sales,12,0.0196412413,97,False,4,-1,weak
+bank_housing_loans,ura_ppi,sales,0,,16,True,,1,insufficient data
+bank_housing_loans,ura_ppi,sales,1,,15,True,,1,insufficient data
+bank_housing_loans,ura_ppi,sales,2,,14,True,,1,insufficient data
+bank_housing_loans,ura_ppi,sales,4,,12,False,,1,insufficient data
+bank_housing_loans,ura_ppi,sales,6,,10,False,,1,insufficient data
+bank_housing_loans,ura_ppi,sales,8,,8,False,,1,insufficient data
+bank_housing_loans,ura_ppi,sales,12,,4,False,,1,insufficient data
+bank_housing_loans,ura_rri_nonlanded,rents,0,,16,True,,,insufficient data
+bank_housing_loans,ura_rri_nonlanded,rents,1,,15,True,,,insufficient data
+bank_housing_loans,ura_rri_nonlanded,rents,2,,14,True,,,insufficient data
+bank_housing_loans,ura_rri_nonlanded,rents,4,,12,False,,,insufficient data
+bank_housing_loans,ura_rri_nonlanded,rents,6,,10,False,,,insufficient data
+bank_housing_loans,ura_rri_nonlanded,rents,8,,8,False,,,insufficient data
+bank_housing_loans,ura_rri_nonlanded,rents,12,,4,False,,,insufficient data
+bank_housing_loans,hdb_rpi,sales,0,,16,True,,1,insufficient data
+bank_housing_loans,hdb_rpi,sales,1,,15,True,,1,insufficient data
+bank_housing_loans,hdb_rpi,sales,2,,14,True,,1,insufficient data
+bank_housing_loans,hdb_rpi,sales,4,,12,False,,1,insufficient data
+bank_housing_loans,hdb_rpi,sales,6,,10,False,,1,insufficient data
+bank_housing_loans,hdb_rpi,sales,8,,8,False,,1,insufficient data
+bank_housing_loans,hdb_rpi,sales,12,,4,False,,1,insufficient data
+gdp_real_sa,ura_ppi,sales,0,0.5395071002,202,False,1,1,agrees
+gdp_real_sa,ura_ppi,sales,1,0.5326583836,201,True,1,1,agrees
+gdp_real_sa,ura_ppi,sales,2,0.4554716088,200,True,1,1,agrees
+gdp_real_sa,ura_ppi,sales,4,0.2085838079,198,True,1,1,agrees
+gdp_real_sa,ura_ppi,sales,6,0.0518978564,196,False,1,1,agrees
+gdp_real_sa,ura_ppi,sales,8,0.0597861941,194,False,1,1,agrees
+gdp_real_sa,ura_ppi,sales,12,0.0724740135,190,False,1,1,agrees
+gdp_real_sa,ura_rri_nonlanded,rents,0,0.2635613248,86,False,2,1,agrees
+gdp_real_sa,ura_rri_nonlanded,rents,1,0.4256529402,86,True,2,1,agrees
+gdp_real_sa,ura_rri_nonlanded,rents,2,0.5041548237,86,True,2,1,agrees
+gdp_real_sa,ura_rri_nonlanded,rents,4,0.389977711,86,True,2,1,agrees
+gdp_real_sa,ura_rri_nonlanded,rents,6,0.1887906497,86,False,2,1,agrees
+gdp_real_sa,ura_rri_nonlanded,rents,8,-0.0117394901,86,False,2,1,agrees
+gdp_real_sa,ura_rri_nonlanded,rents,12,-0.1012639135,86,False,2,1,agrees
+gdp_real_sa,hdb_rpi,sales,0,0.4357405689,142,False,1,1,agrees
+gdp_real_sa,hdb_rpi,sales,1,0.4171002555,142,True,1,1,agrees
+gdp_real_sa,hdb_rpi,sales,2,0.3592204026,142,True,1,1,agrees
+gdp_real_sa,hdb_rpi,sales,4,0.1670845365,142,True,1,1,agrees
+gdp_real_sa,hdb_rpi,sales,6,0.0518555694,142,False,1,1,agrees
+gdp_real_sa,hdb_rpi,sales,8,0.1078130898,142,False,1,1,agrees
+gdp_real_sa,hdb_rpi,sales,12,0.1989629538,142,False,1,1,agrees
+unemployment_rate_sa,ura_ppi,sales,0,-0.49583712,134,False,1,-1,agrees
+unemployment_rate_sa,ura_ppi,sales,1,-0.4414908175,133,True,1,-1,agrees
+unemployment_rate_sa,ura_ppi,sales,2,-0.2576648549,132,True,1,-1,agrees
+unemployment_rate_sa,ura_ppi,sales,4,0.148221003,130,False,1,-1,agrees
+unemployment_rate_sa,ura_ppi,sales,6,0.2394510223,128,False,1,-1,agrees
+unemployment_rate_sa,ura_ppi,sales,8,0.0282251901,126,False,1,-1,agrees
+unemployment_rate_sa,ura_ppi,sales,12,-0.1877547826,122,False,1,-1,agrees
+unemployment_rate_sa,ura_rri_nonlanded,rents,0,-0.5311545077,86,False,1,-1,agrees
+unemployment_rate_sa,ura_rri_nonlanded,rents,1,-0.6286190769,86,True,1,-1,agrees
+unemployment_rate_sa,ura_rri_nonlanded,rents,2,-0.5554580057,86,True,1,-1,agrees
+unemployment_rate_sa,ura_rri_nonlanded,rents,4,-0.2725896205,86,False,1,-1,agrees
+unemployment_rate_sa,ura_rri_nonlanded,rents,6,0.0243078901,86,False,1,-1,agrees
+unemployment_rate_sa,ura_rri_nonlanded,rents,8,0.1496155829,86,False,1,-1,agrees
+unemployment_rate_sa,ura_rri_nonlanded,rents,12,-0.0659321493,86,False,1,-1,agrees
+unemployment_rate_sa,hdb_rpi,sales,0,-0.2222448759,134,False,1,-1,agrees
+unemployment_rate_sa,hdb_rpi,sales,1,-0.2071676619,133,True,1,-1,agrees
+unemployment_rate_sa,hdb_rpi,sales,2,-0.1460475007,132,True,1,-1,agrees
+unemployment_rate_sa,hdb_rpi,sales,4,0.0519370941,130,False,1,-1,agrees
+unemployment_rate_sa,hdb_rpi,sales,6,0.1326899129,128,False,1,-1,agrees
+unemployment_rate_sa,hdb_rpi,sales,8,-0.0105282458,126,False,1,-1,agrees
+unemployment_rate_sa,hdb_rpi,sales,12,-0.2330265547,122,False,1,-1,agrees
+cpi_all_items,ura_ppi,sales,0,0.5467931581,202,True,0,0,ambiguous by design
+cpi_all_items,ura_ppi,sales,1,0.4418499708,202,True,0,0,ambiguous by design
+cpi_all_items,ura_ppi,sales,2,0.3503522327,202,True,0,0,ambiguous by design
+cpi_all_items,ura_ppi,sales,4,0.2644725822,202,False,0,0,ambiguous by design
+cpi_all_items,ura_ppi,sales,6,0.2032314221,202,False,0,0,ambiguous by design
+cpi_all_items,ura_ppi,sales,8,0.1064100394,202,False,0,0,ambiguous by design
+cpi_all_items,ura_ppi,sales,12,-0.000810376,202,False,0,0,ambiguous by design
+cpi_all_items,ura_rri_nonlanded,rents,0,0.6123655633,86,True,0,0,ambiguous by design
+cpi_all_items,ura_rri_nonlanded,rents,1,0.4542434385,86,True,0,0,ambiguous by design
+cpi_all_items,ura_rri_nonlanded,rents,2,0.2579626342,86,True,0,0,ambiguous by design
+cpi_all_items,ura_rri_nonlanded,rents,4,-0.1010923225,86,False,0,0,ambiguous by design
+cpi_all_items,ura_rri_nonlanded,rents,6,-0.2229883507,86,False,0,0,ambiguous by design
+cpi_all_items,ura_rri_nonlanded,rents,8,-0.1627797897,86,False,0,0,ambiguous by design
+cpi_all_items,ura_rri_nonlanded,rents,12,-0.1375486381,86,False,0,0,ambiguous by design
+cpi_all_items,hdb_rpi,sales,0,0.3650415052,142,True,0,0,ambiguous by design
+cpi_all_items,hdb_rpi,sales,1,0.3050730595,142,True,0,0,ambiguous by design
+cpi_all_items,hdb_rpi,sales,2,0.2351642848,142,True,0,0,ambiguous by design
+cpi_all_items,hdb_rpi,sales,4,0.1288921702,142,False,0,0,ambiguous by design
+cpi_all_items,hdb_rpi,sales,6,0.1292080636,142,False,0,0,ambiguous by design
+cpi_all_items,hdb_rpi,sales,8,0.2102465507,142,False,0,0,ambiguous by design
+cpi_all_items,hdb_rpi,sales,12,0.182682131,142,False,0,0,ambiguous by design
+cpi_accommodation,ura_ppi,sales,0,0.0820109479,82,True,1,1,weak
+cpi_accommodation,ura_ppi,sales,1,-0.183464922,81,True,1,1,weak
+cpi_accommodation,ura_ppi,sales,2,-0.3157822507,80,False,1,1,weak
+cpi_accommodation,ura_ppi,sales,4,-0.1313786149,78,False,1,1,weak
+cpi_accommodation,ura_ppi,sales,6,0.2593541213,76,False,1,1,weak
+cpi_accommodation,ura_ppi,sales,8,0.27648913,74,False,1,1,weak
+cpi_accommodation,ura_ppi,sales,12,-0.1221204476,70,False,1,1,weak
+cpi_accommodation,ura_rri_nonlanded,rents,0,0.265486371,82,True,0,1,agrees
+cpi_accommodation,ura_rri_nonlanded,rents,1,0.0448765078,81,True,0,1,agrees
+cpi_accommodation,ura_rri_nonlanded,rents,2,-0.1245315536,80,False,0,1,agrees
+cpi_accommodation,ura_rri_nonlanded,rents,4,-0.2212307123,78,False,0,1,agrees
+cpi_accommodation,ura_rri_nonlanded,rents,6,-0.0463333669,76,False,0,1,agrees
+cpi_accommodation,ura_rri_nonlanded,rents,8,0.1203970733,74,False,0,1,agrees
+cpi_accommodation,ura_rri_nonlanded,rents,12,-0.090340182,70,False,0,1,agrees
+cpi_accommodation,hdb_rpi,sales,0,0.6606706342,82,True,0,1,agrees
+cpi_accommodation,hdb_rpi,sales,1,0.5131182309,81,True,0,1,agrees
+cpi_accommodation,hdb_rpi,sales,2,0.370212581,80,False,0,1,agrees
+cpi_accommodation,hdb_rpi,sales,4,0.2289935532,78,False,0,1,agrees
+cpi_accommodation,hdb_rpi,sales,6,0.2261779142,76,False,0,1,agrees
+cpi_accommodation,hdb_rpi,sales,8,0.1817509507,74,False,0,1,agrees
+cpi_accommodation,hdb_rpi,sales,12,-0.0698877927,70,False,0,1,agrees
+private_transactions,ura_ppi,sales,0,0.375459678,100,False,2,1,agrees
+private_transactions,ura_ppi,sales,1,0.6490663551,99,True,2,1,agrees
+private_transactions,ura_ppi,sales,2,0.7291909966,98,True,2,1,agrees
+private_transactions,ura_ppi,sales,4,0.425357473,96,False,2,1,agrees
+private_transactions,ura_ppi,sales,6,0.0062508309,94,False,2,1,agrees
+private_transactions,ura_ppi,sales,8,-0.0974922831,92,False,2,1,agrees
+private_transactions,ura_ppi,sales,12,0.084976664,88,False,2,1,agrees
+private_transactions,ura_rri_nonlanded,rents,0,0.0511785597,86,False,2,,market not declared
+private_transactions,ura_rri_nonlanded,rents,1,0.309246152,86,True,2,,market not declared
+private_transactions,ura_rri_nonlanded,rents,2,0.5009006832,86,True,2,,market not declared
+private_transactions,ura_rri_nonlanded,rents,4,0.5712156433,86,False,2,,market not declared
+private_transactions,ura_rri_nonlanded,rents,6,0.3299759131,86,False,2,,market not declared
+private_transactions,ura_rri_nonlanded,rents,8,0.0616420352,86,False,2,,market not declared
+private_transactions,ura_rri_nonlanded,rents,12,-0.0890175305,86,False,2,,market not declared
+private_transactions,hdb_rpi,sales,0,0.0867837708,100,False,2,1,agrees
+private_transactions,hdb_rpi,sales,1,0.2558537383,99,True,2,1,agrees
+private_transactions,hdb_rpi,sales,2,0.3742107099,98,True,2,1,agrees
+private_transactions,hdb_rpi,sales,4,0.4116918565,96,False,2,1,agrees
+private_transactions,hdb_rpi,sales,6,0.2709657758,94,False,2,1,agrees
+private_transactions,hdb_rpi,sales,8,0.1751464739,92,False,2,1,agrees
+private_transactions,hdb_rpi,sales,12,0.2399664384,88,False,2,1,agrees
+unsold_inventory,ura_ppi,sales,0,0.2359958001,76,False,4,-1,agrees
+unsold_inventory,ura_ppi,sales,1,0.0725239361,75,True,4,-1,agrees
+unsold_inventory,ura_ppi,sales,2,-0.1132753947,74,True,4,-1,agrees
+unsold_inventory,ura_ppi,sales,4,-0.3256892685,72,True,4,-1,agrees
+unsold_inventory,ura_ppi,sales,6,-0.1496079374,70,False,4,-1,agrees
+unsold_inventory,ura_ppi,sales,8,0.1235635883,68,False,4,-1,agrees
+unsold_inventory,ura_ppi,sales,12,0.2713501553,64,False,4,-1,agrees
+unsold_inventory,ura_rri_nonlanded,rents,0,0.2369404014,76,False,4,,market not declared
+unsold_inventory,ura_rri_nonlanded,rents,1,0.1066900019,75,True,4,,market not declared
+unsold_inventory,ura_rri_nonlanded,rents,2,-0.0606286708,74,True,4,,market not declared
+unsold_inventory,ura_rri_nonlanded,rents,4,-0.391512419,72,True,4,,market not declared
+unsold_inventory,ura_rri_nonlanded,rents,6,-0.4267971747,70,False,4,,market not declared
+unsold_inventory,ura_rri_nonlanded,rents,8,-0.2270372322,68,False,4,,market not declared
+unsold_inventory,ura_rri_nonlanded,rents,12,0.1785334725,64,False,4,,market not declared
+unsold_inventory,hdb_rpi,sales,0,0.0701825555,76,False,4,-1,weak
+unsold_inventory,hdb_rpi,sales,1,0.0379669244,75,True,4,-1,weak
+unsold_inventory,hdb_rpi,sales,2,-0.0086948434,74,True,4,-1,weak
+unsold_inventory,hdb_rpi,sales,4,-0.1107872932,72,True,4,-1,weak
+unsold_inventory,hdb_rpi,sales,6,-0.0905439589,70,False,4,-1,weak
+unsold_inventory,hdb_rpi,sales,8,0.0650154993,68,False,4,-1,weak
+unsold_inventory,hdb_rpi,sales,12,0.2939979487,64,False,4,-1,weak
+vacancy_nonlanded,ura_ppi,sales,0,-0.2486474767,142,True,2,-1,agrees
+vacancy_nonlanded,ura_ppi,sales,1,-0.3489688905,141,True,2,-1,agrees
+vacancy_nonlanded,ura_ppi,sales,2,-0.396973917,140,True,2,-1,agrees
+vacancy_nonlanded,ura_ppi,sales,4,-0.3268983696,138,False,2,-1,agrees
+vacancy_nonlanded,ura_ppi,sales,6,-0.0374875018,136,False,2,-1,agrees
+vacancy_nonlanded,ura_ppi,sales,8,0.244521995,134,False,2,-1,agrees
+vacancy_nonlanded,ura_ppi,sales,12,0.0587935166,130,False,2,-1,agrees
+vacancy_nonlanded,ura_rri_nonlanded,rents,0,-0.0606106819,86,True,2,-1,agrees
+vacancy_nonlanded,ura_rri_nonlanded,rents,1,-0.3066793723,86,True,2,-1,agrees
+vacancy_nonlanded,ura_rri_nonlanded,rents,2,-0.4973620348,86,True,2,-1,agrees
+vacancy_nonlanded,ura_rri_nonlanded,rents,4,-0.6204423214,86,False,2,-1,agrees
+vacancy_nonlanded,ura_rri_nonlanded,rents,6,-0.3463973242,86,False,2,-1,agrees
+vacancy_nonlanded,ura_rri_nonlanded,rents,8,0.0524585674,86,False,2,-1,agrees
+vacancy_nonlanded,ura_rri_nonlanded,rents,12,0.1299163774,86,False,2,-1,agrees
+vacancy_nonlanded,hdb_rpi,sales,0,-0.015180881,134,True,1,-1,weak
+vacancy_nonlanded,hdb_rpi,sales,1,-0.0258065455,134,True,1,-1,weak
+vacancy_nonlanded,hdb_rpi,sales,2,-0.0211467642,134,True,1,-1,weak
+vacancy_nonlanded,hdb_rpi,sales,4,-0.0973494125,134,False,1,-1,weak
+vacancy_nonlanded,hdb_rpi,sales,6,-0.1111169883,134,False,1,-1,weak
+vacancy_nonlanded,hdb_rpi,sales,8,-0.0457646764,134,False,1,-1,weak
+vacancy_nonlanded,hdb_rpi,sales,12,-0.0048328189,130,False,1,-1,weak
+pipeline_under_construction,ura_ppi,sales,0,0.3589601162,129,False,4,-1,weak
+pipeline_under_construction,ura_ppi,sales,1,0.2446642055,128,False,4,-1,weak
+pipeline_under_construction,ura_ppi,sales,2,0.1096048985,127,False,4,-1,weak
+pipeline_under_construction,ura_ppi,sales,4,-0.0925698671,125,True,4,-1,weak
+pipeline_under_construction,ura_ppi,sales,6,-0.0881079011,123,True,4,-1,weak
+pipeline_under_construction,ura_ppi,sales,8,-0.0267161665,121,True,4,-1,weak
+pipeline_under_construction,ura_ppi,sales,12,-0.0723584856,117,True,4,-1,weak
+pipeline_under_construction,ura_rri_nonlanded,rents,0,0.1836107402,86,False,4,-1,weak
+pipeline_under_construction,ura_rri_nonlanded,rents,1,0.1843289881,86,False,4,-1,weak
+pipeline_under_construction,ura_rri_nonlanded,rents,2,0.1547327855,86,False,4,-1,weak
+pipeline_under_construction,ura_rri_nonlanded,rents,4,0.0718973142,86,True,4,-1,weak
+pipeline_under_construction,ura_rri_nonlanded,rents,6,0.007303977,86,True,4,-1,weak
+pipeline_under_construction,ura_rri_nonlanded,rents,8,0.0005868176,86,True,4,-1,weak
+pipeline_under_construction,ura_rri_nonlanded,rents,12,0.0081141494,86,True,4,-1,weak
+pipeline_under_construction,hdb_rpi,sales,0,0.3960573777,129,False,8,-1,disagrees
+pipeline_under_construction,hdb_rpi,sales,1,0.3350255306,128,False,8,-1,disagrees
+pipeline_under_construction,hdb_rpi,sales,2,0.3081623674,127,False,8,-1,disagrees
+pipeline_under_construction,hdb_rpi,sales,4,0.2771366598,125,True,8,-1,disagrees
+pipeline_under_construction,hdb_rpi,sales,6,0.2930691213,123,True,8,-1,disagrees
+pipeline_under_construction,hdb_rpi,sales,8,0.3205197136,121,True,8,-1,disagrees
+pipeline_under_construction,hdb_rpi,sales,12,0.0177846011,117,True,8,-1,disagrees
+nonresident_population,ura_ppi,sales,0,0.6296117465,46,True,0,1,agrees
+nonresident_population,ura_ppi,sales,1,0.5252275766,45,True,0,1,agrees
+nonresident_population,ura_ppi,sales,2,0.3188482583,45,True,0,1,agrees
+nonresident_population,ura_ppi,sales,4,-0.0317788243,45,True,0,1,agrees
+nonresident_population,ura_ppi,sales,6,0.0745054012,44,False,0,1,agrees
+nonresident_population,ura_ppi,sales,8,0.0654084044,44,False,0,1,agrees
+nonresident_population,ura_ppi,sales,12,-0.1112524167,43,False,0,1,agrees
+nonresident_population,ura_rri_nonlanded,rents,0,0.6497668328,22,True,0,1,agrees
+nonresident_population,ura_rri_nonlanded,rents,1,0.5020468937,21,True,0,1,agrees
+nonresident_population,ura_rri_nonlanded,rents,2,0.3257402751,21,True,0,1,agrees
+nonresident_population,ura_rri_nonlanded,rents,4,-0.0301642761,22,True,0,1,agrees
+nonresident_population,ura_rri_nonlanded,rents,6,-0.300458233,21,False,0,1,agrees
+nonresident_population,ura_rri_nonlanded,rents,8,-0.226152741,22,False,0,1,agrees
+nonresident_population,ura_rri_nonlanded,rents,12,-0.0717330138,22,False,0,1,agrees
+nonresident_population,hdb_rpi,sales,0,0.4045883465,36,True,0,1,agrees
+nonresident_population,hdb_rpi,sales,1,0.2791436214,35,True,0,1,agrees
+nonresident_population,hdb_rpi,sales,2,0.2231818481,35,True,0,1,agrees
+nonresident_population,hdb_rpi,sales,4,0.2234457075,36,True,0,1,agrees
+nonresident_population,hdb_rpi,sales,6,0.2444085291,35,False,0,1,agrees
+nonresident_population,hdb_rpi,sales,8,0.2392861025,36,False,0,1,agrees
+nonresident_population,hdb_rpi,sales,12,0.1324842831,36,False,0,1,agrees
+policy_tightening,ura_ppi,sales,0,0.2013135136,83,True,0,-1,disagrees
+policy_tightening,ura_ppi,sales,1,0.1332750615,82,True,0,-1,disagrees
+policy_tightening,ura_ppi,sales,2,0.0414693678,81,True,0,-1,disagrees
+policy_tightening,ura_ppi,sales,4,-0.1894226469,79,True,0,-1,disagrees
+policy_tightening,ura_ppi,sales,6,-0.3218538471,77,False,0,-1,disagrees
+policy_tightening,ura_ppi,sales,8,-0.3230774832,75,False,0,-1,disagrees
+policy_tightening,ura_ppi,sales,12,-0.138364965,71,False,0,-1,disagrees
+policy_tightening,ura_rri_nonlanded,rents,0,0.0863063211,83,True,4,0,weak
+policy_tightening,ura_rri_nonlanded,rents,1,0.0864934136,82,True,4,0,weak
+policy_tightening,ura_rri_nonlanded,rents,2,0.0526316329,81,True,4,0,weak
+policy_tightening,ura_rri_nonlanded,rents,4,-0.1016514777,79,True,4,0,weak
+policy_tightening,ura_rri_nonlanded,rents,6,-0.2738081819,77,False,4,0,weak
+policy_tightening,ura_rri_nonlanded,rents,8,-0.3351565177,75,False,4,0,weak
+policy_tightening,ura_rri_nonlanded,rents,12,-0.1108701201,71,False,4,0,weak
+policy_tightening,hdb_rpi,sales,0,0.2384144183,83,True,0,-1,disagrees
+policy_tightening,hdb_rpi,sales,1,0.1433101229,82,True,0,-1,disagrees
+policy_tightening,hdb_rpi,sales,2,0.03216838,81,True,0,-1,disagrees
+policy_tightening,hdb_rpi,sales,4,-0.122425158,79,True,0,-1,disagrees
+policy_tightening,hdb_rpi,sales,6,-0.2229932462,77,False,0,-1,disagrees
+policy_tightening,hdb_rpi,sales,8,-0.2604426856,75,False,0,-1,disagrees
+policy_tightening,hdb_rpi,sales,12,-0.3091874814,71,False,0,-1,disagrees

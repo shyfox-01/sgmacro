@@ -1,0 +1,28 @@
+{
+  "object": "datagovsg/d_8e4c50283fb7052a391dfb746a05c853",
+  "vintage_id": "20261002T084448Z-5e36cf5a",
+  "retrieved_at": "2026-10-02T08:44:48+00:00",
+  "request": {
+    "source": "datagovsg",
+    "dataset_id": "d_8e4c50283fb7052a391dfb746a05c853"
+  },
+  "files": {
+    "data.csv": "5e36cf5a1ee0176a665903e7dfdbbe79c47eb353b0e3f74c32233936bc8ad629",
+    "metadata.json": "09663e80ca62e193f4450ca997ad171d180c8ac05967f58212deb7bcd3fd1265"
+  },
+  "data_file": "data.csv",
+  "upstream": {
+    "title": "Private Residential Property Rental Index , (Base Quarter 2009-Q1 = 100), Quarterly",
+    "publisher": "Urban Redevelopment Authority",
+    "last_updated": "2026-07-27T09:56:07+08:00",
+    "coverage_start": "2004-01-01T08:00:00+08:00",
+    "coverage_end": "2026-06-30T08:00:00+08:00",
+    "columns_head": [
+      "quarter",
+      "property_type",
+      "locality",
+      "index"
+    ],
+    "column_count": 4
+  }
+}

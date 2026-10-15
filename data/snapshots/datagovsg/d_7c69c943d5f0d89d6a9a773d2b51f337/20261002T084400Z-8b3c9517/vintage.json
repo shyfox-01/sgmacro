@@ -1,0 +1,28 @@
+{
+  "object": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337",
+  "vintage_id": "20261002T084400Z-8b3c9517",
+  "retrieved_at": "2026-10-02T08:44:00+00:00",
+  "request": {
+    "source": "datagovsg",
+    "dataset_id": "d_7c69c943d5f0d89d6a9a773d2b51f337"
+  },
+  "files": {
+    "data.csv": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+    "metadata.json": "3d6e11d9c4da6848e2378348f5dcf6de7eadab01a410b2ed510f9531eaf81375"
+  },
+  "data_file": "data.csv",
+  "upstream": {
+    "title": "Private Residential Property Transactions in the Whole of Singapore, Quarterly",
+    "publisher": "Urban Redevelopment Authority",
+    "last_updated": "2026-07-27T10:32:04+08:00",
+    "coverage_start": "1999-10-01T08:00:00+08:00",
+    "coverage_end": "2026-06-30T08:00:00+08:00",
+    "columns_head": [
+      "quarter",
+      "type_of_sale",
+      "sale_status",
+      "units"
+    ],
+    "column_count": 4
+  }
+}

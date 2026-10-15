@@ -1,0 +1,39 @@
+{
+  "object": "singstat/M213751",
+  "vintage_id": "20261002T084524Z-5d219bc9",
+  "retrieved_at": "2026-10-02T08:45:24+00:00",
+  "request": {
+    "source": "singstat",
+    "table_id": "M213751",
+    "series": [
+      "1",
+      "1.03.1"
+    ]
+  },
+  "files": {
+    "data.json": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+    "metadata.json": "e083cde8a8c4a60f391a891f44ee15eed8d62eea5b7ea536326ac34f2a3f13b9"
+  },
+  "data_file": "data.json",
+  "upstream": {
+    "title": "Consumer Price Index (CPI), 2024 As Base Year, Monthly",
+    "publisher": "SINGAPORE DEPARTMENT OF STATISTICS",
+    "frequency": "Monthly",
+    "adjustment": "Non-seasonally Adjusted",
+    "last_updated": "23/09/2026",
+    "start_period": "1961 Jan",
+    "end_period": "2026 Aug",
+    "series": {
+      "1": {
+        "label": "All Items",
+        "unit_of_measure": "Index",
+        "footnote": null
+      },
+      "1.03.1": {
+        "label": "Accommodation",
+        "unit_of_measure": "Index",
+        "footnote": "Accommodation, one of the groups in the Housing & Utilities expenditure division of the CPI, comprises 'Actual Rentals for Housing', 'Imputed Rentals for Housing', as well as 'Housing Maintenance & Repairs'.  A significant share of the Accommodation group is 'Imputed Rentals for Housing', which reflects the costs to homeowners of utilising the flow of services provided by their homes over an extended period of time.  Given that the cost of using housing services is not directly observed for homeowners, it is computed based on the imputed rental concept under the rental equivalence method, i.e., proxied by market rentals of similar properties.  This provides an estimated rental value for the owned home, as though the homeowner were renting it from themselves.  Housing price is not considered in the CPI as it has a high investment component and is treated as a capital good.  As for the CPI for 'Housing Maintenance & Repairs', it takes into account the rebates for Service & Conservancy Charges (S&CC) disbursed to households living in Housing and Development Board (HDB) flats in the applicable months.  Imputed Rentals have no impact on the cash expenditure of most households in Singapore as they already own their homes, while the inclusion of S&CC rebates results in some volatility in the monthly CPI.  As such, the CPIs for 'All Items less Accommodation' and 'All Items less Imputed Rentals for Housing' are compiled and published as additional indicators.  For the CPI for 'All Items less Imputed Rentals for Housing', actual rentals paid on rented units are still included in the measure."
+      }
+    }
+  }
+}

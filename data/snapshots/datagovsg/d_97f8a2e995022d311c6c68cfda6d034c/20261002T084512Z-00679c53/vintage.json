@@ -1,0 +1,27 @@
+{
+  "object": "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c",
+  "vintage_id": "20261002T084512Z-00679c53",
+  "retrieved_at": "2026-10-02T08:45:12+00:00",
+  "request": {
+    "source": "datagovsg",
+    "dataset_id": "d_97f8a2e995022d311c6c68cfda6d034c"
+  },
+  "files": {
+    "data.csv": "00679c53fb3e3822c46f9ee334e2e55cc0604f9dd583c4991488dfed1f054dd3",
+    "metadata.json": "a5c87ba9d16cf7d86e5824765d4961f24f87c2ea674f4c3b6dd93af5cb6f751f"
+  },
+  "data_file": "data.csv",
+  "upstream": {
+    "title": "Private Residential Property Price Index (Base Quarter 2009-Q1 = 100), Quarterly",
+    "publisher": "Urban Redevelopment Authority",
+    "last_updated": "2026-07-27T09:27:44+08:00",
+    "coverage_start": "1975-01-01T08:00:00+08:00",
+    "coverage_end": "2026-06-30T08:00:00+08:00",
+    "columns_head": [
+      "quarter",
+      "property_type",
+      "index"
+    ],
+    "column_count": 3
+  }
+}

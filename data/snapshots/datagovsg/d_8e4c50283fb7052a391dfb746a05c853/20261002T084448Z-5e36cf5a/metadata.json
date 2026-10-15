@@ -1,0 +1,59 @@
+{
+  "collectionIds": [
+    "1820"
+  ],
+  "columnMetadata": {
+    "map": {
+      "c_5f9ern7kvagl566m7ms8svz8r": "quarter",
+      "c_90dbqnb9fp9aphonkofflpsaj": "index",
+      "c_boipka3nxeub8h2upbzxyuuop": "property_type",
+      "c_cweqhmnubsm2vm8c2fytf74sv": "locality"
+    },
+    "metaMapping": {
+      "c_5f9ern7kvagl566m7ms8svz8r": {
+        "columnTitle": "Quarter",
+        "dataType": "Quarter (Q)",
+        "index": "0",
+        "isCategorical": true,
+        "name": "quarter"
+      },
+      "c_90dbqnb9fp9aphonkofflpsaj": {
+        "columnTitle": "Index",
+        "dataType": "Numeric",
+        "index": "3",
+        "isCategorical": false,
+        "name": "index"
+      },
+      "c_boipka3nxeub8h2upbzxyuuop": {
+        "columnTitle": "Property Type",
+        "dataType": "Text",
+        "index": "1",
+        "isCategorical": true,
+        "name": "property_type"
+      },
+      "c_cweqhmnubsm2vm8c2fytf74sv": {
+        "columnTitle": "Locality",
+        "dataType": "Text",
+        "index": "2",
+        "isCategorical": true,
+        "name": "locality"
+      }
+    },
+    "order": [
+      "c_5f9ern7kvagl566m7ms8svz8r",
+      "c_boipka3nxeub8h2upbzxyuuop",
+      "c_cweqhmnubsm2vm8c2fytf74sv",
+      "c_90dbqnb9fp9aphonkofflpsaj"
+    ]
+  },
+  "coverageEnd": "2026-06-30T08:00:00+08:00",
+  "coverageStart": "2004-01-01T08:00:00+08:00",
+  "createdAt": "2016-09-09T02:36:24+08:00",
+  "datasetId": "d_8e4c50283fb7052a391dfb746a05c853",
+  "datasetSize": 22522,
+  "description": "The residential rental index covers only private residential properties.  It does not cover HDB flats. \r\n\r\nThe rental index is computed from information obtained in returns filed with the Inland Revenue Authority of Singapore (IRAS).  When a property is let out, the property owner has to inform IRAS the details of the tenancy agreement. Besides an overall rental index for private residential properties, sub-indices for landed and non-landed properties are also compiled. From the 2015-Q1, a “stratified hedonic regression methodology” is used to compute the rental indices. Under this method, variations in the attributes of rental private properties transacted such as age and unit size are controlled for by using hedonic regression and rental movements are aggregated using 5-quarter fixed weights to derive the aggregate rental change.",
+  "format": "CSV",
+  "lastUpdatedAt": "2026-07-27T09:56:07+08:00",
+  "managedBy": "Urban Redevelopment Authority",
+  "name": "Private Residential Property Rental Index , (Base Quarter 2009-Q1 = 100), Quarterly"
+}

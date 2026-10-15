@@ -1,0 +1,60 @@
+{
+  "collectionIds": [
+    "1351"
+  ],
+  "columnMetadata": {
+    "map": {
+      "c_9751o8y6vvsa8nd0cpwh75e6k": "non-performing_percentage",
+      "c_aj61aw7n8pq9osb9s4mopmw66": "limits_granted",
+      "c_as1uuke1l7ywtvg6ajkdch78l": "utilised",
+      "c_atx3eyoc111wxn3kcbm4590x": "quarter"
+    },
+    "metaMapping": {
+      "c_9751o8y6vvsa8nd0cpwh75e6k": {
+        "columnTitle": "Non-Performing Percentage",
+        "dataType": "Numeric (Percentage)",
+        "index": "3",
+        "isCategorical": false,
+        "name": "non-performing_percentage"
+      },
+      "c_aj61aw7n8pq9osb9s4mopmw66": {
+        "columnTitle": "Limits Granted",
+        "dataType": "Numeric",
+        "index": "1",
+        "isCategorical": false,
+        "name": "limits_granted",
+        "unitOfMeasure": "S$ Million"
+      },
+      "c_as1uuke1l7ywtvg6ajkdch78l": {
+        "columnTitle": "Utilised",
+        "dataType": "Numeric",
+        "index": "2",
+        "isCategorical": false,
+        "name": "utilised",
+        "unitOfMeasure": "S$ Million"
+      },
+      "c_atx3eyoc111wxn3kcbm4590x": {
+        "columnTitle": "Quarter",
+        "dataType": "Quarter (Q)",
+        "index": "0",
+        "isCategorical": false,
+        "name": "quarter"
+      }
+    },
+    "order": [
+      "c_atx3eyoc111wxn3kcbm4590x",
+      "c_aj61aw7n8pq9osb9s4mopmw66",
+      "c_as1uuke1l7ywtvg6ajkdch78l",
+      "c_9751o8y6vvsa8nd0cpwh75e6k"
+    ]
+  },
+  "coverageEnd": "2015-09-30T08:00:00+08:00",
+  "coverageStart": "2011-01-01T08:00:00+08:00",
+  "createdAt": "2015-10-21T17:55:35+08:00",
+  "datasetId": "d_2d2ca1bcac71713d2c02deca871ebe98",
+  "datasetSize": 612,
+  "format": "CSV",
+  "lastUpdatedAt": "2024-06-06T14:29:16+08:00",
+  "managedBy": "Monetary Authority of Singapore",
+  "name": "Outstanding Housing Loans for Owner-Occupied Property, Quarterly"
+}
