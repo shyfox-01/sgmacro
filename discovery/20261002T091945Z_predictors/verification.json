@@ -1,0 +1,457 @@
+{
+  "verified_on": "2026-10-03",
+  "results": [
+    {
+      "label": "Cement Price Index",
+      "verdict": "review",
+      "proposal": {
+        "label": "Cement Price Index",
+        "source": "singstat",
+        "table_id": "M211251",
+        "series_no": "1",
+        "dataset_id": "",
+        "value_column": "",
+        "filters": "",
+        "frequency": "monthly",
+        "unit": "Dollar Per Tonne",
+        "channel": "Construction costs",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "effect_on_sales": "positive",
+        "effect_on_rents": "positive",
+        "rationale": "Higher construction material costs increase developers' building expenses, which can be passed on to buyers through higher sale prices and rents. This is a direct cost-push factor affecting housing supply costs.",
+        "replaces": ""
+      },
+      "observed": {
+        "publisher": "BUILDING AND CONSTRUCTION AUTHORITY",
+        "unit": "Dollar Per Tonne",
+        "adjustment": "Non-seasonally Adjusted",
+        "last_updated": "28/09/2026",
+        "first": "1999-01",
+        "latest": "2026-08",
+        "latest_value": 121.6,
+        "observations": 332,
+        "min": 65.63,
+        "max": 126.3,
+        "periods_behind": 0,
+        "update_stamp": "2026-09-28",
+        "observed_lag_days": 28,
+        "relationship": [
+          {
+            "target": "Private home prices (URA PPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": 0,
+            "r": 0.356,
+            "pairs": 106,
+            "agreement": "agrees"
+          },
+          {
+            "target": "Private rents (URA rental index)",
+            "market": "rents",
+            "declared_effect": "positive",
+            "best_lag_quarters": 0,
+            "r": 0.674,
+            "pairs": 86,
+            "agreement": "agrees"
+          },
+          {
+            "target": "HDB resale prices (HDB RPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": 12,
+            "r": 0.39,
+            "pairs": 94,
+            "agreement": "agrees"
+          }
+        ]
+      },
+      "draft": {
+        "id": "cement_price_index",
+        "label": "Cement Price Index",
+        "short_label": "Cement Price Index",
+        "role": "predictor",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "channel": "Construction costs",
+        "publisher": "BUILDING AND CONSTRUCTION AUTHORITY",
+        "source": {
+          "source": "singstat",
+          "table_id": "M211251",
+          "series": "1",
+          "unit_of_measure": "Dollar Per Tonne"
+        },
+        "definition": "TODO (publisher title: Construction Material Market Prices, Monthly)",
+        "unit": "Dollar Per Tonne",
+        "unit_kind": "level",
+        "frequency": "monthly",
+        "seasonal_adjustment": "not_applicable",
+        "update_frequency": "TODO",
+        "publication_lag_days": "TODO (cross-check against the update stamp)",
+        "plausible_range": [
+          32.815,
+          252.6
+        ],
+        "transforms": [
+          "mom",
+          "yoy"
+        ],
+        "headline": "yoy",
+        "effects": {
+          "sales": "positive",
+          "rents": "positive"
+        },
+        "neutral_band": "TODO",
+        "expected_lead_quarters": "TODO",
+        "rationale": "Higher construction material costs increase developers' building expenses, which can be passed on to buyers through higher sale prices and rents. This is a direct cost-push factor affecting housing supply costs.",
+        "limitations": "TODO (reviewer)"
+      },
+      "checks": [
+        {
+          "check": "exists",
+          "severity": "pass",
+          "message": "M211251 series 1: Cement In Bulk (Ordinary Portland Cement)"
+        },
+        {
+          "check": "unit",
+          "severity": "pass",
+          "message": "unit 'Dollar Per Tonne'"
+        },
+        {
+          "check": "seasonality",
+          "severity": "warn",
+          "message": "not seasonally adjusted: use year-on-year changes only"
+        },
+        {
+          "check": "freshness",
+          "severity": "pass",
+          "message": "latest observation 2026-08 is current"
+        },
+        {
+          "check": "history",
+          "severity": "pass",
+          "message": "27.7 years of history from 1999-01"
+        },
+        {
+          "check": "relationship",
+          "severity": "pass",
+          "message": "data consistent with the declared effect: Private home prices (URA PPI) r=+0.36 at 0q (agrees); Private rents (URA rental index) r=+0.67 at 0q (agrees); HDB resale prices (HDB RPI) r=+0.39 at 12q (agrees)"
+        }
+      ]
+    },
+    {
+      "label": "Personal Disposable Income",
+      "verdict": "accept",
+      "proposal": {
+        "label": "Personal Disposable Income",
+        "source": "singstat",
+        "table_id": "M016082",
+        "series_no": "1",
+        "dataset_id": "",
+        "value_column": "",
+        "filters": "",
+        "frequency": "quarterly",
+        "unit": "Million Dollars",
+        "channel": "Income and activity",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "effect_on_sales": "positive",
+        "effect_on_rents": "positive",
+        "rationale": "Higher personal disposable income increases households' ability to afford housing, boosting demand for both sales and rentals. This is a measure of overall household purchasing power distinct from GDP.",
+        "replaces": ""
+      },
+      "observed": {
+        "publisher": "SINGAPORE DEPARTMENT OF STATISTICS",
+        "unit": "Million Dollars",
+        "adjustment": "Seasonally Adjusted",
+        "last_updated": "25/08/2026",
+        "first": "1980-Q1",
+        "latest": "2026-Q2",
+        "latest_value": 100270.2,
+        "observations": 186,
+        "min": 3553.5,
+        "max": 100270.2,
+        "periods_behind": 0,
+        "update_stamp": "2026-08-25",
+        "observed_lag_days": 56,
+        "relationship": [
+          {
+            "target": "Private home prices (URA PPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": 0,
+            "r": 0.497,
+            "pairs": 182,
+            "agreement": "agrees"
+          },
+          {
+            "target": "Private rents (URA rental index)",
+            "market": "rents",
+            "declared_effect": "positive",
+            "best_lag_quarters": 0,
+            "r": 0.59,
+            "pairs": 86,
+            "agreement": "agrees"
+          },
+          {
+            "target": "HDB resale prices (HDB RPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": 0,
+            "r": 0.381,
+            "pairs": 142,
+            "agreement": "agrees"
+          }
+        ]
+      },
+      "draft": {
+        "id": "personal_disposable_income",
+        "label": "Personal Disposable Income",
+        "short_label": "Personal Disposable Income",
+        "role": "predictor",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "channel": "Income and activity",
+        "publisher": "SINGAPORE DEPARTMENT OF STATISTICS",
+        "source": {
+          "source": "singstat",
+          "table_id": "M016082",
+          "series": "1",
+          "unit_of_measure": "Million Dollars"
+        },
+        "definition": "TODO (publisher title: Personal Disposable Income At Current Prices, Quarterly, Seasonally Adjusted)",
+        "unit": "Million Dollars",
+        "unit_kind": "level",
+        "frequency": "quarterly",
+        "seasonal_adjustment": "seasonally_adjusted",
+        "update_frequency": "TODO",
+        "publication_lag_days": "TODO (cross-check against the update stamp)",
+        "plausible_range": [
+          1776.75,
+          200540.4
+        ],
+        "transforms": [
+          "qoq",
+          "yoy"
+        ],
+        "headline": "yoy",
+        "effects": {
+          "sales": "positive",
+          "rents": "positive"
+        },
+        "neutral_band": "TODO",
+        "expected_lead_quarters": "TODO",
+        "rationale": "Higher personal disposable income increases households' ability to afford housing, boosting demand for both sales and rentals. This is a measure of overall household purchasing power distinct from GDP.",
+        "limitations": "TODO (reviewer)"
+      },
+      "checks": [
+        {
+          "check": "exists",
+          "severity": "pass",
+          "message": "M016082 series 1: Personal Disposable Income (Nominal)"
+        },
+        {
+          "check": "unit",
+          "severity": "pass",
+          "message": "unit 'Million Dollars'"
+        },
+        {
+          "check": "freshness",
+          "severity": "pass",
+          "message": "latest observation 2026-Q2 is current"
+        },
+        {
+          "check": "history",
+          "severity": "pass",
+          "message": "46.5 years of history from 1980-Q1"
+        },
+        {
+          "check": "relationship",
+          "severity": "pass",
+          "message": "data consistent with the declared effect: Private home prices (URA PPI) r=+0.50 at 0q (agrees); Private rents (URA rental index) r=+0.59 at 0q (agrees); HDB resale prices (HDB RPI) r=+0.38 at 0q (agrees)"
+        }
+      ]
+    },
+    {
+      "label": "Household Income by Deciles",
+      "verdict": "reject",
+      "proposal": {
+        "label": "Household Income by Deciles",
+        "source": "datagovsg",
+        "table_id": "",
+        "series_no": "",
+        "dataset_id": "d_e19935af41b8ba83c0966b89ebed4ad5",
+        "value_column": "Dollar",
+        "filters": "{\"Dollar\": \"2025\"}",
+        "frequency": "annual",
+        "unit": "Dollars",
+        "channel": "Household wealth",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "effect_on_sales": "positive",
+        "effect_on_rents": "positive",
+        "rationale": "Income distribution across deciles reveals wealth concentration and purchasing power at different income levels. Higher incomes in upper deciles directly affect demand for premium properties, while lower decile incomes affect rental demand. This provides insight into household wealth dynamics.",
+        "replaces": ""
+      },
+      "observed": {},
+      "draft": null,
+      "checks": [
+        {
+          "check": "layout",
+          "severity": "fail",
+          "message": "no quarter/month/year column in ['Dollar', '2000', '2001', '2002', '2003', '2004']"
+        }
+      ]
+    },
+    {
+      "label": "Work Permit Holders Share",
+      "verdict": "review",
+      "proposal": {
+        "label": "Work Permit Holders Share",
+        "source": "singstat",
+        "table_id": "M810791",
+        "series_no": "3",
+        "dataset_id": "",
+        "value_column": "",
+        "filters": "",
+        "frequency": "annual",
+        "unit": "Per Cent",
+        "channel": "Rental demand",
+        "markets": [
+          "rents"
+        ],
+        "effect_on_sales": "not_applicable",
+        "effect_on_rents": "positive",
+        "rationale": "Work permit holders (low-wage migrant workers) typically rent rather than buy, so their share of non-resident population affects rental demand. Higher work permit holder share increases rental demand, particularly in lower-cost segments. This captures the foreign workforce channel for rents.",
+        "replaces": ""
+      },
+      "observed": {
+        "publisher": "SINGAPORE DEPARTMENT OF STATISTICS & MINISTRY OF MANPOWER",
+        "unit": "Per Cent",
+        "adjustment": "n/a",
+        "last_updated": "25/09/2026",
+        "reference_month": null,
+        "first": "2000",
+        "latest": "2026",
+        "latest_value": 45.0,
+        "observations": 27,
+        "min": 39.0,
+        "max": 51.0,
+        "periods_behind": 0,
+        "update_stamp": "2026-09-25",
+        "observed_lag_days": -97,
+        "relationship": [
+          {
+            "target": "Private home prices (URA PPI)",
+            "market": "sales",
+            "declared_effect": null,
+            "best_lag_quarters": 8,
+            "r": 0.25,
+            "pairs": 23,
+            "agreement": "market not declared"
+          },
+          {
+            "target": "Private rents (URA rental index)",
+            "market": "rents",
+            "declared_effect": "positive",
+            "best_lag_quarters": 0,
+            "r": 0.364,
+            "pairs": 21,
+            "agreement": "agrees"
+          },
+          {
+            "target": "HDB resale prices (HDB RPI)",
+            "market": "sales",
+            "declared_effect": null,
+            "best_lag_quarters": 12,
+            "r": 0.362,
+            "pairs": 22,
+            "agreement": "market not declared"
+          }
+        ]
+      },
+      "draft": {
+        "id": "work_permit_holders_share",
+        "label": "Work Permit Holders Share",
+        "short_label": "Work Permit Holders Share",
+        "role": "predictor",
+        "markets": [
+          "rents"
+        ],
+        "channel": "Rental demand",
+        "publisher": "SINGAPORE DEPARTMENT OF STATISTICS & MINISTRY OF MANPOWER",
+        "source": {
+          "source": "singstat",
+          "table_id": "M810791",
+          "series": "3",
+          "unit_of_measure": "Per Cent"
+        },
+        "definition": "TODO (publisher title: Share Of Non-Resident Population By Pass Types, At End June, Annual)",
+        "unit": "Per Cent",
+        "unit_kind": "rate",
+        "frequency": "annual",
+        "seasonal_adjustment": "not_applicable",
+        "update_frequency": "TODO",
+        "publication_lag_days": "TODO (cross-check against the update stamp)",
+        "plausible_range": [
+          34,
+          56
+        ],
+        "transforms": [
+          "yoy_pp"
+        ],
+        "headline": "yoy_pp",
+        "effects": {
+          "rents": "positive"
+        },
+        "neutral_band": "TODO",
+        "expected_lead_quarters": "TODO",
+        "rationale": "Work permit holders (low-wage migrant workers) typically rent rather than buy, so their share of non-resident population affects rental demand. Higher work permit holder share increases rental demand, particularly in lower-cost segments. This captures the foreign workforce channel for rents.",
+        "limitations": "TODO (reviewer)",
+        "reference_month": "TODO (month the annual figure refers to, 1-12; e.g. 6 for end-June)"
+      },
+      "checks": [
+        {
+          "check": "exists",
+          "severity": "pass",
+          "message": "M810791 series 3: Work Permit Holders"
+        },
+        {
+          "check": "unit",
+          "severity": "pass",
+          "message": "unit 'Per Cent'"
+        },
+        {
+          "check": "reference_month",
+          "severity": "warn",
+          "message": "annual series with no stated reference month: lag and lead-lag assume end-December; confirm the month before adopting"
+        },
+        {
+          "check": "freshness",
+          "severity": "pass",
+          "message": "latest observation 2026 is current"
+        },
+        {
+          "check": "history",
+          "severity": "pass",
+          "message": "27.0 years of history from 2000"
+        },
+        {
+          "check": "relationship",
+          "severity": "pass",
+          "message": "data consistent with the declared effect: Private rents (URA rental index) r=+0.36 at 0q (agrees)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+# DRAFT registry entries from an agent session (TODO fields are filled with defaults
+# by `sgmacro accept`, which also validates the entry before writing it).
+series:
+- id: commercial_banks_housing_and_bridging_lo
+  label: Commercial banks' housing and bridging loans outstanding (monthly)
+  short_label: Commercial banks' housing and bridging loans outstanding (monthly)
+  role: predictor
+  markets:
+  - sales
+  - rents
+  channel: Mortgage credit
+  publisher: Singapore Department of Statistics
+  source:
+    source: datagovsg
+    dataset_id: d_af0415517a3a3a94b3b74039934ef976
+    layout: wide
+    row_label: Consumer Loans - Housing And Bridging Loans
+  definition: 'TODO (publisher title: Commercial Banks: Loans And Advances To Residents
+    By Industry (End Of Period), Monthly)'
+  unit: Million Dollars
+  unit_kind: level
+  frequency: monthly
+  seasonal_adjustment: not_applicable
+  update_frequency: TODO
+  publication_lag_days: TODO (cross-check against the update stamp)
+  plausible_range:
+  - 104344.65
+  - 509346.6
+  transforms:
+  - mom
+  - yoy
+  headline: yoy
+  effects:
+    sales: positive
+    rents: positive
+  neutral_band: TODO
+  expected_lead_quarters: TODO
+  rationale: Commercial banks' housing and bridging loans outstanding measures the
+    stock of mortgage credit available to households. Higher loan availability increases
+    purchasing power for home buyers, supporting higher transaction volumes and prices
+    (sales). Similarly, increased demand from more credit availability puts upward
+    pressure on rents. This is a direct measure of mortgage credit supply in the market.
+  limitations: TODO (reviewer)
+- id: commercial_banks_housing_and_bridging_lo
+  label: Commercial banks' housing and bridging loans outstanding (quarterly)
+  short_label: Commercial banks' housing and bridging loans outstanding (quarterly)
+  role: predictor
+  markets:
+  - sales
+  - rents
+  channel: Mortgage credit
+  publisher: Singapore Department of Statistics
+  source:
+    source: datagovsg
+    dataset_id: d_0396bc943075a37d44c720ceb5be660a
+    layout: wide
+    row_label: Consumer Loans - Housing And Bridging Loans
+  definition: 'TODO (publisher title: Commercial Banks: Loans And Advances To Residents
+    By Industry (End Of Period), Quarterly)'
+  unit: Million Dollars
+  unit_kind: level
+  frequency: quarterly
+  seasonal_adjustment: not_applicable
+  update_frequency: TODO
+  publication_lag_days: TODO (cross-check against the update stamp)
+  plausible_range:
+  - 105594.3
+  - 505669.4
+  transforms:
+  - qoq
+  - yoy
+  headline: yoy
+  effects:
+    sales: positive
+    rents: positive
+  neutral_band: TODO
+  expected_lead_quarters: TODO
+  rationale: Commercial banks' housing and bridging loans outstanding measures the
+    stock of mortgage credit available to households. Higher loan availability increases
+    purchasing power for home buyers, supporting higher transaction volumes and prices
+    (sales). Similarly, increased demand from more credit availability puts upward
+    pressure on rents. This is a direct measure of mortgage credit supply in the market.
+  limitations: TODO (reviewer)

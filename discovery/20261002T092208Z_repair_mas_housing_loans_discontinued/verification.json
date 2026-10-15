@@ -1,0 +1,276 @@
+{
+  "verified_on": "2026-10-03",
+  "results": [
+    {
+      "label": "Commercial banks' housing and bridging loans outstanding (monthly)",
+      "verdict": "review",
+      "proposal": {
+        "label": "Commercial banks' housing and bridging loans outstanding (monthly)",
+        "source": "datagovsg",
+        "dataset_id": "d_af0415517a3a3a94b3b74039934ef976",
+        "value_column": "Consumer Loans - Housing And Bridging Loans",
+        "filters": "{}",
+        "frequency": "monthly",
+        "unit": "Million Dollars",
+        "channel": "Mortgage credit",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "effect_on_sales": "positive",
+        "effect_on_rents": "positive",
+        "rationale": "Commercial banks' housing and bridging loans outstanding measures the stock of mortgage credit available to households. Higher loan availability increases purchasing power for home buyers, supporting higher transaction volumes and prices (sales). Similarly, increased demand from more credit availability puts upward pressure on rents. This is a direct measure of mortgage credit supply in the market.",
+        "replaces": "mas_housing_loans_discontinued"
+      },
+      "observed": {
+        "publisher": "Singapore Department of Statistics",
+        "last_updated": "2026-08-31T00:00:00+08:00",
+        "first": "2021-07",
+        "latest": "2026-07",
+        "latest_value": 254673.3,
+        "observations": 61,
+        "min": 208689.3,
+        "max": 254673.3,
+        "periods_behind": 0,
+        "update_stamp": "2026-08-31",
+        "observed_lag_days": 31,
+        "relationship": [
+          {
+            "target": "Private home prices (URA PPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": null,
+            "r": null,
+            "pairs": 16,
+            "agreement": "insufficient data"
+          },
+          {
+            "target": "Private rents (URA rental index)",
+            "market": "rents",
+            "declared_effect": "positive",
+            "best_lag_quarters": null,
+            "r": null,
+            "pairs": 16,
+            "agreement": "insufficient data"
+          },
+          {
+            "target": "HDB resale prices (HDB RPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": null,
+            "r": null,
+            "pairs": 16,
+            "agreement": "insufficient data"
+          }
+        ]
+      },
+      "draft": {
+        "id": "commercial_banks_housing_and_bridging_lo",
+        "label": "Commercial banks' housing and bridging loans outstanding (monthly)",
+        "short_label": "Commercial banks' housing and bridging loans outstanding (monthly)",
+        "role": "predictor",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "channel": "Mortgage credit",
+        "publisher": "Singapore Department of Statistics",
+        "source": {
+          "source": "datagovsg",
+          "dataset_id": "d_af0415517a3a3a94b3b74039934ef976",
+          "layout": "wide",
+          "row_label": "Consumer Loans - Housing And Bridging Loans"
+        },
+        "definition": "TODO (publisher title: Commercial Banks: Loans And Advances To Residents By Industry (End Of Period), Monthly)",
+        "unit": "Million Dollars",
+        "unit_kind": "level",
+        "frequency": "monthly",
+        "seasonal_adjustment": "not_applicable",
+        "update_frequency": "TODO",
+        "publication_lag_days": "TODO (cross-check against the update stamp)",
+        "plausible_range": [
+          104344.65,
+          509346.6
+        ],
+        "transforms": [
+          "mom",
+          "yoy"
+        ],
+        "headline": "yoy",
+        "effects": {
+          "sales": "positive",
+          "rents": "positive"
+        },
+        "neutral_band": "TODO",
+        "expected_lead_quarters": "TODO",
+        "rationale": "Commercial banks' housing and bridging loans outstanding measures the stock of mortgage credit available to households. Higher loan availability increases purchasing power for home buyers, supporting higher transaction volumes and prices (sales). Similarly, increased demand from more credit availability puts upward pressure on rents. This is a direct measure of mortgage credit supply in the market.",
+        "limitations": "TODO (reviewer)"
+      },
+      "checks": [
+        {
+          "check": "exists",
+          "severity": "pass",
+          "message": "d_af0415517a3a3a94b3b74039934ef976: Commercial Banks: Loans And Advances To Residents By Industry (End Of Period), Monthly"
+        },
+        {
+          "check": "unit",
+          "severity": "warn",
+          "message": "data.gov.sg exposes no unit metadata; confirm the unit by hand"
+        },
+        {
+          "check": "duplicate",
+          "severity": "warn",
+          "message": "same publication title as the table behind registry series 'bank_housing_loans'; likely another channel's copy of data already covered"
+        },
+        {
+          "check": "freshness",
+          "severity": "pass",
+          "message": "latest observation 2026-07 is current"
+        },
+        {
+          "check": "history",
+          "severity": "warn",
+          "message": "only 5.1 years of history (2021-07 onwards); lead-lag estimates will be weak"
+        },
+        {
+          "check": "relationship",
+          "severity": "warn",
+          "message": "too little overlapping history with the targets to test the declared effect"
+        }
+      ]
+    },
+    {
+      "label": "Commercial banks' housing and bridging loans outstanding (quarterly)",
+      "verdict": "review",
+      "proposal": {
+        "label": "Commercial banks' housing and bridging loans outstanding (quarterly)",
+        "source": "datagovsg",
+        "dataset_id": "d_0396bc943075a37d44c720ceb5be660a",
+        "value_column": "Consumer Loans - Housing And Bridging Loans",
+        "filters": "{}",
+        "frequency": "quarterly",
+        "unit": "Million Dollars",
+        "channel": "Mortgage credit",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "effect_on_sales": "positive",
+        "effect_on_rents": "positive",
+        "rationale": "Commercial banks' housing and bridging loans outstanding measures the stock of mortgage credit available to households. Higher loan availability increases purchasing power for home buyers, supporting higher transaction volumes and prices (sales). Similarly, increased demand from more credit availability puts upward pressure on rents. This is a direct measure of mortgage credit supply in the market.",
+        "replaces": "mas_housing_loans_discontinued"
+      },
+      "observed": {
+        "publisher": "Singapore Department of Statistics",
+        "last_updated": "2026-08-11T00:00:00+08:00",
+        "first": "2021-Q3",
+        "latest": "2026-Q2",
+        "latest_value": 252834.7,
+        "observations": 20,
+        "min": 211188.6,
+        "max": 252834.7,
+        "periods_behind": 0,
+        "update_stamp": "2026-08-11",
+        "observed_lag_days": 42,
+        "relationship": [
+          {
+            "target": "Private home prices (URA PPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": null,
+            "r": null,
+            "pairs": 16,
+            "agreement": "insufficient data"
+          },
+          {
+            "target": "Private rents (URA rental index)",
+            "market": "rents",
+            "declared_effect": "positive",
+            "best_lag_quarters": null,
+            "r": null,
+            "pairs": 16,
+            "agreement": "insufficient data"
+          },
+          {
+            "target": "HDB resale prices (HDB RPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": null,
+            "r": null,
+            "pairs": 16,
+            "agreement": "insufficient data"
+          }
+        ]
+      },
+      "draft": {
+        "id": "commercial_banks_housing_and_bridging_lo",
+        "label": "Commercial banks' housing and bridging loans outstanding (quarterly)",
+        "short_label": "Commercial banks' housing and bridging loans outstanding (quarterly)",
+        "role": "predictor",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "channel": "Mortgage credit",
+        "publisher": "Singapore Department of Statistics",
+        "source": {
+          "source": "datagovsg",
+          "dataset_id": "d_0396bc943075a37d44c720ceb5be660a",
+          "layout": "wide",
+          "row_label": "Consumer Loans - Housing And Bridging Loans"
+        },
+        "definition": "TODO (publisher title: Commercial Banks: Loans And Advances To Residents By Industry (End Of Period), Quarterly)",
+        "unit": "Million Dollars",
+        "unit_kind": "level",
+        "frequency": "quarterly",
+        "seasonal_adjustment": "not_applicable",
+        "update_frequency": "TODO",
+        "publication_lag_days": "TODO (cross-check against the update stamp)",
+        "plausible_range": [
+          105594.3,
+          505669.4
+        ],
+        "transforms": [
+          "qoq",
+          "yoy"
+        ],
+        "headline": "yoy",
+        "effects": {
+          "sales": "positive",
+          "rents": "positive"
+        },
+        "neutral_band": "TODO",
+        "expected_lead_quarters": "TODO",
+        "rationale": "Commercial banks' housing and bridging loans outstanding measures the stock of mortgage credit available to households. Higher loan availability increases purchasing power for home buyers, supporting higher transaction volumes and prices (sales). Similarly, increased demand from more credit availability puts upward pressure on rents. This is a direct measure of mortgage credit supply in the market.",
+        "limitations": "TODO (reviewer)"
+      },
+      "checks": [
+        {
+          "check": "exists",
+          "severity": "pass",
+          "message": "d_0396bc943075a37d44c720ceb5be660a: Commercial Banks: Loans And Advances To Residents By Industry (End Of Period), Quarterly"
+        },
+        {
+          "check": "unit",
+          "severity": "warn",
+          "message": "data.gov.sg exposes no unit metadata; confirm the unit by hand"
+        },
+        {
+          "check": "freshness",
+          "severity": "pass",
+          "message": "latest observation 2026-Q2 is current"
+        },
+        {
+          "check": "history",
+          "severity": "warn",
+          "message": "only 5.0 years of history (2021-Q3 onwards); lead-lag estimates will be weak"
+        },
+        {
+          "check": "relationship",
+          "severity": "warn",
+          "message": "too little overlapping history with the targets to test the declared effect"
+        }
+      ]
+    }
+  ]
+}

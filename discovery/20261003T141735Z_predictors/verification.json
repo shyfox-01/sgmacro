@@ -1,0 +1,443 @@
+{
+  "verified_on": "2026-10-03",
+  "results": [
+    {
+      "label": "Construction material price index (annual)",
+      "verdict": "review",
+      "proposal": {
+        "label": "Construction material price index (annual)",
+        "source": "singstat",
+        "table_id": "M211671",
+        "series_no": "5",
+        "frequency": "annual",
+        "unit": "Dollar Per Cubic Metre",
+        "channel": "Realised housing costs",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "effect_on_sales": "positive",
+        "effect_on_rents": "positive",
+        "rationale": "Construction input costs (ready mixed concrete) influence the supply-side cost of delivering housing. Higher construction input prices increase building costs, which may be passed through to sales prices and rents, especially in supply-constrained markets. This is a direct cost-push indicator for the realised housing costs channel.",
+        "replaces": "",
+        "reference_month": 0
+      },
+      "observed": {
+        "publisher": "BUILDING AND CONSTRUCTION AUTHORITY",
+        "unit": "Dollar Per Cubic Metre",
+        "adjustment": "Non-seasonally Adjusted",
+        "last_updated": "23/02/2026",
+        "reference_month": null,
+        "first": "1999",
+        "latest": "2025",
+        "latest_value": 121.24,
+        "observations": 27,
+        "min": 55.4,
+        "max": 138.96,
+        "periods_behind": 0,
+        "update_stamp": "2026-02-23",
+        "observed_lag_days": 54,
+        "relationship": [
+          {
+            "target": "Private home prices (URA PPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": 0,
+            "r": 0.748,
+            "pairs": 26,
+            "agreement": "agrees"
+          },
+          {
+            "target": "Private rents (URA rental index)",
+            "market": "rents",
+            "declared_effect": "positive",
+            "best_lag_quarters": 0,
+            "r": 0.774,
+            "pairs": 21,
+            "agreement": "agrees"
+          },
+          {
+            "target": "HDB resale prices (HDB RPI)",
+            "market": "sales",
+            "declared_effect": "positive",
+            "best_lag_quarters": 2,
+            "r": 0.445,
+            "pairs": 26,
+            "agreement": "agrees"
+          }
+        ]
+      },
+      "draft": {
+        "id": "construction_material_price_index_annual",
+        "label": "Construction material price index (annual)",
+        "short_label": "Construction material price index (annual)",
+        "role": "predictor",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "channel": "Realised housing costs",
+        "publisher": "BUILDING AND CONSTRUCTION AUTHORITY",
+        "source": {
+          "source": "singstat",
+          "table_id": "M211671",
+          "series": "5",
+          "unit_of_measure": "Dollar Per Cubic Metre"
+        },
+        "definition": "TODO (publisher title: Construction Material Market Prices, Annual)",
+        "unit": "Dollar Per Cubic Metre",
+        "unit_kind": "level",
+        "frequency": "annual",
+        "seasonal_adjustment": "not_applicable",
+        "update_frequency": "TODO",
+        "publication_lag_days": "TODO (cross-check against the update stamp)",
+        "plausible_range": [
+          27.7,
+          277.92
+        ],
+        "transforms": [
+          "yoy"
+        ],
+        "headline": "yoy",
+        "effects": {
+          "sales": "positive",
+          "rents": "positive"
+        },
+        "neutral_band": "TODO",
+        "expected_lead_quarters": "TODO",
+        "rationale": "Construction input costs (ready mixed concrete) influence the supply-side cost of delivering housing. Higher construction input prices increase building costs, which may be passed through to sales prices and rents, especially in supply-constrained markets. This is a direct cost-push indicator for the realised housing costs channel.",
+        "limitations": "TODO (reviewer)",
+        "reference_month": "TODO (month the annual figure refers to, 1-12; e.g. 6 for end-June)"
+      },
+      "checks": [
+        {
+          "check": "exists",
+          "severity": "pass",
+          "message": "M211671 series 5: Ready Mixed Concrete"
+        },
+        {
+          "check": "unit",
+          "severity": "pass",
+          "message": "unit 'Dollar Per Cubic Metre'"
+        },
+        {
+          "check": "reference_month",
+          "severity": "warn",
+          "message": "annual series with no stated reference month: lag and lead-lag assume end-December; confirm the month before adopting"
+        },
+        {
+          "check": "freshness",
+          "severity": "pass",
+          "message": "latest observation 2025 is current"
+        },
+        {
+          "check": "history",
+          "severity": "pass",
+          "message": "27.0 years of history from 1999"
+        },
+        {
+          "check": "relationship",
+          "severity": "pass",
+          "message": "data consistent with the declared effect: Private home prices (URA PPI) r=+0.75 at 0q (agrees); Private rents (URA rental index) r=+0.77 at 0q (agrees); HDB resale prices (HDB RPI) r=+0.45 at 2q (agrees)"
+        }
+      ]
+    },
+    {
+      "label": "Foreign workforce (excluding domestic workers)",
+      "verdict": "reject",
+      "proposal": {
+        "label": "Foreign workforce (excluding domestic workers)",
+        "source": "datagovsg",
+        "dataset_id": "d_f757d4b9db7c8977def084f0a51a46b5",
+        "value_column": "count",
+        "filters": "{}",
+        "frequency": "monthly",
+        "unit": "Number of persons",
+        "channel": "Rental demand",
+        "markets": [
+          "rents"
+        ],
+        "effect_on_sales": "not_applicable",
+        "effect_on_rents": "positive",
+        "rationale": "Foreign workers constitute a significant portion of Singapore's rental market demand. Increases in foreign workforce numbers directly expand the pool of potential renters, exerting upward pressure on rents, particularly in lower- and middle-cost rental segments where foreign workers live. This is distinct from the non-resident population channel which captures PR/other foreign persons; this focuses specifically on work permit holders as a housing demand component.",
+        "replaces": "",
+        "reference_month": 0
+      },
+      "observed": {
+        "publisher": "Ministry of Manpower",
+        "last_updated": "2024-06-06T15:08:55+08:00",
+        "first": "2017-12",
+        "latest": "2022-12",
+        "latest_value": 1155700.0,
+        "observations": 6,
+        "min": 954100.0,
+        "max": 1165600.0,
+        "periods_behind": 42,
+        "update_stamp": "2024-06-06",
+        "observed_lag_days": 523,
+        "relationship": [
+          {
+            "target": "Private home prices (URA PPI)",
+            "market": "sales",
+            "declared_effect": null,
+            "best_lag_quarters": null,
+            "r": null,
+            "pairs": 5,
+            "agreement": "insufficient data"
+          },
+          {
+            "target": "Private rents (URA rental index)",
+            "market": "rents",
+            "declared_effect": "positive",
+            "best_lag_quarters": null,
+            "r": null,
+            "pairs": 5,
+            "agreement": "insufficient data"
+          },
+          {
+            "target": "HDB resale prices (HDB RPI)",
+            "market": "sales",
+            "declared_effect": null,
+            "best_lag_quarters": null,
+            "r": null,
+            "pairs": 5,
+            "agreement": "insufficient data"
+          }
+        ]
+      },
+      "draft": {
+        "id": "foreign_workforce_excluding_domestic_wor",
+        "label": "Foreign workforce (excluding domestic workers)",
+        "short_label": "Foreign workforce (excluding domestic workers)",
+        "role": "predictor",
+        "markets": [
+          "rents"
+        ],
+        "channel": "Rental demand",
+        "publisher": "Ministry of Manpower",
+        "source": {
+          "source": "datagovsg",
+          "dataset_id": "d_f757d4b9db7c8977def084f0a51a46b5",
+          "layout": "tidy",
+          "period_column": "month",
+          "value_column": "count",
+          "filters": {}
+        },
+        "definition": "TODO (publisher title: Foreign Workforce Excluding Foreign Domestic Workers)",
+        "unit": "Number of persons",
+        "unit_kind": "level",
+        "frequency": "monthly",
+        "seasonal_adjustment": "not_applicable",
+        "update_frequency": "TODO",
+        "publication_lag_days": "TODO (cross-check against the update stamp)",
+        "plausible_range": [
+          477050.0,
+          2331200.0
+        ],
+        "transforms": [
+          "mom",
+          "yoy"
+        ],
+        "headline": "yoy",
+        "effects": {
+          "rents": "positive"
+        },
+        "neutral_band": "TODO",
+        "expected_lead_quarters": "TODO",
+        "rationale": "Foreign workers constitute a significant portion of Singapore's rental market demand. Increases in foreign workforce numbers directly expand the pool of potential renters, exerting upward pressure on rents, particularly in lower- and middle-cost rental segments where foreign workers live. This is distinct from the non-resident population channel which captures PR/other foreign persons; this focuses specifically on work permit holders as a housing demand component.",
+        "limitations": "TODO (reviewer)"
+      },
+      "checks": [
+        {
+          "check": "exists",
+          "severity": "pass",
+          "message": "d_f757d4b9db7c8977def084f0a51a46b5: Foreign Workforce Excluding Foreign Domestic Workers"
+        },
+        {
+          "check": "unit",
+          "severity": "warn",
+          "message": "data.gov.sg exposes no unit metadata; confirm the unit by hand"
+        },
+        {
+          "check": "freshness",
+          "severity": "fail",
+          "message": "latest observation 2022-12 is 42 periods behind what a current monthly series would show by 2026-10-03"
+        },
+        {
+          "check": "history",
+          "severity": "warn",
+          "message": "only 0.5 years of history (2017-12 onwards); lead-lag estimates will be weak"
+        },
+        {
+          "check": "relationship",
+          "severity": "warn",
+          "message": "too little overlapping history with the targets to test the declared effect"
+        }
+      ]
+    },
+    {
+      "label": "Share of work permit holders in non-resident population",
+      "verdict": "review",
+      "proposal": {
+        "label": "Share of work permit holders in non-resident population",
+        "source": "datagovsg",
+        "dataset_id": "d_94fd56bdb981f0f966cb487d8247bf1a",
+        "value_column": "Work Permit Holders",
+        "filters": "{}",
+        "frequency": "annual",
+        "unit": "Percent of non-resident population",
+        "channel": "Rental demand",
+        "markets": [
+          "rents"
+        ],
+        "effect_on_sales": "not_applicable",
+        "effect_on_rents": "positive",
+        "rationale": "Work permit holders (CMP and non-CMP) represent a large segment of the foreign population that rents in Singapore, primarily in HDB flats. Their presence directly drives rental demand. Tracking this share provides a cleaner signal than total non-resident population, which also includes tourists, PRs, and other categories less relevant to housing demand. Rising work permit shares indicate tighter restrictions easing or increased inflow, boosting rental demand.",
+        "replaces": "",
+        "reference_month": 6
+      },
+      "observed": {
+        "publisher": "Singapore Department of Statistics",
+        "last_updated": "2026-03-30T00:00:00+08:00",
+        "reference_month": 6,
+        "first": "2000",
+        "latest": "2025",
+        "latest_value": 44.0,
+        "observations": 26,
+        "min": 39.0,
+        "max": 51.0,
+        "periods_behind": 0,
+        "update_stamp": "2026-03-30",
+        "observed_lag_days": 273,
+        "relationship": [
+          {
+            "target": "Private home prices (URA PPI)",
+            "market": "sales",
+            "declared_effect": null,
+            "best_lag_quarters": 1,
+            "r": 0.274,
+            "pairs": 25,
+            "agreement": "market not declared"
+          },
+          {
+            "target": "Private rents (URA rental index)",
+            "market": "rents",
+            "declared_effect": "positive",
+            "best_lag_quarters": 0,
+            "r": 0.572,
+            "pairs": 21,
+            "agreement": "agrees"
+          },
+          {
+            "target": "HDB resale prices (HDB RPI)",
+            "market": "sales",
+            "declared_effect": null,
+            "best_lag_quarters": 12,
+            "r": 0.375,
+            "pairs": 23,
+            "agreement": "market not declared"
+          }
+        ]
+      },
+      "draft": {
+        "id": "share_of_work_permit_holders_in_non_resi",
+        "label": "Share of work permit holders in non-resident population",
+        "short_label": "Share of work permit holders in non-resident population",
+        "role": "predictor",
+        "markets": [
+          "rents"
+        ],
+        "channel": "Rental demand",
+        "publisher": "Singapore Department of Statistics",
+        "source": {
+          "source": "datagovsg",
+          "dataset_id": "d_94fd56bdb981f0f966cb487d8247bf1a",
+          "layout": "wide",
+          "row_label": "Work Permit Holders"
+        },
+        "definition": "TODO (publisher title: Share Of Non-Resident Population By Pass Types, At End June, Annual)",
+        "unit": "Percent of non-resident population",
+        "unit_kind": "rate",
+        "frequency": "annual",
+        "seasonal_adjustment": "not_applicable",
+        "update_frequency": "TODO",
+        "publication_lag_days": "TODO (cross-check against the update stamp)",
+        "plausible_range": [
+          34,
+          56
+        ],
+        "transforms": [
+          "yoy_pp"
+        ],
+        "headline": "yoy_pp",
+        "effects": {
+          "rents": "positive"
+        },
+        "neutral_band": "TODO",
+        "expected_lead_quarters": "TODO",
+        "rationale": "Work permit holders (CMP and non-CMP) represent a large segment of the foreign population that rents in Singapore, primarily in HDB flats. Their presence directly drives rental demand. Tracking this share provides a cleaner signal than total non-resident population, which also includes tourists, PRs, and other categories less relevant to housing demand. Rising work permit shares indicate tighter restrictions easing or increased inflow, boosting rental demand.",
+        "limitations": "TODO (reviewer)",
+        "reference_month": 6
+      },
+      "checks": [
+        {
+          "check": "exists",
+          "severity": "pass",
+          "message": "d_94fd56bdb981f0f966cb487d8247bf1a: Share Of Non-Resident Population By Pass Types, At End June, Annual"
+        },
+        {
+          "check": "unit",
+          "severity": "warn",
+          "message": "data.gov.sg exposes no unit metadata; confirm the unit by hand"
+        },
+        {
+          "check": "freshness",
+          "severity": "pass",
+          "message": "latest observation 2025 is current"
+        },
+        {
+          "check": "history",
+          "severity": "pass",
+          "message": "26.0 years of history from 2000"
+        },
+        {
+          "check": "relationship",
+          "severity": "pass",
+          "message": "data consistent with the declared effect: Private rents (URA rental index) r=+0.57 at 0q (agrees)"
+        }
+      ]
+    },
+    {
+      "label": "Median household employment income (annual)",
+      "verdict": "reject",
+      "proposal": {
+        "label": "Median household employment income (annual)",
+        "source": "datagovsg",
+        "dataset_id": "d_2b32fe125528c2b264b72238341b7e6a",
+        "value_column": "ResidentHouseholds_Median1",
+        "filters": "{}",
+        "frequency": "annual",
+        "unit": "Monthly Dollars",
+        "channel": "Income and activity",
+        "markets": [
+          "sales",
+          "rents"
+        ],
+        "effect_on_sales": "positive",
+        "effect_on_rents": "positive",
+        "rationale": "Median household income from work is a proxy for the purchasing power and affordability constraints of resident households. Higher incomes expand demand for sales housing (especially owner-occupied) and increase ability to pay rents. This complements GDP in the Income and activity channel by directly measuring household-level income, which better captures mortgage repayment capacity and rental budget constraints at the micro level. The median is less volatile and more representative than averages.",
+        "replaces": "",
+        "reference_month": 0
+      },
+      "observed": {},
+      "draft": null,
+      "checks": [
+        {
+          "check": "layout",
+          "severity": "fail",
+          "message": "no quarter/month/year column in ['Dollar', 'ResidentHouseholds_Average', 'ResidentHouseholds_Median1', 'ResidentEmployedHouseholds_Average', 'ResidentEmployedHouseholds_Median1']"
+        }
+      ]
+    }
+  ]
+}

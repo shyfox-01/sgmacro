@@ -1,0 +1,115 @@
+# DRAFT registry entries from an agent session (TODO fields are filled with defaults
+# by `sgmacro accept`, which also validates the entry before writing it).
+series:
+- id: cement_price_index
+  label: Cement Price Index
+  short_label: Cement Price Index
+  role: predictor
+  markets:
+  - sales
+  - rents
+  channel: Construction costs
+  publisher: BUILDING AND CONSTRUCTION AUTHORITY
+  source:
+    source: singstat
+    table_id: M211251
+    series: '1'
+    unit_of_measure: Dollar Per Tonne
+  definition: 'TODO (publisher title: Construction Material Market Prices, Monthly)'
+  unit: Dollar Per Tonne
+  unit_kind: level
+  frequency: monthly
+  seasonal_adjustment: not_applicable
+  update_frequency: TODO
+  publication_lag_days: TODO (cross-check against the update stamp)
+  plausible_range:
+  - 32.815
+  - 252.6
+  transforms:
+  - mom
+  - yoy
+  headline: yoy
+  effects:
+    sales: positive
+    rents: positive
+  neutral_band: TODO
+  expected_lead_quarters: TODO
+  rationale: Higher construction material costs increase developers' building expenses,
+    which can be passed on to buyers through higher sale prices and rents. This is
+    a direct cost-push factor affecting housing supply costs.
+  limitations: TODO (reviewer)
+- id: personal_disposable_income
+  label: Personal Disposable Income
+  short_label: Personal Disposable Income
+  role: predictor
+  markets:
+  - sales
+  - rents
+  channel: Income and activity
+  publisher: SINGAPORE DEPARTMENT OF STATISTICS
+  source:
+    source: singstat
+    table_id: M016082
+    series: '1'
+    unit_of_measure: Million Dollars
+  definition: 'TODO (publisher title: Personal Disposable Income At Current Prices,
+    Quarterly, Seasonally Adjusted)'
+  unit: Million Dollars
+  unit_kind: level
+  frequency: quarterly
+  seasonal_adjustment: seasonally_adjusted
+  update_frequency: TODO
+  publication_lag_days: TODO (cross-check against the update stamp)
+  plausible_range:
+  - 1776.75
+  - 200540.4
+  transforms:
+  - qoq
+  - yoy
+  headline: yoy
+  effects:
+    sales: positive
+    rents: positive
+  neutral_band: TODO
+  expected_lead_quarters: TODO
+  rationale: Higher personal disposable income increases households' ability to afford
+    housing, boosting demand for both sales and rentals. This is a measure of overall
+    household purchasing power distinct from GDP.
+  limitations: TODO (reviewer)
+- id: work_permit_holders_share
+  label: Work Permit Holders Share
+  short_label: Work Permit Holders Share
+  role: predictor
+  markets:
+  - rents
+  channel: Rental demand
+  publisher: SINGAPORE DEPARTMENT OF STATISTICS & MINISTRY OF MANPOWER
+  source:
+    source: singstat
+    table_id: M810791
+    series: '3'
+    unit_of_measure: Per Cent
+  definition: 'TODO (publisher title: Share Of Non-Resident Population By Pass Types,
+    At End June, Annual)'
+  unit: Per Cent
+  unit_kind: rate
+  frequency: annual
+  seasonal_adjustment: not_applicable
+  update_frequency: TODO
+  publication_lag_days: TODO (cross-check against the update stamp)
+  plausible_range:
+  - 34
+  - 56
+  transforms:
+  - yoy_pp
+  headline: yoy_pp
+  effects:
+    rents: positive
+  neutral_band: TODO
+  expected_lead_quarters: TODO
+  rationale: Work permit holders (low-wage migrant workers) typically rent rather
+    than buy, so their share of non-resident population affects rental demand. Higher
+    work permit holder share increases rental demand, particularly in lower-cost segments.
+    This captures the foreign workforce channel for rents.
+  limitations: TODO (reviewer)
+  reference_month: TODO (month the annual figure refers to, 1-12; e.g. 6 for end-June)

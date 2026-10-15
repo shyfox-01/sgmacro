@@ -1,0 +1,80 @@
+# DRAFT registry entries from an agent session (TODO fields are filled with defaults
+# by `sgmacro accept`, which also validates the entry before writing it).
+series:
+- id: construction_material_price_index_annual
+  label: Construction material price index (annual)
+  short_label: Construction material price index (annual)
+  role: predictor
+  markets:
+  - sales
+  - rents
+  channel: Realised housing costs
+  publisher: BUILDING AND CONSTRUCTION AUTHORITY
+  source:
+    source: singstat
+    table_id: M211671
+    series: '5'
+    unit_of_measure: Dollar Per Cubic Metre
+  definition: 'TODO (publisher title: Construction Material Market Prices, Annual)'
+  unit: Dollar Per Cubic Metre
+  unit_kind: level
+  frequency: annual
+  seasonal_adjustment: not_applicable
+  update_frequency: TODO
+  publication_lag_days: TODO (cross-check against the update stamp)
+  plausible_range:
+  - 27.7
+  - 277.92
+  transforms:
+  - yoy
+  headline: yoy
+  effects:
+    sales: positive
+    rents: positive
+  neutral_band: TODO
+  expected_lead_quarters: TODO
+  rationale: Construction input costs (ready mixed concrete) influence the supply-side
+    cost of delivering housing. Higher construction input prices increase building
+    costs, which may be passed through to sales prices and rents, especially in supply-constrained
+    markets. This is a direct cost-push indicator for the realised housing costs channel.
+  limitations: TODO (reviewer)
+  reference_month: TODO (month the annual figure refers to, 1-12; e.g. 6 for end-June)
+- id: share_of_work_permit_holders_in_non_resi
+  label: Share of work permit holders in non-resident population
+  short_label: Share of work permit holders in non-resident population
+  role: predictor
+  markets:
+  - rents
+  channel: Rental demand
+  publisher: Singapore Department of Statistics
+  source:
+    source: datagovsg
+    dataset_id: d_94fd56bdb981f0f966cb487d8247bf1a
+    layout: wide
+    row_label: Work Permit Holders
+  definition: 'TODO (publisher title: Share Of Non-Resident Population By Pass Types,
+    At End June, Annual)'
+  unit: Percent of non-resident population
+  unit_kind: rate
+  frequency: annual
+  seasonal_adjustment: not_applicable
+  update_frequency: TODO
+  publication_lag_days: TODO (cross-check against the update stamp)
+  plausible_range:
+  - 34
+  - 56
+  transforms:
+  - yoy_pp
+  headline: yoy_pp
+  effects:
+    rents: positive
+  neutral_band: TODO
+  expected_lead_quarters: TODO
+  rationale: Work permit holders (CMP and non-CMP) represent a large segment of the
+    foreign population that rents in Singapore, primarily in HDB flats. Their presence
+    directly drives rental demand. Tracking this share provides a cleaner signal than
+    total non-resident population, which also includes tourists, PRs, and other categories
+    less relevant to housing demand. Rising work permit shares indicate tighter restrictions
+    easing or increased inflow, boosting rental demand.
+  limitations: TODO (reviewer)
+  reference_month: 6
