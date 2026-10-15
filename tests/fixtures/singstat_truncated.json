@@ -1,0 +1,108 @@
+{
+ "Data": {
+  "theme": "Economy & Prices",
+  "subject": "Consumer Price Index",
+  "topic": "Consumer Price Index (CPI)/ Inflation Rate",
+  "id": "M213751",
+  "groupTitle": "Consumer Price Index (CPI), 2024 As Base Year",
+  "title": "Consumer Price Index (CPI), 2024 As Base Year, Monthly",
+  "frequency": "Monthly",
+  "adjustmentType": "Non-seasonally Adjusted",
+  "datasource": "SINGAPORE DEPARTMENT OF STATISTICS",
+  "footnote": "The weighting pattern of the Consumer Price Index (CPI) was derived from the expenditure values collected from the Household Expenditure Survey (HES) 2023 and updated to 2024 values by taking into account price changes between 2023 and 2024.",
+  "generatedBy": "SingStat Table Builder",
+  "dataLastUpdated": "23/09/2026",
+  "dateGenerated": "02/10/2026",
+  "offset": null,
+  "limit": "5000",
+  "sortBy": null,
+  "timeFilter": null,
+  "between": null,
+  "search": null,
+  "row": [
+   {
+    "seriesNo": "1",
+    "rowText": "All Items",
+    "uoM": "Index",
+    "footnote": "",
+    "columns": [
+     {
+      "key": "2025 Mar",
+      "value": "100.599"
+     },
+     {
+      "key": "2025 Apr",
+      "value": "100.283"
+     },
+     {
+      "key": "2025 May",
+      "value": "100.978"
+     },
+     {
+      "key": "2025 Jun",
+      "value": "100.9"
+     },
+     {
+      "key": "2025 Jul",
+      "value": "100.447"
+     },
+     {
+      "key": "2025 Aug",
+      "value": "100.963"
+     },
+     {
+      "key": "2025 Sep",
+      "value": "101.32"
+     },
+     {
+      "key": "2025 Oct",
+      "value": "101.33"
+     },
+     {
+      "key": "2025 Nov",
+      "value": "101.579"
+     },
+     {
+      "key": "2025 Dec",
+      "value": "101.854"
+     },
+     {
+      "key": "2026 Jan",
+      "value": "101.333"
+     },
+     {
+      "key": "2026 Feb",
+      "value": "101.918"
+     },
+     {
+      "key": "2026 Mar",
+      "value": "102.405"
+     },
+     {
+      "key": "2026 Apr",
+      "value": "102.052"
+     },
+     {
+      "key": "2026 May",
+      "value": "102.814"
+     },
+     {
+      "key": "2026 Jun",
+      "value": "102.858"
+     },
+     {
+      "key": "2026 Jul",
+      "value": "102.696"
+     },
+     {
+      "key": "2026 Aug",
+      "value": "103.334"
+     }
+    ]
+   }
+  ]
+ },
+ "DataCount": 1,
+ "StatusCode": 200,
+ "Message": ""
+}

@@ -1,0 +1,27 @@
+{
+ "Data": {
+  "theme": "Economy & Prices",
+  "subject": "Consumer Price Index",
+  "topic": "Consumer Price Index (CPI)/ Inflation Rate",
+  "id": "M213751",
+  "groupTitle": "Consumer Price Index (CPI), 2024 As Base Year",
+  "title": "Consumer Price Index (CPI), 2024 As Base Year, Monthly",
+  "frequency": "Monthly",
+  "adjustmentType": "Non-seasonally Adjusted",
+  "datasource": "SINGAPORE DEPARTMENT OF STATISTICS",
+  "footnote": "The weighting pattern of the Consumer Price Index (CPI) was derived from the expenditure values collected from the Household Expenditure Survey (HES) 2023 and updated to 2024 values by taking into account price changes between 2023 and 2024.",
+  "generatedBy": "SingStat Table Builder",
+  "dataLastUpdated": "23/09/2026",
+  "dateGenerated": "02/10/2026",
+  "offset": null,
+  "limit": "5000",
+  "sortBy": null,
+  "timeFilter": null,
+  "between": null,
+  "search": null,
+  "row": []
+ },
+ "DataCount": 0,
+ "StatusCode": 200,
+ "Message": ""
+}

@@ -1,0 +1,188 @@
+{
+ "Data": {
+  "theme": "Economy & Prices",
+  "subject": "Consumer Price Index",
+  "topic": "Consumer Price Index (CPI)/ Inflation Rate",
+  "id": "M213751",
+  "groupTitle": "Consumer Price Index (CPI), 2024 As Base Year",
+  "title": "Consumer Price Index (CPI), 2024 As Base Year, Monthly",
+  "frequency": "Monthly",
+  "adjustmentType": "Non-seasonally Adjusted",
+  "datasource": "SINGAPORE DEPARTMENT OF STATISTICS",
+  "footnote": "The weighting pattern of the Consumer Price Index (CPI) was derived from the expenditure values collected from the Household Expenditure Survey (HES) 2023 and updated to 2024 values by taking into account price changes between 2023 and 2024.",
+  "generatedBy": "SingStat Table Builder",
+  "dataLastUpdated": "23/09/2026",
+  "dateGenerated": "02/10/2026",
+  "offset": null,
+  "limit": "5000",
+  "sortBy": null,
+  "timeFilter": null,
+  "between": null,
+  "search": null,
+  "row": [
+   {
+    "seriesNo": "1",
+    "rowText": "All Items",
+    "uoM": "Index",
+    "footnote": "",
+    "columns": [
+     {
+      "key": "2025 Mar",
+      "value": "100.599"
+     },
+     {
+      "key": "2025 Apr",
+      "value": "100.283"
+     },
+     {
+      "key": "2025 May",
+      "value": "100.978"
+     },
+     {
+      "key": "2025 Jun",
+      "value": "100.9"
+     },
+     {
+      "key": "2025 Jul",
+      "value": "100.447"
+     },
+     {
+      "key": "2025 Aug",
+      "value": "100.963"
+     },
+     {
+      "key": "2025 Sep",
+      "value": "101.32"
+     },
+     {
+      "key": "2025 Oct",
+      "value": "101.33"
+     },
+     {
+      "key": "2025 Nov",
+      "value": "101.579"
+     },
+     {
+      "key": "2025 Dec",
+      "value": "101.854"
+     },
+     {
+      "key": "2026 Jan",
+      "value": "101.333"
+     },
+     {
+      "key": "2026 Feb",
+      "value": "101.918"
+     },
+     {
+      "key": "2026 Mar",
+      "value": "102.405"
+     },
+     {
+      "key": "2026 Apr",
+      "value": "102.052"
+     },
+     {
+      "key": "2026 May",
+      "value": "102.814"
+     },
+     {
+      "key": "2026 Jun",
+      "value": "102.858"
+     },
+     {
+      "key": "2026 Jul",
+      "value": "102.696"
+     },
+     {
+      "key": "2026 Aug",
+      "value": "103.334"
+     }
+    ]
+   },
+   {
+    "seriesNo": "1.03.1",
+    "rowText": "Accommodation",
+    "uoM": "Index",
+    "footnote": "Accommodation, one of the groups in the Housing & Utilities expenditure division of the CPI, comprises 'Actual Rentals for Housing', 'Imputed Rentals for Housing', as well as 'Housing Maintenance & Repairs'.  A significant share of the Accommodation group is 'Imputed Rentals for Housing', which reflects the costs to homeowners of utilising the flow of services provided by their homes over an extended period of time.  Given that the cost of using housing services is not directly observed for homeowners, it is computed based on the imputed rental concept under the rental equivalence method, i.e., proxied by market rentals of similar properties.  This provides an estimated rental value for the owned home, as though the homeowner were renting it from themselves.  Housing price is not considered in the CPI as it has a high investment component and is treated as a capital good.  As for the CPI for 'Housing Maintenance & Repairs', it takes into account the rebates for Service & Conservancy Charges (S&CC) disbursed to households living in Housing and Development Board (HDB) flats in the applicable months.  Imputed Rentals have no impact on the cash expenditure of most households in Singapore as they already own their homes, while the inclusion of S&CC rebates results in some volatility in the monthly CPI.  As such, the CPIs for 'All Items less Accommodation' and 'All Items less Imputed Rentals for Housing' are compiled and published as additional indicators.  For the CPI for 'All Items less Imputed Rentals for Housing', actual rentals paid on rented units are still included in the measure.",
+    "columns": [
+     {
+      "key": "2025 Mar",
+      "value": "101.533"
+     },
+     {
+      "key": "2025 Apr",
+      "value": "98.926"
+     },
+     {
+      "key": "2025 May",
+      "value": "101.525"
+     },
+     {
+      "key": "2025 Jun",
+      "value": "101.518"
+     },
+     {
+      "key": "2025 Jul",
+      "value": "99.824"
+     },
+     {
+      "key": "2025 Aug",
+      "value": "101.602"
+     },
+     {
+      "key": "2025 Sep",
+      "value": "101.608"
+     },
+     {
+      "key": "2025 Oct",
+      "value": "99.957"
+     },
+     {
+      "key": "2025 Nov",
+      "value": "101.705"
+     },
+     {
+      "key": "2025 Dec",
+      "value": "101.761"
+     },
+     {
+      "key": "2026 Jan",
+      "value": "100.38"
+     },
+     {
+      "key": "2026 Feb",
+      "value": "101.855"
+     },
+     {
+      "key": "2026 Mar",
+      "value": "101.888"
+     },
+     {
+      "key": "2026 Apr",
+      "value": "99.349"
+     },
+     {
+      "key": "2026 May",
+      "value": "102.019"
+     },
+     {
+      "key": "2026 Jun",
+      "value": "102.081"
+     },
+     {
+      "key": "2026 Jul",
+      "value": "100.586"
+     },
+     {
+      "key": "2026 Aug",
+      "value": "102.444"
+     }
+    ]
+   }
+  ]
+ },
+ "DataCount": 1,
+ "StatusCode": 200,
+ "Message": ""
+}
