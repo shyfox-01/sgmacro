@@ -1,0 +1,144 @@
+# Singapore residential property market measures ("cooling measures").
+#
+# No API serves these as a time series, so this list is maintained by hand from
+# official releases and treated like any other source: it is snapshotted with a
+# hash on every run, gated by announcement date, and every quarterly value can be
+# traced back to the events below.
+#
+# Unit of record: a ROUND = one official announcement, however many instruments
+# it changed (rounds usually bundle several, so their separate effects cannot be
+# identified from data). Direction is the government's stated intent.
+#
+# Coverage: 2005 onward. MAS's "Macroprudential Policies in Singapore" page lists
+# every round from 2005 to April 2023 with links (used below); later rounds come
+# from MND, HDB and joint MND/MOF/MAS releases. MAS also lists rounds in 1996,
+# 1997 and 2001; they are omitted because their content could not be verified
+# from the archived releases, which is why the series starts in 2005.
+#
+# To add a round: append an event with its official source, update reviewed_on,
+# and run `sgmacro run`; the validator warns when reviewed_on falls behind.
+
+reviewed_on: 2026-10-03
+coverage_start: 2005-01-01
+compiled_from: https://www.mas.gov.sg/publications/macroprudential-policies-in-singapore
+
+events:
+  - announced: 2005-07-19
+    direction: easing
+    instruments: [LTV, minimum cash payment]
+    summary: LTV limit raised from 80% to 90%; minimum cash down payment cut from 10% to 5%.
+    source: https://www.mas.gov.sg/news/media-releases/2005/mas-issues-revised-housing-loan-rules
+
+  - announced: 2009-09-14
+    direction: tightening
+    instruments: [interest absorption / interest-only loans, land supply]
+    summary: Interest absorption schemes and interest-only loans disallowed; Confirmed List reinstated for 2010 Government Land Sales.
+    source: https://www.mas.gov.sg/news/media-releases/2009/measures-to-ensure-a-stable-and-sustainable-property-market
+
+  - announced: 2010-02-19
+    direction: tightening
+    instruments: [SSD, LTV]
+    summary: Seller's stamp duty reintroduced for sales within one year; LTV limit lowered from 90% to 80%.
+    source: https://www.mas.gov.sg/news/media-releases/2010/measures-to-ensure-a-stable-and-sustainable-property-market
+
+  - announced: 2010-08-30
+    direction: tightening
+    instruments: [SSD, LTV, minimum cash payment]
+    summary: SSD holding period extended from one to three years; LTV for borrowers with an outstanding housing loan lowered to 70%; minimum cash payment raised from 5% to 10%.
+    source: https://www.mas.gov.sg/news/media-releases/2010/measures-to-maintain-a-stable-and-sustainable-property-market
+
+  - announced: 2011-01-13
+    direction: tightening
+    instruments: [SSD, LTV]
+    summary: SSD holding period extended to four years at 16%/12%/8%/4%; LTV lowered to 60% for borrowers with an outstanding loan and 50% for non-individuals.
+    source: https://www.mas.gov.sg/news/media-releases/2011/measures-to-maintain-a-stable-and-sustainable-property-market
+
+  - announced: 2011-12-07
+    direction: tightening
+    instruments: [ABSD]
+    summary: Additional buyer's stamp duty introduced, 10% for foreigners and entities and 3% for permanent residents' second and citizens' third property.
+    source: https://www.mas.gov.sg/news/media-releases/2011/absd-for-a-stable-and-sustainable-property-market
+
+  - announced: 2012-10-06
+    direction: tightening
+    instruments: [loan tenure, LTV]
+    summary: Housing loan tenure capped at 35 years with lower LTV for loans above 30 years; LTV for non-individuals lowered from 50% to 40%.
+    source: https://www.mas.gov.sg/news/media-releases/2012/mas-restricts-loan-tenure-for-residential-properties
+
+  - announced: 2013-01-12
+    direction: tightening
+    instruments: [ABSD, LTV, minimum cash payment, MSR]
+    summary: ABSD raised (citizens' second property 7%, third 10%; foreigners 15%); LTV lowered for buyers with outstanding loans; minimum cash payment raised; 30% mortgage servicing ratio introduced.
+    source: https://www.mas.gov.sg/news/media-releases/2013/additional-measures-to-ensure-a-stable-and-sustainable-property-market
+
+  - announced: 2013-06-29
+    direction: tightening
+    instruments: [TDSR]
+    summary: Total debt servicing ratio framework introduced, capping monthly debt repayments at 60% of gross income.
+    source: https://www.mas.gov.sg/news/media-releases/2013/mas-introduces-debt-servicing-framework-for-property-loans
+
+  - announced: 2013-08-27
+    direction: tightening
+    instruments: [HDB loan tenure, LTV]
+    summary: Maximum tenure of HDB loans cut from 35 to 30 years; LTV limits for public housing loans lowered.
+    source: https://www.mas.gov.sg/-/media/mas-media-library/publications/macroprudential-policies-in-singapore/final-revised-press-release-for-ndr-housing-package-final.pdf
+
+  - announced: 2013-12-09
+    direction: tightening
+    instruments: [MSR]
+    summary: 30% mortgage servicing ratio extended to loans for new executive condominiums.
+    source: https://www.mas.gov.sg/-/media/mas-media-library/publications/macroprudential-policies-in-singapore/press-release--refining-the-ec-housing-scheme-9-dec-2013.pdf
+
+  - announced: 2016-09-02
+    direction: easing
+    instruments: [TDSR]
+    summary: TDSR no longer applied when owner-occupiers refinance their housing loans.
+    source: https://www.mas.gov.sg/news/media-releases/2016/tdsr-rules-on-refinancing-fine-tuned
+
+  - announced: 2017-03-10
+    direction: easing
+    instruments: [SSD, TDSR]
+    summary: SSD holding period cut from four to three years with rates lowered by 4 points; TDSR not applied to mortgage equity withdrawal loans at or below 50% LTV.
+    source: https://www.mas.gov.sg/news/media-releases/2017/joint-press-release-on-measures-relating-to-residential-property
+
+  - announced: 2018-07-06
+    direction: tightening
+    instruments: [ABSD, LTV]
+    summary: ABSD raised (citizens' second property 12%, third 15%; foreigners 20%; entities 25%, plus 5% non-remittable for developers); LTV limits lowered by 5 points.
+    source: https://www.mas.gov.sg/news/media-releases/2018/raising-additional-buyers-stamp-duty-rates-and-tightening-loan-to-value-limits
+
+  - announced: 2021-12-15
+    direction: tightening
+    instruments: [ABSD, TDSR, LTV]
+    summary: ABSD raised (citizens' second property 17%, third 25%; foreigners 30%; entities 35%); TDSR threshold cut from 60% to 55%; LTV for HDB loans cut from 90% to 85%.
+    source: https://www.mas.gov.sg/news/media-releases/2021/measures-to-cool-the-property-market
+
+  - announced: 2022-09-29
+    direction: tightening
+    instruments: [interest rate floor]
+    summary: Medium-term interest rate floor used for TDSR and MSR raised by 0.5 point; HDB introduced a 3% interest rate floor for HDB loan eligibility.
+    source: https://www.mas.gov.sg/news/media-releases/2022/measures-to-promote-sustainable-conditions-in-the-property-market-by-ensuring-prudent-borrowing-and-moderating-demand
+
+  - announced: 2023-04-26
+    direction: tightening
+    instruments: [ABSD]
+    summary: ABSD raised (citizens' second property 20%, third 30%; permanent residents' second 30%; foreigners 60%; entities 65%).
+    source: https://www.mas.gov.sg/news/media-releases/2023/measures-for-a-sustainable-property-market
+
+  - announced: 2024-08-19
+    direction: tightening
+    instruments: [LTV]
+    summary: LTV limit for HDB housing loans lowered from 80% to 75% from 20 August 2024, alongside larger housing grants for first-time buyers.
+    source: https://www.hdb.gov.sg/business-partners/estate-agents-and-salespersons/letters-to-keos/measures-to-cool-the-hdb-resale-market-and-provide-greater-support-for-first-time-home-buyers
+
+  - announced: 2025-07-03
+    direction: tightening
+    instruments: [SSD]
+    summary: SSD holding period extended from three to four years and each SSD rate raised by 4 points, for purchases from 4 July 2025.
+    source: https://www.mas.gov.sg/news/media-releases/2025/extension-of-the-holding-period-of-sellers-stamp-duty-and-higher-ssd-rates
+
+  - announced: 2026-05-08
+    direction: tightening
+    instruments: [executive condominium rules]
+    summary: Executive condominium minimum occupation period extended from 5 to 10 years; deferred payment scheme withdrawn; first-timer quota raised from 70% to 90% for two years (EC sites tendered from 8 May 2026).
+    source: https://www.mnd.gov.sg/newsroom/press-releases/view/strengthening-the-executive-condominium-housing-scheme-and-supporting-first-time-home-buyers

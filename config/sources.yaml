@@ -1,0 +1,752 @@
+# Source registry: the contract between what the workflow claims about a series
+# and what it actually reads. Every report field is rendered from this file plus
+# computed values; nothing in the report is hand-written per run.
+#
+# How entries get here: candidates are proposed by the discovery agent
+# (`sgmacro discover`), checked by the deterministic verifier (data, then the
+# relationship with the targets), and written here only when a person answers
+# "yes" for that candidate (or runs `sgmacro accept`); the entry is validated
+# before the file is replaced. The run itself never consults the agent, so a
+# report is reproducible from this file and the snapshot store alone.
+#
+# Field notes
+#   unit_kind        index|level -> percentage changes; rate|ratio -> pp / bp only
+#   unit_of_measure  (SingStat refs) must equal the publisher's metadata, checked
+#                    on every run; a mismatch rejects the series
+#   publication_lag  conservative floor, cross-checked against each source's own
+#                    update stamp on every run
+#   effects          expected sign of the predictor's influence on each market;
+#                    signals and LLM claims are held to it
+#   neutral_band     headline changes inside +/- this are read as flat
+#   cross_check      a second publication of the same series, reconciled per run
+
+version: 4
+timezone: Asia/Singapore
+
+selection_rules:
+  - One predictor per economic transmission channel, chosen for a stated mechanism before looking at correlations.
+  - Prefer the agency-managed publication; keep a second publication of the same series as a cross-check.
+  - Prefer the fresher publication when two agree on history (SingStat carries MAS rates a month ahead of data.gov.sg).
+  - Prefer seasonally adjusted data where a period-on-period change is reported.
+  - Address SingStat series by seriesNo, never by row label (labels repeat within tables).
+  - Record rejected alternatives with the reason, so the choice can be audited.
+
+series:
+
+  # =========================================================================
+  # Targets: what a forecasting model would ultimately predict
+  # =========================================================================
+
+  - id: ura_ppi
+    label: URA Private Residential Property Price Index (all residential)
+    short_label: Private home prices (URA PPI)
+    role: target
+    markets: [sales]
+    publisher: Urban Redevelopment Authority
+    source:
+      source: datagovsg
+      dataset_id: d_97f8a2e995022d311c6c68cfda6d034c
+      layout: tidy
+      period_column: quarter
+      value_column: index
+      filters: {property_type: All Residential}
+    cross_check:
+      ref: {source: singstat, table_id: M212261, series: "1", unit_of_measure: Index}
+      tolerance: 0.05
+      note: SingStat republishes the URA index to one decimal place.
+    definition: >-
+      Price index of private residential property transactions (landed and
+      non-landed, completed and uncompleted), whole island, compiled by URA with
+      a stratified hedonic regression since 2015-Q1.
+    unit: index, 2009-Q1 = 100
+    unit_kind: index
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Quarterly; flash estimate at quarter end, final figures about four weeks later
+    publication_lag_days: 30
+    plausible_range: [5, 400]
+    transforms: [qoq, yoy]
+    headline: yoy
+    history_note: >-
+      Method change, no level break: from 2015-Q1 URA compiles the index with a
+      stratified hedonic regression and 5-quarter fixed weights; the published
+      series is linked across the change.
+    rejected_alternatives:
+      - {ref: d_c0c26484c655113b0ab5abaa0a49952b, reason: sliced by property type only}
+      - {ref: d_f76411aa34d98559b6194419d796ce59, reason: duplicate concept without a stated frequency}
+
+  - id: ura_rri_nonlanded
+    label: URA Private Residential Rental Index (non-landed, whole island)
+    short_label: Private rents (URA rental index)
+    role: target
+    markets: [rents]
+    publisher: Urban Redevelopment Authority
+    source:
+      source: datagovsg
+      dataset_id: d_8e4c50283fb7052a391dfb746a05c853
+      layout: tidy
+      period_column: quarter
+      value_column: index
+      filters: {property_type: Non-Landed, locality: Whole Island}
+    cross_check:
+      ref: {source: singstat, table_id: M212311, series: "1.2", unit_of_measure: Index}
+      tolerance: 0.05
+    definition: >-
+      Rental index of non-landed private residential leases, whole island,
+      compiled by URA from IRAS stamp-duty data on tenancy agreements.
+    unit: index, 2009-Q1 = 100
+    unit_kind: index
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Quarterly; flash estimate at quarter end, final figures about four weeks later
+    publication_lag_days: 30
+    plausible_range: [30, 300]
+    transforms: [qoq, yoy]
+    headline: yoy
+    history_note: >-
+      Non-landed rather than all-residential because URA stopped publishing the
+      all-residential rental slice after 2021-Q2 (see the negative control
+      ura_rri_all_discontinued). Non-landed is also where the rental market sits.
+      Method change, no level break: hedonic regression from 2015-Q1, linked.
+    rejected_alternatives:
+      - {ref: "d_8e4c50283fb7052a391dfb746a05c853 [All Residential]", reason: discontinued after 2021-Q2}
+
+  - id: hdb_rpi
+    label: HDB Resale Price Index
+    short_label: HDB resale prices (HDB RPI)
+    role: target
+    markets: [sales]
+    publisher: Housing & Development Board
+    source:
+      source: datagovsg
+      dataset_id: d_14f63e595975691e7c24a27ae4c07c79
+      layout: tidy
+      period_column: quarter
+      value_column: index
+    cross_check:
+      ref: {source: singstat, table_id: M212161, series: "1", unit_of_measure: Index}
+      tolerance: 0.05
+    definition: >-
+      Resale price index of HDB flats, all flat types, by registration date,
+      compiled with a stratified hedonic regression since 2014-Q4.
+    unit: index, 2009-Q1 = 100
+    unit_kind: index
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Quarterly; flash estimate at quarter end, final figures about four weeks later
+    publication_lag_days: 30
+    plausible_range: [10, 400]
+    transforms: [qoq, yoy]
+    headline: yoy
+    history_note: >-
+      Method change, no level break: hedonic regression from 2014-Q4; earlier
+      values were rescaled to the 2009-Q1 base by 100/138.3, so HDB warns that
+      pre-2014 quarterly changes may differ slightly through rounding.
+    rejected_alternatives:
+      - {ref: d_913fd3cff8b7f462cf70cf415001e02b, reason: SingStat mirror on data.gov.sg; one quarter behind}
+
+  # =========================================================================
+  # Predictors
+  # =========================================================================
+
+  - id: sora_3m
+    label: 3-month compounded SORA
+    short_label: 3M compounded SORA
+    role: predictor
+    markets: [sales, rents]
+    channel: Mortgage financing cost
+    publisher: Monetary Authority of Singapore
+    source: {source: singstat, table_id: M700071, series: "23", unit_of_measure: Per Cent Per Annum}
+    cross_check:
+      ref:
+        source: datagovsg
+        dataset_id: d_5fe5a4bb4a1ecc4d8a56a095832e2b24
+        layout: wide
+        row_label: Compounded Singapore Overnight Rate Average (SORA) - 3 Month
+      tolerance: 0.00005
+      note: The data.gov.sg copy of the same MAS table, typically one month behind SingStat.
+    definition: >-
+      Singapore Overnight Rate Average compounded over the preceding three
+      months, end of month, the benchmark most Singapore floating-rate mortgages
+      now reference.
+    unit: percent per annum
+    unit_kind: rate
+    frequency: monthly
+    seasonal_adjustment: not_applicable
+    update_frequency: Monthly; SingStat table refreshed about two weeks after month end
+    publication_lag_days: 21
+    plausible_range: [-0.5, 8]
+    transforms: [mom_bp, yoy_bp]
+    headline: yoy_bp
+    decimals: 2
+    effects: {sales: negative, rents: ambiguous}
+    neutral_band: 10
+    expected_lead_quarters: [1, 4]
+    rationale: >-
+      Most new and refinanced Singapore mortgages float off compounded SORA, so
+      it feeds almost directly into instalments and therefore into what a buyer
+      can bid. Its effect on rents is two-sided: dearer mortgages push marginal
+      buyers into renting and landlords pass on costs (rents up), but they also
+      cool the economy and investor demand (rents down).
+    limitations: >-
+      A three-month backward-looking average, so it trails market expectations;
+      the transmission to buyers also runs through bank spreads and through the
+      loan-to-value and total-debt-servicing limits, which are policy variables
+      outside this series. The 2022-23 hiking cycle overlapped with post-pandemic
+      rental shortages, which muddies any simple historical correlation.
+    rejected_alternatives:
+      - {ref: "MAS statistics API (eservices.mas.gov.sg)", reason: returned an HTML maintenance page; no documented public JSON endpoint}
+      - {ref: "d_5fe5a4bb4a1ecc4d8a56a095832e2b24 as primary", reason: same values but one month behind SingStat}
+
+  - id: sgs_10y
+    label: SGS 10-year bond yield
+    short_label: SGS 10Y yield
+    role: predictor
+    markets: [sales, rents]
+    channel: Long-horizon discount rate
+    publisher: Monetary Authority of Singapore
+    source: {source: singstat, table_id: M700071, series: "15", unit_of_measure: Per Cent Per Annum}
+    cross_check:
+      ref:
+        source: datagovsg
+        dataset_id: d_5fe5a4bb4a1ecc4d8a56a095832e2b24
+        layout: wide
+        row_label: Government Securities - 10-Year Bond Yield
+      tolerance: 0.005
+    definition: >-
+      Yield on the 10-year Singapore Government Securities benchmark bond, end
+      of month (average of closing bid rates quoted by SGS primary dealers).
+    unit: percent per annum
+    unit_kind: rate
+    frequency: monthly
+    seasonal_adjustment: not_applicable
+    update_frequency: Monthly; SingStat table refreshed about two weeks after month end
+    publication_lag_days: 21
+    plausible_range: [0, 10]
+    transforms: [mom_bp, yoy_bp]
+    headline: yoy_bp
+    decimals: 2
+    effects: {sales: negative, rents: ambiguous}
+    neutral_band: 10
+    expected_lead_quarters: [1, 4]
+    rationale: >-
+      Housing is a long-duration asset, so its value is sensitive to the long end
+      of the curve, the closest local proxy for the rate used to discount future
+      rents. A higher yield lowers the price a rental stream can justify and
+      raises the return on the alternative safe asset.
+    limitations: >-
+      Driven as much by global (US) term premia as by Singapore conditions, so it
+      is a noisy read on local housing demand; its effect on rents is ambiguous
+      for the same two-sided reasons as SORA.
+    history_note: >-
+      Method change, no level break: before 2000 the yield is the mode of
+      dealers' closing bid prices, from 2000 their average.
+
+  - id: bank_housing_loans
+    label: Commercial banks' housing and bridging loans outstanding
+    short_label: Bank housing loans
+    role: predictor
+    markets: [sales]
+    channel: Mortgage credit
+    publisher: Monetary Authority of Singapore
+    source: {source: singstat, table_id: M701091, series: "1.2.1", unit_of_measure: Million Dollars}
+    definition: >-
+      Outstanding housing and bridging loans extended by commercial banks to
+      residents, end of month (consumer loans category, MAS Notice 610 basis).
+    unit: SGD million
+    unit_kind: level
+    frequency: monthly
+    seasonal_adjustment: not_applicable
+    update_frequency: Monthly; about four weeks after month end
+    publication_lag_days: 31
+    plausible_range: [100000, 500000]
+    transforms: [mom, yoy]
+    headline: yoy
+    effects: {sales: positive}
+    neutral_band: 1.0
+    expected_lead_quarters: [0, 2]
+    rationale: >-
+      Most private and many HDB purchases are financed with bank mortgages, so
+      growth in the outstanding stock reflects both credit availability and the
+      volume of transactions being financed. Accelerating loan growth tends to
+      accompany rising transaction prices.
+    limitations: >-
+      A stock, so it moves slowly and mixes new lending with repayments and
+      refinancing. MAS revised the reporting basis in July 2021 and SingStat
+      carries only the new series, so history starts in 2021-07 and the
+      lead-lag diagnostics have few observations.
+    history_note: Series break in July 2021 (MAS Notice 610 revision); earlier data are not comparable.
+    rejected_alternatives:
+      - {ref: d_2d2ca1bcac71713d2c02deca871ebe98, reason: "data.gov.sg owner-occupied housing loans stop at 2015-Q3 (negative control below)"}
+
+  - id: gdp_real_sa
+    label: Real GDP, seasonally adjusted (chained 2015 dollars)
+    short_label: Real GDP (SA)
+    role: predictor
+    markets: [sales, rents]
+    channel: Income and activity
+    publisher: Singapore Department of Statistics
+    source: {source: singstat, table_id: M014812, series: "1", unit_of_measure: Million Dollars}
+    definition: >-
+      Gross domestic product in chained 2015 dollars, seasonally adjusted,
+      expenditure approach.
+    unit: SGD million, chained 2015 prices
+    unit_kind: level
+    frequency: quarterly
+    seasonal_adjustment: seasonally_adjusted
+    update_frequency: Quarterly; advance estimate two weeks after quarter end, this table about six weeks after
+    publication_lag_days: 45
+    plausible_range: [3000, 400000]
+    transforms: [qoq, yoy]
+    headline: yoy
+    effects: {sales: positive, rents: positive}
+    neutral_band: 1.0
+    expected_lead_quarters: [1, 4]
+    rationale: >-
+      Output growth drives incomes, hiring and confidence, which set what
+      households can commit to a mortgage or a lease. In a small open economy it
+      also proxies the external demand that brings in expatriate tenants.
+    limitations: >-
+      Revised between the advance, preliminary and final estimates, and the
+      store only holds the vintages this workflow has fetched. Singapore GDP is
+      volatile (trade and biomedical output swing it), so a strong quarter need
+      not mean strong household income.
+    rejected_alternatives:
+      - {ref: M014811 series 1, reason: not seasonally adjusted; its quarter-on-quarter change is mostly seasonality}
+
+  - id: unemployment_rate_sa
+    label: Overall unemployment rate, seasonally adjusted
+    short_label: Unemployment rate (SA)
+    role: predictor
+    markets: [sales, rents]
+    channel: Labour market slack
+    publisher: Ministry of Manpower
+    source: {source: singstat, table_id: M182342, series: "1", unit_of_measure: Per Cent}
+    definition: >-
+      Unemployed persons as a share of the labour force (residents and
+      non-residents), end of quarter, seasonally adjusted with X-12-ARIMA.
+    unit: percent of labour force
+    unit_kind: rate
+    frequency: quarterly
+    seasonal_adjustment: seasonally_adjusted
+    update_frequency: Quarterly; advance estimate a month after quarter end, this table with the full labour market report about twelve weeks after
+    publication_lag_days: 90
+    plausible_range: [0.5, 10]
+    transforms: [qoq_pp, yoy_pp]
+    headline: yoy_pp
+    decimals: 1
+    effects: {sales: negative, rents: negative}
+    neutral_band: 0.1
+    expected_lead_quarters: [1, 3]
+    rationale: >-
+      Rising unemployment weakens the ability to service a mortgage, delays
+      household formation and signals fewer foreign hires, all of which reduce
+      demand for both purchases and leases.
+    limitations: >-
+      Singapore unemployment is low and range-bound outside recessions, so most
+      moves are within noise; the table's update stamp follows the full labour
+      market report, about twelve weeks after quarter end, which is why the
+      declared lag is long.
+    history_note: >-
+      June 1995, 2000 and 2005 come from the household survey or census rather
+      than the Labour Force Survey; seasonal factors are re-estimated every year,
+      so recent history is revised annually.
+    rejected_alternatives:
+      - {ref: M181641 (resident unemployed persons), reason: a head count; the rate is comparable across labour-force growth}
+
+  - id: cpi_all_items
+    label: Consumer Price Index, all items
+    short_label: CPI all items
+    role: predictor
+    markets: [sales, rents]
+    channel: General price level (deflator)
+    publisher: Singapore Department of Statistics
+    source: {source: singstat, table_id: M213751, series: "1", unit_of_measure: Index}
+    definition: All-items Consumer Price Index, 2024 = 100, not seasonally adjusted.
+    unit: index, 2024 = 100
+    unit_kind: index
+    frequency: monthly
+    seasonal_adjustment: not_applicable
+    update_frequency: Monthly; about 23 days after month end
+    publication_lag_days: 28
+    plausible_range: [10, 200]
+    transforms: [mom, yoy]
+    headline: yoy
+    effects: {sales: ambiguous, rents: ambiguous}
+    neutral_band: 0.5
+    expected_lead_quarters: [0, 2]
+    rationale: >-
+      Used chiefly as the deflator that turns nominal price and rent growth into
+      real growth, and as context for the rate outlook. Its direct effect is
+      two-sided: inflation erodes affordability but also lifts nominal rents and
+      makes property attractive as a real asset.
+    limitations: >-
+      Contains the accommodation component, so it is not independent of the
+      rental predictor below; a control variable rather than a driver.
+    history_note: >-
+      Basket weights are refreshed from each Household Expenditure Survey (latest
+      2023, rebased to 2024 = 100); the series is chain-linked, so there is no
+      level break, but its composition drifts over decades.
+
+  - id: cpi_accommodation
+    label: CPI accommodation component
+    short_label: CPI accommodation
+    role: predictor
+    markets: [rents, sales]
+    channel: Realised housing costs
+    publisher: Singapore Department of Statistics
+    source: {source: singstat, table_id: M213751, series: "1.03.1", unit_of_measure: Index}
+    definition: >-
+      Accommodation component of the CPI (actual rentals and imputed rentals of
+      owner-occupiers), 2024 = 100, not seasonally adjusted.
+    unit: index, 2024 = 100
+    unit_kind: index
+    frequency: monthly
+    seasonal_adjustment: not_applicable
+    update_frequency: Monthly; about 23 days after month end
+    publication_lag_days: 28
+    plausible_range: [5, 200]
+    transforms: [mom, yoy]
+    headline: yoy
+    effects: {rents: positive, sales: positive}
+    neutral_band: 0.5
+    expected_lead_quarters: [0, 1]
+    rationale: >-
+      The official monthly measure of what households pay for shelter, available
+      a quarter earlier than the URA rental index, so it is an early read on the
+      rental target. Higher rents also raise rental yields, which supports the
+      prices investors will pay.
+    limitations: >-
+      Stock-weighted and partly imputed, so it moves more slowly than new-lease
+      rents; month-on-month moves are distorted by the timing of government
+      service-and-conservancy-charge rebates, which is why year-on-year is the
+      headline.
+    history_note: >-
+      Mostly imputed rentals of owner-occupiers (rental-equivalence method), with
+      weights refreshed from each Household Expenditure Survey; chain-linked.
+
+  - id: private_transactions
+    label: Private residential transactions, whole of Singapore
+    short_label: Private transactions (units)
+    role: predictor
+    markets: [sales]
+    channel: Market activity
+    publisher: Urban Redevelopment Authority
+    source:
+      source: datagovsg
+      dataset_id: d_7c69c943d5f0d89d6a9a773d2b51f337
+      layout: tidy
+      period_column: quarter
+      value_column: units
+      aggregate: sum
+      rows_per_period: 4
+    definition: >-
+      Number of private residential units transacted in the quarter, summing new
+      sales (completed and uncompleted), resales and sub-sales; excludes
+      executive condominiums.
+    unit: units per quarter
+    unit_kind: level
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Quarterly; about four weeks after quarter end
+    publication_lag_days: 30
+    plausible_range: [500, 40000]
+    decimals: 0
+    transforms: [qoq, t4q_yoy]
+    headline: t4q_yoy
+    effects: {sales: positive}
+    neutral_band: 5.0
+    expected_lead_quarters: [1, 2]
+    rationale: >-
+      Volume usually turns before price: sellers' asking prices are sticky, so a
+      change in demand shows up first in how many units change hands. The
+      trailing-four-quarter comparison removes launch timing and seasonality from
+      a lumpy quarterly flow.
+    limitations: >-
+      New-sale volume depends on developers' launch calendar and cooling
+      measures can cut volume without cutting prices; a total of four components
+      is only formed when all four rows are published for the quarter.
+
+  - id: unsold_inventory
+    label: Unsold private residential units with planning approvals
+    short_label: Unsold private inventory
+    role: predictor
+    markets: [sales]
+    channel: Developer inventory
+    publisher: Urban Redevelopment Authority
+    source:
+      source: datagovsg
+      dataset_id: d_84d05d45049108f0fd2e99b66bd19cfe
+      layout: tidy
+      period_column: quarter
+      value_column: units
+      aggregate: sum
+      rows_per_period: 12
+    definition: >-
+      Unsold private residential units with planning approval, end of quarter,
+      summed over the three market segments and four completion/launch statuses
+      (completed; launched; not yet launched; without pre-requisites).
+    unit: units
+    unit_kind: level
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Quarterly; about four weeks after quarter end
+    publication_lag_days: 30
+    plausible_range: [2000, 120000]
+    decimals: 0
+    transforms: [qoq, yoy]
+    headline: yoy
+    effects: {sales: negative}
+    neutral_band: 5.0
+    expected_lead_quarters: [1, 4]
+    rationale: >-
+      Developers price new launches against how much unsold stock they and their
+      competitors carry; a thin inventory lets them raise prices, a growing one
+      forces discounts. Government land sales move this series, so it also
+      captures the policy supply response.
+    limitations: >-
+      Units without pre-requisites for sale may be years from launch, so part of
+      the total is a weak commitment; the sum spans segments whose prices can
+      diverge.
+
+  - id: vacancy_nonlanded
+    label: Private non-landed residential vacancy rate
+    short_label: Non-landed vacancy rate
+    role: predictor
+    markets: [rents, sales]
+    channel: Supply slack
+    publisher: Urban Redevelopment Authority
+    source: {source: singstat, table_id: M400841, ratio: ["2.2", "1.2"], unit_of_measure: Number Of Units}
+    cross_check:
+      ref:
+        source: datagovsg
+        dataset_id: d_01e3556fb916ca19a7e29fc39520fa78
+        layout: wide
+        ratio_labels: [Vacant Non-Landed Properties, Available Non-Landed Properties]
+      tolerance: 0.000001
+    definition: >-
+      Vacant completed non-landed private residential units as a percentage of
+      the available completed non-landed stock, end of quarter. Derived by this
+      workflow from the two published unit counts.
+    unit: percent of available stock
+    unit_kind: ratio
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Quarterly; about four weeks after quarter end
+    publication_lag_days: 30
+    plausible_range: [0, 20]
+    transforms: [qoq_pp, yoy_pp]
+    headline: yoy_pp
+    decimals: 2
+    effects: {rents: negative, sales: negative}
+    neutral_band: 0.25
+    expected_lead_quarters: [0, 2]
+    rationale: >-
+      The most direct measure of whether the rental market is short or long of
+      space: landlords with empty units concede on rent, and falling vacancy
+      lets them raise it. Investors price that outlook into purchases.
+    limitations: >-
+      A stock measure blind to location and quality mix; the ratio is computed
+      here, so it inherits revisions in either count.
+    # From the publisher's footnote (SingStat M400841): coverage was widened
+    # twice, so the available stock jumps without any change in the market.
+    breaks:
+      - period: 1995-Q1
+        note: URA added 44,891 private homes built before 1974 (10,779 of them apartments) to the available stock
+      - period: 1996-Q2
+        note: URA added 12,489 apartment units (non-privatised HUDC flats, apartments above shops, former government-scheme flats)
+
+  - id: pipeline_under_construction
+    label: Private non-landed units under construction
+    short_label: Non-landed units under construction
+    role: predictor
+    markets: [rents, sales]
+    channel: Forward supply
+    publisher: Urban Redevelopment Authority
+    source: {source: singstat, table_id: M400391, series: "2.1", unit_of_measure: Number Of Units}
+    definition: >-
+      Non-landed private residential units under construction, end of quarter
+      (excludes executive condominiums); the part of the pipeline that will
+      complete within roughly three years.
+    unit: units
+    unit_kind: level
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Quarterly; about four weeks after quarter end
+    publication_lag_days: 30
+    plausible_range: [1000, 120000]
+    decimals: 0
+    transforms: [qoq, yoy]
+    headline: yoy
+    effects: {rents: negative, sales: negative}
+    neutral_band: 5.0
+    expected_lead_quarters: [4, 12]
+    rationale: >-
+      Completions arriving over the next two to three years are already visible
+      here; a growing pipeline means more units competing for tenants and
+      resale buyers once they obtain their Temporary Occupation Permits.
+    limitations: >-
+      Procyclical in practice: developers start building when the market is
+      strong, so the contemporaneous correlation with prices is positive and the
+      supply effect only appears at long, variable lags. Read it as a forward
+      supply count, not as evidence of relief already under way.
+    rejected_alternatives:
+      - {ref: M400391 series 2 (total non-landed pipeline), reason: includes planned units that may be deferred}
+      - {ref: "d_055b6549444dedb341c50805d9682a41 'Under Construction'", reason: label repeats for landed and non-landed; ambiguous}
+
+  - id: nonresident_population
+    label: Non-resident population
+    short_label: Non-resident population
+    role: predictor
+    markets: [rents, sales]
+    channel: Rental demand
+    publisher: Singapore Department of Statistics
+    source: {source: singstat, table_id: M810001, series: "5", unit_of_measure: Number}
+    definition: >-
+      Foreigners working, studying or living in Singapore without permanent
+      residence (excluding tourists and short-term visitors), as at end-June.
+    unit: persons
+    unit_kind: level
+    frequency: annual
+    reference_month: 6
+    seasonal_adjustment: not_applicable
+    update_frequency: Annual; end-June estimate published in late September
+    publication_lag_days: 90
+    plausible_range: [10000, 4000000]
+    transforms: [yoy]
+    headline: yoy
+    decimals: 0
+    effects: {rents: positive, sales: positive}
+    neutral_band: 1.0
+    expected_lead_quarters: [0, 4]
+    rationale: >-
+      Non-residents overwhelmingly rent, so their number is the most direct
+      demand measure for the rental market; the 2022-23 rent surge coincided with
+      a sharp post-pandemic rebound here. Strong rental demand spills over into
+      investor purchases.
+    limitations: >-
+      Annual and published three months after its end-June reference date, so it
+      confirms rather than leads within a year; includes work-permit holders in
+      dormitories who do not rent private homes.
+
+  - id: policy_tightening
+    label: Net rounds of property cooling measures in the trailing four quarters
+    short_label: Cooling measures (net rounds, 4Q)
+    role: predictor
+    markets: [sales, rents]
+    channel: Housing policy
+    publisher: MAS / MND / MOF / HDB (curated from official releases)
+    source: {source: curated, path: config/policy_events.yaml}
+    definition: >-
+      Tightening rounds minus easing rounds of residential property measures
+      (stamp duties, loan-to-value and debt-servicing limits, loan tenure,
+      interest-rate floors, eligibility rules) announced in the latest four
+      quarters. A round is one official announcement, however many instruments
+      it changed.
+    unit: net rounds (tightening minus easing)
+    unit_kind: count
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Irregular; hand-maintained from official announcements (review date recorded in the list)
+    publication_lag_days: 0
+    plausible_range: [-2, 3]
+    transforms: [t4q_sum]
+    headline: t4q_sum
+    decimals: 0
+    effects: {sales: negative, rents: ambiguous}
+    neutral_band: 0.5
+    expected_lead_quarters: [0, 4]
+    rationale: >-
+      Cooling measures have arguably been the dominant force in Singapore's
+      housing cycles since 2009: each round raises the cost of buying or limits
+      borrowing, and transactions and price growth typically slow within a few
+      quarters. A round in the past year signals an active policy brake on
+      sales. The effect on rents is two-sided: deterring investors shrinks new
+      rental supply, but discouraged buyers may rent instead.
+    limitations: >-
+      Hand-maintained, so it updates only when someone adds a round, and it
+      counts rounds without weighting their severity (a 30-point stamp-duty rise
+      and a technical tweak each count as one). Policy reacts to prices: rounds
+      are announced after prices have risen fast, so the raw correlation with
+      price growth can be positive even though each round restrains it. Starts
+      in 2005; earlier rounds are listed by MAS but could not be verified.
+
+  # =========================================================================
+  # Negative controls: registered on purpose, expected to FAIL validation.
+  # They exercise the checks against live data on every run, not only fixtures.
+  # =========================================================================
+
+  - id: ura_rri_all_discontinued
+    label: URA Private Residential Rental Index (all residential, whole island)
+    short_label: Private rents, all residential (discontinued)
+    role: quarantine
+    expected_status: rejected:discontinued
+    publisher: Urban Redevelopment Authority
+    source:
+      source: datagovsg
+      dataset_id: d_8e4c50283fb7052a391dfb746a05c853
+      layout: tidy
+      period_column: quarter
+      value_column: index
+      filters: {property_type: All Residential, locality: Whole Island}
+    definition: >-
+      The all-residential slice of the URA rental index file. The file is updated
+      every quarter but this slice stops at 2021-Q2, so staleness must be judged
+      per series, not per dataset.
+    unit: index, 2009-Q1 = 100
+    unit_kind: index
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Discontinued after 2021-Q2
+    publication_lag_days: 30
+    plausible_range: [30, 300]
+    transforms: [qoq, yoy]
+    headline: yoy
+
+  - id: mas_housing_loans_discontinued
+    label: Outstanding housing loans for owner-occupied property (data.gov.sg)
+    short_label: Owner-occupied housing loans (discontinued)
+    role: quarantine
+    expected_status: rejected:discontinued
+    publisher: Monetary Authority of Singapore
+    source:
+      source: datagovsg
+      dataset_id: d_2d2ca1bcac71713d2c02deca871ebe98
+      layout: tidy
+      period_column: quarter
+      value_column: utilised
+    definition: >-
+      Utilised housing loans for owner-occupied property. The dataset's metadata
+      was touched in 2024 but its data stop at 2015-Q3, so staleness must be
+      judged from observations, not from the update stamp.
+    unit: SGD million
+    unit_kind: level
+    frequency: quarterly
+    seasonal_adjustment: not_applicable
+    update_frequency: Discontinued after 2015-Q3
+    publication_lag_days: 45
+    plausible_range: [1000, 2000000]
+    transforms: [qoq, yoy]
+    headline: yoy
+
+  - id: nonresident_population_unit_trap
+    label: Non-resident population declared in thousands (deliberate unit error)
+    short_label: Non-resident population, wrong unit
+    role: quarantine
+    expected_status: rejected:contract_mismatch
+    publisher: Singapore Department of Statistics
+    source: {source: singstat, table_id: M810001, series: "5", unit_of_measure: Thousand}
+    definition: >-
+      The same series as nonresident_population, declared with the unit the first
+      version of this registry wrongly used. SingStat publishes persons
+      (uoM "Number"); the contract check must reject this entry.
+    unit: thousand persons
+    unit_kind: level
+    frequency: annual
+    reference_month: 6
+    seasonal_adjustment: not_applicable
+    update_frequency: Annual
+    publication_lag_days: 90
+    plausible_range: [10, 4000]
+    transforms: [yoy]
+    headline: yoy
