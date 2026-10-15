@@ -1,0 +1,1059 @@
+{
+  "schema": 2,
+  "run_id": "2026-10-02_d26e13cf",
+  "as_of": "2026-10-02",
+  "pipeline_version": "2.1.0",
+  "registry": {
+    "version": 4,
+    "fingerprint": "23070f0a26ef3d2e7ef33d7a0a6f662c60467733b0793247329a3913b60c7c0f"
+  },
+  "vintages": {
+    "curated/policy_events": {
+      "object": "curated/policy_events",
+      "vintage_id": "20261002T164519Z-8bf11ed3",
+      "retrieved_at": "2026-10-02T16:45:19+00:00",
+      "data_file": "data.yaml",
+      "data_sha256": "8bf11ed3792c09810565299142ffb03e7042e18304e2c7f8366ad42d9ae7e7d7",
+      "upstream_last_updated": "2026-10-03",
+      "after_as_of": true,
+      "degraded": false,
+      "error": null
+    },
+    "datagovsg/d_01e3556fb916ca19a7e29fc39520fa78": {
+      "object": "datagovsg/d_01e3556fb916ca19a7e29fc39520fa78",
+      "vintage_id": "20261002T084224Z-c7d6cfa7",
+      "retrieved_at": "2026-10-02T08:42:24+00:00",
+      "data_file": "data.csv",
+      "data_sha256": "c7d6cfa702f7c1af2745bfb86fa8b8ddd74b7597c9b4768edb71ea79736e6a68",
+      "upstream_last_updated": "2026-07-24T00:00:00+08:00",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "datagovsg/d_14f63e595975691e7c24a27ae4c07c79": {
+      "object": "datagovsg/d_14f63e595975691e7c24a27ae4c07c79",
+      "vintage_id": "20261002T084248Z-19598c7b",
+      "retrieved_at": "2026-10-02T08:42:48+00:00",
+      "data_file": "data.csv",
+      "data_sha256": "19598c7bae4fb807ef992b6b957f3d5f9ff6db11d217c66a1d4db68eb790e627",
+      "upstream_last_updated": "2026-07-24T11:36:15+08:00",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "datagovsg/d_2d2ca1bcac71713d2c02deca871ebe98": {
+      "object": "datagovsg/d_2d2ca1bcac71713d2c02deca871ebe98",
+      "vintage_id": "20261002T084312Z-9e824ffc",
+      "retrieved_at": "2026-10-02T08:43:12+00:00",
+      "data_file": "data.csv",
+      "data_sha256": "9e824ffc830a0b4e18bd0fe61298d653360419dbc84b62a3092c8f5cbe88d76c",
+      "upstream_last_updated": "2024-06-06T14:29:16+08:00",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "datagovsg/d_5fe5a4bb4a1ecc4d8a56a095832e2b24": {
+      "object": "datagovsg/d_5fe5a4bb4a1ecc4d8a56a095832e2b24",
+      "vintage_id": "20261002T084336Z-cbc7e458",
+      "retrieved_at": "2026-10-02T08:43:36+00:00",
+      "data_file": "data.csv",
+      "data_sha256": "cbc7e458469624bfd0d3cc272e38f7203d3ba3c007e091a73193ad0cc72e737a",
+      "upstream_last_updated": "2026-08-25T00:00:00+08:00",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337": {
+      "object": "datagovsg/d_7c69c943d5f0d89d6a9a773d2b51f337",
+      "vintage_id": "20261002T084400Z-8b3c9517",
+      "retrieved_at": "2026-10-02T08:44:00+00:00",
+      "data_file": "data.csv",
+      "data_sha256": "8b3c95174143d027c78348ab3af14003944ed37a9b3d635d607dc72f80704aef",
+      "upstream_last_updated": "2026-07-27T10:32:04+08:00",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "datagovsg/d_84d05d45049108f0fd2e99b66bd19cfe": {
+      "object": "datagovsg/d_84d05d45049108f0fd2e99b66bd19cfe",
+      "vintage_id": "20261002T084424Z-97321009",
+      "retrieved_at": "2026-10-02T08:44:24+00:00",
+      "data_file": "data.csv",
+      "data_sha256": "9732100930c274a6628e5a15b5a64a42fc8c197fe322c3d7719dc843c6f78b30",
+      "upstream_last_updated": "2026-07-27T10:05:50+08:00",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "datagovsg/d_8e4c50283fb7052a391dfb746a05c853": {
+      "object": "datagovsg/d_8e4c50283fb7052a391dfb746a05c853",
+      "vintage_id": "20261002T084448Z-5e36cf5a",
+      "retrieved_at": "2026-10-02T08:44:48+00:00",
+      "data_file": "data.csv",
+      "data_sha256": "5e36cf5a1ee0176a665903e7dfdbbe79c47eb353b0e3f74c32233936bc8ad629",
+      "upstream_last_updated": "2026-07-27T09:56:07+08:00",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c": {
+      "object": "datagovsg/d_97f8a2e995022d311c6c68cfda6d034c",
+      "vintage_id": "20261002T084512Z-00679c53",
+      "retrieved_at": "2026-10-02T08:45:12+00:00",
+      "data_file": "data.csv",
+      "data_sha256": "00679c53fb3e3822c46f9ee334e2e55cc0604f9dd583c4991488dfed1f054dd3",
+      "upstream_last_updated": "2026-07-27T09:27:44+08:00",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M014812": {
+      "object": "singstat/M014812",
+      "vintage_id": "20261002T084513Z-98373745",
+      "retrieved_at": "2026-10-02T08:45:13+00:00",
+      "data_file": "data.json",
+      "data_sha256": "98373745e48c75af5cdc508055670db5228e96156fe9251165c09f239655c5ee",
+      "upstream_last_updated": "11/08/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M182342": {
+      "object": "singstat/M182342",
+      "vintage_id": "20261002T084515Z-9fe7713a",
+      "retrieved_at": "2026-10-02T08:45:15+00:00",
+      "data_file": "data.json",
+      "data_sha256": "9fe7713ad9f64ed0eebd579565d02f1a7ca609468401f9786c4941966c966050",
+      "upstream_last_updated": "22/09/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M212161": {
+      "object": "singstat/M212161",
+      "vintage_id": "20261002T084518Z-76d95e08",
+      "retrieved_at": "2026-10-02T08:45:18+00:00",
+      "data_file": "data.json",
+      "data_sha256": "76d95e08de338e961ff24b98d233539aaa651c7560722bf0d84995711b94d52a",
+      "upstream_last_updated": "24/07/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M212261": {
+      "object": "singstat/M212261",
+      "vintage_id": "20261002T084519Z-de1e38d8",
+      "retrieved_at": "2026-10-02T08:45:19+00:00",
+      "data_file": "data.json",
+      "data_sha256": "de1e38d82d93e673c9e0d19aa513e8f05cdc38068086061e675eaee3e6ca2e7a",
+      "upstream_last_updated": "24/07/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M212311": {
+      "object": "singstat/M212311",
+      "vintage_id": "20261002T084521Z-b3a7504c",
+      "retrieved_at": "2026-10-02T08:45:21+00:00",
+      "data_file": "data.json",
+      "data_sha256": "b3a7504cb1cbc552ccb21da1029c45a4e3f13c96941d64c5bdc1fd482cb6fa5f",
+      "upstream_last_updated": "24/07/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M213751": {
+      "object": "singstat/M213751",
+      "vintage_id": "20261002T084524Z-5d219bc9",
+      "retrieved_at": "2026-10-02T08:45:24+00:00",
+      "data_file": "data.json",
+      "data_sha256": "5d219bc95f55c5e01aaf671445600e7407699256f2aee0a611a44920b502866d",
+      "upstream_last_updated": "23/09/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M400391": {
+      "object": "singstat/M400391",
+      "vintage_id": "20261002T084525Z-14454eb8",
+      "retrieved_at": "2026-10-02T08:45:25+00:00",
+      "data_file": "data.json",
+      "data_sha256": "14454eb8c5395d2bc96657c887b32811b9ae7a635d3b272f01d62d7512f70895",
+      "upstream_last_updated": "24/07/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M400841": {
+      "object": "singstat/M400841",
+      "vintage_id": "20261002T084527Z-62608a63",
+      "retrieved_at": "2026-10-02T08:45:27+00:00",
+      "data_file": "data.json",
+      "data_sha256": "62608a6386dc200489cd603420e3b9c631c14d88efd90e48d5f14549f11a4f67",
+      "upstream_last_updated": "24/07/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M700071": {
+      "object": "singstat/M700071",
+      "vintage_id": "20261002T084530Z-c23ac2f1",
+      "retrieved_at": "2026-10-02T08:45:30+00:00",
+      "data_file": "data.json",
+      "data_sha256": "c23ac2f12728f23925d25f7ddefb45d9dc0458dcbe3528b1116c091283b1475c",
+      "upstream_last_updated": "14/09/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M701091": {
+      "object": "singstat/M701091",
+      "vintage_id": "20261002T084532Z-b07e45d3",
+      "retrieved_at": "2026-10-02T08:45:32+00:00",
+      "data_file": "data.json",
+      "data_sha256": "b07e45d330b1e895ec2ea31669f8c46ef5a68ee1af554c00a1226c2ce73fdd03",
+      "upstream_last_updated": "30/09/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    },
+    "singstat/M810001": {
+      "object": "singstat/M810001",
+      "vintage_id": "20261002T084534Z-df4363f5",
+      "retrieved_at": "2026-10-02T08:45:34+00:00",
+      "data_file": "data.json",
+      "data_sha256": "df4363f580bda6c42f6e5ca1588fbb0c391f81d51245ba4c1da43bfa3108d25a",
+      "upstream_last_updated": "25/09/2026",
+      "after_as_of": false,
+      "degraded": false,
+      "error": null
+    }
+  },
+  "series": [
+    {
+      "series_id": "ura_ppi",
+      "role": "target",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": 27,
+      "vintage": "20261002T084512Z-00679c53",
+      "cross_check": {
+        "source": "SingStat",
+        "identifier": "M212261 series 1",
+        "available": true,
+        "overlap_periods": 206,
+        "mismatches": 0,
+        "max_abs_diff": 0.0,
+        "tolerance": 0.05,
+        "primary_latest": "2026-Q2",
+        "cross_latest": "2026-Q2",
+        "primary_lead_periods": 0
+      },
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 30d covers the 27d observed for 2026-Q2",
+          "details": {
+            "observed_days": 27,
+            "declared_days": 30,
+            "period": "2026-Q2"
+          }
+        },
+        {
+          "check": "cross_source",
+          "severity": "info",
+          "message": "agrees with SingStat on all 206 overlapping periods (max |difference| 0, tolerance 0.05)",
+          "details": {}
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "Method change, no level break: from 2015-Q1 URA compiles the index with a stratified hedonic regression and 5-quarter fixed weights; the published series is linked across the change.",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "ura_rri_nonlanded",
+      "role": "target",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": 27,
+      "vintage": "20261002T084448Z-5e36cf5a",
+      "cross_check": {
+        "source": "SingStat",
+        "identifier": "M212311 series 1.2",
+        "available": true,
+        "overlap_periods": 90,
+        "mismatches": 0,
+        "max_abs_diff": 0.0,
+        "tolerance": 0.05,
+        "primary_latest": "2026-Q2",
+        "cross_latest": "2026-Q2",
+        "primary_lead_periods": 0
+      },
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 30d covers the 27d observed for 2026-Q2",
+          "details": {
+            "observed_days": 27,
+            "declared_days": 30,
+            "period": "2026-Q2"
+          }
+        },
+        {
+          "check": "cross_source",
+          "severity": "info",
+          "message": "agrees with SingStat on all 90 overlapping periods (max |difference| 0, tolerance 0.05)",
+          "details": {}
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "Non-landed rather than all-residential because URA stopped publishing the all-residential rental slice after 2021-Q2 (see the negative control ura_rri_all_discontinued). Non-landed is also where the rental market sits. Method change, no level break: hedonic regression from 2015-Q1, linked.",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "hdb_rpi",
+      "role": "target",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": 24,
+      "vintage": "20261002T084248Z-19598c7b",
+      "cross_check": {
+        "source": "SingStat",
+        "identifier": "M212161 series 1",
+        "available": true,
+        "overlap_periods": 146,
+        "mismatches": 0,
+        "max_abs_diff": 0.0,
+        "tolerance": 0.05,
+        "primary_latest": "2026-Q2",
+        "cross_latest": "2026-Q2",
+        "primary_lead_periods": 0
+      },
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 30d covers the 24d observed for 2026-Q2",
+          "details": {
+            "observed_days": 24,
+            "declared_days": 30,
+            "period": "2026-Q2"
+          }
+        },
+        {
+          "check": "cross_source",
+          "severity": "info",
+          "message": "agrees with SingStat on all 146 overlapping periods (max |difference| 0, tolerance 0.05)",
+          "details": {}
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "Method change, no level break: hedonic regression from 2014-Q4; earlier values were rescaled to the 2009-Q1 base by 100/138.3, so HDB warns that pre-2014 quarterly changes may differ slightly through rounding.",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "sora_3m",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-08",
+      "expected_latest": "2026-08",
+      "withheld": [],
+      "observed_lag_days": 14,
+      "vintage": "20261002T084530Z-c23ac2f1",
+      "cross_check": {
+        "source": "data.gov.sg",
+        "identifier": "d_5fe5a4bb4a1ecc4d8a56a095832e2b24 row 'Compounded Singapore Overnight Rate Average (SORA) - 3 Month'",
+        "available": true,
+        "overlap_periods": 250,
+        "mismatches": 0,
+        "max_abs_diff": 0.0,
+        "tolerance": 5e-05,
+        "primary_latest": "2026-08",
+        "cross_latest": "2026-07",
+        "primary_lead_periods": 1
+      },
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 21d covers the 14d observed for 2026-08",
+          "details": {
+            "observed_days": 14,
+            "declared_days": 21,
+            "period": "2026-08"
+          }
+        },
+        {
+          "check": "cross_source",
+          "severity": "info",
+          "message": "agrees with data.gov.sg on all 250 overlapping periods (max |difference| 0, tolerance 5e-05)",
+          "details": {}
+        },
+        {
+          "check": "cross_source",
+          "severity": "info",
+          "message": "data.gov.sg lags the primary source by 1 period(s) (its latest is 2026-07)",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "sgs_10y",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-08",
+      "expected_latest": "2026-08",
+      "withheld": [],
+      "observed_lag_days": 14,
+      "vintage": "20261002T084530Z-c23ac2f1",
+      "cross_check": {
+        "source": "data.gov.sg",
+        "identifier": "d_5fe5a4bb4a1ecc4d8a56a095832e2b24 row 'Government Securities - 10-Year Bond Yield'",
+        "available": true,
+        "overlap_periods": 338,
+        "mismatches": 0,
+        "max_abs_diff": 0.0,
+        "tolerance": 0.005,
+        "primary_latest": "2026-08",
+        "cross_latest": "2026-07",
+        "primary_lead_periods": 1
+      },
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 21d covers the 14d observed for 2026-08",
+          "details": {
+            "observed_days": 14,
+            "declared_days": 21,
+            "period": "2026-08"
+          }
+        },
+        {
+          "check": "cross_source",
+          "severity": "info",
+          "message": "agrees with data.gov.sg on all 338 overlapping periods (max |difference| 0, tolerance 0.005)",
+          "details": {}
+        },
+        {
+          "check": "cross_source",
+          "severity": "info",
+          "message": "data.gov.sg lags the primary source by 1 period(s) (its latest is 2026-07)",
+          "details": {}
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "Method change, no level break: before 2000 the yield is the mode of dealers' closing bid prices, from 2000 their average.",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "bank_housing_loans",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-08",
+      "expected_latest": "2026-08",
+      "withheld": [],
+      "observed_lag_days": 30,
+      "vintage": "20261002T084532Z-b07e45d3",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 31d covers the 30d observed for 2026-08",
+          "details": {
+            "observed_days": 30,
+            "declared_days": 31,
+            "period": "2026-08"
+          }
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "Series break in July 2021 (MAS Notice 610 revision); earlier data are not comparable.",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "gdp_real_sa",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": 42,
+      "vintage": "20261002T084513Z-98373745",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 45d covers the 42d observed for 2026-Q2",
+          "details": {
+            "observed_days": 42,
+            "declared_days": 45,
+            "period": "2026-Q2"
+          }
+        }
+      ]
+    },
+    {
+      "series_id": "unemployment_rate_sa",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": 84,
+      "vintage": "20261002T084515Z-9fe7713a",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 90d covers the 84d observed for 2026-Q2",
+          "details": {
+            "observed_days": 84,
+            "declared_days": 90,
+            "period": "2026-Q2"
+          }
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "June 1995, 2000 and 2005 come from the household survey or census rather than the Labour Force Survey; seasonal factors are re-estimated every year, so recent history is revised annually.",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "cpi_all_items",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-08",
+      "expected_latest": "2026-08",
+      "withheld": [],
+      "observed_lag_days": 23,
+      "vintage": "20261002T084524Z-5d219bc9",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 28d covers the 23d observed for 2026-08",
+          "details": {
+            "observed_days": 23,
+            "declared_days": 28,
+            "period": "2026-08"
+          }
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "Basket weights are refreshed from each Household Expenditure Survey (latest 2023, rebased to 2024 = 100); the series is chain-linked, so there is no level break, but its composition drifts over decades.",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "cpi_accommodation",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-08",
+      "expected_latest": "2026-08",
+      "withheld": [],
+      "observed_lag_days": 23,
+      "vintage": "20261002T084524Z-5d219bc9",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 28d covers the 23d observed for 2026-08",
+          "details": {
+            "observed_days": 23,
+            "declared_days": 28,
+            "period": "2026-08"
+          }
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "Mostly imputed rentals of owner-occupiers (rental-equivalence method), with weights refreshed from each Household Expenditure Survey; chain-linked.",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "private_transactions",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": 27,
+      "vintage": "20261002T084400Z-8b3c9517",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 30d covers the 27d observed for 2026-Q2",
+          "details": {
+            "observed_days": 27,
+            "declared_days": 30,
+            "period": "2026-Q2"
+          }
+        }
+      ]
+    },
+    {
+      "series_id": "unsold_inventory",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": 27,
+      "vintage": "20261002T084424Z-97321009",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 30d covers the 27d observed for 2026-Q2",
+          "details": {
+            "observed_days": 27,
+            "declared_days": 30,
+            "period": "2026-Q2"
+          }
+        }
+      ]
+    },
+    {
+      "series_id": "vacancy_nonlanded",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": 24,
+      "vintage": "20261002T084527Z-62608a63",
+      "cross_check": {
+        "source": "data.gov.sg",
+        "identifier": "d_01e3556fb916ca19a7e29fc39520fa78 row 'Vacant Non-Landed Properties / Available Non-Landed Properties'",
+        "available": true,
+        "overlap_periods": 154,
+        "mismatches": 0,
+        "max_abs_diff": 0.0,
+        "tolerance": 1e-06,
+        "primary_latest": "2026-Q2",
+        "cross_latest": "2026-Q2",
+        "primary_lead_periods": 0
+      },
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 30d covers the 24d observed for 2026-Q2",
+          "details": {
+            "observed_days": 24,
+            "declared_days": 30,
+            "period": "2026-Q2"
+          }
+        },
+        {
+          "check": "cross_source",
+          "severity": "info",
+          "message": "agrees with data.gov.sg on all 154 overlapping periods (max |difference| 0, tolerance 1e-06)",
+          "details": {}
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "series break at 1995-Q1: URA added 44,891 private homes built before 1974 (10,779 of them apartments) to the available stock; changes spanning it are excluded",
+          "details": {}
+        },
+        {
+          "check": "history",
+          "severity": "info",
+          "message": "series break at 1996-Q2: URA added 12,489 apartment units (non-privatised HUDC flats, apartments above shops, former government-scheme flats); changes spanning it are excluded",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "pipeline_under_construction",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": 24,
+      "vintage": "20261002T084525Z-14454eb8",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 30d covers the 24d observed for 2026-Q2",
+          "details": {
+            "observed_days": 24,
+            "declared_days": 30,
+            "period": "2026-Q2"
+          }
+        }
+      ]
+    },
+    {
+      "series_id": "nonresident_population",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026",
+      "expected_latest": "2026",
+      "withheld": [],
+      "observed_lag_days": 87,
+      "vintage": "20261002T084534Z-df4363f5",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "declared lag 90d covers the 87d observed for 2026",
+          "details": {
+            "observed_days": 87,
+            "declared_days": 90,
+            "period": "2026"
+          }
+        }
+      ]
+    },
+    {
+      "series_id": "policy_tightening",
+      "role": "predictor",
+      "verdict": "ok",
+      "expected": null,
+      "as_expected": null,
+      "latest": "2026-Q3",
+      "expected_latest": "2026-Q3",
+      "withheld": [],
+      "observed_lag_days": null,
+      "vintage": "20261002T164519Z-8bf11ed3",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "vintage",
+          "severity": "info",
+          "message": "event list compiled on 2026-10-03, after the as-of date; events are gated by their announcement dates",
+          "details": {}
+        },
+        {
+          "check": "declared_lag",
+          "severity": "info",
+          "message": "hand-maintained list, last reviewed 2026-10-03; a quarter is admitted once it has ended",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "series_id": "ura_rri_all_discontinued",
+      "role": "quarantine",
+      "verdict": "rejected:discontinued",
+      "expected": "rejected:discontinued",
+      "as_expected": true,
+      "latest": "2021-Q2",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": null,
+      "vintage": "20261002T084448Z-5e36cf5a",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "staleness",
+          "severity": "error",
+          "message": "newest observation 2021-Q2 is 20 quarterly periods behind the 2026-Q2 that the as-of date 2026-10-02 should allow; treated as discontinued and excluded",
+          "details": {
+            "latest": "2021-Q2",
+            "expected": "2026-Q2",
+            "periods_behind": 20
+          }
+        },
+        {
+          "check": "coverage",
+          "severity": "warn",
+          "message": "the dataset declares coverage to 2026-06-30 but this series ends at 2021-Q2 (1826 days earlier): the dataset is alive, the series may not be",
+          "details": {
+            "declared_end": "2026-06-30",
+            "series_end": "2021-06-30"
+          }
+        }
+      ]
+    },
+    {
+      "series_id": "mas_housing_loans_discontinued",
+      "role": "quarantine",
+      "verdict": "rejected:discontinued",
+      "expected": "rejected:discontinued",
+      "as_expected": true,
+      "latest": "2015-Q3",
+      "expected_latest": "2026-Q2",
+      "withheld": [],
+      "observed_lag_days": null,
+      "vintage": "20261002T084312Z-9e824ffc",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "staleness",
+          "severity": "error",
+          "message": "newest observation 2015-Q3 is 43 quarterly periods behind the 2026-Q2 that the as-of date 2026-10-02 should allow; treated as discontinued and excluded",
+          "details": {
+            "latest": "2015-Q3",
+            "expected": "2026-Q2",
+            "periods_behind": 43
+          }
+        }
+      ]
+    },
+    {
+      "series_id": "nonresident_population_unit_trap",
+      "role": "quarantine",
+      "verdict": "rejected:contract_mismatch",
+      "expected": "rejected:contract_mismatch",
+      "as_expected": true,
+      "latest": null,
+      "expected_latest": null,
+      "withheld": [],
+      "observed_lag_days": null,
+      "vintage": "20261002T084534Z-df4363f5",
+      "cross_check": null,
+      "revisions": null,
+      "findings": [
+        {
+          "check": "contract",
+          "severity": "error",
+          "message": "M810001 series 5: publisher's unit of measure is 'Number' but the registry declares 'Thousand'; every level and change would be mislabelled",
+          "details": {
+            "publisher_unit": "Number",
+            "declared": "Thousand"
+          }
+        }
+      ]
+    }
+  ],
+  "facts": 340,
+  "summary": {
+    "source": "ollama:qwen3.5:27b",
+    "model": "qwen3.5:27b",
+    "prompt_sha256": "dc101b5818d5bba7a6a4e7ced95848fc9559f5723073ded9a038f3ca73da3cdf",
+    "response_sha256": "ffb03f49ba810d308c03edb71b91e0b9ea1c4f9999bf67bd7c136ebac382f33b",
+    "notes": [],
+    "markets": {
+      "sales": {
+        "source": "ollama:qwen3.5:27b",
+        "accepted": 5,
+        "rejected": 0,
+        "claims": [
+          {
+            "market": "sales",
+            "text": "Private home prices rose on a year-on-year basis while real price growth also advanced. HDB resale prices held steady nominally but declined in real terms.",
+            "facts": [
+              "F:06cca86b",
+              "F:f0c465dd",
+              "F:263a825a",
+              "F:533960e6"
+            ],
+            "stance": "context",
+            "accepted": true,
+            "violations": []
+          },
+          {
+            "market": "sales",
+            "text": "Lower mortgage financing costs, higher bank housing loans, stronger economic activity, reduced labour market slack, rising realised housing costs, falling developer inventory, tighter supply slack, and growing non-resident population all support sales. These factors reflect improved affordability, credit availability, income growth, and constrained supply relative to demand.",
+            "facts": [
+              "F:331a4bda",
+              "F:a589ed7d",
+              "F:605ceea6",
+              "F:0681d341",
+              "F:9f9ea43e",
+              "F:623df940",
+              "F:94768f7b",
+              "F:0fbbb3a9"
+            ],
+            "stance": "supportive",
+            "accepted": true,
+            "violations": []
+          },
+          {
+            "market": "sales",
+            "text": "Higher long-horizon discount rates, increased forward supply, and tighter housing policy act as headwinds to sales. These movements suggest elevated borrowing costs for long-term financing, greater future inventory pressure, and restrictive regulatory conditions.",
+            "facts": [
+              "F:c145ab14",
+              "F:9bb1195d",
+              "F:0fb21029"
+            ],
+            "stance": "headwind",
+            "accepted": true,
+            "violations": []
+          },
+          {
+            "market": "sales",
+            "text": "Market activity showed little change in its trailing four-quarter comparison. This indicates that transaction volumes have barely moved relative to the prior period.",
+            "facts": [
+              "F:cc8b57d8"
+            ],
+            "stance": "neutral",
+            "accepted": true,
+            "violations": []
+          },
+          {
+            "market": "sales",
+            "text": "The general price level movement provides no clear directional signal for sales. Theory offers no definitive sign on how this inflation measure bears on the market under current conditions.",
+            "facts": [
+              "F:18a45b38"
+            ],
+            "stance": "ambiguous",
+            "accepted": true,
+            "violations": []
+          }
+        ]
+      },
+      "rents": {
+        "source": "ollama:qwen3.5:27b",
+        "accepted": 4,
+        "rejected": 0,
+        "claims": [
+          {
+            "market": "rents",
+            "text": "Private rents rose nominally over the year but fell in real terms after adjusting for inflation.",
+            "facts": [
+              "F:571c087b",
+              "F:a68c5da8"
+            ],
+            "stance": "context",
+            "accepted": true,
+            "violations": []
+          },
+          {
+            "market": "rents",
+            "text": "Stronger economic activity, reduced labour market slack, rising realised housing costs, tighter supply slack, and growing non-resident population support rental levels. These factors reflect higher income potential, lower unemployment pressure, increased housing cost realization, constrained vacancy, and stronger demand from foreign residents.",
+            "facts": [
+              "F:605ceea6",
+              "F:0681d341",
+              "F:9f9ea43e",
+              "F:94768f7b",
+              "F:0fbbb3a9"
+            ],
+            "stance": "supportive",
+            "accepted": true,
+            "violations": []
+          },
+          {
+            "market": "rents",
+            "text": "Increased forward supply acts as a headwind to rents. This rise in units under construction suggests greater future inventory that may dampen rental growth.",
+            "facts": [
+              "F:9bb1195d"
+            ],
+            "stance": "headwind",
+            "accepted": true,
+            "violations": []
+          },
+          {
+            "market": "rents",
+            "text": "Movements in mortgage financing costs, long-horizon discount rates, the general price level, and housing policy provide no clear directional signal for rents. Theoretical mechanisms do not yield a definitive sign on how these factors bear on the rental market.",
+            "facts": [
+              "F:331a4bda",
+              "F:c145ab14",
+              "F:18a45b38",
+              "F:0fb21029"
+            ],
+            "stance": "ambiguous",
+            "accepted": true,
+            "violations": []
+          }
+        ]
+      }
+    }
+  },
+  "outputs": {
+    "data/processed/2026-10-02_d26e13cf/diagnostics.csv": "7b498dbf917e15ca005686db6c3304f1de265921f57db6faff1d6b527f924c5f",
+    "data/processed/2026-10-02_d26e13cf/facts.csv": "0a3a822b54e1202e271d57cd2cc5dd76d21ec16baeec8d4bf878d434349996ea",
+    "data/processed/2026-10-02_d26e13cf/facts.json": "2d36ba284b868ab9a6d3bc26eb1ecc887a01587241ec82df99f166e28cb10310",
+    "data/processed/2026-10-02_d26e13cf/observations.csv": "0956b237722c34dd6c4f41765f3bed7cfcc95524e7769f1501e8d45a24059154",
+    "data/processed/2026-10-02_d26e13cf/series.csv": "cc36f7767a60dce913c51182831c4d296a18322c3aa7090de71e0945ec534745",
+    "data/processed/2026-10-02_d26e13cf/signals.csv": "575f1761ff7b739cd61c71802494eaf139c7f320dfc89b02b3bf15fe3cc48975",
+    "data/processed/2026-10-02_d26e13cf/validation.csv": "f83332db1ab4b387f5434974000e3ca59ce8740aa849ad8fd7835f8980bff0e1",
+    "reports/2026-10-02_d26e13cf/charts/predictors.svg": "e865233da627953afca9bd25d5d3121b68096e37d2415036dddcdf2492942ef5",
+    "reports/2026-10-02_d26e13cf/charts/targets.svg": "cb86c5ec8bb4aa5b495c9978033e5b6ccb01dad6a569bafd51b679347c448824",
+    "reports/2026-10-02_d26e13cf/report.html": "0601a056b504226ffc91abd8dc9a9442207e9a46a09e0ef69951fb4eaa464a02",
+    "reports/2026-10-02_d26e13cf/report.md": "e093f37b09fb1260ee8532c4e6a1f7590f4c35e324012473532ddb65fcc1b282"
+  }
+}
