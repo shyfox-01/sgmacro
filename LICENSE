@@ -1,0 +1,53 @@
+Copyright (c) 2026 shyfox-01
+
+All rights reserved.
+
+This repository contains only a description of sgmacro and an image of it. You
+may view them here and link to this page; GitHub's Terms of Service also let
+GitHub users view and fork this repository on GitHub. Any other copying,
+redistributing or adapting of the text or image needs prior written permission,
+except where applicable law allows it, such as a short quotation with credit.
+These terms do not restrict the third-party data shown in the chart, which
+remains available from its publishers under its own licence.
+
+The source code of sgmacro is not public. This repository grants no license
+to it or to the software.
+
+THIRD-PARTY DATA
+
+  The chart in this repository contains information from the following datasets,
+  accessed on 2 October 2026 from data.gov.sg (https://data.gov.sg/) and made
+  available under the Singapore Open Data Licence
+  (https://data.gov.sg/open-data-licence):
+
+  Urban Redevelopment Authority: Private Residential Property Price Index (Base
+  Quarter 2009-Q1 = 100), Quarterly.
+  https://data.gov.sg/datasets/d_97f8a2e995022d311c6c68cfda6d034c/view
+
+  Urban Redevelopment Authority: Private Residential Property Rental Index ,
+  (Base Quarter 2009-Q1 = 100), Quarterly. The chart shows the non-landed,
+  whole-island series.
+  https://data.gov.sg/datasets/d_8e4c50283fb7052a391dfb746a05c853/view
+
+  Housing & Development Board: HDB Resale Price Index (1Q2009 = 100), Quarterly.
+  https://data.gov.sg/datasets/d_14f63e595975691e7c24a27ae4c07c79/view
+
+  sgmacro also uses data from SingStat Table Builder
+  (https://tablebuilder.singstat.gov.sg/), to which SingStat's Terms of Use
+  apply (https://www.singstat.gov.sg/terms-of-use).
+
+  The original publishers include the Urban Redevelopment Authority, Housing &
+  Development Board, Monetary Authority of Singapore, Ministry of Manpower and
+  Singapore Department of Statistics.
+
+  The displayed data is a saved example rather than a current feed. Processed
+  figures, tables, calculations and commentary are produced by this project and
+  should not be attributed to the data publishers. No government agency endorses
+  this project.
+
+  Housing-policy information is manually maintained from official policy
+  announcements. Those announcements remain subject to their publishers' terms.
+
+NO WARRANTY
+
+  The text and image are provided "as is", without warranty of any kind.
